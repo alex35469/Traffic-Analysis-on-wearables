@@ -1,0 +1,332 @@
+\documentclass[USenglish,oneside,twocolumn]{article}
+
+\usepackage[utf8]{inputenc}%(only for the pdftex engine)
+%\RequirePackage[no-math]{fontspec}%(only for the luatex or the xetex engine)
+\usepackage[big]{dgruyter_NEW}
+\usepackage{xspace}
+\usepackage[boxruled]{algorithm2e}
+\usepackage{color,xcolor,colortbl}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{natbib}
+\usepackage{subfigure}
+\usepackage{environ}
+\usepackage[subtle]{savetrees}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{changepage}
+\usepackage{bytefield}
+
+% extra compactness
+\setlength{\textfloatsep}{10pt}
+
+\makeatletter
+\newcommand{\algrule}[1][.2pt]{\par\vskip.5\baselineskip\hrule height #1\par\vskip.5\baselineskip}
+\makeatother
+
+\newif\ifanonymous{}
+\newif\ifextended{}
+
+%=============================================
+\anonymousfalse{} %controls the authors/page numbers etc
+%=============================================
+\extendedtrue{}  %toggle churn analysis
+%=============================================
+
+
+\graphicspath{{graphics/}{.}}
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
+
+\newcommand{\squishlist}{
+	\begin{list}{$\bullet$}
+		{ \setlength{\itemsep}{0pt}      \setlength{\parsep}{3pt}
+			\setlength{\topsep}{3pt}       \setlength{\partopsep}{0pt}
+			\setlength{\leftmargin}{3.5mm} \setlength{\labelwidth}{1em}
+			\setlength{\labelsep}{0.5em} } }
+	
+	\newcommand{\squishend}{
+\end{list}  }
+
+\clubpenalty=10000
+\widowpenalty=10000
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Property}
+\SetAlgorithmName{Protocol}{protocol}{List of Protocols}
+
+\newcommand{\sysname}{Sysname\xspace}
+\newcommand{\rpm}{\raisebox{.2ex}{$\scriptstyle\pm$}}
+\newcommand{\sfsize}{\fontsize{0.72\baselineskip}{0.68\baselineskip}\selectfont}
+\newcommand{\sans}[1]{\textsf{\sfsize{}\mbox{#1}}}
+\newcommand{\sansbf}[1]{\textsf{\textbf{\sfsize{}\mbox{#1}}}}
+\newcommand{\para}[1]{\vspace*{0.48em} \noindent \sansbf{\mbox{#1}}}
+
+\newcommand{\ie}{{\em i.e., \xspace\/}}
+\newcommand{\eg}{{\em e.g., \xspace\/}}
+\renewcommand{\vec}[1]{\underline{#1}}
+\newcommand{\sig}[2]{\mathcal{S}_{#1}{(#2)}}
+\newcommand{\enc}[2]{\mathcal{E}_{#1}{(#2)}}
+\newcommand{\dec}[2]{\mathcal{D}_{#1}{(#2)}}
+\newcommand{\bin}{{\{0, 1\}}}
+
+\newcommand{\ad}{\ensuremath{\mathcal{A}}}
+\newcommand{\adpair}{\ensuremath{\ad_{\text{pairing}}}}
+\newcommand{\adpage}{\ensuremath{\ad_{\text{paging}}}}
+\newcommand{\adcomm}{\ensuremath{\ad_{\text{comm}}}}
+
+\newcommand{\personComment}[2]{{\noindent\color{teal}[\underline{#1:} #2]}}
+\newcommand{\todo}[1]{\personComment{Todo}{#1}}
+\newcommand{\bryan}[1]{\personComment{Bryan}{#1}}
+\newcommand{\ludovic}[1]{\personComment{Ludovic}{#1}}
+\newcommand{\italo}[1]{\personComment{Italo}{#1}}
+\newcommand{\hl}{\color{blue}}
+\newcommand{\bk}{\color{black}}
+
+\DOI{foobar}
+
+\cclogo{\includegraphics{by-nc-nd.pdf}}
+
+\begin{document}
+	
+	\ifanonymous{}
+		\renewcommand{\sysname}{Sysname2\xspace}
+	\else
+		\author*[1]{Ludovic Barman}
+		\author[2]{Apostolos Pyrgelis}
+		\author[3]{Jean-Pierre Hubaux}
+		
+		\affil[1]{EPFL, E-mail: ludovic.barman@epfl.ch}	
+		\affil[2]{EPFL, E-mail: apostolos.pyrgelis@epfl.ch}
+		\affil[3]{EPFL, E-mail: jean-pierre.hubaux@epfl.ch}
+	\fi
+	
+	\title{[Draft] Traffic-Analysis of Wearable Devices}
+	\runningtitle{Wearables}
+	
+	\noindent {\color{red} Please do not disseminate.}
+	\input{0-abstract}
+
+	%\keywords{keywords, keywords}
+	
+	\journalname{Proceedings on Privacy Enhancing Technologies}
+	\DOI{}
+	\startpage{1}
+	%\received{..}
+	%\revised{..}
+	%\accepted{..}
+	
+	\journalyear{..}
+	\journalvolume{..}
+	\journalissue{..}
+	
+	\maketitle
+	
+	\section{Introduction}
+	
+	Wearable devices such as smartwatches, fitness-related and medical devices (\eg activity trackers, steps counters, blood pressure monitors) are bound to become more ubiquitous due to a high demand for personalized health.
+	This class of devices contain sensitive data: personal identifiers and data often directly related to health (\eg heart rate, daily activity, medication schedules). 
+	%{\color{red} [To check/quote:] We note that in the medical context, FDA-approved devices are required to protect medical and personal data using ``sufficient techniques''.}
+	Typically, wearable devices communicate with a smartphone which collects and processes the data.
+	Researchers repeatedly showed how communication patterns, even encrypted, often leaks information~\citep{srinivasan2008protecting,acar2018peek}; notably, the encrypted traffic of smartphones has been shown to leak enough information to allow App identification and user activity recognition~\citep{conti2015analyzing,taylor2017robust}.
+	
+	In this work, we explore the information leakage of wearable devices over Bluetooth Classic and Low Energy (BLE).
+	%Unlike related work, which either capture data directly on the device, we consider an external passive attacker.
+	We consider a near future where Bluetooth wearable devices are ubiquitous, and where an adversary passively eavesdrop on Bluetooth communications (\eg in a mall or a public transportation).
+	%We demonstrate that Bluetooth communications leak enough information to create privacy and security threats.
+	While (some) recent devices use up-to-date practices regarding encryption and MAC addresses randomization, we show that these measures are not sufficient, and demonstrate a traffic-analysis attack to infer devices, applications and users actions.
+	
+	In Bluetooth Low Energy, wearables are typically talkative. Most devices continuously advertise their name (and often, model number) to their surroundings; to prevent long-term device and user tracking, BLE devices can make use of random MAC addresses. A large number of related work already highlight that current BLE devices do not rotate MAC addresses enough or at appropriate times, enabling tracking~\citep{aksu2018identification}. However, we highlight a deeper problem: the communication patterns alone are sufficient to accurately identify devices, and a long-term solution against tracking should involve appropriate padding and timing protections.
+	
+	In Bluetooth Classic, an adversary who does not observe the pairing/a \emph{paging event} sees limited information. Through the connection identifier {\color{red}RANDOM ID}, he can enumerate the active connections, but typically cannot see their MAC address. However, we show that timings and sizes of packets allow for accurate device identification and hence tracking; additionally, our ML model recognizes applications and user actions such as {\color{red} recording the heart rate, receiving a phone call, or performing a workout on a specific app}, despite the use of encryption.
+		
+	{\color{red} 
+		
+	We analyze the communications of various medical and fitness wearable devices and three smartwatches with different OS, we gain the following insights:
+	\begin{enumerate}
+		\item The security standards for some devices is blatantly insufficient, even for FDA-approved devices from large distributors; we observe health-related data with PII over plaintext communications, custom-made ``encoding'' instead of encryption; obsolete pairings, static identifiers which allow tracking. We took steps for responsible disclosure of these specific devices.
+		\item For all devices, communication  patterns allow for device identification, application and user-activities recognition.
+	\end{enumerate}
+	
+	We highlight potential solutions which revolve around padding or shaping the traffic.
+	We emphasize that these solutions are by no means perfect and further research should be conducted to find an appropriate security/cost balance.
+	These mitigation have to be implemented in the wearable themselves, and hence it is urgent that vendors are provided with acceptable solutions to protect the next generation of wearable devices.
+	Some partial mitigations could be implemented in the Bluetooth protocol itself; we have contacted the Bluetooth Special Interest Group with our findings.}
+
+	\newpage
+	\section{Background}
+	
+	Two flavors of Bluetooth co-exist: Bluetooth Classic, often referred to as "BR/EDR" for Basic Rate/Enhanced Data Rate, and Bluetooth Low Energy (BLE). 
+	Both are specified in a 3000-page technical document~\citep{bluetooth2016bluetooth} produced by the Bluetooth Special Interest Group (SIG), and their latest version is 5.1 (introduced in January 2019). 
+	
+	\para{Classic vs LE.} Bluetooth Low Energy (BLE) focuses on improved energy efficiency, and is better suited for devices which do sporadic data exchanges.
+	It is incompatible with the Classic version and requires a different firmware.
+	
+	Bluetooth Classic is tailored for data-intensive or latency-sensitive applications, and typically is not used for wearable devices (a notable exception being high-end smartwatches).
+	
+	\para{Data Exchange.} In both Bluetooth Classic and BLE, data exchange happens after a pairing process between a slave and a master. Initially, devices broadcast and listen on \emph{advertising channels} to discover each other.
+	Then, the pairing process assigns the slave to the master's \emph{Piconet}, and both devices communicate using the non-advertising channels. {\color{red} Typically, devices stop advertising when they are part of an active connection.}
+	
+	To communicate in one Piconet, all devices use the same frequency hopping. The channel is divided into time-slots; odd time-slots for the slaves, and even time-slots for the master.
+	When the connection is Asynchronous Connectionless (ACL), devices communicate opportunistically during unreserved time-slots.
+	In the case of Synchronous Connection-Oriented (SCO) connections, devices communicate at pre-determined time-slots without acknowledgments (this is typically used for latency-sensitive data such as voice).
+	
+	Unlike Bluetooth Classic, BLE also support data exchange without pairing, in which the slave simply broadcast short information to its surroundings on the advertising channel.
+	
+	\para{Security.} The security properties are fairly similar between Bluetooth Classic and BLE. Older pairings are typically insecure, as shown by many related work, but the most recent pairings and encryption are fairly safe by today's standards ($128$ bit of security).%We note that sometimes the most secure pairings are not used for a variety of reasons (\eg computational power, absence of input device on the wearable).
+	
+	The purpose of the pairing is to exchange a short- or long-term key. Older devices might use Link Manager Protocol (LMP) pairing, which is based on a short PIN and can be easily bruteforced, whereas modern devices uses Simple Secure Pairing (SSP), which is a more secure version based on elliptic curve cryptography~\citep{phan2012analyzing}. From a user perspective, four variants of SSP exists: JustWorks (where no key is used), Out-of-Band (where an additional channel is used to authenticate the devices, \eg NFC or visual channel), Passkey Entry (where the user inputs twice the same code on the devices), and finally Numeric Comparison. Most attacks on SSP are based on some form of Man-in-the-Middle~\citep{haataja2008man,haataja2008practical}. Typically, if the pairing is done correctly, the subsequent communication is confidential (protected by AES-CCM with a $128$-bit key), but often not integrity-protected.
+	
+	\para{???} After a successful pairing, devices can securely reconnect without re-exchanging cryptographic information; an \emph{Inquiry/Paging} event is sufficient for devices to reconnect, as opposed to a pairing. %In addition, a \emph{bonding} flag tells whether the exchanged keys need to be kept on a long-term (\ie surviving reboot).	
+	
+	
+	\subsection{Eavesdropping}
+	
+	Eavesdropping Bluetooth is hard (\ie significantly harder than eavesdropping on IEEE 802.11 ``Wi-Fi'') due to the use of frequency hopping. This is primarily a technique to improve robustness of communications when many device communicate simultaneously, but it also makes the task hard for an eavesdropper. 
+	
+	Devices initially become aware of each others on specific \emph{advertising channel}.
+	
+	The hopping sequence is derived from a secret shared by the two devices.
+	
+
+	\section{Related Work}
+
+	However, the related works consider an eavesdropper directly on the mobile phone, or a malicious ISP seeing IP packets; to the best of our knowledge, no related work focuses on a co-located eavesdropper sniffing \emph{wireless} traffic.
+	In practice however, this scenario is relevant:
+	First, the data exchanged between the wearable and the smartphone is not necessarily the same as the data exchanged between the smartphone and the Internet.
+	This is typically the case for devices without a screen, where the wearable sends raw data which is later processed in the smartphone.
+	Second, Bluetooth traces collected on the smartphone (\ie through HCI dumps) are already decrypted and do not represent what an adversary sees on the wireless medium.
+
+	\para{Audio Fingerprinting.} xxx
+	
+	
+	\para{Jamming.} 
+	Eavesdropping Bluetooth is hard due to the frequency hopping.
+	Professional scanners avoid the issue altogether by eavesdropping simultaneously on all channels, but they are prohibitively expensive ($50$k USD).
+	Some cheap scanners use classical Bluetooth hardware but with a special firmware which tries to follow another active connection. The firmware tries to infer the connection parameters and the clocks of the devices being targeted, until it has enough information to recompute the full hopping sequence. We note that typically, this can only work when the scanner captures the initial pairing; otherwise, with recent Bluetooth protocols, such scanners are unable to recompute efficiently the hopping sequence, as it is cryptographically derived from the pairing.
+	
+	In a typical Bluetooth connection, not all channels are used: there is a mechanism to avoid ``noisy'' channels (notably because the Bluetooth spectrum overlaps with the 802.11 spectrum).
+	In Bluetooth classic, there is a minimum number of channels for communications to happen; when below this threshold, security is considered too low and devices may refuse to communicate.
+	In BLE, unlike in Bluetooth Classic, the minimum seems misconfigured: its value is $2$, which would make the hopping pattern trivially predicable {\color{red} or at least much easier to predict, as each ``guess'' is correct with probability $0.5$}.
+	
+	{\color{red}
+	
+	We propose a selective jamming attack to lower the cost of eavesdropping: more precisely, to enable cheap scanners which follow connections to perform better.
+	In practice, we jam $N-2$ channels until both target devices stop using them, which make their subsequent communication easier to eavesdrop upon. We show that this attack improves the accuracy of the capture by $9000\%$.
+	Additionally, while this attack should theoretically not work on Bluetooth classic, we observe the devices studied are misconfigured, and that the attack is still applicable.
+	
+}
+
+	\section{System and Threat model}
+	
+	We consider a user $U$ who possesses a smartphone $S$ and a collection of wearable devices $\vec{W}$.
+	
+	The adversary \ad{} is a passive, computationally-bounded eavesdropper close-by to $U$ who sees all Bluetooth (Classic and LE) traffic. $\ad$ attempts to infer information from the communications between $\vec{W}$ and $S$.
+	
+	However, such adversary is often too strong to model practical attacks.
+	In particular, pairings are one-time events and a real-life adversary who is eavesdropping in a public place would probably not see them. Thus, we narrow down three adversaries \adpair{}, \adpage{}, \adcomm{} in the sense of \ad{} but who observed, respectively: 
+	
+	\squishlist
+		\item all pairings and all subsequent communications;
+		\item all paging and subsequent communications, but not the pairings;
+		\item all active communications, but neither pairing nor paging events.
+	\squishend
+	
+	In practice, an adversary eavesdropping with a Bluetooth sniffer in a mall would likely be modeled by \adpage{} or \adcomm{}. In terms of adversarial power, we have $\adpair{} \ge \adpage{} \ge \adcomm{}$.
+	
+	{\color{red} Our aim is to identify things whether the traffic is encrypted or not, as did the related work \citep{taylor2016appscanner,taylor2017robust}}
+	
+	\section{Information visible to an eavesdropper}
+	
+	\subsection{Information visible for \adcomm{}}
+	
+	\adcomm{} does not see neither pairing nor paging events. In Bluetooth Classic, the information visible consists of:
+	
+	\begin{bytefield}{22}
+		\bitbox{5}{Preamble} & \bitbox{5}{Sync word} & \bitbox{4}{Trailer} & \bitbox{6}{AM-ADDR}  & \bitbox{4}{Flow}  & \bitbox{4}{Payload}\\
+	\end{bytefield}
+
+	The Sync word reveals the 24 lower bits of the master's MAC address (LAP).
+	Unlike the upper address part (UAP) of the MAC address, which are specific per manufacturer, the LAP can be chosen arbitrarily by the manufacturer. %, and in the case of BLE, can be randomized frequently.
+	This information allow \adpage{} to enumerate the different Piconets in range, as well as recognize an already-seen device.
+	Similarily, the AM-ADDR (Active-Member Address) is a 3-bit integer identifying a device in a given Piconet.
+	
+	In Bluetooth Low Energy, the format is:
+	
+	\begin{bytefield}{22}
+		\bitbox{5}{Preamble} & \bitbox{8}{Access Address} & \bitbox{4}{Header} & \bitbox{4}{Payload}\\
+	\end{bytefield}
+
+	The Access Address is a connection identifier (not a MAC address). Like in Bluetooth Classic, this enable \adpage{} to enumerate the active communications and devices in range, but not recognize the devices.
+	
+	In short, in both Bluetooth Classic and LE, the adversary sees, for all packets, the equivalent of:
+	$$<\text{time},~\text{connection ID},~\text{device ID},~\text{packet size}>$$
+	
+	... where both ID are randomized (but allow grouping packets per device / Piconet).
+	
+	
+	\subsection{Information visible for \adpage{}}
+	
+	Compared to \adcomm{}, \adpage{} additionally obtains the information exchanged during paging events. 
+	
+	In Bluetooth Classic, this consists of packets used to contact the slave; the only meaniful extra information is a Frequency Hopping Synchronization (FHS) packet containing clock information but more importantly the MAC address of the master.
+	
+	Similarily, in Bluetooth Low Energy, the payload (Figure ??) starts with the ``advertisement address'' which corresponds to the (possibly randomized) MAC address of the slave, as well as a short payload. Then, although this is not required in the specification, the exchange can continue with SCAN\_REQ and SCAN\_RSP packets which typically contains the slave's human-friendly name, all the proposed services, attributes, and device characteristics.	
+	
+	{\color{red} This is also the case for Classic}
+	
+	\subsection{Information visible for \adpair{}}
+	
+	\adpair{} sees all information exchanged.
+	
+	In Bluetooth Classic, the devices MAC addresses, devices characteristics () and connection characteristics (including which kind of pairing is used).
+	
+	We note that naturally, some of this information can be encrypted with a key unknown to the adversary (this commonly happens when the pairing is SSP).
+	Since $\adpair$ sees the pairings, he learns notably the device ``human-friendly names'', all protocols used (pairing + encryption), the (possibly randomized) MAC addresses.	
+	
+	\section{Adversary model v2}
+	
+	We assume an adversary who does not see the pairing nor the paging
+	
+	We assume that MAC addresses are properly rotated
+	
+	Classic => potentially only the MAC of the master, maybe not (investigate why)
+	
+	BLE => see the MAC addresses of both, but they are randomized (can the master be too ?)
+	
+	(In the eval, mention the truth if some non-random MAC address is visible, but say that we ignore it)
+	
+	\section{Attack}
+	
+	Identifying devices
+	
+	Identifying which action a device is performing
+	
+	Identifying which app a smartwatch is using
+	
+	Identifying which audio is being played on Bluetooth Classic
+	
+	\section{Contributions}
+	
+	4.5 seconds is not enough
+	
+	xdeltas are the most important feature
+	
+	\section{Acknowledgments}
+	
+	Friederike Groschupp
+	Stéphanie Lebrun
+	Jiska Classen?
+	
+	\section{Interesting questions}
+	
+	\squishlist
+		\item how does the attack precision fall with degraded capture conditions?
+	\squishend
+	
+	\input{relatedwork}
+	
+
+	\bibliographystyle{abbrv}
+	\bibliography{bibliography.bib}
+	
+\end{document}

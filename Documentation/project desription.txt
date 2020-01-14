@@ -1,0 +1,25 @@
+Traffic-Analysis of Wearable Devices
+In the era of personalized health, people constantly track their overall wellbeing status through wearable devices (e.g., smart watches, fitness trackers) that are able to measure vital signs such as their blood pressure or heart rate and monitor various aspects of their daily lives such as stress levels and quality of sleep. Typically, such wearables — which are capable of communicating over Bluetooth or Bluetooth Low Energy (BLE) wireless technology — forward the pieces of sensitive information that they collect to a device with stronger computing capabilities (i.e., a smartphone) that processes them to inform and notify the wearer about her health status through specialized applications [1]. 
+
+The goal of this project is to evaluate the privacy leakage that stems from the Bluetooth/BLE communications between health wearable devices and their connected smartphone. While such communications are commonly encrypted [2], there is typically no protection for their associated metadata (e.g., packet sizes or timings) and as such, they are potentially subject to traffic analysis techniques [3] which can reveal sensitive information about the person that is being monitored. To this end, we will employ advanced software techniques [4] or elaborate wireless analysis equipment [5] to eavesdrop on and collect data regarding the (encrypted) communications of a wide range of commercially available wearable devices such as smart watches, fitness trackers, and blood pressure monitors. Subsequently, we will apply machine learning methodologies on the captured data [6] aiming to extract information about devices’ states, fingerprint users’ activities and track their health status. As a final step of the project, we will also investigate countermeasures aiming to prevent such attacks by employing padding [7] or traffic morphing techniques [8].
+
+Type: Semester project and bachelor-/master- thesis
+
+References:
+
+[1] iOS Health – https://www.apple.com/ios/health/
+
+[2] Bluetooth Specification – https://www.bluetooth.com/specifications/bluetooth-core-specification/
+
+[3] Das, A.K., Pathak, P.H., Chuah, C.N. and Mohapatra, P., 2016, February. Uncovering privacy leakage in ble network traffic of wearable fitness trackers. In Proceedings of the 17th International Workshop on Mobile Computing Systems and Applications (pp. 99-104). ACM.
+
+[4] Albazrqaoe, Wahhab, Jun Huang, and Guoliang Xing. “Practical bluetooth traffic sniffing: Systems and privacy implications.” Proceedings of the 14th Annual International Conference on Mobile Systems, Applications, and Services. ACM, 2016.
+
+[5] Ellisys Vanguard – https://www.ellisys.com/products/bv1/index.php
+
+[6] Acar, Abbas, Hossein Fereidooni, Tigist Abera, Amit Kumar Sikder, Markus Miettinen, Hidayet Aksu, Mauro Conti, Ahmad-Reza Sadeghi, and A. Selcuk Uluagac. “Peek-a-Boo: I see your smart home activities, even encrypted!.” arXiv preprint arXiv:1808.02741 (2018).
+
+[7] Nikitin, K., Barman, L., Lueks, W., Underwood, M., Hubaux, J. P., & Ford, B. (2019). Reducing metadata leakage from encrypted files and communication with purbs. Proceedings on Privacy Enhancing Technologies, 2019(4), 6-33.
+[8] Wright, C. V., Coull, S. E., & Monrose, F. (2009, February). Traffic Morphing: An Efficient Defense Against Statistical Traffic Analysis. In NDSS (Vol. 9).
+
+Point of contact: Ludovic Barman

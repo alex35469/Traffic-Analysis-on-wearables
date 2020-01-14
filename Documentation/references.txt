@@ -1,0 +1,14 @@
+[1] iOS Health – https://www.apple.com/ios/health/
+
+[2] Bluetooth Specification – https://www.bluetooth.com/specifications/bluetooth-core-specification/
+
+[3] Das, A.K., Pathak, P.H., Chuah, C.N. and Mohapatra, P., 2016, February. Uncovering privacy leakage in ble network traffic of wearable fitness trackers. In Proceedings of the 17th International Workshop on Mobile Computing Systems and Applications (pp. 99-104). ACM.
+
+[4] Albazrqaoe, Wahhab, Jun Huang, and Guoliang Xing. “Practical bluetooth traffic sniffing: Systems and privacy implications.” Proceedings of the 14th Annual International Conference on Mobile Systems, Applications, and Services. ACM, 2016.
+
+[5] Ellisys Vanguard – https://www.ellisys.com/products/bv1/index.php
+
+[6] Acar, Abbas, Hossein Fereidooni, Tigist Abera, Amit Kumar Sikder, Markus Miettinen, Hidayet Aksu, Mauro Conti, Ahmad-Reza Sadeghi, and A. Selcuk Uluagac. “Peek-a-Boo: I see your smart home activities, even encrypted!.” arXiv preprint arXiv:1808.02741 (2018).
+
+[7] Nikitin, K., Barman, L., Lueks, W., Underwood, M., Hubaux, J. P., & Ford, B. (2019). Reducing metadata leakage from encrypted files and communication with purbs. Proceedings on Privacy Enhancing Technologies, 2019(4), 6-33.
+[8] Wright, C. V., Coull, S. E., & Monrose, F. (2009, February). Traffic Morphing: An Efficient Defense Against Statistical Traffic Analysis. In NDSS (Vol. 9).
