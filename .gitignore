@@ -1,2 +1,6 @@
-# ignore datasets
-datasets/*
+# ignore everything
+* 
+
+# except
+!.gitignore
+!/Automation/adb/platform-tools/*
