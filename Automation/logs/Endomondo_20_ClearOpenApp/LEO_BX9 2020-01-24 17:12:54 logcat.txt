@@ -1,0 +1,1083 @@
+--------- beginning of system
+01-24 17:08:39.161   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:08:44.954   434  3945 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.endomondo.android/.wear.ui.WearAppActivity} from uid 2000
+01-24 17:08:45.035   434  2021 I ActivityManager: Start proc 8429:com.endomondo.android/u0a52 for activity com.endomondo.android/.wear.ui.WearAppActivity
+01-24 17:08:45.276   434  2021 W ActivityManager: Slow operation: 98ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:08:45.282   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:08:49.011 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:08:49.104   434  6034 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:08:49.105   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:08:49.124 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:08:49.163   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:08:49.205   434  1268 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:08:49.205   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:08:49.446 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:08:49.530   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:08:49.530   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:03.661   434  6034 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=0: clear data
+01-24 17:09:03.663   434  6034 I ActivityManager: Killing 8429:com.endomondo.android/u0a52 (adj 0): stop com.endomondo.android
+01-24 17:09:03.692   434  6034 W ActivityManager: Scheduling restart of crashed service com.endomondo.android/.wear.workout.WorkoutService in 1000ms
+01-24 17:09:03.694   434  6034 W ActivityManager: Force removing ActivityRecord{e432f9c u0 com.endomondo.android/.wear.ui.WearAppActivity t343}: app died, no saved state
+01-24 17:09:03.882   434   453 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=-1: clearApplicationUserData
+01-24 17:09:03.905   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 8429
+01-24 17:09:03.915   434   454 W Looper  : Dispatch took 253ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:09:03.920   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:04.038 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:04.104   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:09:04.122 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:04.178   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:09:04.179   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:04.179   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:09:04.179   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:04.185 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:04.265   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:09:04.270   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:10.059   434   756 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.endomondo.android/.wear.ui.WearAppActivity} from uid 2000
+01-24 17:09:10.193   434  6034 I ActivityManager: Start proc 8541:com.endomondo.android/u0a52 for activity com.endomondo.android/.wear.ui.WearAppActivity
+01-24 17:09:10.391   434  6034 W ActivityManager: Slow operation: 83ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:09:10.410   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:11.980   434  1694 E BatteryStatsService: no controller energy info supplied
+01-24 17:09:11.980   434  1694 I chatty  : uid=1000(system) Binder:434_C identical 1 line
+01-24 17:09:11.980   434  1694 E BatteryStatsService: no controller energy info supplied
+01-24 17:09:13.310 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:13.371   434  1694 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:09:13.372   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:13.404 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:13.489   434  4786 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:09:13.492   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:13.736   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:09:13.774 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:28.597   434  6034 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=0: clear data
+01-24 17:09:28.599   434  6034 I ActivityManager: Killing 8541:com.endomondo.android/u0a52 (adj 0): stop com.endomondo.android
+01-24 17:09:28.611   434  6034 W ActivityManager: Scheduling restart of crashed service com.endomondo.android/.wear.workout.WorkoutService in 1000ms
+01-24 17:09:28.614   434  6034 W ActivityManager: Force removing ActivityRecord{7b9ed95 u0 com.endomondo.android/.wear.ui.WearAppActivity t344}: app died, no saved state
+01-24 17:09:28.784   434   454 W Looper  : Dispatch took 186ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:09:28.818   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:28.818   434   453 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=-1: clearApplicationUserData
+01-24 17:09:28.858   434   756 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 8541 uid 10052
+01-24 17:09:28.940   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 8541
+01-24 17:09:28.954   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:09:28.975 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:29.031 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:29.115   434  1694 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:09:29.116   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:29.132 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:29.378   434  1694 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:09:29.382   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:29.382   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:09:29.383   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:35.119   434  6034 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.endomondo.android/.wear.ui.WearAppActivity} from uid 2000
+01-24 17:09:35.246   434   756 I ActivityManager: Start proc 8651:com.endomondo.android/u0a52 for activity com.endomondo.android/.wear.ui.WearAppActivity
+01-24 17:09:35.273   434   454 W Looper  : Dispatch took 102ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:09:35.471   434   756 W ActivityManager: Slow operation: 88ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:09:35.479   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:38.869   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:09:39.136 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:39.173   434  4786 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:09:39.176   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:39.236 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:39.257   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:09:39.257   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:39.527 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:39.545   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:09:39.546   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:53.928   434  7909 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=0: clear data
+01-24 17:09:53.929   434  7909 I ActivityManager: Killing 8651:com.endomondo.android/u0a52 (adj 0): stop com.endomondo.android
+01-24 17:09:53.943   434  7909 W ActivityManager: Scheduling restart of crashed service com.endomondo.android/.wear.workout.WorkoutService in 1000ms
+01-24 17:09:53.947   434  7909 W ActivityManager: Force removing ActivityRecord{e5f23ef u0 com.endomondo.android/.wear.ui.WearAppActivity t345}: app died, no saved state
+01-24 17:09:54.128   434   454 W Looper  : Dispatch took 199ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:09:54.154   434   453 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=-1: clearApplicationUserData
+01-24 17:09:54.161   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 8651
+01-24 17:09:54.168   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:09:54.247   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:54.406 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:54.492 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:54.562   434   756 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:09:54.562   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:54.603 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:09:54.740   434  4786 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:09:54.741   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:09:54.741   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:09:54.742   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:00.609   434   874 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.endomondo.android/.wear.ui.WearAppActivity} from uid 2000
+01-24 17:10:00.719   434   756 I ActivityManager: Start proc 8763:com.endomondo.android/u0a52 for activity com.endomondo.android/.wear.ui.WearAppActivity
+01-24 17:10:00.895   434   756 W ActivityManager: Slow operation: 75ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:10:00.909   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:04.619   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:10:04.848 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:04.878   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:04.879   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:04.981 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:05.019   434  7909 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:05.019   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:05.281 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:05.320   434   874 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:05.323   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:12.007   434   874 E BatteryStatsService: no controller energy info supplied
+01-24 17:10:12.010   434   874 I chatty  : uid=1000(system) Binder:434_7 identical 1 line
+01-24 17:10:12.010   434   874 E BatteryStatsService: no controller energy info supplied
+01-24 17:10:19.207   434  7909 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=0: clear data
+01-24 17:10:19.209   434  7909 I ActivityManager: Killing 8763:com.endomondo.android/u0a52 (adj 0): stop com.endomondo.android
+01-24 17:10:19.222   434  7909 W ActivityManager: Scheduling restart of crashed service com.endomondo.android/.wear.workout.WorkoutService in 1000ms
+01-24 17:10:19.225   434  7909 W ActivityManager: Force removing ActivityRecord{64a5944 u0 com.endomondo.android/.wear.ui.WearAppActivity t346}: app died, no saved state
+01-24 17:10:19.405   434   453 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=-1: clearApplicationUserData
+01-24 17:10:19.431   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:19.440   434   454 W Looper  : Dispatch took 210ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:10:19.462   434 13083 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 8763 uid 10052
+01-24 17:10:19.578   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:10:19.582   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 8763
+01-24 17:10:19.608 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:19.671 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:19.704   434  1694 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:19.725   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:19.753 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:20.024   434  5705 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:20.026   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:20.027   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:20.027   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:25.805   434  1694 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.endomondo.android/.wear.ui.WearAppActivity} from uid 2000
+01-24 17:10:25.925   434  2560 I ActivityManager: Start proc 8871:com.endomondo.android/u0a52 for activity com.endomondo.android/.wear.ui.WearAppActivity
+01-24 17:10:26.088   434  2560 W ActivityManager: Slow operation: 88ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:10:26.104   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:29.510   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:10:29.924 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:29.964   434  2560 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:29.964   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:30.061 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:30.090   434  5705 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:30.093   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:30.286 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:30.310   434  2560 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:30.311   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:44.363   434 13083 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=0: clear data
+01-24 17:10:44.366   434 13083 I ActivityManager: Killing 8871:com.endomondo.android/u0a52 (adj 0): stop com.endomondo.android
+01-24 17:10:44.377   434 13083 W ActivityManager: Scheduling restart of crashed service com.endomondo.android/.wear.workout.WorkoutService in 1000ms
+01-24 17:10:44.380   434 13083 W ActivityManager: Force removing ActivityRecord{9c92eeb u0 com.endomondo.android/.wear.ui.WearAppActivity t347}: app died, no saved state
+01-24 17:10:44.554   434   454 W Looper  : Dispatch took 189ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:10:44.556   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:44.610   434   453 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=-1: clearApplicationUserData
+01-24 17:10:44.664   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 8871
+01-24 17:10:44.752   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:10:44.754 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:44.821 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:44.883   434  2614 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:44.885   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:44.907 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:45.178   434  5033 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:45.190   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:45.194   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:45.194   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:50.797   434  2093 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.endomondo.android/.wear.ui.WearAppActivity} from uid 2000
+01-24 17:10:50.905   434  3482 I ActivityManager: Start proc 8982:com.endomondo.android/u0a52 for activity com.endomondo.android/.wear.ui.WearAppActivity
+01-24 17:10:51.141   434 13083 W ActivityManager: Slow operation: 78ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:10:51.149   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:54.627   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:10:55.566 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:55.603   434  2093 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:55.617   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:55.664 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:55.701   434  1679 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:55.704   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:10:55.895 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:10:55.925   434  1679 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:10:55.927   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:09.380   434  2614 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=0: clear data
+01-24 17:11:09.382   434  2614 I ActivityManager: Killing 8982:com.endomondo.android/u0a52 (adj 0): stop com.endomondo.android
+01-24 17:11:09.391   434  2614 W ActivityManager: Scheduling restart of crashed service com.endomondo.android/.wear.workout.WorkoutService in 1000ms
+01-24 17:11:09.397   434  2614 W ActivityManager: Force removing ActivityRecord{608275e u0 com.endomondo.android/.wear.ui.WearAppActivity t348}: app died, no saved state
+01-24 17:11:09.643   434   454 W Looper  : Dispatch took 262ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:11:09.643   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 8982
+01-24 17:11:09.675 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:11:09.724   434   453 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=-1: clearApplicationUserData
+01-24 17:11:09.871   434  2021 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:09.885 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:11:09.889   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:11:10.012 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:11:10.138   434  2021 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:11:10.139   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:10.139   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:11:10.139   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:10.140   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:11:10.140   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+--------- beginning of main
+01-24 17:11:10.647 13109  9081 I Fitness : Removing all subscriptions for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:11:10.654 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:11:10.654 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:11:10.654 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:11:10.654 13109 13219 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:11:10.704 13109  9081 I Fitness : Clearing all cached OAuth tokens for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:11:10.718 13109  9081 I Fitness : Removing all subscriptions for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:11:10.783 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:11:10.783 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:11:10.783 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:11:10.783 13109 13234 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:11:10.814 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:11:10.814 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:11:10.814 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:11:10.814 13109 13234 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:11:11.935   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 17:11:11.939 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 378  /isUsbOrAc: 1
+01-24 17:11:11.943   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 17:11:11.943   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 17:11:11.965   434   445 E BatteryStatsService: no controller energy info supplied
+01-24 17:11:11.965   434   445 I chatty  : uid=1000(system) Binder:434_2 identical 1 line
+01-24 17:11:11.966   434   445 E BatteryStatsService: no controller energy info supplied
+01-24 17:11:12.037   434   614 I chatty  : uid=1000(system) Thread-12 expire 18 lines
+01-24 17:11:13.976  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:11:15.892   434   445 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.endomondo.android/.wear.ui.WearAppActivity} from uid 2000
+01-24 17:11:16.013   434 13083 I ActivityManager: Start proc 9093:com.endomondo.android/u0a52 for activity com.endomondo.android/.wear.ui.WearAppActivity
+01-24 17:11:16.159   434 13083 W ActivityManager: Slow operation: 82ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:11:16.198   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:16.227  9093  9093 I chatty  : uid=10052(u0_a52) expire 9 lines
+01-24 17:11:16.552  9093  9112 I chatty  : uid=10052(u0_a52) expire 4 lines
+01-24 17:11:18.281  9093  9103 I chatty  : uid=10052(u0_a52) expire 3 lines
+01-24 17:11:18.774  9093  9112 I chatty  : uid=10052(u0_a52) expire 5 lines
+01-24 17:11:18.779  9112  9112 I chatty  : uid=10052(u0_a52) com.endomondo.android expire 1 line
+01-24 17:11:18.980  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:11:18.986   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=158148491547427)
+01-24 17:11:19.105  9093  9093 I chatty  : uid=10052(u0_a52) expire 7 lines
+01-24 17:11:19.229  9141  9141 I chatty  : uid=10052(u0_a52) com.endomondo.android expire 1 line
+01-24 17:11:19.238  9093  9141 I chatty  : uid=10052(u0_a52) expire 3 lines
+01-24 17:11:19.508   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:11:19.751   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=158149245148990)
+01-24 17:11:19.843   434   461 I chatty  : uid=1000(system) android.display expire 1 line
+01-24 17:11:20.137 32131 32131 I AppLifecycleTracker: App foreground state unchanged: inForeground ? true
+01-24 17:11:20.138   328   328 D shd     : ProcessSensorDeactive sensor:0xa, handle:37 
+01-24 17:11:20.155   434   614 I chatty  : uid=1000(system) Thread-12 expire 45 lines
+01-24 17:11:20.192 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:11:20.207   434  2021 I chatty  : uid=1000(system) Binder:434_D expire 4 lines
+01-24 17:11:20.267   434   874 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:11:20.269   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:20.309 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:11:20.314   434 13081 I chatty  : uid=1000(system) Binder:434_1E expire 1 line
+01-24 17:11:20.358   434  2021 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:11:20.367   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:20.371   434 13083 I chatty  : uid=1000(system) Binder:434_1F expire 1 line
+01-24 17:11:20.465  9093  9142 I chatty  : uid=10052(u0_a52) expire 2 lines
+01-24 17:11:20.485 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:11:20.492 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:11:20.492 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:11:20.495 13109 13219 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:11:20.507  9093  9142 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:0 and remote module com.google.android.gms.googlecertificates:4
+01-24 17:11:20.508  9093  9142 I DynamiteModule: Selected remote version of com.google.android.gms.googlecertificates, version >= 4
+01-24 17:11:20.536  9093  9142 W zygote  : Skipping duplicate class check due to unrecognized classloader
+01-24 17:11:20.560 31332 31342 I zygote  : Background concurrent copying GC freed 322(399KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 1024KB/1536KB, paused 4.051ms total 178.007ms
+01-24 17:11:20.638 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:11:20.652 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:11:20.652 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:11:20.652 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:11:20.667 13109 13234 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:11:20.676   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:11:20.676   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:20.765 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:11:20.766 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:11:20.766 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:11:20.776 13109 13229 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:11:20.827   434   452 I chatty  : uid=1000(system) android.bg expire 10 lines
+01-24 17:11:20.849   328   328 D shd     : ProcessSensorActive sensor:0xa, handle:37, option:0
+01-24 17:11:20.870  9093  9098 I zygote  : Do partial code cache collection, code=29KB, data=27KB
+01-24 17:11:20.872  9093  9098 I zygote  : After code cache collection, code=28KB, data=26KB
+01-24 17:11:20.872  9093  9098 I zygote  : Increasing code cache capacity to 128KB
+01-24 17:11:21.054   434   443 I chatty  : uid=1000(system) HeapTaskDaemon expire 1 line
+01-24 17:11:21.312  9093  9106 I zygote  : Waiting for a blocking GC ProfileSaver
+01-24 17:11:21.482  9093  9103 I zygote  : Background concurrent copying GC freed 6194(574KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 2MB/3MB, paused 4.490ms total 294.720ms
+01-24 17:11:21.484  9093  9106 I zygote  : WaitForGcToComplete blocked for 171.626ms for cause ProfileSaver
+01-24 17:11:21.569  9093  9103 I zygote  : WaitForGcToComplete blocked for 32.222ms for cause HeapTrim
+01-24 17:11:21.676   434   611 I chatty  : uid=1000 system_server expire 53 lines
+01-24 17:11:21.697   434   452 I chatty  : uid=1000(system) android.bg expire 4 lines
+01-24 17:11:21.709   434  9166 I chatty  : uid=1000 system_server expire 4 lines
+01-24 17:11:21.723  9093  9093 I zygote  : Deoptimizing int c.g.a(java.lang.Object) due to JIT inline cache
+01-24 17:11:21.939   434   614 I chatty  : uid=1000(system) Thread-12 expire 7 lines
+01-24 17:11:22.317  9093  9103 I zygote  : Background concurrent copying GC freed 6307(653KB) AllocSpace objects, 14(280KB) LOS objects, 24% free, 2MB/3MB, paused 1.783ms total 155.933ms
+01-24 17:11:22.537   434   611 I chatty  : uid=1000 system_server expire 186 lines
+01-24 17:11:22.909  9093  9098 I zygote  : Do partial code cache collection, code=55KB, data=45KB
+01-24 17:11:22.911  9093  9098 I zygote  : After code cache collection, code=55KB, data=45KB
+01-24 17:11:22.912  9093  9098 I zygote  : Increasing code cache capacity to 256KB
+01-24 17:11:23.596 31850 31863 I zygote  : Background concurrent copying GC freed 7555(753KB) AllocSpace objects, 2(60KB) LOS objects, 25% free, 3MB/4MB, paused 6.478ms total 226.861ms
+01-24 17:11:23.674  9093  9103 I zygote  : Background concurrent copying GC freed 5433(525KB) AllocSpace objects, 3(196KB) LOS objects, 24% free, 2MB/3MB, paused 1.140ms total 164.111ms
+01-24 17:11:23.983  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:11:24.038   434   614 I chatty  : uid=1000(system) Thread-12 expire 4 lines
+01-24 17:11:24.113  9093  9103 I zygote  : Background concurrent copying GC freed 2728(342KB) AllocSpace objects, 12(524KB) LOS objects, 24% free, 2MB/3MB, paused 652us total 106.083ms
+01-24 17:11:24.596   434   611 I chatty  : uid=1000 system_server expire 143 lines
+01-24 17:11:25.024  9093  9098 I zygote  : Compiler allocated 4MB to compile void com.google.maps.api.android.lib6.gmm6.vector.cd.a(javax.microedition.khronos.opengles.GL10)
+01-24 17:11:26.053   434   614 I chatty  : uid=1000(system) Thread-12 expire 23 lines
+01-24 17:11:28.987  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:11:33.139  9174  9174 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:11:33.994  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:11:34.139  7206  7217 I zygote  : Background concurrent copying GC freed 6014(454KB) AllocSpace objects, 2(40KB) LOS objects, 30% free, 1177KB/1689KB, paused 20.310ms total 142.317ms
+01-24 17:11:34.288  9174  9174 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:11:34.318   434  2021 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=0: clear data
+01-24 17:11:34.320   434  2021 I ActivityManager: Killing 9093:com.endomondo.android/u0a52 (adj 0): stop com.endomondo.android
+01-24 17:11:34.329   434  2021 W ActivityManager: Scheduling restart of crashed service com.endomondo.android/.wear.workout.WorkoutService in 1000ms
+01-24 17:11:34.333   434  2021 W ActivityManager: Force removing ActivityRecord{dfe3589 u0 com.endomondo.android/.wear.ui.WearAppActivity t349}: app died, no saved state
+01-24 17:11:34.495   434  6034 I chatty  : uid=1000(system) Binder:434_1B expire 1 line
+01-24 17:11:34.525 32131 32131 I AppLifecycleTracker: App foreground state unchanged: inForeground ? true
+01-24 17:11:34.546   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 9093
+01-24 17:11:34.547   434   454 W Looper  : Dispatch took 228ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:11:34.556   434   453 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=-1: clearApplicationUserData
+01-24 17:11:34.565 32131 32303 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 17:11:34.571 32131 32303 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:11:34.624 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:11:34.634   434   756 I chatty  : uid=1000(system) Binder:434_6 expire 1 line
+01-24 17:11:34.716   335   335 I keystore: clear_uid 10052
+01-24 17:11:34.773 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:11:34.805   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:11:34.823 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:11:34.859   434  5002 I chatty  : uid=1000(system) Binder:434_17 expire 1 line
+01-24 17:11:34.885   434 13083 I chatty  : uid=1000(system) Binder:434_1F expire 2 lines
+01-24 17:11:34.886   434   452 I chatty  : uid=1000(system) android.bg expire 5 lines
+01-24 17:11:34.962   434   756 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:34.979   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:11:34.979   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:35.002 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:11:35.009   434  2021 I chatty  : uid=1000(system) Binder:434_D expire 2 lines
+01-24 17:11:35.015   434   614 I chatty  : uid=1000(system) Thread-12 expire 15 lines
+01-24 17:11:35.062   434   611 I chatty  : uid=1000 system_server expire 3 lines
+01-24 17:11:35.093   434   756 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:11:35.094   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:35.095   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:11:35.105   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:35.136   434   452 I chatty  : uid=1000(system) android.bg expire 9 lines
+01-24 17:11:35.440 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:11:35.440 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.endomondo.android]
+01-24 17:11:35.441 31332 31332 D Avrcp   : packageName: com.endomondo.android removed: true
+01-24 17:11:35.441 31332 31332 V Avrcp   : isBrowseSupported for com.endomondo.android: false
+01-24 17:11:35.476  9174  9174 I app_process: System.exit called, status: 0
+01-24 17:11:35.476  9174  9174 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:11:35.555   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:11:35.566 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:11:35.566 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:11:35.566 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:11:35.566 13109 13229 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:11:35.611 13109  9186 I Fitness : Clearing all cached OAuth tokens for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:11:35.614 13109  9186 I Fitness : Removing all subscriptions for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:11:35.729 13109  9186 I Fitness : Clearing all cached OAuth tokens for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:11:35.749 13109  9186 I Fitness : Removing all subscriptions for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:11:35.819 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:11:35.819 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:11:35.819 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:11:35.819 13109 13232 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:11:35.920 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:11:35.920 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:11:35.920 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:11:35.925 13109 13232 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:11:36.120 13109 13122 I zygote  : Background concurrent copying GC freed 34791(2MB) AllocSpace objects, 0(0B) LOS objects, 20% free, 7MB/9MB, paused 8.178ms total 582.684ms
+01-24 17:11:38.996  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:11:40.874   434 13081 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.endomondo.android/.wear.ui.WearAppActivity} from uid 2000
+01-24 17:11:41.003   434  2021 I ActivityManager: Start proc 9203:com.endomondo.android/u0a52 for activity com.endomondo.android/.wear.ui.WearAppActivity
+01-24 17:11:41.228   434  2021 W ActivityManager: Slow operation: 118ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:11:41.234   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:41.360  9203  9203 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 17:11:41.453  9203  9213 I zygote  : Background concurrent copying GC freed 781(368KB) AllocSpace objects, 0(0B) LOS objects, 34% free, 993KB/1505KB, paused 8.273ms total 79.962ms
+01-24 17:11:41.555  9203  9203 E WearAppActivity: useAmbiactive true
+01-24 17:11:41.680  9203  9222 D OpenGLRenderer: HWUI GL Pipeline
+01-24 17:11:41.819  9203  9203 I q       : Making Creator dynamically
+01-24 17:11:41.932  9203  9203 W DynamiteModule: Failed to load module via V2: java.lang.ClassNotFoundException: Didn't find class "com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader" on path: DexPathList[[zip file "/system/framework/com.google.android.wearable.jar", zip file "/data/app/com.endomondo.android-zmAn65MMuKEGxC23cGvNjA==/base.apk"],nativeLibraryDirectories=[/data/app/com.endomondo.android-zmAn65MMuKEGxC23cGvNjA==/lib/arm, /system/lib, /system/vendor/lib]]
+01-24 17:11:41.951  9203  9203 I DynamiteModule: Considering local module com.google.android.gms.maps_dynamite:0 and remote module com.google.android.gms.maps_dynamite:222
+01-24 17:11:41.951  9203  9203 I DynamiteModule: Selected remote version of com.google.android.gms.maps_dynamite, version >= 222
+01-24 17:11:42.029  9203  9203 W zygote  : Skipping duplicate class check due to unrecognized classloader
+01-24 17:11:42.116  9203  9203 I Google Maps Android API: Google Play services client version: 9080000
+01-24 17:11:42.126  9203  9203 I Google Maps Android API: Google Play services package version: 20104061
+01-24 17:11:42.773  9203  9213 I zygote  : Background concurrent copying GC freed 2588(490KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 1499KB/2011KB, paused 1.501ms total 129.304ms
+01-24 17:11:43.267  9203  9213 I zygote  : Background concurrent copying GC freed 3310(510KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 1526KB/2038KB, paused 4.283ms total 120.001ms
+01-24 17:11:43.467  9203  9250 I zygote  : IncrementDisableThreadFlip blocked for 7.466ms
+01-24 17:11:43.603   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=158173114397835)
+01-24 17:11:43.834  9203  9213 I zygote  : Background concurrent copying GC freed 1412(402KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 2MB/3MB, paused 1.976ms total 403.277ms
+01-24 17:11:44.031  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:11:44.075  9203  9222 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 17:11:44.075  9203  9222 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 17:11:44.075  9203  9222 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 17:11:44.075  9203  9222 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 17:11:44.075  9203  9222 I Adreno-EGL: Remote Branch: 
+01-24 17:11:44.075  9203  9222 I Adreno-EGL: Local Patches: 
+01-24 17:11:44.075  9203  9222 I Adreno-EGL: Reconstruct Branch: 
+01-24 17:11:44.081  9203  9222 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:11:44.098  9203  9222 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 17:11:44.098  9203  9222 D OpenGLRenderer: Swap behavior 1
+01-24 17:11:44.099  9222  9222 W RenderThread: type=1400 audit(0.0:430): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 17:11:44.107  9203  9222 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 17:11:44.122  9203  9222 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 17:11:44.126  9203  9222 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:11:44.285  9203  9203 W View    : requestLayout() improperly called by android.widget.ImageView{f2dfe7f V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:11:44.286  9203  9203 W View    : requestLayout() improperly called by android.widget.ImageView{f5a3e4c V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:11:44.286  9203  9203 W View    : requestLayout() improperly called by android.widget.ImageView{32fde95 V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:11:44.286  9203  9203 W View    : requestLayout() improperly called by android.widget.ImageView{d715baa V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:11:44.287  9203  9203 W View    : requestLayout() improperly called by android.widget.ImageView{2ae039b V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:11:44.361  9203  9203 I Choreographer: Skipped 156 frames!  The application may be doing too much work on its main thread.
+01-24 17:11:44.427  9203  9222 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:11:44.449   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:11:44.469  9252  9252 W com.endomondo.android: type=1400 audit(0.0:431): avc: denied { read } for comm=474C5468726561642031373434 name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 17:11:44.486  9203  9252 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 17:11:44.491  9203  9252 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 17:11:44.497  9203  9252 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:11:44.914  9203  9203 I Choreographer: Skipped 32 frames!  The application may be doing too much work on its main thread.
+01-24 17:11:44.993   434   461 I chatty  : uid=1000(system) android.display expire 1 line
+01-24 17:11:45.018 32131 32131 I AppLifecycleTracker: App foreground state unchanged: inForeground ? true
+01-24 17:11:45.038   434   614 I chatty  : uid=1000(system) Thread-12 expire 31 lines
+01-24 17:11:45.104 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:11:45.122   434 13081 I chatty  : uid=1000(system) Binder:434_1E expire 3 lines
+01-24 17:11:45.140   328   328 D shd     : ProcessSensorDeactive sensor:0xa, handle:37 
+01-24 17:11:45.184   434 13081 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:11:45.210   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:45.294 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:11:45.302   434  5002 I chatty  : uid=1000(system) Binder:434_17 expire 1 line
+01-24 17:11:45.333   434 13083 I chatty  : uid=1000(system) Binder:434_1F expire 1 line
+01-24 17:11:45.345   434 13081 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:11:45.351   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:45.387 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:11:45.387 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:11:45.387 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:11:45.388 13109 13229 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:11:45.489 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:11:45.489 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:11:45.489 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:11:45.490 13109 13229 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:11:45.532  9203  9213 I zygote  : NativeAllocBackground concurrent copying GC freed 3425(283KB) AllocSpace objects, 0(0B) LOS objects, 24% free, 2MB/2MB, paused 508us total 100.724ms
+01-24 17:11:45.588 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:11:45.637   434 13083 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:11:45.638   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:11:45.722 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:11:45.723 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:11:45.723 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:11:45.723 13109 13219 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:11:45.768   328   328 D shd     : ProcessSensorActive sensor:0xa, handle:37, option:0
+01-24 17:11:45.778  9203  9253 W DynamiteModule: Local module descriptor class for com.google.android.gms.googlecertificates not found.
+01-24 17:11:45.779  9203  9253 W DynamiteModule: Failed to load module via V2: java.lang.ClassNotFoundException: Didn't find class "com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader" on path: DexPathList[[zip file "/system/framework/com.google.android.wearable.jar", zip file "/data/app/com.endomondo.android-zmAn65MMuKEGxC23cGvNjA==/base.apk"],nativeLibraryDirectories=[/data/app/com.endomondo.android-zmAn65MMuKEGxC23cGvNjA==/lib/arm, /system/lib, /system/vendor/lib]]
+01-24 17:11:45.795  9203  9253 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:0 and remote module com.google.android.gms.googlecertificates:4
+01-24 17:11:45.795  9203  9253 I DynamiteModule: Selected remote version of com.google.android.gms.googlecertificates, version >= 4
+01-24 17:11:45.821  9203  9253 W zygote  : Skipping duplicate class check due to unrecognized classloader
+01-24 17:11:46.045  9203  9208 I zygote  : Do partial code cache collection, code=29KB, data=27KB
+01-24 17:11:46.047  9203  9208 I zygote  : After code cache collection, code=28KB, data=27KB
+01-24 17:11:46.047  9203  9208 I zygote  : Increasing code cache capacity to 128KB
+01-24 17:11:46.192  9203  9213 I zygote  : Background concurrent copying GC freed 7004(668KB) AllocSpace objects, 2(40KB) LOS objects, 24% free, 2MB/3MB, paused 1.171ms total 124.693ms
+01-24 17:11:46.343  9203  9203 I zygote  : Deoptimizing int c.g.a(java.lang.Object) due to JIT inline cache
+01-24 17:11:46.499   434   614 I chatty  : uid=1000(system) Thread-12 expire 31 lines
+01-24 17:11:46.625   434   611 I chatty  : uid=1000 system_server expire 25 lines
+01-24 17:11:46.638   434   452 I chatty  : uid=1000(system) android.bg expire 6 lines
+01-24 17:11:46.673   434  9281 I chatty  : uid=1000 system_server expire 4 lines
+01-24 17:11:47.053  9203  9213 I zygote  : Background concurrent copying GC freed 4730(527KB) AllocSpace objects, 12(240KB) LOS objects, 25% free, 2MB/3MB, paused 1.904ms total 198.463ms
+01-24 17:11:47.088   434   611 I chatty  : uid=1000 system_server expire 127 lines
+01-24 17:11:47.191  9203  9208 I zygote  : Do partial code cache collection, code=55KB, data=45KB
+01-24 17:11:47.193  9203  9208 I zygote  : After code cache collection, code=55KB, data=45KB
+01-24 17:11:47.193  9203  9208 I zygote  : Increasing code cache capacity to 256KB
+01-24 17:11:47.933 31850 31863 I zygote  : Background concurrent copying GC freed 8820(798KB) AllocSpace objects, 2(60KB) LOS objects, 24% free, 3MB/4MB, paused 5.602ms total 226.602ms
+01-24 17:11:48.045   434   614 I chatty  : uid=1000(system) Thread-12 expire 4 lines
+01-24 17:11:48.059  9203  9213 I zygote  : Background concurrent copying GC freed 4072(457KB) AllocSpace objects, 5(268KB) LOS objects, 24% free, 2MB/3MB, paused 1.814ms total 172.627ms
+01-24 17:11:48.506   434   611 I chatty  : uid=1000 system_server expire 183 lines
+01-24 17:11:49.037  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:11:49.358  9203  9208 I zygote  : Compiler allocated 4MB to compile void com.google.maps.api.android.lib6.gmm6.vector.cd.a(javax.microedition.khronos.opengles.GL10)
+01-24 17:11:50.043   434   614 I chatty  : uid=1000(system) Thread-12 expire 15 lines
+01-24 17:11:50.657   434   611 I chatty  : uid=1000 system_server expire 47 lines
+01-24 17:11:53.592   434   443 I chatty  : uid=1000(system) HeapTaskDaemon expire 1 line
+01-24 17:11:54.043  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:11:57.043   434   614 I chatty  : uid=1000(system) Thread-12 expire 25 lines
+01-24 17:11:58.269  9286  9286 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:11:59.047  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:11:59.574  9286  9286 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:11:59.610   434 13081 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=0: clear data
+01-24 17:11:59.612   434 13081 I ActivityManager: Killing 9203:com.endomondo.android/u0a52 (adj 0): stop com.endomondo.android
+01-24 17:11:59.627   434 13081 W ActivityManager: Scheduling restart of crashed service com.endomondo.android/.wear.workout.WorkoutService in 1000ms
+01-24 17:11:59.629   434 13081 W ActivityManager: Force removing ActivityRecord{9ed2ac3 u0 com.endomondo.android/.wear.ui.WearAppActivity t350}: app died, no saved state
+01-24 17:11:59.787   434  5002 I chatty  : uid=1000(system) Binder:434_17 expire 1 line
+01-24 17:11:59.832 32131 32131 I AppLifecycleTracker: App foreground state unchanged: inForeground ? true
+01-24 17:11:59.837   434   454 W Looper  : Dispatch took 226ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:11:59.863   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 9203
+01-24 17:11:59.863   434   453 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=-1: clearApplicationUserData
+01-24 17:11:59.872 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:11:59.882   335   335 I keystore: clear_uid 10052
+01-24 17:11:59.904 32131 32303 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 17:11:59.909 32131 32303 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:11:59.918   434  2426 I chatty  : uid=1000(system) Binder:434_F expire 2 lines
+01-24 17:12:00.258 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:12:00.271   434 13081 I chatty  : uid=1000(system) Binder:434_1E expire 2 lines
+01-24 17:12:00.319   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:12:00.330   434   445 I chatty  : uid=1000(system) Binder:434_2 expire 2 lines
+01-24 17:12:00.336 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 17:12:00.377   434  2093 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:00.387 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:12:00.402   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:12:00.403   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:00.421 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:12:00.498   434  2093 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:12:00.500   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:00.500   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:12:00.500   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:00.540 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 17:12:00.619 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 17:12:00.865 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:12:00.865 31332 31332 D Avrcp   : packageName: com.endomondo.android removed: true
+01-24 17:12:00.865 31332 31332 V Avrcp   : isBrowseSupported for com.endomondo.android: false
+01-24 17:12:00.866 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.endomondo.android]
+01-24 17:12:00.928  9286  9286 I app_process: System.exit called, status: 0
+01-24 17:12:00.929  9286  9286 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:12:00.950   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:12:01.092 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:12:01.092 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:12:01.092 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:12:01.095 13109 13229 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:12:01.140 13109  9303 I Fitness : Clearing all cached OAuth tokens for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:12:01.158 13109  9303 I Fitness : Removing all subscriptions for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:12:01.201 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:12:01.201 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:12:01.201 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:12:01.201 13109 13229 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:12:01.209 13109  9303 I Fitness : Clearing all cached OAuth tokens for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:12:01.218 13109  9303 I Fitness : Removing all subscriptions for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:12:01.246 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:12:01.246 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:12:01.246 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:12:01.247 13109 13219 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:12:01.380   434   452 I chatty  : uid=1000(system) android.bg expire 13 lines
+01-24 17:12:02.040   434   611 I chatty  : uid=1000 system_server expire 3 lines
+01-24 17:12:04.052  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:12:06.364   434   445 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.endomondo.android/.wear.ui.WearAppActivity} from uid 2000
+01-24 17:12:06.499   434  2426 I ActivityManager: Start proc 9313:com.endomondo.android/u0a52 for activity com.endomondo.android/.wear.ui.WearAppActivity
+01-24 17:12:06.695   434  2426 W ActivityManager: Slow operation: 96ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:12:06.699   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:06.862  9313  9313 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 17:12:06.891  9313  9323 I zygote  : Background concurrent copying GC freed 640(377KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 1032KB/1524KB, paused 1.233ms total 146.157ms
+01-24 17:12:07.063  9313  9313 E WearAppActivity: useAmbiactive true
+01-24 17:12:07.172  9313  9332 D OpenGLRenderer: HWUI GL Pipeline
+01-24 17:12:07.303  9313  9313 I q       : Making Creator dynamically
+01-24 17:12:07.397   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=158196892808347)
+01-24 17:12:07.412  9313  9313 W DynamiteModule: Failed to load module via V2: java.lang.ClassNotFoundException: Didn't find class "com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader" on path: DexPathList[[zip file "/system/framework/com.google.android.wearable.jar", zip file "/data/app/com.endomondo.android-zmAn65MMuKEGxC23cGvNjA==/base.apk"],nativeLibraryDirectories=[/data/app/com.endomondo.android-zmAn65MMuKEGxC23cGvNjA==/lib/arm, /system/lib, /system/vendor/lib]]
+01-24 17:12:07.428  9313  9313 I DynamiteModule: Considering local module com.google.android.gms.maps_dynamite:0 and remote module com.google.android.gms.maps_dynamite:222
+01-24 17:12:07.429  9313  9313 I DynamiteModule: Selected remote version of com.google.android.gms.maps_dynamite, version >= 222
+01-24 17:12:07.504  9313  9313 W zygote  : Skipping duplicate class check due to unrecognized classloader
+01-24 17:12:07.601  9313  9313 I Google Maps Android API: Google Play services client version: 9080000
+01-24 17:12:07.614  9313  9313 I Google Maps Android API: Google Play services package version: 20104061
+01-24 17:12:08.045   434   614 I chatty  : uid=1000(system) Thread-12 expire 10 lines
+01-24 17:12:08.336  9313  9323 I zygote  : Background concurrent copying GC freed 3082(478KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 1477KB/1989KB, paused 4.189ms total 153.079ms
+01-24 17:12:08.821  9313  9323 I zygote  : Background concurrent copying GC freed 3034(445KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 1565KB/2MB, paused 1.142ms total 126.040ms
+01-24 17:12:09.059  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:12:09.119  9313  9323 I zygote  : Background concurrent copying GC freed 1387(398KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 1886KB/2MB, paused 4.089ms total 150.180ms
+01-24 17:12:09.575  9313  9332 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 17:12:09.575  9313  9332 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 17:12:09.575  9313  9332 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 17:12:09.575  9313  9332 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 17:12:09.575  9313  9332 I Adreno-EGL: Remote Branch: 
+01-24 17:12:09.575  9313  9332 I Adreno-EGL: Local Patches: 
+01-24 17:12:09.575  9313  9332 I Adreno-EGL: Reconstruct Branch: 
+01-24 17:12:09.595  9313  9332 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:12:09.609  9332  9332 W RenderThread: type=1400 audit(0.0:432): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 17:12:09.610  9313  9332 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 17:12:09.610  9313  9332 D OpenGLRenderer: Swap behavior 1
+01-24 17:12:09.619  9313  9332 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 17:12:09.640  9313  9332 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 17:12:09.651  9313  9332 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:12:09.877  9313  9323 I zygote  : Background concurrent copying GC freed 3952(622KB) AllocSpace objects, 0(0B) LOS objects, 24% free, 1990KB/2MB, paused 5.115ms total 412.153ms
+01-24 17:12:09.926  9313  9313 W View    : requestLayout() improperly called by android.widget.ImageView{f2dfe7f V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:12:09.927  9313  9313 W View    : requestLayout() improperly called by android.widget.ImageView{f5a3e4c V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:12:09.927  9313  9313 W View    : requestLayout() improperly called by android.widget.ImageView{32fde95 V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:12:09.927  9313  9313 W View    : requestLayout() improperly called by android.widget.ImageView{d715baa V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:12:09.927  9313  9313 W View    : requestLayout() improperly called by android.widget.ImageView{2ae039b V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:12:09.952   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:12:09.994  9313  9313 I Choreographer: Skipped 166 frames!  The application may be doing too much work on its main thread.
+01-24 17:12:10.062  9313  9332 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:12:10.069  9362  9362 W com.endomondo.android: type=1400 audit(0.0:433): avc: denied { read } for comm=474C5468726561642031373438 name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 17:12:10.082  9313  9362 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 17:12:10.089  9313  9362 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 17:12:10.091  9313  9362 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:12:10.493   434   461 I chatty  : uid=1000(system) android.display expire 1 line
+01-24 17:12:10.544  9313  9313 I zygote  : IncrementDisableThreadFlip blocked for 44.678ms
+01-24 17:12:10.545  9313  9371 I zygote  : IncrementDisableThreadFlip blocked for 38.319ms
+01-24 17:12:10.585  9313  9313 I Choreographer: Skipped 35 frames!  The application may be doing too much work on its main thread.
+01-24 17:12:10.675 32131 32131 I AppLifecycleTracker: App foreground state unchanged: inForeground ? true
+01-24 17:12:10.844 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:12:10.876   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:12:10.876   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:10.947 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:12:10.949   434  2021 I chatty  : uid=1000(system) Binder:434_D expire 1 line
+01-24 17:12:10.965   434  2093 I chatty  : uid=1000(system) Binder:434_E expire 2 lines
+01-24 17:12:10.974   434  2021 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:12:10.980   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:11.089 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:12:11.089 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:12:11.089 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:12:11.090 13109 13130 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:12:11.194  9313  9323 I zygote  : NativeAllocBackground concurrent copying GC freed 5256(463KB) AllocSpace objects, 0(0B) LOS objects, 24% free, 2MB/2MB, paused 6.449ms total 714.002ms
+01-24 17:12:11.194 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:12:11.194 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:12:11.194 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:12:11.194 13109 13512 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:12:11.271   434   614 I chatty  : uid=1000(system) Thread-12 expire 45 lines
+01-24 17:12:11.276   434   452 I chatty  : uid=1000(system) android.bg expire 7 lines
+01-24 17:12:11.301  9313  9364 W DynamiteModule: Local module descriptor class for com.google.android.gms.googlecertificates not found.
+01-24 17:12:11.302  9313  9364 W DynamiteModule: Failed to load module via V2: java.lang.ClassNotFoundException: Didn't find class "com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader" on path: DexPathList[[zip file "/system/framework/com.google.android.wearable.jar", zip file "/data/app/com.endomondo.android-zmAn65MMuKEGxC23cGvNjA==/base.apk"],nativeLibraryDirectories=[/data/app/com.endomondo.android-zmAn65MMuKEGxC23cGvNjA==/lib/arm, /system/lib, /system/vendor/lib]]
+01-24 17:12:11.324  9313  9364 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:0 and remote module com.google.android.gms.googlecertificates:4
+01-24 17:12:11.324  9313  9364 I DynamiteModule: Selected remote version of com.google.android.gms.googlecertificates, version >= 4
+01-24 17:12:11.344  9313  9364 W zygote  : Skipping duplicate class check due to unrecognized classloader
+01-24 17:12:11.345 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:12:11.347   434  2021 I chatty  : uid=1000(system) Binder:434_D expire 1 line
+01-24 17:12:11.382   434  2021 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:12:11.383   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:11.397   434 13081 I chatty  : uid=1000(system) Binder:434_1E expire 1 line
+01-24 17:12:11.453 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:12:11.454 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:12:11.454 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:12:11.454 13109 13512 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:12:11.595   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=158201106463501)
+01-24 17:12:11.871  9313  9326 I zygote  : Waiting for a blocking GC ProfileSaver
+01-24 17:12:11.927  9313  9323 I zygote  : Background concurrent copying GC freed 4927(602KB) AllocSpace objects, 2(40KB) LOS objects, 25% free, 2MB/3MB, paused 5.779ms total 315.719ms
+01-24 17:12:11.929  9313  9326 I zygote  : WaitForGcToComplete blocked for 57.482ms for cause ProfileSaver
+01-24 17:12:11.992 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 379  /isUsbOrAc: 1
+01-24 17:12:11.994   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 17:12:12.003   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 17:12:12.003   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 17:12:12.026   434 13081 E BatteryStatsService: no controller energy info supplied
+01-24 17:12:12.039   434   611 I chatty  : uid=1000 system_server expire 7 lines
+01-24 17:12:12.093   434  9390 I chatty  : uid=1000 system_server expire 4 lines
+01-24 17:12:12.134  9313  9318 I zygote  : Do partial code cache collection, code=29KB, data=29KB
+01-24 17:12:12.142  9313  9318 I zygote  : After code cache collection, code=28KB, data=28KB
+01-24 17:12:12.142  9313  9318 I zygote  : Increasing code cache capacity to 128KB
+01-24 17:12:12.264   723   737 I zygote  : Background concurrent copying GC freed 6367(570KB) AllocSpace objects, 2(192KB) LOS objects, 24% free, 1993KB/2MB, paused 9.203ms total 128.078ms
+01-24 17:12:13.132  9313  9318 I zygote  : Do partial code cache collection, code=55KB, data=45KB
+01-24 17:12:13.134  9313  9318 I zygote  : After code cache collection, code=55KB, data=45KB
+01-24 17:12:13.134  9313  9318 I zygote  : Increasing code cache capacity to 256KB
+01-24 17:12:13.757  9313  9323 I zygote  : Background concurrent copying GC freed 7260(657KB) AllocSpace objects, 12(240KB) LOS objects, 25% free, 3MB/4MB, paused 1.338ms total 124.711ms
+01-24 17:12:14.041   434   611 I chatty  : uid=1000 system_server expire 128 lines
+01-24 17:12:14.060  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:12:14.195  9313  9323 I zygote  : Background concurrent copying GC freed 6332(615KB) AllocSpace objects, 15(720KB) LOS objects, 24% free, 2MB/3MB, paused 1.634ms total 140.425ms
+01-24 17:12:15.047   434   614 I chatty  : uid=1000(system) Thread-12 expire 4 lines
+01-24 17:12:15.193  9313  9318 I zygote  : Compiler allocated 4MB to compile void com.google.maps.api.android.lib6.gmm6.vector.cd.a(javax.microedition.khronos.opengles.GL10)
+01-24 17:12:15.375   434   611 I chatty  : uid=1000 system_server expire 62 lines
+01-24 17:12:15.537   434   443 I chatty  : uid=1000(system) HeapTaskDaemon expire 1 line
+01-24 17:12:16.125   434   611 I chatty  : uid=1000 system_server expire 101 lines
+01-24 17:12:17.045   434   614 I chatty  : uid=1000(system) Thread-12 expire 4 lines
+01-24 17:12:17.420   434   611 I chatty  : uid=1000 system_server expire 84 lines
+01-24 17:12:19.047   434   614 I chatty  : uid=1000(system) Thread-12 expire 24 lines
+01-24 17:12:19.059  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:12:23.584  9395  9395 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:12:24.065  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:12:24.830  9395  9395 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:12:12.028   434 13081 I chatty  : uid=1000(system) Binder:434_1E identical 1 line
+01-24 17:12:12.028   434 13081 E BatteryStatsService: no controller energy info supplied
+01-24 17:12:24.857   434  2426 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=0: clear data
+01-24 17:12:24.859   434  2426 I ActivityManager: Killing 9313:com.endomondo.android/u0a52 (adj 0): stop com.endomondo.android
+01-24 17:12:24.863   434  2426 W ActivityManager: Scheduling restart of crashed service com.endomondo.android/.wear.workout.WorkoutService in 1000ms
+01-24 17:12:24.877   434  2426 W ActivityManager: Force removing ActivityRecord{1ce3a33 u0 com.endomondo.android/.wear.ui.WearAppActivity t351}: app died, no saved state
+01-24 17:12:24.907   323   635 E SurfaceFlinger: Failed to find layer (com.endomondo.android/com.endomondo.android.wear.ui.WearAppActivity#0) in layer parent (no-parent).
+01-24 17:12:25.030 32131 32131 I AppLifecycleTracker: App foreground state unchanged: inForeground ? true
+01-24 17:12:25.062   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:25.064   434   454 W Looper  : Dispatch took 206ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:12:25.067   434   453 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=-1: clearApplicationUserData
+01-24 17:12:25.070 32131 32303 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 17:12:25.080 32131 32303 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:12:25.118   434   452 I chatty  : uid=1000(system) android.bg expire 5 lines
+01-24 17:12:25.140   434  5002 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 9313 uid 10052
+01-24 17:12:25.170   434   756 I chatty  : uid=1000(system) Binder:434_6 expire 2 lines
+01-24 17:12:25.195   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 9313
+01-24 17:12:25.198 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:12:25.215   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:12:25.223 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:12:25.225   434 13081 I chatty  : uid=1000(system) Binder:434_1E expire 1 line
+01-24 17:12:25.295 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:12:25.302   434  2426 I chatty  : uid=1000(system) Binder:434_F expire 2 lines
+01-24 17:12:25.335   335   335 I keystore: clear_uid 10052
+01-24 17:12:25.356   434  2426 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:12:25.357   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:25.361 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:12:25.367   434 13081 I chatty  : uid=1000(system) Binder:434_1E expire 1 line
+01-24 17:12:25.462   434  5705 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:12:25.464   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:25.465   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:12:25.482   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:25.910 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.endomondo.android]
+01-24 17:12:25.911 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:12:25.911 31332 31332 D Avrcp   : packageName: com.endomondo.android removed: true
+01-24 17:12:25.911 31332 31332 V Avrcp   : isBrowseSupported for com.endomondo.android: false
+01-24 17:12:25.935  9395  9395 I app_process: System.exit called, status: 0
+01-24 17:12:25.936  9395  9395 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:12:26.035   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:12:26.040   434   614 I chatty  : uid=1000(system) Thread-12 expire 44 lines
+01-24 17:12:26.042   434   611 I chatty  : uid=1000 system_server expire 3 lines
+01-24 17:12:26.201 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:12:26.201 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:12:26.201 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:12:26.203 13109 13512 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:12:26.212 13109  9407 I Fitness : Clearing all cached OAuth tokens for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:12:26.232 13109  9407 I Fitness : Removing all subscriptions for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:12:26.283 13109  9407 I Fitness : Clearing all cached OAuth tokens for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:12:26.302 13109  9407 I Fitness : Removing all subscriptions for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:12:26.314 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:12:26.315 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:12:26.315 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:12:26.315 13109 13219 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:12:26.389 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:12:26.389 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:12:26.389 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:12:26.389 13109 13219 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:12:26.483 13109 13122 I zygote  : Background concurrent copying GC freed 35599(2MB) AllocSpace objects, 0(0B) LOS objects, 20% free, 7MB/9MB, paused 5.279ms total 561.989ms
+01-24 17:12:29.066  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:12:31.359   434   756 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.endomondo.android/.wear.ui.WearAppActivity} from uid 2000
+01-24 17:12:31.480   434  5002 I ActivityManager: Start proc 9423:com.endomondo.android/u0a52 for activity com.endomondo.android/.wear.ui.WearAppActivity
+01-24 17:12:31.655  9423  9433 I zygote  : Background concurrent copying GC freed 514(390KB) AllocSpace objects, 0(0B) LOS objects, 35% free, 949KB/1461KB, paused 10.845ms total 102.201ms
+01-24 17:12:31.659   434  5705 W ActivityManager: Slow operation: 80ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:12:31.661   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:31.751  9423  9423 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 17:12:31.988  9423  9423 E WearAppActivity: useAmbiactive true
+01-24 17:12:32.079  9423  9442 D OpenGLRenderer: HWUI GL Pipeline
+01-24 17:12:32.236  9423  9423 I q       : Making Creator dynamically
+01-24 17:12:32.345  9423  9423 W DynamiteModule: Failed to load module via V2: java.lang.ClassNotFoundException: Didn't find class "com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader" on path: DexPathList[[zip file "/system/framework/com.google.android.wearable.jar", zip file "/data/app/com.endomondo.android-zmAn65MMuKEGxC23cGvNjA==/base.apk"],nativeLibraryDirectories=[/data/app/com.endomondo.android-zmAn65MMuKEGxC23cGvNjA==/lib/arm, /system/lib, /system/vendor/lib]]
+01-24 17:12:32.364  9423  9423 I DynamiteModule: Considering local module com.google.android.gms.maps_dynamite:0 and remote module com.google.android.gms.maps_dynamite:222
+01-24 17:12:32.365  9423  9423 I DynamiteModule: Selected remote version of com.google.android.gms.maps_dynamite, version >= 222
+01-24 17:12:32.438  9423  9423 W zygote  : Skipping duplicate class check due to unrecognized classloader
+01-24 17:12:32.534  9423  9423 I Google Maps Android API: Google Play services client version: 9080000
+01-24 17:12:32.545  9423  9423 I Google Maps Android API: Google Play services package version: 20104061
+01-24 17:12:33.361  9423  9433 I zygote  : Background concurrent copying GC freed 1700(358KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 2026KB/2MB, paused 1.175ms total 123.335ms
+01-24 17:12:33.562  9423  9442 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 17:12:33.562  9423  9442 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 17:12:33.562  9423  9442 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 17:12:33.562  9423  9442 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 17:12:33.562  9423  9442 I Adreno-EGL: Remote Branch: 
+01-24 17:12:33.562  9423  9442 I Adreno-EGL: Local Patches: 
+01-24 17:12:33.562  9423  9442 I Adreno-EGL: Reconstruct Branch: 
+01-24 17:12:33.569  9423  9442 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:12:33.585  9423  9442 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 17:12:33.586  9423  9442 D OpenGLRenderer: Swap behavior 1
+01-24 17:12:33.589  9442  9442 W RenderThread: type=1400 audit(0.0:434): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 17:12:33.599  9423  9442 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 17:12:33.611  9423  9442 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 17:12:33.613  9423  9442 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:12:33.674  9423  9433 I zygote  : Background concurrent copying GC freed 4701(818KB) AllocSpace objects, 0(0B) LOS objects, 24% free, 1949KB/2MB, paused 941us total 158.964ms
+01-24 17:12:33.699  9423  9423 W View    : requestLayout() improperly called by android.widget.ImageView{f2dfe7f V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:12:33.699  9423  9423 W View    : requestLayout() improperly called by android.widget.ImageView{f5a3e4c V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:12:33.699  9423  9423 W View    : requestLayout() improperly called by android.widget.ImageView{32fde95 V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:12:33.699  9423  9423 W View    : requestLayout() improperly called by android.widget.ImageView{d715baa V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:12:33.699  9423  9423 W View    : requestLayout() improperly called by android.widget.ImageView{2ae039b V.ED..... ......I. 0,0-0,0 #7f0e0025 app:id/zoneIcon} during layout: running second layout pass
+01-24 17:12:33.737  9423  9423 I Choreographer: Skipped 94 frames!  The application may be doing too much work on its main thread.
+01-24 17:12:33.769  9471  9471 W com.endomondo.android: type=1400 audit(0.0:435): avc: denied { read } for comm=474C5468726561642031373531 name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 17:12:33.779  9423  9471 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 17:12:33.784  9423  9442 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:12:33.788  9423  9471 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 17:12:33.789  9423  9471 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:12:34.073  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:12:34.157   434   461 I chatty  : uid=1000(system) android.display expire 1 line
+01-24 17:12:34.292  9423  9423 I Choreographer: Skipped 33 frames!  The application may be doing too much work on its main thread.
+01-24 17:12:34.446 32131 32131 I AppLifecycleTracker: App foreground state unchanged: inForeground ? true
+01-24 17:12:34.516 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:12:34.531   434  2093 I chatty  : uid=1000(system) Binder:434_E expire 2 lines
+01-24 17:12:34.552   434  2093 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:12:34.563   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:34.591 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:12:34.597   434  4786 I chatty  : uid=1000(system) Binder:434_14 expire 2 lines
+01-24 17:12:34.640  9423  9433 I zygote  : NativeAllocBackground concurrent copying GC freed 2784(258KB) AllocSpace objects, 0(0B) LOS objects, 24% free, 2MB/3MB, paused 12.983ms total 589.144ms
+01-24 17:12:34.644   434  4786 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:12:34.648   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:34.655   434   452 I chatty  : uid=1000(system) android.bg expire 8 lines
+01-24 17:12:34.749 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:12:34.749 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:12:34.749 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:12:34.749 13109 13234 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:12:34.823 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:12:34.823 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:12:34.823 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:12:34.824 13109 13510 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:12:34.875 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:12:34.892   434   756 I chatty  : uid=1000(system) Binder:434_6 expire 1 line
+01-24 17:12:35.184   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:12:35.355   434   614 I chatty  : uid=1000(system) Thread-12 expire 16 lines
+01-24 17:12:35.355   434   611 I chatty  : uid=1000 system_server expire 39 lines
+01-24 17:12:35.373   434   452 I chatty  : uid=1000(system) android.bg expire 6 lines
+01-24 17:12:35.393   434  9493 I chatty  : uid=1000(system) AsyncTask #264 expire 4 lines
+01-24 17:12:35.530  9423  9472 W DynamiteModule: Local module descriptor class for com.google.android.gms.googlecertificates not found.
+01-24 17:12:35.531  9423  9472 W DynamiteModule: Failed to load module via V2: java.lang.ClassNotFoundException: Didn't find class "com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader" on path: DexPathList[[zip file "/system/framework/com.google.android.wearable.jar", zip file "/data/app/com.endomondo.android-zmAn65MMuKEGxC23cGvNjA==/base.apk"],nativeLibraryDirectories=[/data/app/com.endomondo.android-zmAn65MMuKEGxC23cGvNjA==/lib/arm, /system/lib, /system/vendor/lib]]
+01-24 17:12:35.586  9423  9472 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:0 and remote module com.google.android.gms.googlecertificates:4
+01-24 17:12:35.587  9423  9472 I DynamiteModule: Selected remote version of com.google.android.gms.googlecertificates, version >= 4
+01-24 17:12:35.681  9423  9472 W zygote  : Skipping duplicate class check due to unrecognized classloader
+01-24 17:12:35.729  9423  9423 I zygote  : Deoptimizing int c.g.a(java.lang.Object) due to JIT inline cache
+01-24 17:12:35.997 15691 15701 I zygote  : Background concurrent copying GC freed 4241(400KB) AllocSpace objects, 0(0B) LOS objects, 29% free, 1241KB/1753KB, paused 3.117ms total 147.891ms
+01-24 17:12:36.322  9423  9428 I zygote  : Do partial code cache collection, code=29KB, data=29KB
+01-24 17:12:36.363  9423  9428 I zygote  : After code cache collection, code=28KB, data=28KB
+01-24 17:12:36.364  9423  9428 I zygote  : Increasing code cache capacity to 128KB
+01-24 17:12:36.408  9423  9423 I Choreographer: Skipped 30 frames!  The application may be doing too much work on its main thread.
+01-24 17:12:36.536  9423  9433 I zygote  : Background concurrent copying GC freed 6439(652KB) AllocSpace objects, 2(40KB) LOS objects, 24% free, 2MB/3MB, paused 2.475ms total 668.179ms
+01-24 17:12:37.404   434   611 I chatty  : uid=1000 system_server expire 62 lines
+01-24 17:12:37.550  9423  9428 I zygote  : Do partial code cache collection, code=55KB, data=45KB
+01-24 17:12:37.552  9423  9428 I zygote  : After code cache collection, code=55KB, data=45KB
+01-24 17:12:37.552  9423  9428 I zygote  : Increasing code cache capacity to 256KB
+01-24 17:12:38.044   434   614 I chatty  : uid=1000(system) Thread-12 expire 2 lines
+01-24 17:12:38.166   434   611 I chatty  : uid=1000 system_server expire 126 lines
+01-24 17:12:38.700 31850 31863 I zygote  : Background concurrent copying GC freed 8138(796KB) AllocSpace objects, 3(140KB) LOS objects, 25% free, 3MB/4MB, paused 2.566ms total 166.974ms
+01-24 17:12:38.881  9423  9433 I zygote  : Background concurrent copying GC freed 7869(732KB) AllocSpace objects, 12(240KB) LOS objects, 24% free, 3MB/4MB, paused 6.803ms total 196.001ms
+01-24 17:12:39.047   434   614 I chatty  : uid=1000(system) Thread-12 expire 2 lines
+01-24 17:12:39.076  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:12:39.547   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [51] completed successfully.
+01-24 17:12:39.570   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [52/121]: GLO-EPH for SV 20 (size [56] retries [0])
+01-24 17:12:39.570   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [52] completed successfully.
+01-24 17:12:39.595   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [53/121]: GLO-EPH for SV 21 (size [56] retries [0])
+01-24 17:12:39.595   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [53] completed successfully.
+01-24 17:12:39.615   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [54/121]: GLO-EPH for SV 22 (size [56] retries [0])
+01-24 17:12:39.615   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [54] completed successfully.
+01-24 17:12:39.635   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [55/121]: GLO-EPH for SV 23 (size [56] retries [0])
+01-24 17:12:39.635   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [55] completed successfully.
+01-24 17:12:39.659   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [56/121]: QZSS-EPH for SV 1 (size [76] retries [0])
+01-24 17:12:39.659   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [56] completed successfully.
+01-24 17:12:39.680   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [57/121]: QZSS-EPH for SV 2 (size [76] retries [0])
+01-24 17:12:39.680   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [57] completed successfully.
+01-24 17:12:39.702   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [58/121]: QZSS-EPH for SV 3 (size [76] retries [0])
+01-24 17:12:39.702   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [58] completed successfully.
+01-24 17:12:39.725   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [59/121]: GPS-ALM for SV 1 (size [44] retries [0])
+01-24 17:12:39.726   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [59] completed successfully.
+01-24 17:12:39.749   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [60/121]: GPS-ALM for SV 2 (size [44] retries [0])
+01-24 17:12:39.749   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [60] completed successfully.
+01-24 17:12:39.773   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [61/121]: GPS-ALM for SV 3 (size [44] retries [0])
+01-24 17:12:39.773   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [61] completed successfully.
+01-24 17:12:39.795   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [62/121]: GPS-ALM for SV 4 (size [44] retries [0])
+01-24 17:12:39.796   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [62] completed successfully.
+01-24 17:12:39.816   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [63/121]: GPS-ALM for SV 5 (size [44] retries [0])
+01-24 17:12:39.816   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [63] completed successfully.
+01-24 17:12:39.837   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [64/121]: GPS-ALM for SV 6 (size [44] retries [0])
+01-24 17:12:39.837   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [64] completed successfully.
+01-24 17:12:39.861   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [65/121]: GPS-ALM for SV 7 (size [44] retries [0])
+01-24 17:12:39.862   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [65] completed successfully.
+01-24 17:12:39.888   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [66/121]: GPS-ALM for SV 8 (size [44] retries [0])
+01-24 17:12:39.888   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [66] completed successfully.
+01-24 17:12:39.909   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [67/121]: GPS-ALM for SV 9 (size [44] retries [0])
+01-24 17:12:39.909   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [67] completed successfully.
+01-24 17:12:39.933   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [68/121]: GPS-ALM for SV 10 (size [44] retries [0])
+01-24 17:12:39.933   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [68] completed successfully.
+01-24 17:12:39.955   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [69/121]: GPS-ALM for SV 11 (size [44] retries [0])
+01-24 17:12:39.956   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [69] completed successfully.
+01-24 17:12:39.979   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [70/121]: GPS-ALM for SV 12 (size [44] retries [0])
+01-24 17:12:39.979   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [70] completed successfully.
+01-24 17:12:40.002   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [71/121]: GPS-ALM for SV 13 (size [44] retries [0])
+01-24 17:12:40.002   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [71] completed successfully.
+01-24 17:12:40.023   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [72/121]: GPS-ALM for SV 14 (size [44] retries [0])
+01-24 17:12:40.023   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [72] completed successfully.
+01-24 17:12:40.043   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:40.048   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:12:40.053   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [73/121]: GPS-ALM for SV 15 (size [44] retries [0])
+01-24 17:12:40.053   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [73] completed successfully.
+01-24 17:12:40.073   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [74/121]: GPS-ALM for SV 16 (size [44] retries [0])
+01-24 17:12:40.073   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [74] completed successfully.
+01-24 17:12:40.092   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [75/121]: GPS-ALM for SV 17 (size [44] retries [0])
+01-24 17:12:40.093   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [75] completed successfully.
+01-24 17:12:40.112   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [76/121]: GPS-ALM for SV 19 (size [44] retries [0])
+01-24 17:12:40.112   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [76] completed successfully.
+01-24 17:12:40.132   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [77/121]: GPS-ALM for SV 20 (size [44] retries [0])
+01-24 17:12:40.132   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [77] completed successfully.
+01-24 17:12:40.153   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [78/121]: GPS-ALM for SV 21 (size [44] retries [0])
+01-24 17:12:40.153   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [78] completed successfully.
+01-24 17:12:40.159  9423  9428 I zygote  : Compiler allocated 4MB to compile void com.google.maps.api.android.lib6.gmm6.vector.cd.a(javax.microedition.khronos.opengles.GL10)
+01-24 17:12:40.173   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [79/121]: GPS-ALM for SV 22 (size [44] retries [0])
+01-24 17:12:40.173   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [79] completed successfully.
+01-24 17:12:40.193   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [80/121]: GPS-ALM for SV 23 (size [44] retries [0])
+01-24 17:12:40.193   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [80] completed successfully.
+01-24 17:12:40.214   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [81/121]: GPS-ALM for SV 24 (size [44] retries [0])
+01-24 17:12:40.214   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [81] completed successfully.
+01-24 17:12:40.238   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [82/121]: GPS-ALM for SV 25 (size [44] retries [0])
+01-24 17:12:40.238   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [82] completed successfully.
+01-24 17:12:40.260   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [83/121]: GPS-ALM for SV 26 (size [44] retries [0])
+01-24 17:12:40.261   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [83] completed successfully.
+01-24 17:12:40.288   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [84/121]: GPS-ALM for SV 27 (size [44] retries [0])
+01-24 17:12:40.288   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [84] completed successfully.
+01-24 17:12:40.310   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [85/121]: GPS-ALM for SV 28 (size [44] retries [0])
+01-24 17:12:40.311   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [85] completed successfully.
+01-24 17:12:40.335   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [86/121]: GPS-ALM for SV 29 (size [44] retries [0])
+01-24 17:12:40.335   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [86] completed successfully.
+01-24 17:12:40.364   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [87/121]: GPS-ALM for SV 30 (size [44] retries [0])
+01-24 17:12:40.364   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [87] completed successfully.
+01-24 17:12:40.388   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [88/121]: GPS-ALM for SV 31 (size [44] retries [0])
+01-24 17:12:40.388   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [88] completed successfully.
+01-24 17:12:40.414   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [89/121]: GPS-ALM for SV 32 (size [44] retries [0])
+01-24 17:12:40.414   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [89] completed successfully.
+01-24 17:12:40.439   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [90/121]: GLO-ALM for SV 1 (size [44] retries [0])
+01-24 17:12:40.439   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [90] completed successfully.
+01-24 17:12:40.463   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [91/121]: GLO-ALM for SV 2 (size [44] retries [0])
+01-24 17:12:40.463   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [91] completed successfully.
+01-24 17:12:40.485   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [92/121]: GLO-ALM for SV 3 (size [44] retries [0])
+01-24 17:12:40.485   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [92] completed successfully.
+01-24 17:12:40.510   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [93/121]: GLO-ALM for SV 4 (size [44] retries [0])
+01-24 17:12:40.510   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [93] completed successfully.
+01-24 17:12:40.536   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [94/121]: GLO-ALM for SV 5 (size [44] retries [0])
+01-24 17:12:40.536   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [94] completed successfully.
+01-24 17:12:40.562   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [95/121]: GLO-ALM for SV 6 (size [44] retries [0])
+01-24 17:12:40.562   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [95] completed successfully.
+01-24 17:12:40.588   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [96/121]: GLO-ALM for SV 7 (size [44] retries [0])
+01-24 17:12:40.588   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [96] completed successfully.
+01-24 17:12:40.614   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [97/121]: GLO-ALM for SV 8 (size [44] retries [0])
+01-24 17:12:40.614   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [97] completed successfully.
+01-24 17:12:40.639   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [98/121]: GLO-ALM for SV 9 (size [44] retries [0])
+01-24 17:12:40.639   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [98] completed successfully.
+01-24 17:12:40.665   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [99/121]: GLO-ALM for SV 10 (size [44] retries [0])
+01-24 17:12:40.665   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [99] completed successfully.
+01-24 17:12:40.689   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [100/121]: GLO-ALM for SV 11 (size [44] retries [0])
+01-24 17:12:40.690   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [100] completed successfully.
+01-24 17:12:40.715   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [101/121]: GLO-ALM for SV 12 (size [44] retries [0])
+01-24 17:12:40.715   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [101] completed successfully.
+01-24 17:12:40.739   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [102/121]: GLO-ALM for SV 13 (size [44] retries [0])
+01-24 17:12:40.740   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [102] completed successfully.
+01-24 17:12:40.763   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [103/121]: GLO-ALM for SV 14 (size [44] retries [0])
+01-24 17:12:40.764   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [103] completed successfully.
+01-24 17:12:40.790   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [104/121]: GLO-ALM for SV 15 (size [44] retries [0])
+01-24 17:12:40.790   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [104] completed successfully.
+01-24 17:12:40.813   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [105/121]: GLO-ALM for SV 16 (size [44] retries [0])
+01-24 17:12:40.813   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [105] completed successfully.
+01-24 17:12:40.836   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [106/121]: GLO-ALM for SV 17 (size [44] retries [0])
+01-24 17:12:40.836   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [106] completed successfully.
+01-24 17:12:40.861   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [107/121]: GLO-ALM for SV 18 (size [44] retries [0])
+01-24 17:12:40.861   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [107] completed successfully.
+01-24 17:12:40.885   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [108/121]: GLO-ALM for SV 19 (size [44] retries [0])
+01-24 17:12:40.885   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [108] completed successfully.
+01-24 17:12:40.907   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [109/121]: GLO-ALM for SV 20 (size [44] retries [0])
+01-24 17:12:40.907   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [109] completed successfully.
+01-24 17:12:40.932   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [110/121]: GLO-ALM for SV 21 (size [44] retries [0])
+01-24 17:12:40.932   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [110] completed successfully.
+01-24 17:12:40.955   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [111/121]: GLO-ALM for SV 22 (size [44] retries [0])
+01-24 17:12:40.955   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [111] completed successfully.
+01-24 17:12:40.984   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [112/121]: GLO-ALM for SV 23 (size [44] retries [0])
+01-24 17:12:40.984   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [112] completed successfully.
+01-24 17:12:41.008   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [113/121]: QZSS-ALM for SV 1 (size [44] retries [0])
+01-24 17:12:41.008   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [113] completed successfully.
+01-24 17:12:41.036   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [114/121]: QZSS-ALM for SV 2 (size [44] retries [0])
+01-24 17:12:41.036   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [114] completed successfully.
+01-24 17:12:41.050   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:41.053   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:12:41.064   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [115/121]: QZSS-ALM for SV 3 (size [44] retries [0])
+01-24 17:12:41.064   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [115] completed successfully.
+01-24 17:12:41.087   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [116/121]: GPS-HEALTH (size [48] retries [0])
+01-24 17:12:41.087   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [116] completed successfully.
+01-24 17:12:41.110   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [117/121]: GPS-IONO (size [24] retries [0])
+01-24 17:12:41.110   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [117] completed successfully.
+01-24 17:12:41.135   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [118/121]: GPS-UTC (size [28] retries [0])
+01-24 17:12:41.135   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [118] completed successfully.
+01-24 17:12:41.158   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [119/121]: GLO-TIMEOFFSET (size [28] retries [0])
+01-24 17:12:41.159   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [119] completed successfully.
+01-24 17:12:41.183   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [120/121]: QZSS-HEALTH (size [20] retries [0])
+01-24 17:12:41.184   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [120] completed successfully.
+01-24 17:12:41.208   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Message sent [121/121]: MGA-INI-EOP(0x06) (size [80] retries [0])
+01-24 17:12:41.208   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Transfer of Message [121] completed successfully.
+01-24 17:12:41.221   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Successfully finished transfer
+01-24 17:12:41.224   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Online Transfer finished successfully!
+01-24 17:12:41.224   434   611 V u-blox  : CUbxGpsState::finished: Transfer of Online data has been successful!
+01-24 17:12:41.224   434   611 W u-blox  : CUbxGpsState::getAppRuntimeStatus: runtime_flag=65, isEntryPsm=0
+01-24 17:12:41.224   434   611 V u-blox  : CUbxGpsState::checkFinish: start check Online of Transfer status, runtime_state(0x40)!
+01-24 17:12:41.225   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Starting Time Transfer!
+01-24 17:12:41.226   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Configure receiver to acknowledge aiding (Try 1/5)
+01-24 17:12:41.256   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Acknowledgment for aiding messages enabled (Try 1/5)
+01-24 17:12:41.272   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Sent the follwing UTC time for aiding the receiver: 2020.01.24 16:12:41.258312647 (GPS: 2089wn:490378258ms:000312647ns) Accuracy: 00:00:20.000000000
+01-24 17:12:41.324   434   611 E u-blox  : CUbxGpsState::printErr: MGA: Time Transfer finished unsuccessfully! Action failed!
+01-24 17:12:41.324   434   611 E u-blox  : CUbxGpsState::finished: Transfer of Time data failed!
+01-24 17:12:41.324   434   611 W u-blox  : CUbxGpsState::getAppRuntimeStatus: runtime_flag=64, isEntryPsm=0
+01-24 17:12:41.324   434   611 V u-blox  : CUbxGpsState::checkFinish: start check Time of Transfer status, runtime_state(0x40)!
+01-24 17:12:41.324   434   611 E u-blox  : CUbxGpsState::finished: Maximum consecutive failures while trying to transfer reached (0). Transfer will not be rescheduled
+01-24 17:12:42.044   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:42.046   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:12:43.044   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:43.046   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:12:44.047   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:44.048   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:12:44.077  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:12:45.045   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:45.053   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:12:46.044   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:46.046   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:12:47.042   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:47.044   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:12:48.047   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:48.049   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:12:48.563  9503  9503 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:12:49.041   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:49.043   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:12:49.083  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:12:49.771  9503  9503 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:12:49.802   434  2093 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=0: clear data
+01-24 17:12:49.804   434  2093 I ActivityManager: Killing 9423:com.endomondo.android/u0a52 (adj 0): stop com.endomondo.android
+01-24 17:12:49.811   434  2093 W ActivityManager: Scheduling restart of crashed service com.endomondo.android/.wear.workout.WorkoutService in 1000ms
+01-24 17:12:49.814   434  2093 W ActivityManager: Force removing ActivityRecord{8b26534 u0 com.endomondo.android/.wear.ui.WearAppActivity t352}: app died, no saved state
+01-24 17:12:49.984 32131 32131 I AppLifecycleTracker: App foreground state unchanged: inForeground ? true
+01-24 17:12:49.987   434   453 I ActivityManager: Force stopping com.endomondo.android appid=10052 user=-1: clearApplicationUserData
+01-24 17:12:49.999   434  2021 D GnssStatusListenerHelper: Remote Listener died: android.location.IGnssStatusListener$Stub$Proxy@a2d22d8
+01-24 17:12:50.010   434   454 W Looper  : Dispatch took 207ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:12:50.033 32131 32303 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 17:12:50.038 32131 32303 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:12:50.067   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:50.067   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 9423
+01-24 17:12:50.103   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:50.103   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:12:50.107   335   335 I keystore: clear_uid 10052
+01-24 17:12:50.221   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:12:50.226 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:50 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:12:50.251   434  7888 E ActivityManager: Sending non-protected broadcast com.google.android.clockwork.settings.action.GPS_ACTIVITY from system 32158:com.google.android.apps.wearable.settings/1000 pkg com.google.android.apps.wearable.settings
+01-24 17:12:50.251   434  7888 E ActivityManager: java.lang.Throwable
+01-24 17:12:50.251   434  7888 E ActivityManager: 	at com.android.server.am.ActivityManagerService.checkBroadcastFromSystem(ActivityManagerService.java:18976)
+01-24 17:12:50.251   434  7888 E ActivityManager: 	at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:19582)
+01-24 17:12:50.251   434  7888 E ActivityManager: 	at com.android.server.am.ActivityManagerService.broadcastIntent(ActivityManagerService.java:19724)
+01-24 17:12:50.251   434  7888 E ActivityManager: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:240)
+01-24 17:12:50.251   434  7888 E ActivityManager: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2935)
+01-24 17:12:50.251   434  7888 E ActivityManager: 	at android.os.Binder.execTransact(Binder.java:674)
+01-24 17:12:50.309 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:12:50.315 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:12:50.319   434  5002 I GnssLocationProvider: WakeLock acquired by sendMessage(SET_REQUEST, 0, com.android.server.location.GnssLocationProvider$GpsRequest@54769fa)
+01-24 17:12:50.319   434   452 V u-blox  : CGpsIf::stop: (2610518384):
+01-24 17:12:50.320   434   452 W u-blox  : CUbxGpsState::getAppRuntimeStatus: runtime_flag=64, isEntryPsm=0
+01-24 17:12:50.320   434   614 V u-blox  : handleCmdInput: (2504894832): Cmd received (2)
+01-24 17:12:50.320   434   614 V u-blox  : handle_cmd: command 2
+01-24 17:12:50.320   434   614 V u-blox  : CAndroidDatabase::decPublish: count now 0
+01-24 17:12:50.320   434   614 V u-blox  : engineStop: (Begin) Client count 1
+01-24 17:12:50.320   434   614 I GnssHAL_GnssInterface: updateWakelock: GNSS HAL Wakelock released
+01-24 17:12:50.320   434   614 V u-blox  : engineStop: (End) Client count 0
+01-24 17:12:50.320   434   614 V u-blox  : checkShutdownState: Command the receiver to turn off!
+01-24 17:12:50.320   434   614 V u-blox  : CUbxGpsState::changeState: A receiver state change has been detected. Turn receiver Off!
+01-24 17:12:50.320   434   614 W u-blox  : CUbxGpsState::getAppRuntimeStatus: runtime_flag=0, isEntryPsm=0
+01-24 17:12:50.320   434   614 V u-blox  : CUbxGpsState::printStd: MGA: Successfully scheduled Poll of Receiver Aiding State data
+01-24 17:12:50.322   434  2426 E ActivityManager: Sending non-protected broadcast com.google.android.clockwork.settings.action.GPS_ACTIVITY from system 32158:com.google.android.apps.wearable.settings/1000 pkg com.google.android.apps.wearable.settings
+01-24 17:12:50.322   434  2426 E ActivityManager: java.lang.Throwable
+01-24 17:12:50.322   434  2426 E ActivityManager: 	at com.android.server.am.ActivityManagerService.checkBroadcastFromSystem(ActivityManagerService.java:18976)
+01-24 17:12:50.322   434  2426 E ActivityManager: 	at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:19582)
+01-24 17:12:50.322   434  2426 E ActivityManager: 	at com.android.server.am.ActivityManagerService.broadcastIntent(ActivityManagerService.java:19724)
+01-24 17:12:50.322   434  2426 E ActivityManager: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:240)
+01-24 17:12:50.322   434  2426 E ActivityManager: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2935)
+01-24 17:12:50.322   434  2426 E ActivityManager: 	at android.os.Binder.execTransact(Binder.java:674)
+01-24 17:12:50.340  9503  9503 I app_process: System.exit called, status: 0
+01-24 17:12:50.340  9503  9503 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:12:50.391 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:12:50.392 31332 31332 D Avrcp   : packageName: com.endomondo.android removed: true
+01-24 17:12:50.392 31332 31332 V Avrcp   : isBrowseSupported for com.endomondo.android: false
+01-24 17:12:50.399   434   452 I GnssLocationProvider: WakeLock released by handleMessage(SET_REQUEST, 0, com.android.server.location.GnssLocationProvider$GpsRequest@54769fa)
+01-24 17:12:50.553 32158 32158 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:950 android.content.ContextWrapper.sendBroadcast:431 android.content.ContextWrapper.sendBroadcast:431 com.google.android.clockwork.settings.GpsActivityReceiver.onReceive:64 android.app.ActivityThread.handleReceiver:3252 
+01-24 17:12:50.572   434 13081 E ActivityManager: Sending non-protected broadcast com.google.android.clockwork.settings.action.GPS_ACTIVITY from system 32158:com.google.android.apps.wearable.settings/1000 pkg com.google.android.apps.wearable.settings
+01-24 17:12:50.572   434 13081 E ActivityManager: java.lang.Throwable
+01-24 17:12:50.572   434 13081 E ActivityManager: 	at com.android.server.am.ActivityManagerService.checkBroadcastFromSystem(ActivityManagerService.java:18976)
+01-24 17:12:50.572   434 13081 E ActivityManager: 	at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:19582)
+01-24 17:12:50.572   434 13081 E ActivityManager: 	at com.android.server.am.ActivityManagerService.broadcastIntent(ActivityManagerService.java:19724)
+01-24 17:12:50.572   434 13081 E ActivityManager: 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:240)
+01-24 17:12:50.572   434 13081 E ActivityManager: 	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2935)
+01-24 17:12:50.572   434 13081 E ActivityManager: 	at android.os.Binder.execTransact(Binder.java:674)
+01-24 17:12:50.702   434  5328 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:12:50.703   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:50.707 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.endomondo.android]
+01-24 17:12:50.827   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:12:50.868   434  5002 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:12:50.869   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:50.869   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:12:50.869   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:12:51.043   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:51.045   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Starting Receiver Aiding State Poll!
+01-24 17:12:51.110 13109  9517 I Fitness : Clearing all cached OAuth tokens for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:12:51.113 13109  9517 I Fitness : Removing all subscriptions for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:12:51.162 13109  9517 I Fitness : Clearing all cached OAuth tokens for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:12:51.169 13109  9517 I Fitness : Removing all subscriptions for: com.endomondo.android [CONTEXT service_id=17 ]
+01-24 17:12:51.187 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:12:51.187 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:12:51.187 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:12:51.188 13109 13442 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:12:51.246 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:12:51.247 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:12:51.247 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:12:51.247 13109 13442 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:12:51.284 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:12:51.284 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:12:51.284 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:12:51.285 13109 13169 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:12:51.476   434   443 I zygote  : Background concurrent copying GC freed 20828(1761KB) AllocSpace objects, 7(140KB) LOS objects, 14% free, 11MB/13MB, paused 3.797ms total 1.297s
+01-24 17:12:52.040   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:53.041   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:53.054   434   611 E u-blox  : CUbxGpsState::printErr: MGA: Receiver Aiding State Poll finished unsuccessfully! Action failed!
+01-24 17:12:53.054   434   611 E u-blox  : CUbxGpsState::finished: Poll of Receiver Aiding State data failed!
+01-24 17:12:54.042   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:12:54.086  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:12:55.044   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+
+

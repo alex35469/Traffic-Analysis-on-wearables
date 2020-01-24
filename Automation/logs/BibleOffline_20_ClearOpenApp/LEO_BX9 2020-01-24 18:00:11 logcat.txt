@@ -1,0 +1,1230 @@
+--------- beginning of system
+01-24 17:52:04.620   434  2021 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:52:04.718   434   756 I ActivityManager: Start proc 10950:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:52:04.911   434   756 W ActivityManager: Slow operation: 78ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:52:04.929   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+--------- beginning of main
+01-24 17:52:05.477   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=160594991301494)
+01-24 17:52:05.487 10950 10960 I chatty  : uid=10059(u0_a59) expire 1 line
+01-24 17:52:06.273  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:52:06.668   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=160596171902171)
+01-24 17:52:06.711   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=160596223232692)
+01-24 17:52:06.762 10950 10950 I chatty  : uid=10059(u0_a59) expire 3 lines
+01-24 17:52:07.040 10950 10968 I chatty  : uid=10059(u0_a59) expire 8 lines
+01-24 17:52:07.079 10968 10968 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:52:07.298   434   461 I chatty  : uid=1000(system) android.display expire 3 lines
+01-24 17:52:08.196   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:52:11.281  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:52:11.964 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 359  /isUsbOrAc: 1
+01-24 17:52:11.971   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 17:52:12.007   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 17:52:12.007   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 17:52:12.044   434   756 E BatteryStatsService: no controller energy info supplied
+01-24 17:52:12.322   723   737 I zygote  : Background concurrent copying GC freed 7495(654KB) AllocSpace objects, 2(192KB) LOS objects, 24% free, 1959KB/2MB, paused 4.446ms total 193.481ms
+01-24 17:52:12.692   434   443 I chatty  : uid=1000(system) HeapTaskDaemon expire 1 line
+01-24 17:52:16.287  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:52:21.292  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:52:21.787 10972 10972 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:52:23.019 10972 10972 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:52:12.048   434   756 I chatty  : uid=1000(system) Binder:434_6 identical 1 line
+01-24 17:52:12.048   434   756 E BatteryStatsService: no controller energy info supplied
+01-24 17:52:23.045   434  1694 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:52:23.047   434  1694 I ActivityManager: Killing 10950:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:52:23.052   434  1694 W ActivityManager: Force removing ActivityRecord{eca2a14 u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t375}: app died, no saved state
+01-24 17:52:23.328   434   454 W Looper  : Dispatch took 282ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:52:23.368   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:52:23.416   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 10950
+01-24 17:52:23.418   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:52:23.438 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:52:23.456   335   335 I keystore: clear_uid 10059
+01-24 17:52:23.469   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:52:23.591 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:52:23.598 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:52:23.601 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:52:23.601 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:52:23.621 10972 10972 I app_process: System.exit called, status: 0
+01-24 17:52:23.621 10972 10972 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:52:23.647   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:52:23.671 13109 10987 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:52:23.681 13109 10987 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:52:23.778 13109 10987 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:52:23.792 13109 10987 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:52:26.298  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:52:28.970   434  1694 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:52:28.992   434   488 I chatty  : uid=1000(system) android.anim expire 2 lines
+01-24 17:52:29.107   434   462 W ProcessCpuTracker: Skipping unknown process pid 10994
+01-24 17:52:29.110   434   462 W ProcessCpuTracker: Skipping unknown process pid 10996
+01-24 17:52:29.111   434   756 I ActivityManager: Start proc 10998:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:52:29.238 10998 11008 I chatty  : uid=10059(u0_a59) expire 1 line
+01-24 17:52:29.315   434   756 W ActivityManager: Slow operation: 82ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:52:29.324   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:52:29.365 10998 10998 I chatty  : uid=10059(u0_a59) expire 15 lines
+01-24 17:52:29.557 10998 11014 I chatty  : uid=10059(u0_a59) expire 9 lines
+01-24 17:52:31.313  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:52:31.529 11014 11014 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:52:32.533   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:52:36.320  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:52:41.326  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:52:46.209 11018 11018 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:52:46.333  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:52:47.464 11018 11018 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:52:47.491   434   756 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:52:47.494   434   756 I ActivityManager: Killing 10998:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:52:47.500   434   756 W ActivityManager: Force removing ActivityRecord{f55f03c u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t376}: app died, no saved state
+01-24 17:52:47.797   434   454 W Looper  : Dispatch took 303ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:52:47.810   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:52:47.815   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 10998
+01-24 17:52:47.871   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:52:47.888 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:52:47.909   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:52:47.928   335   335 I keystore: clear_uid 10059
+01-24 17:52:48.012 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:52:48.013 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:52:48.013 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:52:48.013 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:52:48.039 11018 11018 I app_process: System.exit called, status: 0
+01-24 17:52:48.039 11018 11018 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:52:48.096 13109 11034 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:52:48.109 13109 11034 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:52:48.123   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:52:48.195 13109 11034 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:52:48.201 13109 11034 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:52:51.337  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:52:53.263  2732  2732 D sysproxy: [T:78] Closed stream. RX/TX: 3174/4221
+01-24 17:52:53.384   434  1694 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:52:53.528   434   462 W ProcessCpuTracker: Skipping unknown process pid 11041
+01-24 17:52:53.529   434   660 I ActivityManager: Start proc 11045:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:52:53.545   434   462 W ProcessCpuTracker: Skipping unknown process pid 11043
+01-24 17:52:53.727   434   660 W ActivityManager: Slow operation: 91ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:52:53.731   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:52:53.791 11045 11045 I chatty  : uid=10059(u0_a59) expire 15 lines
+01-24 17:52:53.971 11045 11061 I chatty  : uid=10059(u0_a59) expire 9 lines
+01-24 17:52:55.061   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=160644568330590)
+01-24 17:52:55.427   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=160644927579913)
+01-24 17:52:55.483   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=160644978883038)
+01-24 17:52:55.790  2732  2732 D sysproxy: [T:76] Closed stream. RX/TX: 5842/10239
+01-24 17:52:55.969 11061 11061 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:52:56.336  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:52:56.922   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:52:58.568 13109 13122 I zygote  : Background concurrent copying GC freed 29591(2034KB) AllocSpace objects, 0(0B) LOS objects, 21% free, 7MB/9MB, paused 1.227ms total 360.539ms
+01-24 17:53:00.027 15691 15691 D WallpaperUtil: InternalCache: available=1541M
+01-24 17:53:00.045 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 17:53:00.055 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 17:53:00.535   434  1694 I chatty  : uid=1000(system) Binder:434_C expire 1 line
+01-24 17:53:00.537   434   452 I chatty  : uid=1000(system) android.bg expire 8 lines
+01-24 17:53:00.550   434   614 I chatty  : uid=1000(system) Thread-12 expire 57 lines
+01-24 17:53:00.552   328   328 D shd     : ProcessSensorActive sensor:0xa, handle:37, option:0
+01-24 17:53:01.342  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:53:01.352   434   611 I chatty  : uid=1000 system_server expire 299 lines
+01-24 17:53:01.362   434 11065 I chatty  : uid=1000 system_server expire 4 lines
+01-24 17:53:05.412   434   611 I chatty  : uid=1000 system_server expire 59 lines
+01-24 17:53:06.042   434   614 I chatty  : uid=1000(system) Thread-12 expire 2 lines
+01-24 17:53:06.191   434   611 I chatty  : uid=1000 system_server expire 24 lines
+01-24 17:53:06.344  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:53:07.044   434   614 I chatty  : uid=1000(system) Thread-12 expire 17 lines
+01-24 17:53:10.614 11067 11067 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:53:11.346  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:53:11.812 11067 11067 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:53:11.840   434  1694 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:53:11.842   434  1694 I ActivityManager: Killing 11045:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:53:11.846   434  1694 W ActivityManager: Force removing ActivityRecord{3179ef7 u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t377}: app died, no saved state
+01-24 17:53:12.169   434   454 W Looper  : Dispatch took 325ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:53:12.195   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:53:12.195   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11045
+01-24 17:53:12.203 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:53:12.229   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:53:12.236   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 17:53:12.252   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 17:53:12.253   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 17:53:12.260 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 357  /isUsbOrAc: 1
+01-24 17:53:12.296   434  2426 E BatteryStatsService: no controller energy info supplied
+01-24 17:53:12.297   434  2426 I chatty  : uid=1000(system) Binder:434_F identical 1 line
+01-24 17:53:12.297   434  2426 E BatteryStatsService: no controller energy info supplied
+01-24 17:53:12.326   335   335 I keystore: clear_uid 10059
+01-24 17:53:12.336   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:53:12.507 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:53:12.508 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:53:12.508 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:53:12.508 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:53:12.546 11067 11067 I app_process: System.exit called, status: 0
+01-24 17:53:12.546 11067 11067 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:53:12.604 13109 11079 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:53:12.610   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:53:12.614 13109 11079 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:53:12.768 13109 11079 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:53:12.776 13109 11079 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:53:13.184   434   443 I chatty  : uid=1000(system) HeapTaskDaemon expire 1 line
+01-24 17:53:14.373   434 11090 I chatty  : uid=1000 system_server expire 2 lines
+01-24 17:53:14.373   434 11091 I chatty  : uid=1000 system_server expire 2 lines
+01-24 17:53:14.392   434  1808 I chatty  : uid=1000(system) NetworkMonitorN expire 1 line
+01-24 17:53:14.393   434   517 D ConnectivityService: NetworkAgentInfo [WIFI () - 448] validation failed
+01-24 17:53:14.394   434   514 I chatty  : uid=1000(system) WifiStateMachin expire 1 line
+01-24 17:53:15.042   434   614 I chatty  : uid=1000(system) Thread-12 expire 14 lines
+01-24 17:53:16.352  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:53:17.949   434  1694 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:53:17.965   434   488 I chatty  : uid=1000(system) android.anim expire 2 lines
+01-24 17:53:18.015   434   660 I ActivityManager: Start proc 11098:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:53:18.249   434   660 W ActivityManager: Slow operation: 89ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:53:18.253   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:53:18.345 11098 11098 I chatty  : uid=10059(u0_a59) expire 15 lines
+01-24 17:53:18.527 11098 11114 I chatty  : uid=10059(u0_a59) expire 9 lines
+01-24 17:53:20.539 11114 11114 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:53:20.782   434   461 I chatty  : uid=1000(system) android.display expire 1 line
+01-24 17:53:21.359  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:53:21.511   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:53:22.049   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:53:23.042   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:23.044   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:53:24.039   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:24.041   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:53:25.048   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:25.049   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:53:26.046   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:26.048   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:53:26.365  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:53:27.043   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:27.045   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:53:28.042   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:28.044   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:53:29.041   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:29.042   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:53:30.047   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:30.050   434   614 V u-blox  : CAndroidDatabase::Commit: ignore location report, lat long alt invalid
+01-24 17:53:30.545   434  2426 I GnssLocationProvider: WakeLock acquired by sendMessage(SET_REQUEST, 0, com.android.server.location.GnssLocationProvider$GpsRequest@b673284)
+01-24 17:53:30.547   434   452 V u-blox  : CGpsIf::stop: (2610518384):
+01-24 17:53:30.547   434   452 W u-blox  : CUbxGpsState::getAppRuntimeStatus: runtime_flag=64, isEntryPsm=0
+01-24 17:53:30.547   434   614 V u-blox  : handleCmdInput: (2504894832): Cmd received (2)
+01-24 17:53:30.548   434   614 V u-blox  : handle_cmd: command 2
+01-24 17:53:30.548   434   614 V u-blox  : CAndroidDatabase::decPublish: count now 0
+01-24 17:53:30.548   434   614 V u-blox  : engineStop: (Begin) Client count 1
+01-24 17:53:30.548   434   614 I GnssHAL_GnssInterface: updateWakelock: GNSS HAL Wakelock released
+01-24 17:53:30.548   434   614 V u-blox  : engineStop: (End) Client count 0
+01-24 17:53:30.548   434   614 V u-blox  : checkShutdownState: Command the receiver to turn off!
+01-24 17:53:30.548   434   614 V u-blox  : CUbxGpsState::changeState: A receiver state change has been detected. Turn receiver Off!
+01-24 17:53:30.548   434   614 W u-blox  : CUbxGpsState::getAppRuntimeStatus: runtime_flag=0, isEntryPsm=0
+01-24 17:53:30.548   434   614 V u-blox  : CUbxGpsState::printStd: MGA: Successfully scheduled Poll of Receiver Aiding State data
+01-24 17:53:30.551   434   452 I GnssLocationProvider: WakeLock released by handleMessage(SET_REQUEST, 0, com.android.server.location.GnssLocationProvider$GpsRequest@b673284)
+01-24 17:53:31.043   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:31.043   434   611 V u-blox  : CUbxGpsState::printStd: MGA: Starting Receiver Aiding State Poll!
+01-24 17:53:31.366  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:53:32.043   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:33.043   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:33.058   434   611 E u-blox  : CUbxGpsState::printErr: MGA: Receiver Aiding State Poll finished unsuccessfully! Action failed!
+01-24 17:53:33.058   434   611 E u-blox  : CUbxGpsState::finished: Poll of Receiver Aiding State data failed!
+01-24 17:53:34.039   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:35.040   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:35.097 11118 11118 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:53:36.039   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:36.338 11118 11118 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:53:36.372  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:53:36.373   434  2426 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:53:36.375   434  2426 I ActivityManager: Killing 11098:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:53:36.380   434  2426 W ActivityManager: Force removing ActivityRecord{375acea u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t378}: app died, no saved state
+01-24 17:53:36.544   434   756 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 11098 uid 10059
+01-24 17:53:36.634   434   454 W Looper  : Dispatch took 260ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:53:36.681   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:53:36.694   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11098
+01-24 17:53:36.704   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:53:36.713 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:53:36.751   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:53:36.773   335   335 I keystore: clear_uid 10059
+01-24 17:53:36.868 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:53:36.868 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:53:36.868 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:53:36.870 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:53:36.926 11118 11118 I app_process: System.exit called, status: 0
+01-24 17:53:36.926 11118 11118 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:53:36.955   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:53:36.955 13109 11129 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:53:36.967 13109 11129 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:53:36.995 13109 11129 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:53:37.001 13109 11129 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:53:37.037   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:39.045   434   614 I chatty  : uid=1000(system) Thread-12 identical 2 lines
+01-24 17:53:40.040   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:41.039   434   614 W u-blox  : CUbxGpsState::onNewMsg: Time for preparing the shutdown run out. Stopping the receiver...
+01-24 17:53:41.139   434   614 V u-blox  : CUbxGpsState::forceTurnOff: The receiver output is disabled!
+01-24 17:53:41.140   328   328 D shd     : ProcessSensorDeactive sensor:0xa, handle:37 
+01-24 17:53:41.147   434   614 V u-blox  : DeActive sensor OK
+01-24 17:53:41.147   434   614 V u-blox  : CUbxGpsState::powerOff: placeholder for power OFF function
+01-24 17:53:41.147   434   614 V u-blox  : CUbxGpsState::forceTurnOff: The receiver is powered off!
+01-24 17:53:41.147   434   614 V u-blox  : CUbxGpsState::changeState: The receiver is now turned Off
+01-24 17:53:41.147   434   614 W u-blox  : CProtocolUBX::ProcessNavPvt: psmState=0, fixType=0, gnssFixOk=0, numSV=0, pDOP=999, hACC=4294967, vACC=3750000
+01-24 17:53:41.151   434   614 V u-blox  : checkShutdownState: (Begin)
+01-24 17:53:41.151   434   614 V u-blox  : changeSessionStatus:  State = 3
+01-24 17:53:41.151   434   614 V u-blox  : CGpsIf::gpsStatus: current GPS status: (still) 4 (GPS_STATUS_ENGINE_OFF)
+01-24 17:53:41.151   434   614 V u-blox  : checkShutdownState: (End)
+01-24 17:53:41.376  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:53:42.400   434  2426 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:53:42.493   434 13081 I ActivityManager: Start proc 11144:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:53:42.568   434   462 W ProcessCpuTracker: Skipping unknown process pid 11140
+01-24 17:53:42.737   434  2426 W ActivityManager: Slow operation: 76ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:53:42.768   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:53:42.787 11144 11144 I chatty  : uid=10059(u0_a59) expire 11 lines
+01-24 17:53:42.970 11144 11160 I chatty  : uid=10059(u0_a59) expire 9 lines
+01-24 17:53:43.213 11144 11144 I chatty  : uid=10059(u0_a59) expire 4 lines
+01-24 17:53:44.899 11160 11160 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:53:45.128   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s674ms
+01-24 17:53:45.961   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:53:46.383  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:53:51.386  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 1 line
+01-24 17:53:56.391  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:53:59.547 11165 11165 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:54:00.024 15691 15691 D WallpaperUtil: InternalCache: available=1541M
+01-24 17:54:00.051 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 17:54:00.058 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 17:54:00.913 11165 11165 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:54:00.939   434 13081 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:54:00.941   434 13081 I ActivityManager: Killing 11144:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:54:00.946   434 13081 W ActivityManager: Force removing ActivityRecord{2228c52 u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t379}: app died, no saved state
+01-24 17:54:01.129   434  2426 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 11144 uid 10059
+01-24 17:54:01.218   434   454 W Looper  : Dispatch took 277ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:54:01.308 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:54:01.308   335   335 I keystore: clear_uid 10059
+01-24 17:54:01.313   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11144
+01-24 17:54:01.318   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:54:01.335   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:54:01.347   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:54:01.396  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:54:01.654 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:54:01.654 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:54:01.654 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:54:01.658 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:54:01.670 11165 11165 I app_process: System.exit called, status: 0
+01-24 17:54:01.671 11165 11165 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:54:01.738   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:54:01.784 13109 11176 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:54:01.799 13109 11176 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:54:01.875 13109 11176 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:54:01.878 13109 11176 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:54:06.400  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:54:07.078   434  2426 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:54:07.218   434  1694 I ActivityManager: Start proc 11191:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:54:07.349   434   462 W ProcessCpuTracker: Skipping unknown process pid 11187
+01-24 17:54:07.352   434   462 W ProcessCpuTracker: Skipping unknown process pid 11189
+01-24 17:54:07.490   434  1694 W ActivityManager: Slow operation: 132ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:54:07.495   434   454 W Looper  : Dispatch took 108ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=31
+01-24 17:54:07.509   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:54:07.540 11191 11191 I chatty  : uid=10059(u0_a59) expire 15 lines
+01-24 17:54:07.737 11191 11207 I chatty  : uid=10059(u0_a59) expire 9 lines
+01-24 17:54:07.862 11191 11201 I chatty  : uid=10059(u0_a59) expire 1 line
+01-24 17:54:08.167   434   443 I zygote  : Background concurrent copying GC freed 22934(1609KB) AllocSpace objects, 19(456KB) LOS objects, 15% free, 11MB/13MB, paused 7.028ms total 1.035s
+01-24 17:54:09.739 11207 11207 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:54:09.954   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s781ms
+01-24 17:54:10.635   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:54:11.404  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:54:11.958 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 358  /isUsbOrAc: 1
+01-24 17:54:11.965   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 17:54:11.981   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 17:54:11.982   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 17:54:12.014   434   756 E BatteryStatsService: no controller energy info supplied
+01-24 17:54:12.184   723   737 I zygote  : Background concurrent copying GC freed 6931(592KB) AllocSpace objects, 2(192KB) LOS objects, 24% free, 1974KB/2MB, paused 2.710ms total 112.653ms
+01-24 17:54:16.411  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:54:21.418  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:54:23.840 31850 32286 I Checkin : [EventLogChimeraService] Opted in for usage reporting: false
+01-24 17:54:23.841 31850 32286 I Checkin : [EventLogChimeraService] Aggregate from 1579883063007 (log), 1579883063007 (data)
+01-24 17:54:12.017   434   756 I chatty  : uid=1000(system) Binder:434_6 identical 1 line
+01-24 17:54:12.017   434   756 E BatteryStatsService: no controller energy info supplied
+01-24 17:54:23.972   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:54:23.974   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:54:23.998   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 17:54:24.004   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:54:24.215 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:54:24.215 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:54:24.215 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:54:24.216 13109 13430 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:54:24.252 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 17:54:24.253 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 17:54:24.253 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 17:54:24.253 13109 13430 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 17:54:24.493 11212 11212 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:54:25.021 13109 13122 I zygote  : Background concurrent copying GC freed 30513(2000KB) AllocSpace objects, 0(0B) LOS objects, 20% free, 7MB/9MB, paused 1.628ms total 416.748ms
+01-24 17:54:25.305  2732  2732 D sysproxy: [D:33e8] Look up play.googleapis.com.
+01-24 17:54:25.461 11212 11212 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:54:25.492   434  4786 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:54:25.494   434  4786 I ActivityManager: Killing 11191:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:54:25.499   434  4786 W ActivityManager: Force removing ActivityRecord{cfc2eba u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t380}: app died, no saved state
+01-24 17:54:25.590  2732  2732 D sysproxy: [D:33e8] Resolved play.googleapis.com to 172.217.168.10.
+01-24 17:54:25.704  2732  2732 D sysproxy: [T:79] Establishing a new TCP stream to: 172.217.168.10:443 (uid=10009) (package=com.google.android.gms)
+01-24 17:54:25.711   434   756 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 11191 uid 10059
+01-24 17:54:25.791   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:54:25.805   434   454 W Looper  : Dispatch took 312ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:54:25.840   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:54:25.841   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11191
+01-24 17:54:25.865 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:54:25.883   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:54:25.887 13109 30467 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+01-24 17:54:25.895 13109 30467 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@20104061@20.1.04 (050300-288960190):2)
+01-24 17:54:25.895 13109 30467 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(Unknown Source:3)
+01-24 17:54:25.914   335   335 I keystore: clear_uid 10059
+01-24 17:54:25.970 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:54:25.976 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:54:25.976 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:54:25.976 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:54:25.994 11212 11212 I app_process: System.exit called, status: 0
+01-24 17:54:25.994 11212 11212 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:54:26.129   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:54:26.149 13109 11218 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:54:26.156 13109 11218 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:54:26.224 13109 11218 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:54:26.228 13109 11218 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:54:26.274   712   726 I zygote  : Background concurrent copying GC freed 10231(400KB) AllocSpace objects, 0(0B) LOS objects, 29% free, 1250KB/1762KB, paused 1.065ms total 159.911ms
+01-24 17:54:26.359 13109 30467 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+01-24 17:54:26.360 13109 30467 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@20104061@20.1.04 (050300-288960190):2)
+01-24 17:54:26.360 13109 30467 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(Unknown Source:3)
+01-24 17:54:26.419  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:54:26.593 13109 30467 W Uploader: nexus5blacklca1@gmail.com no longer exists, so no auth token.
+01-24 17:54:26.647 13109 30467 W Uploader: nexus5blacklca1@gmail.com no longer exists, so no auth token.
+01-24 17:54:26.700 13109 13109 W ChimeraUtils: Non Chimera context
+01-24 17:54:26.700 13109 13109 W ChimeraUtils: Non Chimera context
+01-24 17:54:26.815  2732  2732 D sysproxy: [T:80] Establishing a new TCP stream to: 172.217.168.10:443 (uid=10009) (package=com.google.android.gms)
+01-24 17:54:26.828 13109 30467 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+01-24 17:54:26.829 13109 30467 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@20104061@20.1.04 (050300-288960190):2)
+01-24 17:54:26.829 13109 30467 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(Unknown Source:3)
+01-24 17:54:26.998 13109 30467 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+01-24 17:54:26.999 13109 30467 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@20104061@20.1.04 (050300-288960190):2)
+01-24 17:54:26.999 13109 30467 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(Unknown Source:3)
+01-24 17:54:27.168 13109 30467 W Uploader: none no longer exists, so no auth token.
+01-24 17:54:27.184 13109 30467 I chatty  : uid=10009(u0_a9) lowpool[56] identical 12 lines
+01-24 17:54:27.962 13109 13122 I chatty  : uid=10009(u0_a9) HeapTaskDaemon expire 1 line
+01-24 17:54:31.318   434  4786 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:54:31.420  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:54:31.424   434   756 I ActivityManager: Start proc 11243:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:54:31.465   434   462 W ProcessCpuTracker: Skipping unknown process pid 11239
+01-24 17:54:31.478   434   462 W ProcessCpuTracker: Skipping unknown process pid 11241
+01-24 17:54:31.609   434   756 W ActivityManager: Slow operation: 85ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:54:31.617   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:54:31.677 11243 11243 I chatty  : uid=10059(u0_a59) expire 15 lines
+01-24 17:54:31.878 11243 11253 I chatty  : uid=10059(u0_a59) expire 1 line
+01-24 17:54:31.944 11243 11259 I chatty  : uid=10059(u0_a59) expire 9 lines
+01-24 17:54:33.889 11259 11259 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:54:34.117   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s713ms
+01-24 17:54:34.871   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:54:36.422  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:54:41.428  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 1 line
+01-24 17:54:46.435  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:54:48.535 11264 11264 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:54:49.440 11264 11264 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:54:49.472   434  4786 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:54:49.473   434  4786 I ActivityManager: Killing 11243:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:54:49.479   434  4786 W ActivityManager: Force removing ActivityRecord{76be5f6 u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t381}: app died, no saved state
+01-24 17:54:49.673   434  7909 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 11243 uid 10059
+01-24 17:54:49.752   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11243
+01-24 17:54:49.764   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:54:49.781   434   454 W Looper  : Dispatch took 307ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:54:49.802   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:54:49.817   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:54:49.826 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:54:49.883   335   335 I keystore: clear_uid 10059
+01-24 17:54:49.931 15691 15701 I zygote  : Background concurrent copying GC freed 4339(383KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1289KB/1801KB, paused 567us total 101.798ms
+01-24 17:54:49.973 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:54:49.975 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:54:49.975 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:54:49.977 13109 13109 I chatty  : uid=10009(u0_a9) com.google.android.gms.persistent expire 1 line
+01-24 17:54:50.013 11264 11264 I app_process: System.exit called, status: 0
+01-24 17:54:50.013 11264 11264 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:54:50.021 13109 11275 I chatty  : uid=10009(u0_a9) com.google.android.gms.persistent expire 4 lines
+01-24 17:54:50.143   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:54:50.657   434   443 I zygote  : Background concurrent copying GC freed 25859(1650KB) AllocSpace objects, 16(412KB) LOS objects, 15% free, 10MB/12MB, paused 8.973ms total 587.477ms
+01-24 17:54:51.436  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:54:55.402   434  7909 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:54:55.428   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 87, previously 90
+01-24 17:54:55.429   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 59, previously 64
+01-24 17:54:55.516   434 13083 I ActivityManager: Start proc 11291:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:54:55.557   434   462 W ProcessCpuTracker: Skipping unknown process pid 11287
+01-24 17:54:55.559   434   462 W ProcessCpuTracker: Skipping unknown process pid 11289
+01-24 17:54:55.734   434  7909 W ActivityManager: Slow operation: 90ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:54:55.767   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:54:55.789 11291 11291 I chatty  : uid=10059(u0_a59) expire 16 lines
+01-24 17:54:55.918 11291 11301 I chatty  : uid=10059(u0_a59) expire 1 line
+01-24 17:54:56.021 11291 11307 I chatty  : uid=10059(u0_a59) expire 9 lines
+01-24 17:54:56.451  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:54:57.999 11307 11307 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:54:58.253   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s761ms
+01-24 17:54:58.949   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:55:00.016 15691 15691 D WallpaperUtil: InternalCache: available=1541M
+01-24 17:55:00.033 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 17:55:00.042 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 17:55:01.457  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:55:06.463  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 2 lines
+01-24 17:55:11.466  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:55:11.959   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 17:55:11.972 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 357  /isUsbOrAc: 1
+01-24 17:55:12.004   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 17:55:12.005   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 17:55:12.071   434  4786 E BatteryStatsService: no controller energy info supplied
+01-24 17:55:12.072   434  4786 I chatty  : uid=1000(system) Binder:434_14 identical 1 line
+01-24 17:55:12.072   434  4786 E BatteryStatsService: no controller energy info supplied
+01-24 17:55:12.669 11312 11312 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:55:13.842 11312 11312 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:55:13.866   434  4786 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:55:13.868   434  4786 I ActivityManager: Killing 11291:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:55:13.874   434  4786 W ActivityManager: Force removing ActivityRecord{815df19 u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t382}: app died, no saved state
+01-24 17:55:14.039   434 13083 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 11291 uid 10059
+01-24 17:55:14.075   551  3887 W InputMethodWrapper: Session is already finished: android.inputmethodservice.IInputMethodSessionWrapper@ff821a1
+01-24 17:55:14.137   434   454 W Looper  : Dispatch took 270ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:55:14.153   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11291
+01-24 17:55:14.162   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:55:14.202   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:55:14.202 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:55:14.238   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:55:14.444   335   335 I keystore: clear_uid 10059
+01-24 17:55:14.503 13109 13109 I chatty  : uid=10009(u0_a9) com.google.android.gms.persistent expire 3 lines
+01-24 17:55:14.510 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:55:14.510 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:55:14.510 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:55:14.517 11312 11312 I app_process: System.exit called, status: 0
+01-24 17:55:14.517 11312 11312 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:55:14.548   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:55:14.605 13109 11323 I chatty  : uid=10009(u0_a9) com.google.android.gms.persistent expire 4 lines
+01-24 17:55:16.470  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:55:19.872   434   660 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:55:19.971   434  7909 I ActivityManager: Start proc 11337:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:55:19.973   434   462 W ProcessCpuTracker: Skipping unknown process pid 11333
+01-24 17:55:19.975   434   462 W ProcessCpuTracker: Skipping unknown process pid 11335
+01-24 17:55:20.133   434  7909 W ActivityManager: Slow operation: 80ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:55:20.166   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:55:20.195 11337 11337 I chatty  : uid=10059(u0_a59) expire 15 lines
+01-24 17:55:20.391 11337 11353 I chatty  : uid=10059(u0_a59) expire 9 lines
+01-24 17:55:21.477  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:55:22.319 11353 11353 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:55:22.537   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s592ms
+01-24 17:55:23.424   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:55:26.484  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:55:36.497  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:55:37.115 11358 11358 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:55:38.308 11358 11358 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:55:38.340   434  7909 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:55:38.344   434  7909 I ActivityManager: Killing 11337:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:55:38.350   434  7909 W ActivityManager: Force removing ActivityRecord{b826aa1 u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t383}: app died, no saved state
+01-24 17:55:38.515   434  4786 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 11337 uid 10059
+01-24 17:55:38.571   434   454 W Looper  : Dispatch took 229ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:55:38.579   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11337
+01-24 17:55:38.586   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:55:38.595 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:55:38.605   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:55:38.616   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:55:38.634   335   335 I keystore: clear_uid 10059
+01-24 17:55:38.733   434   462 W ProcessCpuTracker: Skipping unknown process pid 11337
+01-24 17:55:39.013 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:55:39.013 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:55:39.013 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:55:39.027 11358 11358 I app_process: System.exit called, status: 0
+01-24 17:55:39.027 11358 11358 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:55:39.098 13109 11369 I chatty  : uid=10009(u0_a9) com.google.android.gms.persistent expire 4 lines
+01-24 17:55:39.112   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:55:39.450 32131 32141 I zygote  : Background concurrent copying GC freed 53103(2MB) AllocSpace objects, 0(0B) LOS objects, 24% free, 6MB/8MB, paused 53.263ms total 855.245ms
+01-24 17:55:41.501  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:55:44.445   434  2426 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:55:44.532   434  7909 I ActivityManager: Start proc 11384:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:55:44.625   434   462 W ProcessCpuTracker: Skipping unknown process pid 11380
+01-24 17:55:44.627   434   462 W ProcessCpuTracker: Skipping unknown process pid 11382
+01-24 17:55:44.787   434  7909 W ActivityManager: Slow operation: 85ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:55:44.792   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:55:44.870 11384 11384 I chatty  : uid=10059(u0_a59) expire 15 lines
+01-24 17:55:45.033 11384 11400 I chatty  : uid=10059(u0_a59) expire 9 lines
+01-24 17:55:46.507  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:55:46.969 11400 11400 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:55:47.215   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s683ms
+01-24 17:55:47.899   434   443 I zygote  : Background concurrent copying GC freed 21475(1511KB) AllocSpace objects, 22(532KB) LOS objects, 15% free, 10MB/12MB, paused 4.960ms total 445.680ms
+01-24 17:55:48.018   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:55:51.512  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:55:56.518  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:56:00.013 15691 15691 D WallpaperUtil: InternalCache: available=1541M
+01-24 17:56:00.053 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 17:56:00.062 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 17:56:01.521  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:56:01.690 11405 11405 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:56:03.042 11405 11405 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:56:03.075   434  4786 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:56:03.079   434  4786 I ActivityManager: Killing 11384:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:56:03.086   434  4786 W ActivityManager: Force removing ActivityRecord{11502b0 u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t384}: app died, no saved state
+01-24 17:56:03.367   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11384
+01-24 17:56:03.383   434   454 W Looper  : Dispatch took 303ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:56:03.392   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:56:03.401 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:56:03.460   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:56:03.464   335   335 I keystore: clear_uid 10059
+01-24 17:56:03.493   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:56:03.596 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:56:03.597 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:56:03.597 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:56:03.601 11405 11405 I app_process: System.exit called, status: 0
+01-24 17:56:03.601 11405 11405 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:56:03.662 13109 11417 I chatty  : uid=10009(u0_a9) com.google.android.gms.persistent expire 1 line
+01-24 17:56:03.665 13109 11417 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:56:03.695   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:56:03.775 13109 11417 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:56:03.783 13109 11417 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:56:06.526  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:56:08.972   434  4786 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:56:08.989   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 87, previously 90
+01-24 17:56:08.990   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 59, previously 64
+01-24 17:56:09.063   434  2021 I ActivityManager: Start proc 11431:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:56:09.183   283 11435 I zygote  : Background concurrent copying GC freed 583(416KB) AllocSpace objects, 0(0B) LOS objects, 36% free, 876KB/1388KB, paused 9.281ms total 79.966ms
+01-24 17:56:09.328   434  2021 W ActivityManager: Slow operation: 88ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:56:09.338   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:56:09.376 11431 11431 I chatty  : uid=10059(u0_a59) expire 15 lines
+01-24 17:56:09.535 11431 11447 I chatty  : uid=10059(u0_a59) expire 9 lines
+01-24 17:56:11.539 11447 11447 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:56:11.542  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:56:11.762   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s719ms
+01-24 17:56:11.933   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 17:56:11.937 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 355  /isUsbOrAc: 1
+01-24 17:56:11.945   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 17:56:11.945   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 17:56:11.973   434 13083 E BatteryStatsService: no controller energy info supplied
+01-24 17:56:11.973   434 13083 I chatty  : uid=1000(system) Binder:434_1F identical 1 line
+01-24 17:56:11.973   434 13083 E BatteryStatsService: no controller energy info supplied
+01-24 17:56:12.561   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:56:16.546  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:56:21.551  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:56:26.208 11452 11452 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:56:26.556  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:56:27.474 11452 11452 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:56:27.504   434  2021 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:56:27.507   434  2021 I ActivityManager: Killing 11431:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:56:27.511   434  2021 W ActivityManager: Force removing ActivityRecord{367bd58 u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t385}: app died, no saved state
+01-24 17:56:27.741   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11431
+01-24 17:56:27.752   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:56:27.773   434   454 W Looper  : Dispatch took 268ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:56:27.787   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:56:27.788   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:56:27.841 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:56:27.882   335   335 I keystore: clear_uid 10059
+01-24 17:56:27.964 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:56:27.971 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:56:27.971 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:56:27.971 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:56:28.010 11452 11452 I app_process: System.exit called, status: 0
+01-24 17:56:28.011 11452 11452 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:56:28.043 13109 11469 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:56:28.044   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:56:28.066 13109 11469 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:56:28.167 13109 11469 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:56:28.170 13109 11469 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:56:31.557  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:56:33.418   434  2021 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:56:33.531   434  2560 I ActivityManager: Start proc 11479:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:56:33.715   434  2560 W ActivityManager: Slow operation: 76ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:56:33.721   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:56:33.791 11479 11479 I chatty  : uid=10059(u0_a59) expire 15 lines
+01-24 17:56:33.959 11479 11495 I chatty  : uid=10059(u0_a59) expire 9 lines
+01-24 17:56:35.003   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=160864511934100)
+01-24 17:56:35.909 11495 11495 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:56:36.142   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s631ms
+01-24 17:56:36.557  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:56:36.974   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:56:41.563  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 1 line
+01-24 17:56:46.570  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:56:50.715 11499 11499 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:56:51.576  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:56:51.971 11499 11499 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:56:51.999   434  7909 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:56:52.001   434  7909 I ActivityManager: Killing 11479:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:56:52.007   434  7909 W ActivityManager: Force removing ActivityRecord{79e6583 u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t386}: app died, no saved state
+01-24 17:56:52.290   434   454 W Looper  : Dispatch took 281ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:56:52.316   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:56:52.322   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11479
+01-24 17:56:52.348   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:56:52.359   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:56:52.390 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:56:52.413   335   335 I keystore: clear_uid 10059
+01-24 17:56:52.523 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:56:52.529 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:56:52.529 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:56:52.530 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:56:52.591 11499 11499 I app_process: System.exit called, status: 0
+01-24 17:56:52.591 11499 11499 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:56:52.612 13109 11515 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:56:52.624   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:56:52.636 13109 11515 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:56:52.725 13109 11515 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:56:52.750 13109 11515 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:56:53.197   434   443 I zygote  : Background concurrent copying GC freed 19150(1413KB) AllocSpace objects, 19(472KB) LOS objects, 15% free, 11MB/13MB, paused 7.002ms total 835.530ms
+01-24 17:56:53.197 13109 13122 I zygote  : Background concurrent copying GC freed 33936(2MB) AllocSpace objects, 1(20KB) LOS objects, 20% free, 7MB/9MB, paused 1.563ms total 584.091ms
+01-24 17:56:56.576  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:56:57.981   434  7909 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:56:57.997   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 87, previously 90
+01-24 17:56:57.998   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 59, previously 64
+01-24 17:56:58.075   434  2560 I ActivityManager: Start proc 11526:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:56:58.272   434  2560 W ActivityManager: Slow operation: 85ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:56:58.275   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:56:58.340 11526 11526 I chatty  : uid=10059(u0_a59) expire 10 lines
+01-24 17:56:58.547 11526 11542 I chatty  : uid=10059(u0_a59) expire 1 line
+01-24 17:56:58.666 11526 11536 I chatty  : uid=10059(u0_a59) expire 1 line
+01-24 17:56:58.767 11526 11526 I chatty  : uid=10059(u0_a59) expire 5 lines
+01-24 17:56:59.681   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=160889192349142)
+01-24 17:56:59.836   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=160889346271278)
+01-24 17:56:59.953   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=160889448920236)
+01-24 17:57:00.112 15691 15691 D WallpaperUtil: InternalCache: available=1541M
+01-24 17:57:00.382 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 17:57:00.401 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 17:57:00.459 11526 11542 I chatty  : uid=10059(u0_a59) expire 8 lines
+01-24 17:57:00.509 11542 11542 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:57:00.563   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=160890064469194)
+01-24 17:57:00.700   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=160890201183621)
+01-24 17:57:00.731   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s673ms
+01-24 17:57:01.542   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:57:01.580  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:57:06.588  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 2 lines
+01-24 17:57:11.595  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:57:11.948   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 17:57:11.953 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 354  /isUsbOrAc: 1
+01-24 17:57:11.967   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 17:57:11.967   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 17:57:12.001   434  7909 E BatteryStatsService: no controller energy info supplied
+01-24 17:57:12.003   434  7909 I chatty  : uid=1000(system) Binder:434_1D identical 1 line
+01-24 17:57:12.003   434  7909 E BatteryStatsService: no controller energy info supplied
+01-24 17:57:15.235 11546 11546 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:57:16.501 11546 11546 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:57:16.529   434  2021 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:57:16.531   434  2021 I ActivityManager: Killing 11526:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:57:16.536   434  2021 W ActivityManager: Force removing ActivityRecord{dd6da9a u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t387}: app died, no saved state
+01-24 17:57:16.600  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:57:16.772   434   454 W Looper  : Dispatch took 241ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:57:16.810   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11526
+01-24 17:57:16.840   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:57:16.840   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:57:16.886   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:57:16.906 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:57:16.910   335   335 I keystore: clear_uid 10059
+01-24 17:57:17.192 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:57:17.199 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:57:17.199 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:57:17.199 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:57:17.245 11546 11546 I app_process: System.exit called, status: 0
+01-24 17:57:17.245 11546 11546 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:57:17.336   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:57:17.393 13109 11566 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:57:17.402 13109 11566 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:57:17.441 13109 11566 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:57:17.447 13109 11566 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:57:21.604  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:57:22.654   434  2560 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:57:22.743   434   610 I ActivityManager: Start proc 11572:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:57:22.909   434   610 W ActivityManager: Slow operation: 72ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:57:22.958   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:57:22.958 11572 11572 I chatty  : uid=10059(u0_a59) expire 15 lines
+01-24 17:57:23.171 11572 11582 I chatty  : uid=10059(u0_a59) expire 1 line
+01-24 17:57:23.178 11572 11588 I chatty  : uid=10059(u0_a59) expire 9 lines
+01-24 17:57:25.139 11588 11588 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:57:25.360   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s645ms
+01-24 17:57:26.223   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:57:26.605  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:57:36.618  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:57:39.713 11593 11593 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:57:40.900 11593 11593 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:57:40.924   434 13233 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:57:40.925   434 13233 I ActivityManager: Killing 11572:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:57:40.935   434 13233 W ActivityManager: Force removing ActivityRecord{c8ba402 u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t388}: app died, no saved state
+01-24 17:57:41.209   434   454 W Looper  : Dispatch took 284ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:57:41.213   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11572
+01-24 17:57:41.250   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:57:41.269   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:57:41.290 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:57:41.296   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:57:41.330   335   335 I keystore: clear_uid 10059
+01-24 17:57:41.376 15691 15701 I zygote  : Background concurrent copying GC freed 4284(401KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1307KB/1819KB, paused 15.165ms total 141.858ms
+01-24 17:57:41.415 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:57:41.417 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:57:41.417 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:57:41.417 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:57:41.479   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:57:41.489 11593 11593 I app_process: System.exit called, status: 0
+01-24 17:57:41.489 11593 11593 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:57:41.515 13109 11604 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:57:41.520 13109 11604 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:57:41.551 13109 11604 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:57:41.575 13109 11604 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:57:41.625  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:57:46.626  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:57:47.018   434 13233 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:57:47.114   434  2560 I ActivityManager: Start proc 11619:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:57:47.338   434  2560 W ActivityManager: Slow operation: 124ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:57:47.384 11619 11619 I chatty  : uid=10059(u0_a59) expire 11 lines
+01-24 17:57:47.392   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:57:47.446   434   454 W Looper  : Dispatch took 169ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=31
+01-24 17:57:47.708 11619 11629 I chatty  : uid=10059(u0_a59) expire 1 line
+01-24 17:57:47.716 11619 11635 I chatty  : uid=10059(u0_a59) expire 9 lines
+01-24 17:57:47.901 11619 11619 I chatty  : uid=10059(u0_a59) expire 4 lines
+01-24 17:57:48.022   434   443 I zygote  : Background concurrent copying GC freed 20555(1488KB) AllocSpace objects, 21(512KB) LOS objects, 15% free, 11MB/13MB, paused 2.712ms total 960.625ms
+01-24 17:57:49.639 11635 11635 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:57:49.837   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s738ms
+01-24 17:57:50.584   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:57:51.632  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:57:56.640  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:58:00.013 15691 15691 D WallpaperUtil: InternalCache: available=1541M
+01-24 17:58:00.028 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 17:58:00.036 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 17:58:01.648  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:58:04.253 11640 11640 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:58:05.540 11640 11640 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:58:05.573   434  4786 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:58:05.575   434  4786 I ActivityManager: Killing 11619:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:58:05.585   434  4786 W ActivityManager: Force removing ActivityRecord{aa8ce55 u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t389}: app died, no saved state
+01-24 17:58:05.843   434   454 W Looper  : Dispatch took 268ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:58:05.845   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11619
+01-24 17:58:05.850   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:58:05.914   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:58:05.916 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:58:05.924   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:58:05.929   335   335 I keystore: clear_uid 10059
+01-24 17:58:06.035 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:58:06.035 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:58:06.035 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:58:06.035 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:58:06.061 11640 11640 I app_process: System.exit called, status: 0
+01-24 17:58:06.061 11640 11640 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:58:06.102   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:58:06.243 13109 11659 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:58:06.260 13109 11659 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:58:06.322 13109 11659 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:58:06.326 13109 11659 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:58:06.363   712   726 I zygote  : Background concurrent copying GC freed 10648(416KB) AllocSpace objects, 0(0B) LOS objects, 29% free, 1234KB/1746KB, paused 1.081ms total 264.543ms
+01-24 17:58:06.653  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:58:11.510   434 13233 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:58:11.605   434   756 I ActivityManager: Start proc 11666:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:58:11.656  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:58:11.743   434   756 W ActivityManager: Slow operation: 63ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:58:11.751   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:58:11.859 11666 11666 I chatty  : uid=10059(u0_a59) expire 15 lines
+01-24 17:58:12.004 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 352  /isUsbOrAc: 1
+01-24 17:58:12.005   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 17:58:12.017   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 17:58:12.017   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 17:58:12.084   434  4786 E BatteryStatsService: no controller energy info supplied
+01-24 17:58:12.085   434  4786 I chatty  : uid=1000(system) Binder:434_14 identical 1 line
+01-24 17:58:12.085   434  4786 E BatteryStatsService: no controller energy info supplied
+01-24 17:58:12.125 11666 11676 I chatty  : uid=10059(u0_a59) expire 1 line
+01-24 17:58:12.146 11666 11682 I chatty  : uid=10059(u0_a59) expire 9 lines
+01-24 17:58:12.316   723   737 I zygote  : Background concurrent copying GC freed 7131(620KB) AllocSpace objects, 2(192KB) LOS objects, 24% free, 1992KB/2MB, paused 29.469ms total 103.656ms
+01-24 17:58:14.119 11682 11682 I chatty  : uid=10059(u0_a59) com.bestweatherfor.bibleoffline_pt_ra expire 1 line
+01-24 17:58:14.332   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s745ms
+01-24 17:58:15.048   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:58:16.663  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:58:21.671  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 1 line
+01-24 17:58:26.679  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:58:27.021  2732  2732 D sysproxy: [T:79] Closed stream. RX/TX: 3027/4578
+01-24 17:58:27.660  2732  2732 D sysproxy: [T:80] Closed stream. RX/TX: 3777/4971
+01-24 17:58:28.694 11688 11688 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:58:29.907 11688 11688 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:58:29.932   434 13233 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:58:29.934   434 13233 I ActivityManager: Killing 11666:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:58:29.938   434 13233 W ActivityManager: Force removing ActivityRecord{3fa3a5d u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t390}: app died, no saved state
+01-24 17:58:30.114   434   756 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 11666 uid 10059
+01-24 17:58:30.198   434   454 W Looper  : Dispatch took 265ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:58:30.244   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:58:30.248   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11666
+01-24 17:58:30.280   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:58:30.298 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:58:30.314   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:58:30.358   335   335 I keystore: clear_uid 10059
+01-24 17:58:30.405 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:58:30.405 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:58:30.406 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:58:30.408 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:58:30.458 11688 11688 I app_process: System.exit called, status: 0
+01-24 17:58:30.458 11688 11688 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:58:30.503 13109 11699 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:58:30.507 13109 11699 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:58:30.541   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:58:30.610 13109 11699 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:58:30.617 13109 11699 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:58:31.685  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:58:35.882   434 13233 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:58:35.964   434  2560 I ActivityManager: Start proc 11714:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:58:36.112 11714 11724 I chatty  : uid=10059(u0_a59) expire 1 line
+01-24 17:58:36.176   434  2560 W ActivityManager: Slow operation: 85ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:58:36.189   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:58:36.236 11714 11714 I chatty  : uid=10059(u0_a59) expire 10 lines
+01-24 17:58:36.415 11714 11730 I chatty  : uid=10059(u0_a59) expire 1 line
+01-24 17:58:36.618 11714 11714 V Banco de Dados: teste(): /data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg
+01-24 17:58:36.643 11714 11714 V Banco de Dados: copy: /data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg
+01-24 17:58:36.686  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:58:38.030 11714 11714 W ResourceType: For resource 0x7f100059, entry index(89) is beyond type entryCount(87)
+01-24 17:58:38.036 11714 11714 E SQLiteLog: (1) no such table: bible
+01-24 17:58:38.281 11714 11730 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 17:58:38.281 11714 11730 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 17:58:38.281 11714 11730 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 17:58:38.281 11714 11730 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 17:58:38.281 11714 11730 I Adreno-EGL: Remote Branch: 
+01-24 17:58:38.281 11714 11730 I Adreno-EGL: Local Patches: 
+01-24 17:58:38.281 11714 11730 I Adreno-EGL: Reconstruct Branch: 
+01-24 17:58:38.306 11714 11730 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:58:38.326 11714 11730 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 17:58:38.327 11714 11730 D OpenGLRenderer: Swap behavior 1
+01-24 17:58:38.329 11730 11730 W RenderThread: type=1400 audit(0.0:474): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 17:58:38.332 11714 11714 I Choreographer: Skipped 112 frames!  The application may be doing too much work on its main thread.
+01-24 17:58:38.340 11714 11730 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 17:58:38.363 11714 11730 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 17:58:38.368 11714 11730 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:58:38.415 11714 11730 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:58:38.537   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s593ms
+01-24 17:58:39.452   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:58:41.694  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:58:46.699  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 1 line
+01-24 17:58:51.704  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:58:52.947 11734 11734 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:58:54.169 11734 11734 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:58:54.194   434  2560 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:58:54.196   434  2560 I ActivityManager: Killing 11714:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:58:54.200   434  2560 W ActivityManager: Force removing ActivityRecord{81a4e5c u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t391}: app died, no saved state
+01-24 17:58:54.487   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11714
+01-24 17:58:54.497   434   454 W Looper  : Dispatch took 302ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:58:54.499   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:58:54.566   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:58:54.582 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:58:54.598   335   335 I keystore: clear_uid 10059
+01-24 17:58:54.627   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:58:54.946 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:58:54.947 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:58:54.947 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:58:54.949 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:58:54.993   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:58:55.003 11734 11734 I app_process: System.exit called, status: 0
+01-24 17:58:55.003 11734 11734 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:58:55.209 13109 11754 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:58:55.225 13109 11754 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:58:55.288   434   443 I zygote  : Background concurrent copying GC freed 23136(1693KB) AllocSpace objects, 22(532KB) LOS objects, 15% free, 11MB/13MB, paused 3.608ms total 754.276ms
+01-24 17:58:55.294 13109 11754 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:58:55.298 13109 11754 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:58:56.706  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:59:00.029 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 17:59:00.035 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 17:59:00.039 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 17:59:00.374   434  4786 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:59:00.389   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 87, previously 90
+01-24 17:59:00.389   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 59, previously 64
+01-24 17:59:00.472   434  2560 I ActivityManager: Start proc 11760:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:59:00.731 11760 11770 I zygote  : Background concurrent copying GC freed 475(396KB) AllocSpace objects, 0(0B) LOS objects, 35% free, 927KB/1439KB, paused 9.351ms total 153.456ms
+01-24 17:59:00.754   434  2560 W ActivityManager: Slow operation: 89ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:59:00.785   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:59:00.813 11760 11760 W ResourceType: ResTable_typeSpec entry count inconsistent: given 87, previously 90
+01-24 17:59:00.814 11760 11760 W ResourceType: ResTable_typeSpec entry count inconsistent: given 59, previously 64
+01-24 17:59:00.838 11760 11760 W ResourceType: ResTable_typeSpec entry count inconsistent: given 87, previously 90
+01-24 17:59:00.839 11760 11760 W ResourceType: ResTable_typeSpec entry count inconsistent: given 59, previously 64
+01-24 17:59:00.963 11760 11760 W ResourceType: For resource 0x7f100059, entry index(89) is beyond type entryCount(87)
+01-24 17:59:01.007 11760 11776 D OpenGLRenderer: HWUI GL Pipeline
+01-24 17:59:01.059 11760 11760 W ResourceType: For resource 0x7f100058, entry index(88) is beyond type entryCount(87)
+01-24 17:59:01.066 11760 11760 V BD: context() MAIN: /data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg
+01-24 17:59:01.068 11760 11760 E SQLiteLog: (14) cannot open file at line 35652 of [8201f4e1c5]
+01-24 17:59:01.069 11760 11760 E SQLiteLog: (14) os_unix.c:35652: (2) open(/data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg) - 
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: Failed to open database '/data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg'.
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (code 14): Could not open database
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnection.nativeOpen(Native Method)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:209)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:808)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:793)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:696)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:671)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at com.bestweatherfor.bibleoffline_pt_ra.a.b.d(DataBaseHelper.java:2)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at com.bestweatherfor.bibleoffline_pt_ra.a.b.b(DataBaseHelper.java:1)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at com.bestweatherfor.bibleoffline_pt_ra.MainActivity.a(MainActivity.java:11)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at com.bestweatherfor.bibleoffline_pt_ra.MainActivity$a.a(MainActivity.java:9)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.support.wearable.view.WatchViewStub.a(WatchViewStub.java:10)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.support.wearable.view.WatchViewStub.onApplyWindowInsets(WatchViewStub.java:7)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.view.View.dispatchApplyWindowInsets(View.java:9189)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.view.ViewGroup.dispatchApplyWindowInsets(ViewGroup.java:6907)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.view.ViewGroup.dispatchApplyWindowInsets(ViewGroup.java:6911)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.view.ViewGroup.dispatchApplyWindowInsets(ViewGroup.java:6911)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.view.ViewRootImpl.dispatchApplyInsets(ViewRootImpl.java:1562)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1802)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1386)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6733)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:911)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.view.Choreographer.doCallbacks(Choreographer.java:723)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.view.Choreographer.doFrame(Choreographer.java:658)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:897)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.os.Handler.handleCallback(Handler.java:789)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.os.Handler.dispatchMessage(Handler.java:98)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.os.Looper.loop(Looper.java:164)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at java.lang.reflect.Method.invoke(Native Method)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+01-24 17:59:01.073 11760 11760 E SQLiteDatabase: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+01-24 17:59:01.241 11760 11760 V Banco de Dados: teste(): /data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg
+01-24 17:59:01.253 11760 11760 V Banco de Dados: copy: /data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg
+01-24 17:59:01.718  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:59:02.622 11760 11760 W ResourceType: For resource 0x7f100059, entry index(89) is beyond type entryCount(87)
+01-24 17:59:02.627 11760 11760 E SQLiteLog: (1) no such table: bible
+01-24 17:59:02.891 11760 11776 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 17:59:02.891 11760 11776 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 17:59:02.891 11760 11776 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 17:59:02.891 11760 11776 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 17:59:02.891 11760 11776 I Adreno-EGL: Remote Branch: 
+01-24 17:59:02.891 11760 11776 I Adreno-EGL: Local Patches: 
+01-24 17:59:02.891 11760 11776 I Adreno-EGL: Reconstruct Branch: 
+01-24 17:59:02.903 11760 11776 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:59:02.925 11760 11776 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 17:59:02.926 11760 11776 D OpenGLRenderer: Swap behavior 1
+01-24 17:59:02.929 11776 11776 W RenderThread: type=1400 audit(0.0:475): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 17:59:02.931 11760 11760 I Choreographer: Skipped 112 frames!  The application may be doing too much work on its main thread.
+01-24 17:59:02.938 11760 11776 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 17:59:02.960 11760 11776 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 17:59:02.965 11760 11776 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:59:03.007 11760 11776 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:59:03.137   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s699ms
+01-24 17:59:03.922   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:59:06.719  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:59:11.726  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:59:11.959 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 352  /isUsbOrAc: 1
+01-24 17:59:11.962   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 17:59:11.979   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 17:59:11.979   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 17:59:12.016   434  2560 E BatteryStatsService: no controller energy info supplied
+01-24 17:59:12.098  7206  7217 I zygote  : Background concurrent copying GC freed 6096(405KB) AllocSpace objects, 0(0B) LOS objects, 31% free, 1138KB/1650KB, paused 15.427ms total 123.316ms
+01-24 17:59:16.732  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:59:17.515 11780 11780 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:59:18.731 11780 11780 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:59:12.019   434  2560 I chatty  : uid=1000(system) Binder:434_10 identical 1 line
+01-24 17:59:12.019   434  2560 E BatteryStatsService: no controller energy info supplied
+01-24 17:59:18.763   434  5328 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:59:18.765   434  5328 I ActivityManager: Killing 11760:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:59:18.779   434  5328 W ActivityManager: Force removing ActivityRecord{87a7b84 u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t392}: app died, no saved state
+01-24 17:59:19.016   434   454 W Looper  : Dispatch took 251ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:59:19.018   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11760
+01-24 17:59:19.025 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:59:19.040   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:59:19.082   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:59:19.089   335   335 I keystore: clear_uid 10059
+01-24 17:59:19.104   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:59:19.193 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:59:19.196 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:59:19.196 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:59:19.196 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:59:19.204 11780 11780 I app_process: System.exit called, status: 0
+01-24 17:59:19.204 11780 11780 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:59:19.276   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:59:19.348 13109 11795 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:59:19.353 13109 11795 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:59:19.428 13109 11795 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:59:19.446 13109 11795 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:59:19.729 13109 13122 I zygote  : Background concurrent copying GC freed 33858(2MB) AllocSpace objects, 0(0B) LOS objects, 21% free, 7MB/9MB, paused 1.370ms total 339.440ms
+01-24 17:59:21.738  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:59:24.617   434  2560 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:59:24.698   434  3945 I ActivityManager: Start proc 11806:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:59:24.868 11806 11816 I zygote  : Background concurrent copying GC freed 543(445KB) AllocSpace objects, 0(0B) LOS objects, 35% free, 927KB/1439KB, paused 1.997ms total 119.894ms
+01-24 17:59:24.885   434  3945 W ActivityManager: Slow operation: 81ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:59:24.907   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:59:24.932 11806 11806 W ResourceType: ResTable_typeSpec entry count inconsistent: given 87, previously 90
+01-24 17:59:24.933 11806 11806 W ResourceType: ResTable_typeSpec entry count inconsistent: given 59, previously 64
+01-24 17:59:24.959 11806 11806 W ResourceType: ResTable_typeSpec entry count inconsistent: given 87, previously 90
+01-24 17:59:24.959 11806 11806 W ResourceType: ResTable_typeSpec entry count inconsistent: given 59, previously 64
+01-24 17:59:25.053 11806 11806 W ResourceType: For resource 0x7f100059, entry index(89) is beyond type entryCount(87)
+01-24 17:59:25.098 11806 11822 D OpenGLRenderer: HWUI GL Pipeline
+01-24 17:59:25.148 11806 11806 W ResourceType: For resource 0x7f100058, entry index(88) is beyond type entryCount(87)
+01-24 17:59:25.155 11806 11806 V BD: context() MAIN: /data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg
+01-24 17:59:25.158 11806 11806 E SQLiteLog: (14) cannot open file at line 35652 of [8201f4e1c5]
+01-24 17:59:25.158 11806 11806 E SQLiteLog: (14) os_unix.c:35652: (2) open(/data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg) - 
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: Failed to open database '/data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg'.
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (code 14): Could not open database
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnection.nativeOpen(Native Method)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:209)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:808)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:793)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:696)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:671)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at com.bestweatherfor.bibleoffline_pt_ra.a.b.d(DataBaseHelper.java:2)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at com.bestweatherfor.bibleoffline_pt_ra.a.b.b(DataBaseHelper.java:1)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at com.bestweatherfor.bibleoffline_pt_ra.MainActivity.a(MainActivity.java:11)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at com.bestweatherfor.bibleoffline_pt_ra.MainActivity$a.a(MainActivity.java:9)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.support.wearable.view.WatchViewStub.a(WatchViewStub.java:10)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.support.wearable.view.WatchViewStub.onApplyWindowInsets(WatchViewStub.java:7)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.view.View.dispatchApplyWindowInsets(View.java:9189)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.view.ViewGroup.dispatchApplyWindowInsets(ViewGroup.java:6907)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.view.ViewGroup.dispatchApplyWindowInsets(ViewGroup.java:6911)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.view.ViewGroup.dispatchApplyWindowInsets(ViewGroup.java:6911)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.view.ViewRootImpl.dispatchApplyInsets(ViewRootImpl.java:1562)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1802)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1386)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6733)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:911)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.view.Choreographer.doCallbacks(Choreographer.java:723)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.view.Choreographer.doFrame(Choreographer.java:658)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:897)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.os.Handler.handleCallback(Handler.java:789)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.os.Handler.dispatchMessage(Handler.java:98)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.os.Looper.loop(Looper.java:164)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at java.lang.reflect.Method.invoke(Native Method)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+01-24 17:59:25.162 11806 11806 E SQLiteDatabase: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+01-24 17:59:25.318 11806 11806 V Banco de Dados: teste(): /data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg
+01-24 17:59:25.332 11806 11806 V Banco de Dados: copy: /data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg
+01-24 17:59:26.713 11806 11806 W ResourceType: For resource 0x7f100059, entry index(89) is beyond type entryCount(87)
+01-24 17:59:26.716 11806 11806 E SQLiteLog: (1) no such table: bible
+01-24 17:59:26.764  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:59:26.984 11806 11822 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 17:59:26.984 11806 11822 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 17:59:26.984 11806 11822 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 17:59:26.984 11806 11822 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 17:59:26.984 11806 11822 I Adreno-EGL: Remote Branch: 
+01-24 17:59:26.984 11806 11822 I Adreno-EGL: Local Patches: 
+01-24 17:59:26.984 11806 11822 I Adreno-EGL: Reconstruct Branch: 
+01-24 17:59:26.997 11806 11822 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:59:27.019 11822 11822 W RenderThread: type=1400 audit(0.0:476): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 17:59:27.022 11806 11822 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 17:59:27.022 11806 11822 D OpenGLRenderer: Swap behavior 1
+01-24 17:59:27.030 11806 11806 I Choreographer: Skipped 112 frames!  The application may be doing too much work on its main thread.
+01-24 17:59:27.034 11806 11822 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 17:59:27.055   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=161036561996795)
+01-24 17:59:27.057 11806 11822 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 17:59:27.062 11806 11822 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:59:27.091   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=161036596324451)
+01-24 17:59:27.117 11806 11822 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:59:27.237   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s566ms
+01-24 17:59:28.174   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:59:31.769  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:59:36.775  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:59:39.753 30846 30867 I Finsky  : [1245] jwq.run(3): Stats for Executor: BlockingExecutor jyi@923c909[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 289]
+01-24 17:59:39.754 30846 30867 I Finsky  : [1245] jwq.run(3): Stats for Executor: LightweightExecutor jyi@173870e[Running, pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 64]
+01-24 17:59:41.733 30846 30867 I Finsky  : [1245] jwq.run(3): Stats for Executor: bgExecutor jyi@5e72822[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 1071]
+01-24 17:59:41.780  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:59:41.824 11827 11827 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 17:59:43.007 11827 11827 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 17:59:43.034   434 13233 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 17:59:43.036   434 13233 I ActivityManager: Killing 11806:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 17:59:43.047   434 13233 W ActivityManager: Force removing ActivityRecord{d54ed5f u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t393}: app died, no saved state
+01-24 17:59:43.289   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11806
+01-24 17:59:43.332   434   454 W Looper  : Dispatch took 286ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 17:59:43.354 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 17:59:43.363   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:59:43.366   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 17:59:43.384   335   335 I keystore: clear_uid 10059
+01-24 17:59:43.441   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:59:43.518 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 17:59:43.522 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 17:59:43.522 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 17:59:43.522 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 17:59:43.539 11827 11827 I app_process: System.exit called, status: 0
+01-24 17:59:43.539 11827 11827 I AndroidRuntime: VM exiting with result code 0.
+01-24 17:59:43.605 13109 11843 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:59:43.608 13109 11843 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:59:43.624   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 17:59:43.693 13109 11843 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:59:43.698 13109 11843 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 17:59:46.786  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:59:48.988   434  2093 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.bestweatherfor.bibleoffline_pt_ra/.MainActivity} from uid 2000
+01-24 17:59:49.091   434  5328 I ActivityManager: Start proc 11857:com.bestweatherfor.bibleoffline_pt_ra/u0a59 for activity com.bestweatherfor.bibleoffline_pt_ra/.MainActivity
+01-24 17:59:49.341   434  2093 W ActivityManager: Slow operation: 132ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 17:59:49.366   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 17:59:49.395 11857 11857 W ResourceType: ResTable_typeSpec entry count inconsistent: given 87, previously 90
+01-24 17:59:49.396 11857 11857 W ResourceType: ResTable_typeSpec entry count inconsistent: given 59, previously 64
+01-24 17:59:49.403   434   454 W Looper  : Dispatch took 113ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=31
+01-24 17:59:49.417 11857 11857 W ResourceType: ResTable_typeSpec entry count inconsistent: given 87, previously 90
+01-24 17:59:49.417 11857 11857 W ResourceType: ResTable_typeSpec entry count inconsistent: given 59, previously 64
+01-24 17:59:49.478   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=161058988661473)
+01-24 17:59:49.513 11857 11857 W ResourceType: For resource 0x7f100059, entry index(89) is beyond type entryCount(87)
+01-24 17:59:49.571 11857 11873 D OpenGLRenderer: HWUI GL Pipeline
+01-24 17:59:49.628 11857 11857 W ResourceType: For resource 0x7f100058, entry index(88) is beyond type entryCount(87)
+01-24 17:59:49.651 11857 11857 V BD: context() MAIN: /data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg
+01-24 17:59:49.654 11857 11857 E SQLiteLog: (14) cannot open file at line 35652 of [8201f4e1c5]
+01-24 17:59:49.655 11857 11857 E SQLiteLog: (14) os_unix.c:35652: (2) open(/data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg) - 
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: Failed to open database '/data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg'.
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (code 14): Could not open database
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnection.nativeOpen(Native Method)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:209)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:808)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:793)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:696)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:671)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at com.bestweatherfor.bibleoffline_pt_ra.a.b.d(DataBaseHelper.java:2)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at com.bestweatherfor.bibleoffline_pt_ra.a.b.b(DataBaseHelper.java:1)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at com.bestweatherfor.bibleoffline_pt_ra.MainActivity.a(MainActivity.java:11)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at com.bestweatherfor.bibleoffline_pt_ra.MainActivity$a.a(MainActivity.java:9)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.support.wearable.view.WatchViewStub.a(WatchViewStub.java:10)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.support.wearable.view.WatchViewStub.onApplyWindowInsets(WatchViewStub.java:7)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.view.View.dispatchApplyWindowInsets(View.java:9189)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.view.ViewGroup.dispatchApplyWindowInsets(ViewGroup.java:6907)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.view.ViewGroup.dispatchApplyWindowInsets(ViewGroup.java:6911)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.view.ViewGroup.dispatchApplyWindowInsets(ViewGroup.java:6911)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.view.ViewRootImpl.dispatchApplyInsets(ViewRootImpl.java:1562)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1802)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1386)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6733)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:911)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.view.Choreographer.doCallbacks(Choreographer.java:723)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.view.Choreographer.doFrame(Choreographer.java:658)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:897)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.os.Handler.handleCallback(Handler.java:789)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.os.Handler.dispatchMessage(Handler.java:98)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.os.Looper.loop(Looper.java:164)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at java.lang.reflect.Method.invoke(Native Method)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+01-24 17:59:49.659 11857 11857 E SQLiteDatabase: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+01-24 17:59:49.787 11857 11857 V Banco de Dados: teste(): /data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg
+01-24 17:59:49.801 11857 11857 V Banco de Dados: copy: /data/user/0/com.bestweatherfor.bibleoffline_pt_ra/databases/bible_pt_ra.jpg
+01-24 17:59:49.992   434   443 I zygote  : Background concurrent copying GC freed 20136(1575KB) AllocSpace objects, 21(512KB) LOS objects, 15% free, 11MB/13MB, paused 4.921ms total 971.092ms
+01-24 17:59:51.168 11857 11857 W ResourceType: For resource 0x7f100059, entry index(89) is beyond type entryCount(87)
+01-24 17:59:51.174 11857 11857 E SQLiteLog: (1) no such table: bible
+01-24 17:59:51.451 11857 11873 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 17:59:51.451 11857 11873 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 17:59:51.451 11857 11873 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 17:59:51.451 11857 11873 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 17:59:51.451 11857 11873 I Adreno-EGL: Remote Branch: 
+01-24 17:59:51.451 11857 11873 I Adreno-EGL: Local Patches: 
+01-24 17:59:51.451 11857 11873 I Adreno-EGL: Reconstruct Branch: 
+01-24 17:59:51.464 11857 11873 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:59:51.486 11857 11873 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 17:59:51.487 11857 11873 D OpenGLRenderer: Swap behavior 1
+01-24 17:59:51.489 11873 11873 W RenderThread: type=1400 audit(0.0:477): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 17:59:51.490 11857 11857 I Choreographer: Skipped 112 frames!  The application may be doing too much work on its main thread.
+01-24 17:59:51.500 11857 11873 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 17:59:51.537 11857 11873 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 17:59:51.542 11857 11873 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:59:51.598 11857 11873 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 17:59:51.725   434   461 I ActivityManager: Displayed com.bestweatherfor.bibleoffline_pt_ra/.MainActivity: +2s690ms
+01-24 17:59:51.786  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 17:59:52.556   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 17:59:56.791  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:00:00.012 15691 15691 D WallpaperUtil: InternalCache: available=1541M
+01-24 18:00:00.027 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 18:00:00.034 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 18:00:01.798  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:00:06.141 11878 11878 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:00:06.804  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:00:07.319 11878 11878 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:00:07.357   434  7909 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=0: clear data
+01-24 18:00:07.359   434  7909 I ActivityManager: Killing 11857:com.bestweatherfor.bibleoffline_pt_ra/u0a59 (adj 0): stop com.bestweatherfor.bibleoffline_pt_ra
+01-24 18:00:07.363   434  7909 W ActivityManager: Force removing ActivityRecord{12456e6 u0 com.bestweatherfor.bibleoffline_pt_ra/.MainActivity t394}: app died, no saved state
+01-24 18:00:07.636   434   454 W Looper  : Dispatch took 278ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:00:07.665   434   453 I ActivityManager: Force stopping com.bestweatherfor.bibleoffline_pt_ra appid=10059 user=-1: clearApplicationUserData
+01-24 18:00:07.703   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:00:07.704   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 11857
+01-24 18:00:07.709 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:00:07.748   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:00:07.776   335   335 I keystore: clear_uid 10059
+01-24 18:00:07.857 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:00:07.857 31332 31332 D Avrcp   : packageName: com.bestweatherfor.bibleoffline_pt_ra removed: true
+01-24 18:00:07.857 31332 31332 V Avrcp   : isBrowseSupported for com.bestweatherfor.bibleoffline_pt_ra: false
+01-24 18:00:07.857 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.bestweatherfor.bibleoffline_pt_ra]
+01-24 18:00:07.880 11878 11878 I app_process: System.exit called, status: 0
+01-24 18:00:07.880 11878 11878 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:00:07.914   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:00:07.941 13109 11893 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 18:00:07.951 13109 11893 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 18:00:08.028 13109 11893 I Fitness : Clearing all cached OAuth tokens for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 18:00:08.031 13109 11893 I Fitness : Removing all subscriptions for: com.bestweatherfor.bibleoffline_pt_ra [CONTEXT service_id=17 ]
+01-24 18:00:11.809  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:00:11.941   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 18:00:11.944 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 350  /isUsbOrAc: 1
+01-24 18:00:11.948   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 18:00:11.949   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 18:00:11.963   434   660 E BatteryStatsService: no controller energy info supplied
+01-24 18:00:12.129   723   737 I zygote  : Background concurrent copying GC freed 7221(631KB) AllocSpace objects, 2(192KB) LOS objects, 24% free, 1953KB/2MB, paused 2.361ms total 112.103ms
+
+
