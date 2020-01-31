@@ -1,0 +1,1139 @@
+--------- beginning of system
+01-24 19:43:31.017   434  2560 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:43:31.100   434  7909 I ActivityManager: Start proc 14804:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:43:31.349   434  7909 W ActivityManager: Slow operation: 84ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:43:31.370   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+--------- beginning of main
+01-24 19:43:27.496  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:43:31.450 14804 14804 I chatty  : uid=10067(u0_a67) expire 1 line
+01-24 19:43:31.754 14804 14814 I chatty  : uid=10067(u0_a67) expire 1 line
+01-24 19:43:31.849 14804 14823 I chatty  : uid=10067(u0_a67) expire 9 lines
+01-24 19:43:31.929 14823 14823 I chatty  : uid=10067(u0_a67) online.makkahtv.salattime expire 1 line
+01-24 19:43:32.270   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s163ms
+01-24 19:43:32.502  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:43:34.650   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:43:37.507  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:43:38.069 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 19:43:42.514  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:43:47.516  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:43:48.237 14828 14828 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:43:49.460 14828 14828 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:43:49.495   434  2426 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:43:49.498   434  2426 I ActivityManager: Killing 14804:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:43:49.507   434  2426 W ActivityManager: Force removing ActivityRecord{4ac092c u0 online.makkahtv.salattime/.activity.MainChooseActivity t441}: app died, no saved state
+01-24 19:43:49.677   434  7909 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 14804 uid 10067
+01-24 19:43:49.748   434   454 W Looper  : Dispatch took 251ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:43:49.751   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 14804
+01-24 19:43:49.756   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:43:49.762   335   335 I keystore: clear_uid 10067
+01-24 19:43:49.776   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:43:49.819 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:43:49.839   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:43:49.923 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:43:49.924 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:43:49.924 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:43:49.925 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:43:49.940 14828 14828 I app_process: System.exit called, status: 0
+01-24 19:43:49.941 14828 14828 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:43:50.023   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:43:50.026 13109 14839 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:43:50.029 13109 14839 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:43:50.090 13109 14839 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:43:50.093 13109 14839 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:43:50.452 13109 13122 I zygote  : Background concurrent copying GC freed 32116(2MB) AllocSpace objects, 0(0B) LOS objects, 20% free, 7MB/9MB, paused 3.547ms total 296.517ms
+01-24 19:43:52.522  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:43:55.452   434 13233 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:43:55.539   434   610 I ActivityManager: Start proc 14856:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:43:55.684   434 13233 W ActivityManager: Slow operation: 83ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:43:55.688   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:43:55.779 14856 14856 I chatty  : uid=10067(u0_a67) expire 1 line
+01-24 19:43:56.180 14856 14872 I chatty  : uid=10067(u0_a67) expire 9 lines
+01-24 19:43:56.269 14872 14872 I chatty  : uid=10067(u0_a67) online.makkahtv.salattime expire 1 line
+01-24 19:43:56.271   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=167305774784559)
+01-24 19:43:56.613   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s98ms
+01-24 19:43:57.529  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:43:59.093   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:44:00.014 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 19:44:00.031 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 19:44:00.040 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 19:44:02.536  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:44:07.543  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:44:11.952   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 19:44:11.964 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 362  /isUsbOrAc: 1
+01-24 19:44:11.979   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 19:44:11.980   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 19:44:12.018   434 13083 E BatteryStatsService: no controller energy info supplied
+01-24 19:44:12.021   434 13083 I chatty  : uid=1000(system) Binder:434_1F identical 1 line
+01-24 19:44:12.021   434 13083 E BatteryStatsService: no controller energy info supplied
+01-24 19:44:12.549  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:44:12.681   434   443 I zygote  : Background concurrent copying GC freed 23011(1540KB) AllocSpace objects, 18(544KB) LOS objects, 15% free, 10MB/12MB, paused 21.618ms total 613.904ms
+01-24 19:44:12.866 14878 14878 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:44:14.167 14878 14878 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:44:14.198   434 13083 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:44:14.202   434 13083 I ActivityManager: Killing 14856:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:44:14.209   434 13083 W ActivityManager: Force removing ActivityRecord{2867f43 u0 online.makkahtv.salattime/.activity.MainChooseActivity t442}: app died, no saved state
+01-24 19:44:14.415   434  2426 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 14856 uid 10067
+01-24 19:44:14.511   434   454 W Looper  : Dispatch took 310ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:44:14.539   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:44:14.574   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:44:14.581   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 14856
+01-24 19:44:14.603 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:44:14.607   335   335 I keystore: clear_uid 10067
+01-24 19:44:14.608   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:44:14.731 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:44:14.732 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:44:14.732 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:44:14.744 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:44:14.748 14878 14878 I app_process: System.exit called, status: 0
+01-24 19:44:14.748 14878 14878 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:44:14.827 13109 14889 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:44:14.828   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:44:14.830 13109 14889 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:44:14.912 13109 14889 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:44:14.915 13109 14889 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:44:15.055   712   726 I zygote  : Background concurrent copying GC freed 9941(424KB) AllocSpace objects, 0(0B) LOS objects, 29% free, 1228KB/1740KB, paused 36.324ms total 265.049ms
+01-24 19:44:17.552  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:44:20.133   434 13083 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:44:20.219   434   610 I ActivityManager: Start proc 14904:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:44:20.411   434   610 W ActivityManager: Slow operation: 95ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:44:20.436   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:44:20.490 14904 14904 I chatty  : uid=10067(u0_a67) expire 1 line
+01-24 19:44:20.878 14904 14914 I chatty  : uid=10067(u0_a67) expire 1 line
+01-24 19:44:20.925 14904 14920 I chatty  : uid=10067(u0_a67) expire 9 lines
+01-24 19:44:20.999 14920 14920 I chatty  : uid=10067(u0_a67) online.makkahtv.salattime expire 1 line
+01-24 19:44:21.341   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s126ms
+01-24 19:44:22.560  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:44:23.711   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:44:27.567  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 3 lines
+01-24 19:44:32.571  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:44:37.477 14926 14926 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:44:37.577  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:44:38.666 14926 14926 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:44:38.696   434 13081 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:44:38.697   434 13081 I ActivityManager: Killing 14904:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:44:38.702   434 13081 W ActivityManager: Force removing ActivityRecord{10a6681 u0 online.makkahtv.salattime/.activity.MainChooseActivity t443}: app died, no saved state
+01-24 19:44:38.840   434 13083 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 14904 uid 10067
+01-24 19:44:38.931   434   454 W Looper  : Dispatch took 234ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:44:38.962   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:44:38.985   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:44:39.007   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 14904
+01-24 19:44:39.013 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:44:39.014   335   335 I keystore: clear_uid 10067
+01-24 19:44:39.049   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:44:39.145 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:44:39.148 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:44:39.149 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:44:39.149 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:44:39.227 14926 14926 I app_process: System.exit called, status: 0
+01-24 19:44:39.228 14926 14926 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:44:39.237   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:44:39.243 13109 14938 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:44:39.255 13109 14938 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:44:39.355 13109 14938 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:44:39.358 13109 14938 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:44:42.577  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:44:44.602   434 13083 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:44:44.680   434 13081 I ActivityManager: Start proc 14952:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:44:44.854   434 13081 W ActivityManager: Slow operation: 75ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:44:44.861   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:44:44.977 14952 14952 I chatty  : uid=10067(u0_a67) expire 1 line
+01-24 19:44:45.297 14952 14967 I chatty  : uid=10067(u0_a67) expire 1 line
+01-24 19:44:45.363 14952 14973 I chatty  : uid=10067(u0_a67) expire 9 lines
+01-24 19:44:45.439 14973 14973 I chatty  : uid=10067(u0_a67) online.makkahtv.salattime expire 1 line
+01-24 19:44:45.761   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s87ms
+01-24 19:44:47.584  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:44:48.164   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:44:57.598  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:45:00.016 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 19:45:00.034 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 19:45:00.052 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 19:45:01.893 14978 14978 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:45:02.604  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:45:03.266 14978 14978 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:45:03.292   434  2021 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:45:03.296   434  2021 I ActivityManager: Killing 14952:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:45:03.303   434  2021 W ActivityManager: Force removing ActivityRecord{6f2030e u0 online.makkahtv.salattime/.activity.MainChooseActivity t444}: app died, no saved state
+01-24 19:45:03.367   323   370 E SurfaceFlinger: Failed to find layer (online.makkahtv.salattime/online.makkahtv.salattime.activity.MainChooseActivity#0) in layer parent (no-parent).
+01-24 19:45:03.557   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:45:03.582   335   335 I keystore: clear_uid 10067
+01-24 19:45:03.592   434   454 W Looper  : Dispatch took 298ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:45:03.596   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 14952
+01-24 19:45:03.627   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:45:03.633 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:45:03.653   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:45:03.784 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:45:03.785 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:45:03.785 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:45:03.785 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:45:03.833 14978 14978 I app_process: System.exit called, status: 0
+01-24 19:45:03.834 14978 14978 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:45:03.890   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:45:03.894 13109 14990 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:45:03.900 13109 14990 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:45:03.974 13109 14990 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:45:03.978 13109 14990 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:45:07.606  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:45:09.300   434 13081 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:45:09.393   434  2426 I ActivityManager: Start proc 15004:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:45:09.643   434  2021 W ActivityManager: Slow operation: 104ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:45:09.680   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:45:09.716 15004 15004 I chatty  : uid=10067(u0_a67) expire 1 line
+01-24 19:45:10.163 15004 15014 I chatty  : uid=10067(u0_a67) expire 1 line
+01-24 19:45:10.163 15004 15020 I chatty  : uid=10067(u0_a67) expire 9 lines
+01-24 19:45:10.239 15020 15020 I chatty  : uid=10067(u0_a67) online.makkahtv.salattime expire 1 line
+01-24 19:45:10.462   434   443 I zygote  : Background concurrent copying GC freed 21357(1571KB) AllocSpace objects, 19(380KB) LOS objects, 15% free, 11MB/13MB, paused 3.516ms total 1.116s
+01-24 19:45:10.613   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s253ms
+01-24 19:45:11.990   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 19:45:12.007 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 358  /isUsbOrAc: 1
+01-24 19:45:12.021   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 19:45:12.021   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 19:45:12.086   434 13081 E BatteryStatsService: no controller energy info supplied
+01-24 19:45:12.099   434 13081 I chatty  : uid=1000(system) Binder:434_1E identical 1 line
+01-24 19:45:12.099   434 13081 E BatteryStatsService: no controller energy info supplied
+01-24 19:45:12.324   723   737 I zygote  : Background concurrent copying GC freed 7035(608KB) AllocSpace objects, 2(192KB) LOS objects, 25% free, 1996KB/2MB, paused 1.698ms total 107.210ms
+01-24 19:45:12.607  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:45:12.877   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:45:16.307 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 19:45:17.614  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:45:22.620  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:45:26.528 15026 15026 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:45:27.626  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:45:27.752 15026 15026 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:45:27.786   434  4786 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:45:27.787   434  4786 I ActivityManager: Killing 15004:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:45:27.792   434  4786 W ActivityManager: Force removing ActivityRecord{7f39464 u0 online.makkahtv.salattime/.activity.MainChooseActivity t445}: app died, no saved state
+01-24 19:45:27.968   434 13081 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 15004 uid 10067
+01-24 19:45:28.061   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:45:28.069   434   454 W Looper  : Dispatch took 282ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:45:28.094   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:45:28.094   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15004
+01-24 19:45:28.108   335   335 I keystore: clear_uid 10067
+01-24 19:45:28.112 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:45:28.130   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:45:28.222 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:45:28.226 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:45:28.226 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:45:28.226 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:45:28.262 15026 15026 I app_process: System.exit called, status: 0
+01-24 19:45:28.262 15026 15026 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:45:28.307   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:45:28.308 13109 15037 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:45:28.318 13109 15037 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:45:28.394 13109 15037 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:45:28.410 13109 15037 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:45:31.700   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 19:45:31.700   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 19:45:31.720   434   456 E BatteryStatsService: no controller energy info supplied
+01-24 19:45:31.721   434   456 I chatty  : uid=1000(system) batterystats-sy identical 1 line
+01-24 19:45:31.721   434   456 E BatteryStatsService: no controller energy info supplied
+01-24 19:45:32.632  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:45:33.661   434  5002 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:45:33.746   434  4786 I ActivityManager: Start proc 15052:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:45:33.921   434  5002 W ActivityManager: Slow operation: 96ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:45:33.954   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:45:33.995 15052 15052 I chatty  : uid=10067(u0_a67) expire 1 line
+01-24 19:45:34.178 15052 15062 I chatty  : uid=10067(u0_a67) expire 1 line
+01-24 19:45:34.401 15052 15068 I chatty  : uid=10067(u0_a67) expire 9 lines
+01-24 19:45:34.479 15068 15068 I chatty  : uid=10067(u0_a67) online.makkahtv.salattime expire 1 line
+01-24 19:45:34.823   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s78ms
+01-24 19:45:37.242   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:45:37.638  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:45:47.646  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:45:50.811 15074 15074 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:45:52.004 15074 15074 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:45:52.035   434   610 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:45:52.037   434   610 I ActivityManager: Killing 15052:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:45:52.061   434   610 W ActivityManager: Force removing ActivityRecord{626c3d5 u0 online.makkahtv.salattime/.activity.MainChooseActivity t446}: app died, no saved state
+01-24 19:45:52.340   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:45:52.360   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15052
+01-24 19:45:52.364   434   454 W Looper  : Dispatch took 328ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:45:52.394   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:45:52.409 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:45:52.439   335   335 I keystore: clear_uid 10067
+01-24 19:45:52.446   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:45:52.562 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:45:52.562 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:45:52.562 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:45:52.563 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:45:52.575 15074 15074 I app_process: System.exit called, status: 0
+01-24 19:45:52.575 15074 15074 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:45:52.639 13109 15085 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:45:52.643   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:45:52.653  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:45:52.683 13109 15085 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:45:52.747 13109 15085 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:45:52.752 13109 15085 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:45:53.084 13109 13122 I zygote  : Background concurrent copying GC freed 33070(2MB) AllocSpace objects, 0(0B) LOS objects, 21% free, 7MB/9MB, paused 1.207ms total 316.304ms
+01-24 19:45:57.656  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:45:58.044   434   610 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:45:58.147   434  7888 I ActivityManager: Start proc 15100:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:45:58.212   434   462 W ProcessCpuTracker: Skipping unknown process pid 15096
+01-24 19:45:58.213   434   462 W ProcessCpuTracker: Skipping unknown process pid 15098
+01-24 19:45:58.360   434  7888 W ActivityManager: Slow operation: 92ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:45:58.372   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:45:58.494 15100 15100 I chatty  : uid=10067(u0_a67) expire 1 line
+01-24 19:45:58.746 15691 15701 I zygote  : Background concurrent copying GC freed 4270(401KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1258KB/1770KB, paused 28.584ms total 148.648ms
+01-24 19:45:58.867 15100 15110 I chatty  : uid=10067(u0_a67) expire 1 line
+01-24 19:45:58.927 15100 15116 D OpenGLRenderer: HWUI GL Pipeline
+01-24 19:45:58.983 15100 15116 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 19:45:58.983 15100 15116 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 19:45:58.983 15100 15116 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 19:45:58.983 15100 15116 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 19:45:58.983 15100 15116 I Adreno-EGL: Remote Branch: 
+01-24 19:45:58.983 15100 15116 I Adreno-EGL: Local Patches: 
+01-24 19:45:58.983 15100 15116 I Adreno-EGL: Reconstruct Branch: 
+01-24 19:45:58.989 15100 15116 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:45:58.999 15116 15116 W RenderThread: type=1400 audit(0.0:530): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 19:45:59.002 15100 15116 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 19:45:59.003 15100 15116 D OpenGLRenderer: Swap behavior 1
+01-24 19:45:59.010 15100 15116 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 19:45:59.021 15100 15116 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 19:45:59.023 15100 15116 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:45:59.102 15100 15116 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:45:59.255   434   443 I zygote  : Background concurrent copying GC freed 18551(1355KB) AllocSpace objects, 22(584KB) LOS objects, 15% free, 11MB/13MB, paused 4.204ms total 752.602ms
+01-24 19:45:59.331   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s202ms
+01-24 19:46:00.018 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 19:46:00.032 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 19:46:00.039 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 19:46:01.618   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:46:02.662  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:46:07.668  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:46:11.957   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 19:46:11.959 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 356  /isUsbOrAc: 1
+01-24 19:46:11.988   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 19:46:11.989   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 19:46:12.021   434  5002 E BatteryStatsService: no controller energy info supplied
+01-24 19:46:12.023   434  5002 I chatty  : uid=1000(system) Binder:434_17 identical 1 line
+01-24 19:46:12.023   434  5002 E BatteryStatsService: no controller energy info supplied
+01-24 19:46:12.674  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:46:15.330 15122 15122 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:46:16.585 15122 15122 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:46:16.613   434   610 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:46:16.614   434   610 I ActivityManager: Killing 15100:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:46:16.619   434   610 W ActivityManager: Force removing ActivityRecord{df7f752 u0 online.makkahtv.salattime/.activity.MainChooseActivity t447}: app died, no saved state
+01-24 19:46:16.820   434  7888 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 15100 uid 10067
+01-24 19:46:16.902   434   454 W Looper  : Dispatch took 288ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:46:16.904   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:46:16.907   335   335 I keystore: clear_uid 10067
+01-24 19:46:16.912   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:46:16.917   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15100
+01-24 19:46:16.921 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:46:16.981   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:46:17.093 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:46:17.096 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:46:17.096 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:46:17.096 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:46:17.122 15122 15122 I app_process: System.exit called, status: 0
+01-24 19:46:17.122 15122 15122 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:46:17.181 13109 15134 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:46:17.185 13109 15134 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:46:17.192   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:46:17.313 13109 15134 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:46:17.320 13109 15134 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:46:17.676  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:46:22.512   434  5002 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:46:22.593   434  2426 I ActivityManager: Start proc 15148:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:46:22.676   434   462 W ProcessCpuTracker: Skipping unknown process pid 15144
+01-24 19:46:22.678   434   462 W ProcessCpuTracker: Skipping unknown process pid 15146
+01-24 19:46:22.682  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:46:22.826 15148 15158 I zygote  : Background concurrent copying GC freed 521(406KB) AllocSpace objects, 0(0B) LOS objects, 35% free, 934KB/1446KB, paused 20.512ms total 90.276ms
+01-24 19:46:22.872   434  2426 W ActivityManager: Slow operation: 101ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:46:22.938   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:46:22.952 15148 15148 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 19:46:23.305 15148 15158 I zygote  : NativeAllocBackground concurrent copying GC freed 757(148KB) AllocSpace objects, 0(0B) LOS objects, 31% free, 1094KB/1606KB, paused 8.054ms total 104.595ms
+01-24 19:46:23.361 15148 15164 D OpenGLRenderer: HWUI GL Pipeline
+01-24 19:46:23.418 15148 15164 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 19:46:23.418 15148 15164 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 19:46:23.418 15148 15164 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 19:46:23.418 15148 15164 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 19:46:23.418 15148 15164 I Adreno-EGL: Remote Branch: 
+01-24 19:46:23.418 15148 15164 I Adreno-EGL: Local Patches: 
+01-24 19:46:23.418 15148 15164 I Adreno-EGL: Reconstruct Branch: 
+01-24 19:46:23.424 15148 15164 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:46:23.438 15148 15164 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 19:46:23.438 15148 15164 D OpenGLRenderer: Swap behavior 1
+01-24 19:46:23.439 15164 15164 W RenderThread: type=1400 audit(0.0:531): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 19:46:23.446 15148 15164 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 19:46:23.458 15148 15164 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 19:46:23.460 15148 15164 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:46:23.529 15148 15164 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:46:23.745   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s178ms
+01-24 19:46:26.099   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:46:27.686  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:46:29.081 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 19:46:32.692  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:46:37.696  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:46:39.817 15170 15170 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:46:41.097 15170 15170 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:46:41.125   434 13081 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:46:41.127   434 13081 I ActivityManager: Killing 15148:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:46:41.133   434 13081 W ActivityManager: Force removing ActivityRecord{76fa7c8 u0 online.makkahtv.salattime/.activity.MainChooseActivity t448}: app died, no saved state
+01-24 19:46:41.400   434   454 W Looper  : Dispatch took 267ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:46:41.406   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15148
+01-24 19:46:41.407   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:46:41.427   335   335 I keystore: clear_uid 10067
+01-24 19:46:41.441   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:46:41.485 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:46:41.487   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:46:41.541   434   462 W ProcessCpuTracker: Skipping unknown process pid 15148
+01-24 19:46:41.569 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:46:41.573 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:46:41.573 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:46:41.573 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:46:41.609 15170 15170 I app_process: System.exit called, status: 0
+01-24 19:46:41.609 15170 15170 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:46:41.681 13109 15182 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:46:41.683   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:46:41.692 13109 15182 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:46:41.777 13109 15182 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:46:41.789 13109 15182 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:46:42.701  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:46:46.984   434 13081 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:46:47.078   434  2426 I ActivityManager: Start proc 15196:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:46:47.189   434   462 W ProcessCpuTracker: Skipping unknown process pid 15192
+01-24 19:46:47.190   434   462 W ProcessCpuTracker: Skipping unknown process pid 15194
+01-24 19:46:47.241   283 15200 I zygote  : Background concurrent copying GC freed 611(416KB) AllocSpace objects, 0(0B) LOS objects, 36% free, 876KB/1388KB, paused 788us total 122.321ms
+01-24 19:46:47.267 15196 15206 I zygote  : Background concurrent copying GC freed 554(445KB) AllocSpace objects, 0(0B) LOS objects, 35% free, 928KB/1440KB, paused 6.035ms total 75.644ms
+01-24 19:46:47.352   434  2426 W ActivityManager: Slow operation: 93ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:46:47.363   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:46:47.428 15196 15196 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 19:46:47.707  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:46:47.837 15196 15212 D OpenGLRenderer: HWUI GL Pipeline
+01-24 19:46:47.897 15196 15212 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 19:46:47.897 15196 15212 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 19:46:47.897 15196 15212 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 19:46:47.897 15196 15212 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 19:46:47.897 15196 15212 I Adreno-EGL: Remote Branch: 
+01-24 19:46:47.897 15196 15212 I Adreno-EGL: Local Patches: 
+01-24 19:46:47.897 15196 15212 I Adreno-EGL: Reconstruct Branch: 
+01-24 19:46:47.905 15196 15212 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:46:47.919 15212 15212 W RenderThread: type=1400 audit(0.0:532): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 19:46:47.921 15196 15212 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 19:46:47.921 15196 15212 D OpenGLRenderer: Swap behavior 1
+01-24 19:46:47.929 15196 15212 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 19:46:47.940 15196 15212 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 19:46:47.942 15196 15212 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:46:48.009 15196 15212 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:46:48.239   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s188ms
+01-24 19:46:50.566   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:46:52.713  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:46:53.657 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 19:46:57.719  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:47:00.015 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 19:47:00.038 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 19:47:00.045 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 19:47:02.724  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:47:04.269 15218 15218 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:47:05.465 15218 15218 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:47:05.491   434  2021 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:47:05.492   434  2021 I ActivityManager: Killing 15196:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:47:05.499   434  2021 W ActivityManager: Force removing ActivityRecord{8fee2e9 u0 online.makkahtv.salattime/.activity.MainChooseActivity t449}: app died, no saved state
+01-24 19:47:05.680   434 13081 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 15196 uid 10067
+01-24 19:47:05.823   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15196
+01-24 19:47:05.824   434   454 W Looper  : Dispatch took 330ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:47:05.837   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:47:05.875   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:47:05.907   335   335 I keystore: clear_uid 10067
+01-24 19:47:05.907   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:47:05.920 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:47:06.048 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:47:06.051 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:47:06.051 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:47:06.051 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:47:06.071 15218 15218 I app_process: System.exit called, status: 0
+01-24 19:47:06.071 15218 15218 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:47:06.152 13109 15229 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:47:06.159 13109 15229 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:47:06.178   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:47:06.281 13109 15229 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:47:06.284 13109 15229 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:47:06.697   434   443 I zygote  : Background concurrent copying GC freed 23260(1623KB) AllocSpace objects, 20(492KB) LOS objects, 15% free, 11MB/13MB, paused 4.469ms total 810.349ms
+01-24 19:47:07.724  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:47:11.459   434  2021 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:47:11.618   434  7909 I ActivityManager: Start proc 15244:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:47:11.632   434   462 W ProcessCpuTracker: Skipping unknown process pid 15240
+01-24 19:47:11.633   434   462 W ProcessCpuTracker: Skipping unknown process pid 15242
+01-24 19:47:11.805   434  7909 W ActivityManager: Slow operation: 92ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:47:11.814   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:47:11.921 15244 15244 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 19:47:12.009   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 19:47:12.030 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 354  /isUsbOrAc: 1
+01-24 19:47:12.046   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 19:47:12.046   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 19:47:12.121   434  6034 E BatteryStatsService: no controller energy info supplied
+01-24 19:47:12.137   434  6034 I chatty  : uid=1000(system) Binder:434_1B identical 1 line
+01-24 19:47:12.137   434  6034 E BatteryStatsService: no controller energy info supplied
+01-24 19:47:12.348 15244 15260 D OpenGLRenderer: HWUI GL Pipeline
+01-24 19:47:12.407 15244 15260 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 19:47:12.407 15244 15260 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 19:47:12.407 15244 15260 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 19:47:12.407 15244 15260 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 19:47:12.407 15244 15260 I Adreno-EGL: Remote Branch: 
+01-24 19:47:12.407 15244 15260 I Adreno-EGL: Local Patches: 
+01-24 19:47:12.407 15244 15260 I Adreno-EGL: Reconstruct Branch: 
+01-24 19:47:12.413 15244 15260 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:47:12.429 15260 15260 W RenderThread: type=1400 audit(0.0:533): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 19:47:12.430 15244 15260 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 19:47:12.430 15244 15260 D OpenGLRenderer: Swap behavior 1
+01-24 19:47:12.438 15244 15260 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 19:47:12.464 15244 15260 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 19:47:12.468 15244 15260 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:47:12.524 15244 15260 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:47:12.565   723   737 I zygote  : Background concurrent copying GC freed 7464(633KB) AllocSpace objects, 2(192KB) LOS objects, 25% free, 1970KB/2MB, paused 18.097ms total 299.447ms
+01-24 19:47:12.726  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:47:12.740   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s197ms
+01-24 19:47:15.096   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:47:17.732  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:47:22.739  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 1 line
+01-24 19:47:27.745  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:47:28.725 15266 15266 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:47:29.991 15266 15266 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:47:30.026   434  2426 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:47:30.028   434  2426 I ActivityManager: Killing 15244:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:47:30.037   434  2426 W ActivityManager: Force removing ActivityRecord{4deb2d7 u0 online.makkahtv.salattime/.activity.MainChooseActivity t450}: app died, no saved state
+01-24 19:47:30.330   434   454 W Looper  : Dispatch took 303ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:47:30.334   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:47:30.342   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15244
+01-24 19:47:30.361 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:47:30.368   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:47:30.376   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:47:30.384   335   335 I keystore: clear_uid 10067
+01-24 19:47:30.544 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:47:30.552 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:47:30.552 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:47:30.552 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:47:30.590 15266 15266 I app_process: System.exit called, status: 0
+01-24 19:47:30.590 15266 15266 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:47:30.639 13109 15282 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:47:30.649 13109 15282 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:47:30.671   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:47:30.723 13109 15282 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:47:30.728 13109 15282 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:47:32.746  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:47:36.027   434  6034 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:47:36.108   434  2560 I ActivityManager: Start proc 15291:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:47:36.216   434   462 W ProcessCpuTracker: Skipping unknown process pid 15287
+01-24 19:47:36.219   434   462 W ProcessCpuTracker: Skipping unknown process pid 15289
+01-24 19:47:36.354   434  2560 W ActivityManager: Slow operation: 82ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:47:36.388   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:47:36.438 15291 15291 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 19:47:36.577   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=167526079000048)
+01-24 19:47:36.790 15291 15301 I zygote  : NativeAllocBackground concurrent copying GC freed 874(255KB) AllocSpace objects, 0(0B) LOS objects, 31% free, 1137KB/1649KB, paused 876us total 113.555ms
+01-24 19:47:36.843 15291 15307 D OpenGLRenderer: HWUI GL Pipeline
+01-24 19:47:36.904 15291 15307 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 19:47:36.904 15291 15307 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 19:47:36.904 15291 15307 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 19:47:36.904 15291 15307 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 19:47:36.904 15291 15307 I Adreno-EGL: Remote Branch: 
+01-24 19:47:36.904 15291 15307 I Adreno-EGL: Local Patches: 
+01-24 19:47:36.904 15291 15307 I Adreno-EGL: Reconstruct Branch: 
+01-24 19:47:36.910 15291 15307 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:47:36.929 15307 15307 W RenderThread: type=1400 audit(0.0:534): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 19:47:36.934 15291 15307 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 19:47:36.935 15291 15307 D OpenGLRenderer: Swap behavior 1
+01-24 19:47:36.942 15291 15307 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 19:47:36.952 15291 15307 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 19:47:36.955 15291 15307 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:47:37.017 15291 15307 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:47:37.239   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s151ms
+01-24 19:47:37.748  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:47:39.682   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:47:47.759  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 2 lines
+01-24 19:47:52.765  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:47:53.250 15314 15314 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:47:54.441 15314 15314 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:47:54.469   434   874 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:47:54.471   434   874 I ActivityManager: Killing 15291:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:47:54.480   434   874 W ActivityManager: Force removing ActivityRecord{45d87ec u0 online.makkahtv.salattime/.activity.MainChooseActivity t451}: app died, no saved state
+01-24 19:47:54.623   434   660 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 15291 uid 10067
+01-24 19:47:54.738   434   454 W Looper  : Dispatch took 268ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:47:54.745   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15291
+01-24 19:47:54.761 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:47:54.763   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:47:54.772   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:47:54.798   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:47:54.822   434   462 W ProcessCpuTracker: Skipping unknown process pid 15291
+01-24 19:47:54.837   335   335 I keystore: clear_uid 10067
+01-24 19:47:54.948 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:47:54.948 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:47:54.948 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:47:54.953 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:47:54.986 15314 15314 I app_process: System.exit called, status: 0
+01-24 19:47:54.986 15314 15314 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:47:55.051 13109 15326 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:47:55.064 13109 15326 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:47:55.091   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:47:55.159 13109 15326 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:47:55.177 13109 15326 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:47:55.278   712   726 I zygote  : Background concurrent copying GC freed 10160(402KB) AllocSpace objects, 0(0B) LOS objects, 29% free, 1242KB/1754KB, paused 1.052ms total 258.765ms
+01-24 19:47:55.483 13109 13122 I zygote  : Background concurrent copying GC freed 28887(1942KB) AllocSpace objects, 0(0B) LOS objects, 20% free, 7MB/9MB, paused 925us total 323.032ms
+01-24 19:47:57.767  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:48:00.007 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 19:48:00.042 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 19:48:00.049 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 19:48:00.365   434  2426 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:48:00.417   434   660 I zygote  : IncrementDisableThreadFlip blocked for 16.635ms
+01-24 19:48:00.517   434   660 I ActivityManager: Start proc 15341:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:48:00.758   434   660 W ActivityManager: Slow operation: 111ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:48:00.768   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:48:00.862 15341 15341 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 19:48:01.290 15341 15357 D OpenGLRenderer: HWUI GL Pipeline
+01-24 19:48:01.334 15341 15351 I zygote  : Background concurrent copying GC freed 944(290KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1263KB/1775KB, paused 19.698ms total 366.895ms
+01-24 19:48:01.350 15341 15357 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 19:48:01.350 15341 15357 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 19:48:01.350 15341 15357 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 19:48:01.350 15341 15357 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 19:48:01.350 15341 15357 I Adreno-EGL: Remote Branch: 
+01-24 19:48:01.350 15341 15357 I Adreno-EGL: Local Patches: 
+01-24 19:48:01.350 15341 15357 I Adreno-EGL: Reconstruct Branch: 
+01-24 19:48:01.356 15341 15357 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:48:01.369 15357 15357 W RenderThread: type=1400 audit(0.0:535): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 19:48:01.370 15341 15357 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 19:48:01.370 15341 15357 D OpenGLRenderer: Swap behavior 1
+01-24 19:48:01.376 15341 15357 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 19:48:01.388 15341 15357 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 19:48:01.390 15341 15357 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:48:01.470 15341 15357 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:48:01.518 15341 15351 I zygote  : NativeAllocBackground concurrent copying GC freed 1017(198KB) AllocSpace objects, 0(0B) LOS objects, 30% free, 1148KB/1660KB, paused 2.738ms total 114.104ms
+01-24 19:48:01.713   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s226ms
+01-24 19:48:01.763   434   443 I zygote  : Background concurrent copying GC freed 21353(1624KB) AllocSpace objects, 23(552KB) LOS objects, 15% free, 11MB/13MB, paused 17.030ms total 1.361s
+01-24 19:48:02.774  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:48:03.984   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:48:07.780  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:48:11.960   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 19:48:11.970 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 353  /isUsbOrAc: 1
+01-24 19:48:11.998   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 19:48:11.998   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 19:48:12.028   434 13081 E BatteryStatsService: no controller energy info supplied
+01-24 19:48:12.788  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:48:17.515 15364 15364 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:48:17.793  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:48:18.804 15364 15364 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:48:12.032   434 13081 I chatty  : uid=1000(system) Binder:434_1E identical 1 line
+01-24 19:48:12.032   434 13081 E BatteryStatsService: no controller energy info supplied
+01-24 19:48:18.830   434  2093 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:48:18.832   434  2093 I ActivityManager: Killing 15341:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:48:18.839   434  2093 W ActivityManager: Force removing ActivityRecord{b0cc1b2 u0 online.makkahtv.salattime/.activity.MainChooseActivity t452}: app died, no saved state
+01-24 19:48:19.018   434   660 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 15341 uid 10067
+01-24 19:48:19.101   434   454 W Looper  : Dispatch took 270ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:48:19.157   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:48:19.160   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15341
+01-24 19:48:19.189 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:48:19.193   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:48:19.202   335   335 I keystore: clear_uid 10067
+01-24 19:48:19.229   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:48:19.299 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:48:19.302 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:48:19.302 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:48:19.302 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:48:19.335 15364 15364 I app_process: System.exit called, status: 0
+01-24 19:48:19.335 15364 15364 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:48:19.394 13109 15376 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:48:19.401 13109 15376 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:48:19.440   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:48:19.489 13109 15376 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:48:19.519 13109 15376 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:48:22.798  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:48:24.762   434  7909 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:48:24.861   434   660 I ActivityManager: Start proc 15390:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:48:25.107   434   660 W ActivityManager: Slow operation: 88ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:48:25.117   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:48:25.178 15390 15390 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 19:48:25.332 15390 15400 I zygote  : Background concurrent copying GC freed 1013(353KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 1013KB/1525KB, paused 12.103ms total 43.458ms
+01-24 19:48:25.598 15390 15406 D OpenGLRenderer: HWUI GL Pipeline
+01-24 19:48:25.653 15390 15406 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 19:48:25.653 15390 15406 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 19:48:25.653 15390 15406 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 19:48:25.653 15390 15406 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 19:48:25.653 15390 15406 I Adreno-EGL: Remote Branch: 
+01-24 19:48:25.653 15390 15406 I Adreno-EGL: Local Patches: 
+01-24 19:48:25.653 15390 15406 I Adreno-EGL: Reconstruct Branch: 
+01-24 19:48:25.663 15390 15406 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:48:25.679 15406 15406 W RenderThread: type=1400 audit(0.0:536): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 19:48:25.682 15390 15406 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 19:48:25.682 15390 15406 D OpenGLRenderer: Swap behavior 1
+01-24 19:48:25.688 15390 15406 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 19:48:25.699 15390 15406 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 19:48:25.701 15390 15406 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:48:25.763 15390 15406 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:48:26.016   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s163ms
+01-24 19:48:27.796  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:48:28.330   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:48:31.340 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 19:48:32.804  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:48:37.810  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:48:41.947 15411 15411 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:48:42.814  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:48:43.150 15411 15411 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:48:43.181   434  2560 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:48:43.182   434  2560 I ActivityManager: Killing 15390:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:48:43.188   434  2560 W ActivityManager: Force removing ActivityRecord{54bbf4b u0 online.makkahtv.salattime/.activity.MainChooseActivity t453}: app died, no saved state
+01-24 19:48:43.411   434   454 W Looper  : Dispatch took 229ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:48:43.412   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:48:43.448   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:48:43.484 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:48:43.498   335   335 I keystore: clear_uid 10067
+01-24 19:48:43.517   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15390
+01-24 19:48:43.528   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:48:43.570   434   462 W ProcessCpuTracker: Skipping unknown process pid 15390
+01-24 19:48:43.649 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:48:43.656 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:48:43.657 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:48:43.657 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:48:43.658 15411 15411 I app_process: System.exit called, status: 0
+01-24 19:48:43.658 15411 15411 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:48:43.825 13109 15423 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:48:43.828 13109 15423 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:48:43.831   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:48:43.876 13109 15423 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:48:43.881 13109 15423 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:48:47.814  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:48:49.044   434   660 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:48:49.151   434  1694 I ActivityManager: Start proc 15437:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:48:49.192   434   462 W ProcessCpuTracker: Skipping unknown process pid 15433
+01-24 19:48:49.194   434   462 W ProcessCpuTracker: Skipping unknown process pid 15435
+01-24 19:48:49.358   434  1694 W ActivityManager: Slow operation: 87ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:48:49.378   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:48:49.436 15437 15437 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 19:48:49.602 15437 15447 I zygote  : Background concurrent copying GC freed 868(347KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 1083KB/1595KB, paused 10.826ms total 147.467ms
+01-24 19:48:49.850 15437 15447 I zygote  : NativeAllocBackground concurrent copying GC freed 270(109KB) AllocSpace objects, 0(0B) LOS objects, 30% free, 1175KB/1687KB, paused 758us total 136.644ms
+01-24 19:48:49.865 15437 15453 D OpenGLRenderer: HWUI GL Pipeline
+01-24 19:48:49.923 15437 15453 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 19:48:49.923 15437 15453 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 19:48:49.923 15437 15453 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 19:48:49.923 15437 15453 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 19:48:49.923 15437 15453 I Adreno-EGL: Remote Branch: 
+01-24 19:48:49.923 15437 15453 I Adreno-EGL: Local Patches: 
+01-24 19:48:49.923 15437 15453 I Adreno-EGL: Reconstruct Branch: 
+01-24 19:48:49.929 15437 15453 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:48:49.949 15453 15453 W RenderThread: type=1400 audit(0.0:537): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 19:48:49.952 15437 15453 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 19:48:49.952 15437 15453 D OpenGLRenderer: Swap behavior 1
+01-24 19:48:49.959 15437 15453 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 19:48:49.970 15437 15453 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 19:48:49.973 15437 15453 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:48:50.033 15437 15453 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:48:50.283   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s164ms
+01-24 19:48:52.710   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:48:52.821  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:48:53.192   434   443 I zygote  : Background concurrent copying GC freed 20330(1463KB) AllocSpace objects, 20(492KB) LOS objects, 15% free, 10MB/12MB, paused 7.825ms total 527.187ms
+01-24 19:48:57.827  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:49:00.017 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 19:49:00.034 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 19:49:00.049 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 19:49:02.834  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:49:06.326 15458 15458 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:49:07.537 15458 15458 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:49:07.564   434   874 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:49:07.567   434   874 I ActivityManager: Killing 15437:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:49:07.577   434   874 W ActivityManager: Force removing ActivityRecord{a9c78d0 u0 online.makkahtv.salattime/.activity.MainChooseActivity t454}: app died, no saved state
+01-24 19:49:07.837  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:49:07.886   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:49:07.899   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15437
+01-24 19:49:07.902   434   454 W Looper  : Dispatch took 333ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:49:07.908   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:49:07.939 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:49:07.939   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:49:07.945   335   335 I keystore: clear_uid 10067
+01-24 19:49:08.037 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:49:08.037 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:49:08.038 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:49:08.042 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:49:08.046 15458 15458 I app_process: System.exit called, status: 0
+01-24 19:49:08.046 15458 15458 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:49:08.142   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:49:08.148 13109 15470 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:49:08.150 13109 15470 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:49:08.229 13109 15470 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:49:08.232 13109 15470 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:49:11.937   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 19:49:11.938 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 351  /isUsbOrAc: 1
+01-24 19:49:11.948   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 19:49:11.948   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 19:49:11.971   434 13083 E BatteryStatsService: no controller energy info supplied
+01-24 19:49:11.971   434 13083 I chatty  : uid=1000(system) Binder:434_1F identical 1 line
+01-24 19:49:11.971   434 13083 E BatteryStatsService: no controller energy info supplied
+01-24 19:49:12.843  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:49:13.521   434  2021 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:49:13.601   434   874 I ActivityManager: Start proc 15486:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:49:13.819 15486 15496 I zygote  : Background concurrent copying GC freed 493(375KB) AllocSpace objects, 0(0B) LOS objects, 35% free, 917KB/1429KB, paused 2.474ms total 122.286ms
+01-24 19:49:13.825   434   874 W ActivityManager: Slow operation: 100ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:49:13.832   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:49:13.932 15486 15486 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 19:49:14.252 15486 15496 I zygote  : NativeAllocBackground concurrent copying GC freed 727(132KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 1061KB/1573KB, paused 5.321ms total 64.655ms
+01-24 19:49:14.333 15486 15502 D OpenGLRenderer: HWUI GL Pipeline
+01-24 19:49:14.387 15486 15502 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 19:49:14.387 15486 15502 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 19:49:14.387 15486 15502 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 19:49:14.387 15486 15502 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 19:49:14.387 15486 15502 I Adreno-EGL: Remote Branch: 
+01-24 19:49:14.387 15486 15502 I Adreno-EGL: Local Patches: 
+01-24 19:49:14.387 15486 15502 I Adreno-EGL: Reconstruct Branch: 
+01-24 19:49:14.393 15486 15502 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:49:14.399 15502 15502 W RenderThread: type=1400 audit(0.0:538): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 19:49:14.408 15486 15502 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 19:49:14.408 15486 15502 D OpenGLRenderer: Swap behavior 1
+01-24 19:49:14.415 15486 15502 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 19:49:14.427 15486 15502 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 19:49:14.429 15486 15502 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:49:14.498 15486 15502 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:49:14.719   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s137ms
+01-24 19:49:17.071   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:49:17.850  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:49:20.063 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 19:49:22.856  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:49:27.861  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:49:30.754 15508 15508 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:49:32.006 15508 15508 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:49:32.039   434  6034 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:49:32.041   434  6034 I ActivityManager: Killing 15486:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:49:32.047   434  6034 W ActivityManager: Force removing ActivityRecord{b87beb6 u0 online.makkahtv.salattime/.activity.MainChooseActivity t455}: app died, no saved state
+01-24 19:49:32.322   434   454 W Looper  : Dispatch took 282ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:49:32.334   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15486
+01-24 19:49:32.351   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:49:32.352   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:49:32.359 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:49:32.361   335   335 I keystore: clear_uid 10067
+01-24 19:49:32.396   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:49:32.493   434   462 W ProcessCpuTracker: Skipping unknown process pid 15486
+01-24 19:49:32.546 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:49:32.546 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:49:32.546 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:49:32.553 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:49:32.579 15508 15508 I app_process: System.exit called, status: 0
+01-24 19:49:32.579 15508 15508 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:49:32.665 13109 15520 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:49:32.667 13109 15520 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:49:32.682   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:49:32.742 13109 15520 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:49:32.745 13109 15520 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:49:32.866  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:49:37.871  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:49:37.986   434 13083 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:49:38.072   434  6034 I ActivityManager: Start proc 15534:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:49:38.232 15534 15544 I zygote  : Background concurrent copying GC freed 533(422KB) AllocSpace objects, 0(0B) LOS objects, 35% free, 918KB/1430KB, paused 6.722ms total 60.460ms
+01-24 19:49:38.257   434   462 W ProcessCpuTracker: Skipping unknown process pid 15530
+01-24 19:49:38.258   434   462 W ProcessCpuTracker: Skipping unknown process pid 15532
+01-24 19:49:38.288   434  6034 W ActivityManager: Slow operation: 90ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:49:38.328   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:49:38.361 15534 15534 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 19:49:38.782 15534 15550 D OpenGLRenderer: HWUI GL Pipeline
+01-24 19:49:38.840 15534 15550 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 19:49:38.840 15534 15550 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 19:49:38.840 15534 15550 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 19:49:38.840 15534 15550 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 19:49:38.840 15534 15550 I Adreno-EGL: Remote Branch: 
+01-24 19:49:38.840 15534 15550 I Adreno-EGL: Local Patches: 
+01-24 19:49:38.840 15534 15550 I Adreno-EGL: Reconstruct Branch: 
+01-24 19:49:38.845 15534 15550 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:49:38.859 15550 15550 W RenderThread: type=1400 audit(0.0:539): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 19:49:38.861 15534 15550 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 19:49:38.861 15534 15550 D OpenGLRenderer: Swap behavior 1
+01-24 19:49:38.867 15534 15550 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 19:49:38.878 15534 15550 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 19:49:38.880 15534 15550 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:49:38.951 15534 15550 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:49:39.161   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s112ms
+01-24 19:49:39.793 30846 30867 I Finsky  : [1245] jwq.run(3): Stats for Executor: BlockingExecutor jyi@923c909[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 289]
+01-24 19:49:39.795 30846 30867 I Finsky  : [1245] jwq.run(3): Stats for Executor: LightweightExecutor jyi@173870e[Running, pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 64]
+01-24 19:49:41.627   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:49:41.766 30846 30867 I Finsky  : [1245] jwq.run(3): Stats for Executor: bgExecutor jyi@5e72822[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 1093]
+01-24 19:49:42.876  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:49:47.884  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 1 line
+01-24 19:49:52.887  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:49:55.200 15556 15556 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:49:56.337 15556 15556 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:49:56.368   434   610 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:49:56.370   434   610 I ActivityManager: Killing 15534:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:49:56.384   434   610 W ActivityManager: Force removing ActivityRecord{e28b37f u0 online.makkahtv.salattime/.activity.MainChooseActivity t456}: app died, no saved state
+01-24 19:49:56.599   434   454 W Looper  : Dispatch took 230ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:49:56.658   335   335 I keystore: clear_uid 10067
+01-24 19:49:56.788   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:49:56.813   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15534
+01-24 19:49:56.828   434   454 W Looper  : Dispatch took 225ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=30
+01-24 19:49:56.844 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:49:56.844   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:49:56.848   434 13083 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:49:57.020 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:49:57.021 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:49:57.021 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:49:57.029 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:49:57.042 15556 15556 I app_process: System.exit called, status: 0
+01-24 19:49:57.043 15556 15556 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:49:57.095   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:49:57.102 13109 15569 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:49:57.104 13109 15569 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:49:57.218 13109 15569 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:49:57.250 13109 15569 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:49:57.677 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 19:49:57.677 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 19:49:57.677 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 19:49:57.681 13109 13510 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 19:49:57.842 13109 13122 I zygote  : Background concurrent copying GC freed 32081(2MB) AllocSpace objects, 0(0B) LOS objects, 20% free, 7MB/9MB, paused 7.704ms total 636.192ms
+01-24 19:49:57.856   434   443 I zygote  : Background concurrent copying GC freed 19526(1506KB) AllocSpace objects, 18(452KB) LOS objects, 14% free, 11MB/13MB, paused 3.851ms total 1.225s
+01-24 19:49:57.892  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:49:58.039 31850 32281 I Checkin : [EventLogChimeraService] Opted in for usage reporting: false
+01-24 19:49:58.039 31850 32281 I Checkin : [EventLogChimeraService] Aggregate from 1579890565513 (log), 1579890565513 (data)
+01-24 19:49:58.118   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 19:49:58.119   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:49:58.242 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 19:49:58.242 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 19:49:58.242 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 19:49:58.242 13109 13510 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 19:50:00.004 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 19:50:00.011 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 19:50:00.015 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 19:50:02.468   434   756 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:50:02.614   434   610 I ActivityManager: Start proc 15585:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:50:02.641   434   462 W ProcessCpuTracker: Skipping unknown process pid 15581
+01-24 19:50:02.642   434   462 W ProcessCpuTracker: Skipping unknown process pid 15583
+01-24 19:50:02.791 15585 15595 I zygote  : Background concurrent copying GC freed 605(444KB) AllocSpace objects, 0(0B) LOS objects, 35% free, 928KB/1440KB, paused 5.020ms total 84.049ms
+01-24 19:50:02.846   434   756 W ActivityManager: Slow operation: 98ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:50:02.866   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:50:02.899  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:50:02.930 15585 15585 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 19:50:02.930   434   454 W Looper  : Dispatch took 137ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=31
+01-24 19:50:03.169   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=167672669975044)
+01-24 19:50:03.319 15585 15601 D OpenGLRenderer: HWUI GL Pipeline
+01-24 19:50:03.402 15585 15601 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 19:50:03.402 15585 15601 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 19:50:03.402 15585 15601 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 19:50:03.402 15585 15601 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 19:50:03.402 15585 15601 I Adreno-EGL: Remote Branch: 
+01-24 19:50:03.402 15585 15601 I Adreno-EGL: Local Patches: 
+01-24 19:50:03.402 15585 15601 I Adreno-EGL: Reconstruct Branch: 
+01-24 19:50:03.409 15585 15601 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:50:03.419 15601 15601 W RenderThread: type=1400 audit(0.0:540): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 19:50:03.424 15585 15601 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 19:50:03.425 15585 15601 D OpenGLRenderer: Swap behavior 1
+01-24 19:50:03.433 15585 15601 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 19:50:03.444 15585 15601 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 19:50:03.448 15585 15601 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:50:03.477 15691 15701 I zygote  : Background concurrent copying GC freed 4195(383KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1258KB/1770KB, paused 520us total 139.329ms
+01-24 19:50:03.518 15585 15601 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:50:03.559   317   317 E hw-IPCThreadState: binder thread pool (1 threads) starved for 145 ms
+01-24 19:50:03.577 15585 15595 I zygote  : NativeAllocBackground concurrent copying GC freed 740(141KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1275KB/1787KB, paused 9.308ms total 416.165ms
+01-24 19:50:03.767   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s188ms
+01-24 19:50:06.114   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:50:07.900  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:50:09.607 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 19:50:11.961   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 19:50:11.969 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 350  /isUsbOrAc: 1
+01-24 19:50:11.983   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 19:50:11.984   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 19:50:12.021   434   660 E BatteryStatsService: no controller energy info supplied
+01-24 19:50:12.906  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:50:17.911  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:50:19.684 15607 15607 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:50:20.935 15607 15607 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:50:12.023   434   660 I chatty  : uid=1000(system) Binder:434_5 identical 1 line
+01-24 19:50:12.023   434   660 E BatteryStatsService: no controller energy info supplied
+01-24 19:50:20.964   434 13083 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:50:20.967   434 13083 I ActivityManager: Killing 15585:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:50:20.973   434 13083 W ActivityManager: Force removing ActivityRecord{4bc6ca4 u0 online.makkahtv.salattime/.activity.MainChooseActivity t457}: app died, no saved state
+01-24 19:50:21.149   434   756 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 15585 uid 10067
+01-24 19:50:21.233   434   454 W Looper  : Dispatch took 268ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:50:21.307   335   335 I keystore: clear_uid 10067
+01-24 19:50:21.309   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15585
+01-24 19:50:21.324   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:50:21.335   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:50:21.368 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:50:21.376   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:50:21.481 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:50:21.482 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:50:21.482 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:50:21.486 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:50:21.529 15607 15607 I app_process: System.exit called, status: 0
+01-24 19:50:21.529 15607 15607 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:50:21.553   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:50:21.555 13109 15618 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:50:21.561 13109 15618 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:50:21.624 13109 15618 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:50:21.628 13109 15618 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:50:22.916  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:50:26.945   434   660 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:50:27.092   434 13233 I ActivityManager: Start proc 15633:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:50:27.107   434   454 W Looper  : Dispatch took 102ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:50:27.132   434   462 W ProcessCpuTracker: Skipping unknown process pid 15629
+01-24 19:50:27.133   434   462 W ProcessCpuTracker: Skipping unknown process pid 15631
+01-24 19:50:27.265   434 13233 W ActivityManager: Slow operation: 81ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:50:27.274   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:50:27.373 15633 15633 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 19:50:27.721 15633 15643 I zygote  : NativeAllocBackground concurrent copying GC freed 800(209KB) AllocSpace objects, 0(0B) LOS objects, 31% free, 1135KB/1647KB, paused 12.708ms total 110.956ms
+01-24 19:50:27.735   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=167697234519566)
+01-24 19:50:27.778 15633 15649 D OpenGLRenderer: HWUI GL Pipeline
+01-24 19:50:27.838 15633 15649 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 19:50:27.838 15633 15649 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 19:50:27.838 15633 15649 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 19:50:27.838 15633 15649 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 19:50:27.838 15633 15649 I Adreno-EGL: Remote Branch: 
+01-24 19:50:27.838 15633 15649 I Adreno-EGL: Local Patches: 
+01-24 19:50:27.838 15633 15649 I Adreno-EGL: Reconstruct Branch: 
+01-24 19:50:27.844 15633 15649 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:50:27.859 15649 15649 W RenderThread: type=1400 audit(0.0:541): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 19:50:27.862 15633 15649 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 19:50:27.862 15633 15649 D OpenGLRenderer: Swap behavior 1
+01-24 19:50:27.872 15633 15649 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 19:50:27.883 15633 15649 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 19:50:27.885 15633 15649 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:50:27.905   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=167697405711545)
+01-24 19:50:27.924  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:50:27.948 15633 15649 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:50:28.203   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s154ms
+01-24 19:50:30.513   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:50:32.930  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:50:37.935  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 1 line
+01-24 19:50:42.937  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:50:44.173 15655 15655 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:50:45.445 15655 15655 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:50:45.469   434   874 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:50:45.471   434   874 I ActivityManager: Killing 15633:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:50:45.479   434   874 W ActivityManager: Force removing ActivityRecord{3b16f15 u0 online.makkahtv.salattime/.activity.MainChooseActivity t458}: app died, no saved state
+01-24 19:50:45.568   434   503 W InputDispatcher: channel '11f6539 online.makkahtv.salattime/online.makkahtv.salattime.activity.MainChooseActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+01-24 19:50:45.618   434   503 E InputDispatcher: channel '11f6539 online.makkahtv.salattime/online.makkahtv.salattime.activity.MainChooseActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+01-24 19:50:45.619   434   874 W InputDispatcher: Attempted to unregister already unregistered input channel '11f6539 online.makkahtv.salattime/online.makkahtv.salattime.activity.MainChooseActivity (server)'
+01-24 19:50:45.756   434  2426 W WindowManager: Failed looking up window callers=com.android.server.wm.WindowManagerService.windowForClientLocked:5750 com.android.server.wm.WindowState$DeathRecipient.binderDied:2284 android.os.BinderProxy.sendDeathNotice:828 
+01-24 19:50:45.758   434  2426 I WindowManager: WIN DEATH: null
+01-24 19:50:45.882   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15633
+01-24 19:50:45.883   434   454 W Looper  : Dispatch took 412ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:50:45.931   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:50:45.941 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:50:45.954   335   335 I keystore: clear_uid 10067
+01-24 19:50:46.014   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:50:46.019   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:50:46.163 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:50:46.163 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:50:46.163 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:50:46.170 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:50:46.217 15655 15655 I app_process: System.exit called, status: 0
+01-24 19:50:46.217 15655 15655 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:50:46.303 13109 15666 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:50:46.308 13109 15666 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:50:46.325   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:50:46.390 13109 15666 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:50:46.393 13109 15666 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:50:46.798   434   443 I zygote  : Background concurrent copying GC freed 24750(1812KB) AllocSpace objects, 18(452KB) LOS objects, 15% free, 11MB/13MB, paused 8.112ms total 864.988ms
+01-24 19:50:47.941  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:50:51.601   434  1099 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:50:51.730   434   462 W ProcessCpuTracker: Skipping unknown process pid 15677
+01-24 19:50:51.731   434   462 W ProcessCpuTracker: Skipping unknown process pid 15679
+01-24 19:50:51.744   434  7909 I ActivityManager: Start proc 15685:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:50:51.913   434  7909 W ActivityManager: Slow operation: 89ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:50:51.933   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:50:51.985 15685 15685 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 19:50:52.395 15685 15707 I zygote  : NativeAllocBackground concurrent copying GC freed 872(257KB) AllocSpace objects, 0(0B) LOS objects, 30% free, 1183KB/1695KB, paused 4.631ms total 148.084ms
+01-24 19:50:52.427 15685 15713 D OpenGLRenderer: HWUI GL Pipeline
+01-24 19:50:52.487 15685 15713 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 19:50:52.487 15685 15713 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 19:50:52.487 15685 15713 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 19:50:52.487 15685 15713 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 19:50:52.487 15685 15713 I Adreno-EGL: Remote Branch: 
+01-24 19:50:52.487 15685 15713 I Adreno-EGL: Local Patches: 
+01-24 19:50:52.487 15685 15713 I Adreno-EGL: Reconstruct Branch: 
+01-24 19:50:52.494 15685 15713 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:50:52.509 15713 15713 W RenderThread: type=1400 audit(0.0:542): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 19:50:52.509 15685 15713 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 19:50:52.509 15685 15713 D OpenGLRenderer: Swap behavior 1
+01-24 19:50:52.516 15685 15713 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 19:50:52.527 15685 15713 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 19:50:52.529 15685 15713 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:50:52.594 15685 15713 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:50:52.819   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s120ms
+01-24 19:50:52.946  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:50:55.155   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:50:57.954  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:51:00.019 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 19:51:00.034 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 19:51:00.043 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 19:51:02.963  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:51:07.966  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:51:08.871 15719 15719 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:51:10.052 15719 15719 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:51:10.084   434   874 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:51:10.088   434   874 I ActivityManager: Killing 15685:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:51:10.093   434   874 W ActivityManager: Force removing ActivityRecord{5a9992 u0 online.makkahtv.salattime/.activity.MainChooseActivity t459}: app died, no saved state
+01-24 19:51:10.430   434   454 W Looper  : Dispatch took 344ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:51:10.471   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15685
+01-24 19:51:10.471   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:51:10.476   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:51:10.494   335   335 I keystore: clear_uid 10067
+01-24 19:51:10.501 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:51:10.512   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:51:10.572 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:51:10.572 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:51:10.573 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:51:10.590 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:51:10.613 15719 15719 I app_process: System.exit called, status: 0
+01-24 19:51:10.614 15719 15719 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:51:10.678   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:51:10.681 13109 15732 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:51:10.683 13109 15732 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:51:10.741 13109 15732 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:51:10.757 13109 15732 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:51:11.932 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 348  /isUsbOrAc: 1
+01-24 19:51:11.938   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 19:51:11.949   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 19:51:11.950   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 19:51:11.967   434   874 E BatteryStatsService: no controller energy info supplied
+01-24 19:51:11.967   434   874 I chatty  : uid=1000(system) Binder:434_7 identical 1 line
+01-24 19:51:11.968   434   874 E BatteryStatsService: no controller energy info supplied
+01-24 19:51:12.972  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:51:15.989   434   874 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=online.makkahtv.salattime/.activity.MainChooseActivity} from uid 2000
+01-24 19:51:16.079   434  7909 I ActivityManager: Start proc 15746:online.makkahtv.salattime/u0a67 for activity online.makkahtv.salattime/.activity.MainChooseActivity
+01-24 19:51:16.303   434  7909 W ActivityManager: Slow operation: 63ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 19:51:16.338   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:51:16.381 15746 15746 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+01-24 19:51:16.795 15746 15756 I zygote  : NativeAllocBackground concurrent copying GC freed 68(42KB) AllocSpace objects, 0(0B) LOS objects, 30% free, 1189KB/1701KB, paused 8.359ms total 176.963ms
+01-24 19:51:16.796 15746 15764 D OpenGLRenderer: HWUI GL Pipeline
+01-24 19:51:16.857 15746 15764 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 19:51:16.857 15746 15764 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 19:51:16.857 15746 15764 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 19:51:16.857 15746 15764 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 19:51:16.857 15746 15764 I Adreno-EGL: Remote Branch: 
+01-24 19:51:16.857 15746 15764 I Adreno-EGL: Local Patches: 
+01-24 19:51:16.857 15746 15764 I Adreno-EGL: Reconstruct Branch: 
+01-24 19:51:16.864 15746 15764 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:51:16.879 15764 15764 W RenderThread: type=1400 audit(0.0:543): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 19:51:16.880 15746 15764 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 19:51:16.881 15746 15764 D OpenGLRenderer: Swap behavior 1
+01-24 19:51:16.889 15746 15764 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 19:51:16.903 15746 15764 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 19:51:16.905 15746 15764 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:51:16.976 15746 15764 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 19:51:17.211   434   461 I ActivityManager: Displayed online.makkahtv.salattime/.activity.MainChooseActivity: +1s154ms
+01-24 19:51:17.977  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:51:19.572   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:51:27.990  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 2 lines
+01-24 19:51:32.996  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 19:51:33.207 15770 15770 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 19:51:34.415 15770 15770 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 19:51:34.448   434  2426 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=0: clear data
+01-24 19:51:34.452   434  2426 I ActivityManager: Killing 15746:online.makkahtv.salattime/u0a67 (adj 0): stop online.makkahtv.salattime
+01-24 19:51:34.459   434  2426 W ActivityManager: Force removing ActivityRecord{1f0ac08 u0 online.makkahtv.salattime/.activity.MainChooseActivity t460}: app died, no saved state
+01-24 19:51:34.638   434   874 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 15746 uid 10067
+01-24 19:51:34.743   434   454 W Looper  : Dispatch took 293ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 19:51:34.748   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 15746
+01-24 19:51:34.754   434   453 I ActivityManager: Force stopping online.makkahtv.salattime appid=10067 user=-1: clearApplicationUserData
+01-24 19:51:34.790 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 19:51:34.792   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 19:51:34.838   335   335 I keystore: clear_uid 10067
+01-24 19:51:34.846   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 19:51:34.877   434   462 W ProcessCpuTracker: Skipping unknown process pid 15746
+01-24 19:51:34.988   434   610 I zygote  : IncrementDisableThreadFlip blocked for 8.090ms
+01-24 19:51:35.013 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=online.makkahtv.salattime]
+01-24 19:51:35.023 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 19:51:35.023 31332 31332 D Avrcp   : packageName: online.makkahtv.salattime removed: true
+01-24 19:51:35.023 31332 31332 V Avrcp   : isBrowseSupported for online.makkahtv.salattime: false
+01-24 19:51:35.062 15770 15770 I app_process: System.exit called, status: 0
+01-24 19:51:35.062 15770 15770 I AndroidRuntime: VM exiting with result code 0.
+01-24 19:51:35.077 13109 15781 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:51:35.079 13109 15781 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:51:35.120   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 19:51:35.155 13109 15781 I Fitness : Clearing all cached OAuth tokens for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:51:35.160 13109 15781 I Fitness : Removing all subscriptions for: online.makkahtv.salattime [CONTEXT service_id=17 ]
+01-24 19:51:35.346   712   726 I zygote  : Background concurrent copying GC freed 10547(412KB) AllocSpace objects, 0(0B) LOS objects, 29% free, 1245KB/1757KB, paused 1.849ms total 300.723ms
+01-24 19:51:35.767   434   443 I zygote  : Background concurrent copying GC freed 19384(1525KB) AllocSpace objects, 20(492KB) LOS objects, 15% free, 11MB/13MB, paused 17.027ms total 803.996ms
+01-24 19:51:35.773 13109 13122 I zygote  : Background concurrent copying GC freed 33630(2MB) AllocSpace objects, 0(0B) LOS objects, 21% free, 7MB/9MB, paused 6.213ms total 406.706ms
+01-24 19:51:38.001  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+
+

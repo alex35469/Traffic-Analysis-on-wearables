@@ -1,0 +1,1099 @@
+--------- beginning of system
+01-24 20:05:11.971   434  4786 I chatty  : uid=1000(system) Binder:434_14 expire 1 line
+01-24 20:05:11.971   434  4786 E BatteryStatsService: no controller energy info supplied
+--------- beginning of main
+01-24 20:05:18.796  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:05:18.833   434  4786 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:05:18.914   434  2426 I ActivityManager: Start proc 16982:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:05:19.073   434  2426 W ActivityManager: Slow operation: 79ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:05:19.083   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:05:19.226 16982 16982 I chatty  : uid=10051(u0_a51) expire 1 line
+01-24 20:05:19.343 16982 17000 I chatty  : uid=10051(u0_a51) expire 9 lines
+01-24 20:05:19.521 16982 16992 I chatty  : uid=10051(u0_a51) expire 1 line
+01-24 20:05:19.579 17000 17000 I chatty  : uid=10051(u0_a51) com.getqardio.android expire 1 line
+01-24 20:05:19.842   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +958ms
+01-24 20:05:22.468   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:05:23.803  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:05:25.328 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 20:05:28.809  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:05:33.811  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:05:36.145 17006 17006 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:05:37.416 17006 17006 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:05:37.444   434 13083 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:05:37.447   434 13083 I ActivityManager: Killing 16982:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:05:37.459   434 13083 W ActivityManager: Force removing ActivityRecord{9373fe0 u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t483}: app died, no saved state
+01-24 20:05:37.688   434   454 W Looper  : Dispatch took 241ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:05:37.721   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:05:37.724   335   335 I keystore: clear_uid 10051
+01-24 20:05:37.725   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 16982
+01-24 20:05:37.733   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:05:37.749 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:05:37.756   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:05:37.886 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:05:37.887 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:05:37.887 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:05:37.894 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:05:37.909 17006 17006 I app_process: System.exit called, status: 0
+01-24 20:05:37.909 17006 17006 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:05:37.939   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:05:38.097 13109 17017 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:05:38.101 13109 17017 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:05:38.145 13109 17017 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:05:38.155 13109 17017 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:05:38.812  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:05:43.331   434  2426 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:05:43.409   434   874 I ActivityManager: Start proc 17032:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:05:43.570   434   874 W ActivityManager: Slow operation: 72ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:05:43.587   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:05:43.689 17032 17032 I chatty  : uid=10051(u0_a51) expire 1 line
+01-24 20:05:43.773 17032 17049 I chatty  : uid=10051(u0_a51) expire 9 lines
+01-24 20:05:43.819  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:05:43.889 17032 17042 I chatty  : uid=10051(u0_a51) expire 1 line
+01-24 20:05:44.029 17049 17049 I chatty  : uid=10051(u0_a51) com.getqardio.android expire 1 line
+01-24 20:05:44.304   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +890ms
+01-24 20:05:46.920   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:05:48.827  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:05:49.837 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 20:05:53.835  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:05:58.836  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:06:00.015 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 20:06:00.040 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 20:06:00.056 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 20:06:00.648 17054 17054 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:06:02.014 17054 17054 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:06:02.041   434  2021 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:06:02.043   434  2021 I ActivityManager: Killing 17032:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:06:02.048   434  2021 W ActivityManager: Force removing ActivityRecord{f8f488 u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t484}: app died, no saved state
+01-24 20:06:02.310   434   454 W Looper  : Dispatch took 267ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:06:02.341   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:06:02.354   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17032
+01-24 20:06:02.365   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:06:02.382 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:06:02.389   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:06:02.409   335   335 I keystore: clear_uid 10051
+01-24 20:06:02.523 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:06:02.524 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:06:02.525 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:06:02.525 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:06:02.529 17054 17054 I app_process: System.exit called, status: 0
+01-24 20:06:02.529 17054 17054 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:06:02.571   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:06:02.744 13109 17074 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:06:02.751 13109 17074 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:06:02.787 13109 17074 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:06:02.791 13109 17074 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:06:03.007 13109 13122 I zygote  : Background concurrent copying GC freed 32050(2MB) AllocSpace objects, 0(0B) LOS objects, 20% free, 7MB/9MB, paused 6.342ms total 414.229ms
+01-24 20:06:03.841  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:06:07.893   434 13233 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:06:07.978   434  2021 I ActivityManager: Start proc 17080:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:06:08.164   434  2021 W ActivityManager: Slow operation: 73ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:06:08.168   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:06:08.287 17080 17080 I chatty  : uid=10051(u0_a51) expire 1 line
+01-24 20:06:08.390 17080 17096 I chatty  : uid=10051(u0_a51) expire 9 lines
+01-24 20:06:08.629 17096 17096 I chatty  : uid=10051(u0_a51) com.getqardio.android expire 1 line
+01-24 20:06:08.684 17080 17090 I chatty  : uid=10051(u0_a51) expire 1 line
+01-24 20:06:08.848  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:06:08.914   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +933ms
+01-24 20:06:09.029 17080 17088 I chatty  : uid=10051(u0_a51) expire 1 line
+01-24 20:06:11.471   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:06:11.957   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 20:06:11.960 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 345  /isUsbOrAc: 1
+01-24 20:06:11.973   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 20:06:11.973   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 20:06:12.004   434  2021 E BatteryStatsService: no controller energy info supplied
+01-24 20:06:12.561   434   443 I zygote  : Background concurrent copying GC freed 19635(1520KB) AllocSpace objects, 23(552KB) LOS objects, 15% free, 11MB/13MB, paused 11.414ms total 541.900ms
+01-24 20:06:13.852  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:06:18.858  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 3 lines
+01-24 20:06:23.861  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:06:25.012 17102 17102 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:06:26.206 17102 17102 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:06:12.005   434  2021 I chatty  : uid=1000(system) Binder:434_D identical 1 line
+01-24 20:06:12.005   434  2021 E BatteryStatsService: no controller energy info supplied
+01-24 20:06:26.237   434 13233 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:06:26.238   434 13233 I ActivityManager: Killing 17080:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:06:26.243   434 13233 W ActivityManager: Force removing ActivityRecord{6be4430 u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t485}: app died, no saved state
+01-24 20:06:26.487   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:06:26.523   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17080
+01-24 20:06:26.524   335   335 I keystore: clear_uid 10051
+01-24 20:06:26.551   434   454 W Looper  : Dispatch took 313ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:06:26.558   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:06:26.599 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:06:26.617   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:06:26.666 15691 15701 I zygote  : Background concurrent copying GC freed 4512(401KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1258KB/1770KB, paused 14.635ms total 85.550ms
+01-24 20:06:26.729 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:06:26.729 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:06:26.729 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:06:26.730 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:06:26.797 17102 17102 I app_process: System.exit called, status: 0
+01-24 20:06:26.797 17102 17102 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:06:26.819 13109 17114 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:06:26.825   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:06:26.826 13109 17114 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:06:26.897 13109 17114 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:06:26.900 13109 17114 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:06:28.866  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:06:32.153   434   756 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:06:32.258   434 13233 I ActivityManager: Start proc 17127:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:06:32.398   434 13233 W ActivityManager: Slow operation: 77ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:06:32.406   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:06:32.582 17127 17127 I chatty  : uid=10051(u0_a51) expire 1 line
+01-24 20:06:32.672 17127 17144 I chatty  : uid=10051(u0_a51) expire 9 lines
+01-24 20:06:32.826   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=168662328765813)
+01-24 20:06:32.909 17144 17144 I chatty  : uid=10051(u0_a51) com.getqardio.android expire 1 line
+01-24 20:06:32.949 17127 17137 I chatty  : uid=10051(u0_a51) expire 1 line
+01-24 20:06:33.190   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +939ms
+01-24 20:06:33.873  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:06:35.798   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:06:48.893  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:06:49.287 17149 17149 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:06:50.558 17149 17149 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:06:50.587   434 13233 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:06:50.589   434 13233 I ActivityManager: Killing 17127:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:06:50.593   434 13233 W ActivityManager: Force removing ActivityRecord{9c289bb u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t486}: app died, no saved state
+01-24 20:06:50.861   434   454 W Looper  : Dispatch took 273ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:06:50.877   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17127
+01-24 20:06:50.897   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:06:50.927   335   335 I keystore: clear_uid 10051
+01-24 20:06:50.928   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:06:50.934   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:06:50.951 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:06:51.072 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:06:51.079 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:06:51.079 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:06:51.079 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:06:51.121 17149 17149 I app_process: System.exit called, status: 0
+01-24 20:06:51.121 17149 17149 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:06:51.155   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:06:51.181 13109 17160 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:06:51.189 13109 17160 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:06:51.287 13109 17160 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:06:51.292 13109 17160 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:06:51.355   712   726 I zygote  : Background concurrent copying GC freed 10648(416KB) AllocSpace objects, 0(0B) LOS objects, 29% free, 1229KB/1741KB, paused 1.575ms total 205.193ms
+01-24 20:06:53.896  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:06:56.549   434 13233 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:06:56.635   434  2093 I ActivityManager: Start proc 17176:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:06:56.847   434 13233 W ActivityManager: Slow operation: 84ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:06:56.869   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:06:57.046 17176 17186 I chatty  : uid=10051(u0_a51) expire 2 lines
+01-24 20:06:57.049 17176 17176 I chatty  : uid=10051(u0_a51) expire 1 line
+01-24 20:06:57.114 17176 17192 I chatty  : uid=10051(u0_a51) expire 9 lines
+01-24 20:06:57.349 17192 17192 I chatty  : uid=10051(u0_a51) com.getqardio.android expire 1 line
+01-24 20:06:57.633   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +987ms
+01-24 20:06:58.902  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:07:00.010 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 20:07:00.027 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 20:07:00.035 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 20:07:00.105   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:07:03.910  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:07:08.918  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:07:11.974 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 344  /isUsbOrAc: 1
+01-24 20:07:11.975   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 20:07:11.994   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=168701504791631)
+01-24 20:07:12.013   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 20:07:12.013   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 20:07:12.073   434  2093 E BatteryStatsService: no controller energy info supplied
+01-24 20:07:12.076   434  2093 I chatty  : uid=1000(system) Binder:434_E identical 1 line
+01-24 20:07:12.076   434  2093 E BatteryStatsService: no controller energy info supplied
+01-24 20:07:12.448   723   737 I zygote  : Background concurrent copying GC freed 7298(635KB) AllocSpace objects, 2(192KB) LOS objects, 24% free, 1984KB/2MB, paused 3.042ms total 267.516ms
+01-24 20:07:13.779 17198 17198 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:07:13.923  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:07:14.972 17198 17198 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:07:15.009   434  2093 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:07:15.012   434  2093 I ActivityManager: Killing 17176:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:07:15.019   434  2093 W ActivityManager: Force removing ActivityRecord{6b699b2 u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t487}: app died, no saved state
+01-24 20:07:15.268   434   454 W Looper  : Dispatch took 256ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:07:15.275   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:07:15.296   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17176
+01-24 20:07:15.311   335   335 I keystore: clear_uid 10051
+01-24 20:07:15.325   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:07:15.331   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:07:15.333 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:07:15.461 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:07:15.464 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:07:15.464 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:07:15.464 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:07:15.480 17198 17198 I app_process: System.exit called, status: 0
+01-24 20:07:15.480 17198 17198 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:07:15.587 13109 17214 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:07:15.593 13109 17214 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:07:15.684   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:07:15.695 13109 17214 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:07:15.697 13109 17214 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:07:16.028   434   443 I zygote  : Background concurrent copying GC freed 21197(1638KB) AllocSpace objects, 20(584KB) LOS objects, 15% free, 11MB/13MB, paused 3.917ms total 831.822ms
+01-24 20:07:18.926  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:07:20.791   434  2560 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:07:20.888   434  2021 I ActivityManager: Start proc 17224:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:07:21.107   434  2021 W ActivityManager: Slow operation: 94ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:07:21.117   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:07:21.238 17224 17224 I chatty  : uid=10051(u0_a51) expire 1 line
+01-24 20:07:21.318 17224 17240 I chatty  : uid=10051(u0_a51) expire 8 lines
+01-24 20:07:21.549 17240 17240 I chatty  : uid=10051(u0_a51) com.getqardio.android expire 1 line
+01-24 20:07:21.663 17224 17234 I zygote  : NativeAllocBackground concurrent copying GC freed 1189(214KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 1069KB/1581KB, paused 574us total 185.144ms
+01-24 20:07:21.769 17224 17240 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:07:21.819   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +952ms
+01-24 20:07:21.885 15691 15701 I zygote  : Background concurrent copying GC freed 4430(400KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1275KB/1787KB, paused 482us total 191.767ms
+01-24 20:07:23.933  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:07:24.379   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:07:28.940  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 1 line
+01-24 20:07:33.947  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:07:38.081 17246 17246 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:07:38.953  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:07:39.304 17246 17246 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:07:39.323   434 13233 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:07:39.325   434 13233 I ActivityManager: Killing 17224:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:07:39.331   434 13233 W ActivityManager: Force removing ActivityRecord{a65d01a u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t488}: app died, no saved state
+01-24 20:07:39.483   434  4786 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 17224 uid 10051
+01-24 20:07:39.550   434   454 W Looper  : Dispatch took 225ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:07:39.553   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17224
+01-24 20:07:39.556   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:07:39.592 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:07:39.601   335   335 I keystore: clear_uid 10051
+01-24 20:07:39.602   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:07:39.619   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:07:39.712 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:07:39.712 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:07:39.712 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:07:39.721 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:07:39.741 17246 17246 I app_process: System.exit called, status: 0
+01-24 20:07:39.742 17246 17246 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:07:39.802 31850 17262 I zygote  : IncrementDisableThreadFlip blocked for 7.805ms
+01-24 20:07:39.812 13109 17257 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:07:39.817 13109 17257 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:07:39.836   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:07:39.915 13109 17257 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:07:39.918 13109 17257 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:07:43.956  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:07:45.176   434 13233 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:07:45.260   434  4786 I ActivityManager: Start proc 17272:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:07:45.421   434  4786 W ActivityManager: Slow operation: 80ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:07:45.437   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:07:45.598 17272 17272 D com.getqardio.android.wearable.utils.crashlytics.CrashlyticsWear: Initialize CrachlyticsUncaughtExceptionHandler
+01-24 20:07:45.691 17272 17289 D OpenGLRenderer: HWUI GL Pipeline
+01-24 20:07:45.900 17272 17289 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 20:07:45.900 17272 17289 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 20:07:45.900 17272 17289 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 20:07:45.900 17272 17289 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 20:07:45.900 17272 17289 I Adreno-EGL: Remote Branch: 
+01-24 20:07:45.900 17272 17289 I Adreno-EGL: Local Patches: 
+01-24 20:07:45.900 17272 17289 I Adreno-EGL: Reconstruct Branch: 
+01-24 20:07:45.906 17272 17289 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:07:45.919 17289 17289 W RenderThread: type=1400 audit(0.0:572): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 20:07:45.923 17272 17289 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 20:07:45.924 17272 17289 D OpenGLRenderer: Swap behavior 1
+01-24 20:07:45.931 17272 17289 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 20:07:45.946 17272 17289 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 20:07:45.949 17272 17289 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:07:45.986 17272 17282 I zygote  : NativeAllocBackground concurrent copying GC freed 1182(233KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 1070KB/1582KB, paused 506us total 128.491ms
+01-24 20:07:46.115 17272 17289 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:07:46.182   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +919ms
+01-24 20:07:48.761   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:07:48.962  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:07:53.968  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 1 line
+01-24 20:07:58.971  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:08:00.012 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 20:08:00.029 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 20:08:00.039 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 20:08:02.511 17294 17294 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:08:03.719 17294 17294 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:08:03.745   434   874 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:08:03.748   434   874 I ActivityManager: Killing 17272:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:08:03.754   434   874 W ActivityManager: Force removing ActivityRecord{6981ccd u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t489}: app died, no saved state
+01-24 20:08:03.976  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:08:04.022   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17272
+01-24 20:08:04.052   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:08:04.052   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:08:04.072 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:08:04.085   335   335 I keystore: clear_uid 10051
+01-24 20:08:04.089   434   454 W Looper  : Dispatch took 342ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:08:04.093   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:08:04.257 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:08:04.257 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:08:04.257 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:08:04.258 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:08:04.281   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:08:04.287 17294 17294 I app_process: System.exit called, status: 0
+01-24 20:08:04.287 17294 17294 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:08:04.365 13109 17305 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:08:04.369 13109 17305 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:08:04.406 13109 17305 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:08:04.409 13109 17305 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:08:04.808 13109 13122 I zygote  : Background concurrent copying GC freed 35528(2MB) AllocSpace objects, 0(0B) LOS objects, 20% free, 7MB/9MB, paused 874us total 396.958ms
+01-24 20:08:08.982  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:08:09.661   434  1099 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:08:09.751   434  7909 I ActivityManager: Start proc 17319:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:08:09.898   434  7909 W ActivityManager: Slow operation: 89ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:08:09.905   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:08:10.075 17319 17319 D com.getqardio.android.wearable.utils.crashlytics.CrashlyticsWear: Initialize CrachlyticsUncaughtExceptionHandler
+01-24 20:08:10.145 17319 17335 D OpenGLRenderer: HWUI GL Pipeline
+01-24 20:08:10.239 17319 17329 I zygote  : Background concurrent copying GC freed 1099(259KB) AllocSpace objects, 0(0B) LOS objects, 31% free, 1099KB/1611KB, paused 2.136ms total 102.258ms
+01-24 20:08:10.368 17319 17335 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 20:08:10.368 17319 17335 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 20:08:10.368 17319 17335 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 20:08:10.368 17319 17335 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 20:08:10.368 17319 17335 I Adreno-EGL: Remote Branch: 
+01-24 20:08:10.368 17319 17335 I Adreno-EGL: Local Patches: 
+01-24 20:08:10.368 17319 17335 I Adreno-EGL: Reconstruct Branch: 
+01-24 20:08:10.374 17319 17335 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:08:10.399 17335 17335 W RenderThread: type=1400 audit(0.0:573): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 20:08:10.403 17319 17335 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 20:08:10.403 17319 17335 D OpenGLRenderer: Swap behavior 1
+01-24 20:08:10.410 17319 17335 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 20:08:10.426 17319 17335 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 20:08:10.428 17319 17335 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:08:10.434 17319 17329 I zygote  : NativeAllocBackground concurrent copying GC freed 192(90KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 1074KB/1586KB, paused 421us total 110.308ms
+01-24 20:08:10.600 17319 17335 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:08:10.657   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +922ms
+01-24 20:08:11.965   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 20:08:11.969 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 343  /isUsbOrAc: 1
+01-24 20:08:11.984   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 20:08:11.984   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 20:08:12.178   434 13233 E BatteryStatsService: no controller energy info supplied
+01-24 20:08:12.183   434 13233 I chatty  : uid=1000(system) Binder:434_20 identical 1 line
+01-24 20:08:12.184   434 13233 E BatteryStatsService: no controller energy info supplied
+01-24 20:08:12.720   434   443 I zygote  : Background concurrent copying GC freed 20505(1611KB) AllocSpace objects, 19(380KB) LOS objects, 15% free, 11MB/13MB, paused 8.305ms total 712.578ms
+01-24 20:08:13.245   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:08:13.989  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:08:18.995  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 1 line
+01-24 20:08:24.002  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:08:26.934 17342 17342 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:08:28.208 17342 17342 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:08:28.238   434   756 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:08:28.243   434   756 I ActivityManager: Killing 17319:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:08:28.252   434   756 W ActivityManager: Force removing ActivityRecord{ca549d5 u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t490}: app died, no saved state
+01-24 20:08:28.375   434   455 W zygote  : kill(17319, 9) failed: No such process
+01-24 20:08:28.491   434   454 W Looper  : Dispatch took 251ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:08:28.495   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:08:28.523   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:08:28.560   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17319
+01-24 20:08:28.561   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:08:28.568   335   335 I keystore: clear_uid 10051
+01-24 20:08:28.598 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:08:28.735 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:08:28.735 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:08:28.735 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:08:28.745 17342 17342 I app_process: System.exit called, status: 0
+01-24 20:08:28.746 17342 17342 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:08:28.754 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:08:28.837 13109 17358 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:08:28.839 13109 17358 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:08:28.871   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:08:28.902 13109 17358 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:08:28.910 13109 17358 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:08:29.006  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:08:34.007  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:08:34.227   434   756 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:08:34.319   434   874 I ActivityManager: Start proc 17369:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:08:34.477   434   756 W ActivityManager: Slow operation: 84ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:08:34.483   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:08:34.649 17369 17369 D com.getqardio.android.wearable.utils.crashlytics.CrashlyticsWear: Initialize CrachlyticsUncaughtExceptionHandler
+01-24 20:08:34.740 17369 17385 D OpenGLRenderer: HWUI GL Pipeline
+01-24 20:08:34.834 17369 17379 I zygote  : Background concurrent copying GC freed 939(280KB) AllocSpace objects, 0(0B) LOS objects, 31% free, 1110KB/1622KB, paused 1.686ms total 107.874ms
+01-24 20:08:34.870   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=168784357656495)
+01-24 20:08:34.960 17369 17385 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 20:08:34.960 17369 17385 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 20:08:34.960 17369 17385 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 20:08:34.960 17369 17385 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 20:08:34.960 17369 17385 I Adreno-EGL: Remote Branch: 
+01-24 20:08:34.960 17369 17385 I Adreno-EGL: Local Patches: 
+01-24 20:08:34.960 17369 17385 I Adreno-EGL: Reconstruct Branch: 
+01-24 20:08:34.966 17369 17385 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:08:34.979 17385 17385 W RenderThread: type=1400 audit(0.0:574): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 20:08:34.982 17369 17385 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 20:08:34.982 17369 17385 D OpenGLRenderer: Swap behavior 1
+01-24 20:08:34.989 17369 17385 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 20:08:35.001 17369 17385 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 20:08:35.004 17369 17385 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:08:35.055 17369 17379 I zygote  : NativeAllocBackground concurrent copying GC freed 432(104KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 1070KB/1582KB, paused 802us total 156.862ms
+01-24 20:08:35.182 17369 17385 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:08:35.236   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +940ms
+01-24 20:08:37.821   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:08:39.015  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:08:41.049 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 20:08:44.020  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:08:49.027  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:08:51.375 17390 17390 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:08:52.536 17390 17390 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:08:52.565   434   874 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:08:52.567   434   874 I ActivityManager: Killing 17369:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:08:52.586   434   874 W ActivityManager: Force removing ActivityRecord{52215b4 u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t491}: app died, no saved state
+01-24 20:08:52.856   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17369
+01-24 20:08:52.864   335   335 I keystore: clear_uid 10051
+01-24 20:08:52.872   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:08:52.880 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:08:52.881   434   454 W Looper  : Dispatch took 314ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:08:52.924   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:08:52.928   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:08:53.012 17390 17390 I app_process: System.exit called, status: 0
+01-24 20:08:53.012 17390 17390 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:08:53.019 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:08:53.021 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:08:53.026 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:08:53.027 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:08:53.115   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:08:53.254 13109 17410 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:08:53.262 13109 17410 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:08:53.285 13109 17410 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:08:53.288 13109 17410 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:08:54.031  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:08:58.397   434   874 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:08:58.474   434 13233 I ActivityManager: Start proc 17416:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:08:58.667   434 13233 W ActivityManager: Slow operation: 85ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:08:58.672   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:08:58.792 17416 17416 D com.getqardio.android.wearable.utils.crashlytics.CrashlyticsWear: Initialize CrachlyticsUncaughtExceptionHandler
+01-24 20:08:58.865 17416 17433 D OpenGLRenderer: HWUI GL Pipeline
+01-24 20:08:58.948 17416 17426 I zygote  : Background concurrent copying GC freed 975(315KB) AllocSpace objects, 0(0B) LOS objects, 31% free, 1123KB/1635KB, paused 2.561ms total 152.894ms
+01-24 20:08:59.037  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:08:59.122 17416 17433 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 20:08:59.122 17416 17433 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 20:08:59.122 17416 17433 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 20:08:59.122 17416 17433 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 20:08:59.122 17416 17433 I Adreno-EGL: Remote Branch: 
+01-24 20:08:59.122 17416 17433 I Adreno-EGL: Local Patches: 
+01-24 20:08:59.122 17416 17433 I Adreno-EGL: Reconstruct Branch: 
+01-24 20:08:59.128 17416 17433 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:08:59.139 17433 17433 W RenderThread: type=1400 audit(0.0:575): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 20:08:59.143 17416 17433 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 20:08:59.143 17416 17433 D OpenGLRenderer: Swap behavior 1
+01-24 20:08:59.149 17416 17433 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 20:08:59.161 17416 17433 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 20:08:59.164 17416 17433 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:08:59.344 17416 17433 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:08:59.414   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +939ms
+01-24 20:09:00.013 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 20:09:00.027 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 20:09:00.035 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 20:09:01.978   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:09:04.044  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:09:09.051  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:09:11.956   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 20:09:11.958 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 342  /isUsbOrAc: 1
+01-24 20:09:11.975   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 20:09:11.975   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 20:09:11.998   434  2021 E BatteryStatsService: no controller energy info supplied
+01-24 20:09:12.001   434  2021 I chatty  : uid=1000(system) Binder:434_D identical 1 line
+01-24 20:09:12.001   434  2021 E BatteryStatsService: no controller energy info supplied
+01-24 20:09:12.297   723   737 I zygote  : Background concurrent copying GC freed 7166(610KB) AllocSpace objects, 2(192KB) LOS objects, 24% free, 1982KB/2MB, paused 3.213ms total 217.739ms
+01-24 20:09:12.580   434   443 I zygote  : Background concurrent copying GC freed 21741(1633KB) AllocSpace objects, 23(568KB) LOS objects, 15% free, 11MB/13MB, paused 10.680ms total 533.210ms
+01-24 20:09:14.056  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:09:15.492 17438 17438 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:09:16.746 17438 17438 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:09:16.778   434   756 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:09:16.780   434   756 I ActivityManager: Killing 17416:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:09:16.783   434   756 W ActivityManager: Force removing ActivityRecord{7ad544f u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t492}: app died, no saved state
+01-24 20:09:17.063   434   454 W Looper  : Dispatch took 282ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:09:17.073   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:09:17.080   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17416
+01-24 20:09:17.122 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:09:17.127   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:09:17.137   335   335 I keystore: clear_uid 10051
+01-24 20:09:17.140   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:09:17.227 15691 15701 I zygote  : Background concurrent copying GC freed 4425(401KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1307KB/1819KB, paused 22.851ms total 146.536ms
+01-24 20:09:17.279 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:09:17.285 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:09:17.285 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:09:17.285 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:09:17.292 17438 17438 I app_process: System.exit called, status: 0
+01-24 20:09:17.292 17438 17438 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:09:17.388   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:09:17.403 13109 17449 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:09:17.405 13109 17449 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:09:17.500 13109 17449 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:09:17.502 13109 17449 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:09:19.056  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:09:22.773   434  2426 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:09:22.852   434 13233 I ActivityManager: Start proc 17464:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:09:23.045   434 13233 W ActivityManager: Slow operation: 79ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:09:23.091   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:09:23.259 17464 17464 D com.getqardio.android.wearable.utils.crashlytics.CrashlyticsWear: Initialize CrachlyticsUncaughtExceptionHandler
+01-24 20:09:23.329 17464 17480 D OpenGLRenderer: HWUI GL Pipeline
+01-24 20:09:23.464 17464 17474 I zygote  : Background concurrent copying GC freed 944(342KB) AllocSpace objects, 0(0B) LOS objects, 30% free, 1143KB/1655KB, paused 2.326ms total 242.556ms
+01-24 20:09:23.536 17464 17480 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 20:09:23.536 17464 17480 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 20:09:23.536 17464 17480 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 20:09:23.536 17464 17480 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 20:09:23.536 17464 17480 I Adreno-EGL: Remote Branch: 
+01-24 20:09:23.536 17464 17480 I Adreno-EGL: Local Patches: 
+01-24 20:09:23.536 17464 17480 I Adreno-EGL: Reconstruct Branch: 
+01-24 20:09:23.542 17464 17480 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:09:23.549 17480 17480 W RenderThread: type=1400 audit(0.0:576): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 20:09:23.557 17464 17480 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 20:09:23.558 17464 17480 D OpenGLRenderer: Swap behavior 1
+01-24 20:09:23.564 17464 17480 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 20:09:23.595 17464 17480 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 20:09:23.599 17464 17480 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:09:23.659 17464 17474 I zygote  : NativeAllocBackground concurrent copying GC freed 568(122KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 1086KB/1598KB, paused 465us total 170.334ms
+01-24 20:09:23.779 17464 17480 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:09:23.844   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +989ms
+01-24 20:09:24.062  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:09:26.342   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:09:34.074  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 2 lines
+01-24 20:09:39.076  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:09:39.801 30846 30867 I Finsky  : [1245] jwq.run(3): Stats for Executor: BlockingExecutor jyi@923c909[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 289]
+01-24 20:09:39.803 30846 30867 I Finsky  : [1245] jwq.run(3): Stats for Executor: LightweightExecutor jyi@173870e[Running, pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 64]
+01-24 20:09:40.075 17486 17486 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:09:41.352 17486 17486 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:09:41.384   434 13233 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:09:41.385   434 13233 I ActivityManager: Killing 17464:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:09:41.389   434 13233 W ActivityManager: Force removing ActivityRecord{2b9ed17 u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t493}: app died, no saved state
+01-24 20:09:41.692   434   454 W Looper  : Dispatch took 308ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:09:41.700   335   335 I keystore: clear_uid 10051
+01-24 20:09:41.703   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:09:41.749   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17464
+01-24 20:09:41.760   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:09:41.771 30846 30867 I Finsky  : [1245] jwq.run(3): Stats for Executor: bgExecutor jyi@5e72822[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 1097]
+01-24 20:09:41.784   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:09:41.798 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:09:41.906 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:09:41.908 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:09:41.908 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:09:41.908 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:09:41.925 17486 17486 I app_process: System.exit called, status: 0
+01-24 20:09:41.925 17486 17486 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:09:42.010 13109 17498 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:09:42.024 13109 17498 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:09:42.047   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:09:42.138 13109 17498 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:09:42.140 13109 17498 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:09:44.082  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:09:47.345   434   874 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:09:47.434   434  1099 I ActivityManager: Start proc 17512:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:09:47.605   434  1099 W ActivityManager: Slow operation: 88ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:09:47.669   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:09:47.789 17512 17512 D com.getqardio.android.wearable.utils.crashlytics.CrashlyticsWear: Initialize CrachlyticsUncaughtExceptionHandler
+01-24 20:09:47.825 17512 17522 I zygote  : Background concurrent copying GC freed 831(365KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 1055KB/1567KB, paused 15.927ms total 135.152ms
+01-24 20:09:47.877 17512 17528 D OpenGLRenderer: HWUI GL Pipeline
+01-24 20:09:48.080 17512 17528 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 20:09:48.080 17512 17528 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 20:09:48.080 17512 17528 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 20:09:48.080 17512 17528 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 20:09:48.080 17512 17528 I Adreno-EGL: Remote Branch: 
+01-24 20:09:48.080 17512 17528 I Adreno-EGL: Local Patches: 
+01-24 20:09:48.080 17512 17528 I Adreno-EGL: Reconstruct Branch: 
+01-24 20:09:48.086 17512 17528 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:09:48.099 17528 17528 W RenderThread: type=1400 audit(0.0:577): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 20:09:48.101 17512 17528 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 20:09:48.102 17512 17528 D OpenGLRenderer: Swap behavior 1
+01-24 20:09:48.107 17512 17528 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 20:09:48.120 17512 17528 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 20:09:48.123 17512 17528 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:09:48.143 17512 17522 I zygote  : NativeAllocBackground concurrent copying GC freed 766(159KB) AllocSpace objects, 0(0B) LOS objects, 31% free, 1106KB/1618KB, paused 795us total 107.857ms
+01-24 20:09:48.295 17512 17528 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:09:48.354   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +929ms
+01-24 20:09:49.088  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:09:50.921   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:09:54.094  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 1 line
+01-24 20:09:59.101  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:10:00.011 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 20:10:00.024 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 20:10:00.032 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 20:10:04.106  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:10:04.555 17534 17534 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:10:05.820 17534 17534 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:10:05.849   434   756 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:10:05.851   434   756 I ActivityManager: Killing 17512:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:10:05.858   434   756 W ActivityManager: Force removing ActivityRecord{14aff7e u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t494}: app died, no saved state
+01-24 20:10:06.112   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:10:06.136   434   454 W Looper  : Dispatch took 286ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:10:06.171   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:10:06.173   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17512
+01-24 20:10:06.205   335   335 I keystore: clear_uid 10051
+01-24 20:10:06.213 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:10:06.219   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:10:06.347 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:10:06.349 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:10:06.349 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:10:06.349 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:10:06.374   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:10:06.385 17534 17534 I app_process: System.exit called, status: 0
+01-24 20:10:06.386 17534 17534 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:10:06.448 13109 17545 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:10:06.467 13109 17545 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:10:06.506 13109 17545 I zygote  : IncrementDisableThreadFlip blocked for 5.384ms
+01-24 20:10:06.526 13109 17545 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:10:06.528 13109 17545 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:10:06.892 13109 13122 I zygote  : Background concurrent copying GC freed 29542(1964KB) AllocSpace objects, 0(0B) LOS objects, 20% free, 7MB/9MB, paused 1.393ms total 391.135ms
+01-24 20:10:09.111  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:10:10.239   434   443 I zygote  : Background concurrent copying GC freed 20683(1544KB) AllocSpace objects, 17(416KB) LOS objects, 15% free, 11MB/13MB, paused 4.351ms total 429.143ms
+01-24 20:10:11.830   434   874 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:10:11.933   434   756 I ActivityManager: Start proc 17560:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:10:12.011   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 20:10:12.018 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 341  /isUsbOrAc: 1
+01-24 20:10:12.028   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 20:10:12.028   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 20:10:12.077   434   756 E BatteryStatsService: no controller energy info supplied
+01-24 20:10:12.077   434   756 I chatty  : uid=1000(system) Binder:434_6 identical 1 line
+01-24 20:10:12.077   434   756 E BatteryStatsService: no controller energy info supplied
+01-24 20:10:12.157   434   874 W ActivityManager: Slow operation: 132ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:10:12.160   434   454 W Looper  : Dispatch took 107ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=31
+01-24 20:10:12.183   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:10:12.422 17560 17560 D com.getqardio.android.wearable.utils.crashlytics.CrashlyticsWear: Initialize CrachlyticsUncaughtExceptionHandler
+01-24 20:10:12.463 17560 17570 I zygote  : Background concurrent copying GC freed 620(397KB) AllocSpace objects, 0(0B) LOS objects, 31% free, 1136KB/1648KB, paused 11.503ms total 203.492ms
+01-24 20:10:12.508 17560 17577 D OpenGLRenderer: HWUI GL Pipeline
+01-24 20:10:12.703 17560 17577 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 20:10:12.703 17560 17577 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 20:10:12.703 17560 17577 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 20:10:12.703 17560 17577 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 20:10:12.703 17560 17577 I Adreno-EGL: Remote Branch: 
+01-24 20:10:12.703 17560 17577 I Adreno-EGL: Local Patches: 
+01-24 20:10:12.703 17560 17577 I Adreno-EGL: Reconstruct Branch: 
+01-24 20:10:12.711 17560 17577 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:10:12.719 17577 17577 W RenderThread: type=1400 audit(0.0:578): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 20:10:12.723 17560 17577 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 20:10:12.724 17560 17577 D OpenGLRenderer: Swap behavior 1
+01-24 20:10:12.730 17560 17577 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 20:10:12.740 17560 17577 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 20:10:12.743 17560 17577 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:10:12.917 17560 17577 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:10:12.988   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +1s54ms
+01-24 20:10:14.116  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:10:15.465   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:10:19.119  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 1 line
+01-24 20:10:24.127  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:10:29.022 17582 17582 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:10:29.132  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:10:30.209 17582 17582 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:10:30.241   434   874 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:10:30.243   434   874 I ActivityManager: Killing 17560:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:10:30.260   434   874 W ActivityManager: Force removing ActivityRecord{fa62466 u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t495}: app died, no saved state
+01-24 20:10:30.538   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17560
+01-24 20:10:30.572   434   454 W Looper  : Dispatch took 330ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:10:30.576   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:10:30.610   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:10:30.624 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:10:30.641   335   335 I keystore: clear_uid 10051
+01-24 20:10:30.643   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:10:30.757 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:10:30.762 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:10:30.762 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:10:30.763 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:10:30.768 17582 17582 I app_process: System.exit called, status: 0
+01-24 20:10:30.768 17582 17582 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:10:30.833   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:10:30.843 13109 17593 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:10:30.845 13109 17593 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:10:30.934 13109 17593 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:10:30.936 13109 17593 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:10:31.077   712   726 I zygote  : Background concurrent copying GC freed 9685(398KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1262KB/1774KB, paused 20.793ms total 316.557ms
+01-24 20:10:34.136  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:10:36.178   434   874 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:10:36.261   434  2093 I ActivityManager: Start proc 17609:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:10:36.388 17609 17619 I zygote  : Background concurrent copying GC freed 521(396KB) AllocSpace objects, 0(0B) LOS objects, 35% free, 928KB/1440KB, paused 7.294ms total 58.162ms
+01-24 20:10:36.456   434   874 W ActivityManager: Slow operation: 78ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:10:36.471   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:10:36.589 17609 17609 D com.getqardio.android.wearable.utils.crashlytics.CrashlyticsWear: Initialize CrachlyticsUncaughtExceptionHandler
+01-24 20:10:36.661 17609 17625 D OpenGLRenderer: HWUI GL Pipeline
+01-24 20:10:36.871 17609 17625 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 20:10:36.871 17609 17625 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 20:10:36.871 17609 17625 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 20:10:36.871 17609 17625 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 20:10:36.871 17609 17625 I Adreno-EGL: Remote Branch: 
+01-24 20:10:36.871 17609 17625 I Adreno-EGL: Local Patches: 
+01-24 20:10:36.871 17609 17625 I Adreno-EGL: Reconstruct Branch: 
+01-24 20:10:36.877 17609 17625 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:10:36.889 17625 17625 W RenderThread: type=1400 audit(0.0:579): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 20:10:36.895 17609 17625 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 20:10:36.895 17609 17625 D OpenGLRenderer: Swap behavior 1
+01-24 20:10:36.905 17609 17625 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 20:10:36.915 17609 17625 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 20:10:36.918 17609 17625 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:10:36.977 17609 17619 I zygote  : NativeAllocBackground concurrent copying GC freed 1188(213KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 1069KB/1581KB, paused 568us total 157.018ms
+01-24 20:10:37.094 17609 17625 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:10:37.134   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +903ms
+01-24 20:10:39.142  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:10:39.813   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:10:42.604 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 20:10:44.143  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:10:49.147  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:10:53.325 17632 17632 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:10:54.128 17632 17632 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:10:54.151  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:10:54.158   434   874 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:10:54.159   434   874 I ActivityManager: Killing 17609:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:10:54.165   434   874 W ActivityManager: Force removing ActivityRecord{f9fab49 u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t496}: app died, no saved state
+01-24 20:10:54.439   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17609
+01-24 20:10:54.440   434   454 W Looper  : Dispatch took 281ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:10:54.467   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:10:54.502 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:10:54.521   335   335 I keystore: clear_uid 10051
+01-24 20:10:54.529   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:10:54.547   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:10:54.647 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:10:54.648 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:10:54.648 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:10:54.652 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:10:54.679 17632 17632 I app_process: System.exit called, status: 0
+01-24 20:10:54.679 17632 17632 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:10:54.740   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:10:54.813 13109 17643 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:10:54.815 13109 17643 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:10:54.868 13109 17643 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:10:54.874 13109 17643 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:10:59.156  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:11:00.011 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 20:11:00.025 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 20:11:00.029 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 20:11:00.072   434   660 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:11:00.235   434 13233 I ActivityManager: Start proc 17658:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:11:00.259   434   454 W Looper  : Dispatch took 103ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:11:00.276   283 17662 I zygote  : Background concurrent copying GC freed 591(416KB) AllocSpace objects, 0(0B) LOS objects, 36% free, 892KB/1404KB, paused 6.310ms total 34.452ms
+01-24 20:11:00.553 17658 17668 I zygote  : Background concurrent copying GC freed 579(444KB) AllocSpace objects, 0(0B) LOS objects, 35% free, 928KB/1440KB, paused 1.150ms total 195.431ms
+01-24 20:11:00.575   434 13233 W ActivityManager: Slow operation: 119ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:11:00.578   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:11:00.595   434   454 W Looper  : Dispatch took 108ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=31
+01-24 20:11:00.728 17658 17658 D com.getqardio.android.wearable.utils.crashlytics.CrashlyticsWear: Initialize CrachlyticsUncaughtExceptionHandler
+01-24 20:11:00.793 17658 17674 D OpenGLRenderer: HWUI GL Pipeline
+01-24 20:11:01.020 17658 17674 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 20:11:01.020 17658 17674 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 20:11:01.020 17658 17674 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 20:11:01.020 17658 17674 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 20:11:01.020 17658 17674 I Adreno-EGL: Remote Branch: 
+01-24 20:11:01.020 17658 17674 I Adreno-EGL: Local Patches: 
+01-24 20:11:01.020 17658 17674 I Adreno-EGL: Reconstruct Branch: 
+01-24 20:11:01.026 17658 17674 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:11:01.029 17674 17674 W RenderThread: type=1400 audit(0.0:580): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 20:11:01.040 17658 17674 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 20:11:01.040 17658 17674 D OpenGLRenderer: Swap behavior 1
+01-24 20:11:01.046 17658 17674 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 20:11:01.090 17658 17674 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 20:11:01.092 17658 17674 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:11:01.221   434   443 I zygote  : Background concurrent copying GC freed 20109(1514KB) AllocSpace objects, 19(472KB) LOS objects, 15% free, 11MB/13MB, paused 8.038ms total 1.092s
+01-24 20:11:01.262 17658 17674 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:11:01.310   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +1s145ms
+01-24 20:11:01.333 17658 17668 I zygote  : NativeAllocBackground concurrent copying GC freed 1314(210KB) AllocSpace objects, 0(0B) LOS objects, 31% free, 1088KB/1600KB, paused 10.523ms total 354.307ms
+01-24 20:11:03.677   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:11:04.163  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:11:09.170  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:11:11.954   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 20:11:11.954 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 342  /isUsbOrAc: 1
+01-24 20:11:11.979   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 20:11:11.979   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 20:11:12.001   434  2560 E BatteryStatsService: no controller energy info supplied
+01-24 20:11:12.172   723   737 I zygote  : Background concurrent copying GC freed 6881(601KB) AllocSpace objects, 2(192KB) LOS objects, 24% free, 2004KB/2MB, paused 3.528ms total 109.760ms
+01-24 20:11:14.177  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:11:17.323 17680 17680 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:11:18.503 17680 17680 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:11:12.003   434  2560 I chatty  : uid=1000(system) Binder:434_10 identical 1 line
+01-24 20:11:12.003   434  2560 E BatteryStatsService: no controller energy info supplied
+01-24 20:11:18.532   434   660 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:11:18.534   434   660 I ActivityManager: Killing 17658:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:11:18.539   434   660 W ActivityManager: Force removing ActivityRecord{8bb50d1 u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t497}: app died, no saved state
+01-24 20:11:18.829   434   454 W Looper  : Dispatch took 295ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:11:18.830   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17658
+01-24 20:11:18.841   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:11:18.875 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:11:18.881   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:11:18.903   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:11:18.909   335   335 I keystore: clear_uid 10051
+01-24 20:11:19.000 17680 17680 I app_process: System.exit called, status: 0
+01-24 20:11:19.001 17680 17680 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:11:19.005 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:11:19.005 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:11:19.005 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:11:19.010 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:11:19.105 13109 17691 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:11:19.108 13109 17691 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:11:19.121   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:11:19.169 13109 17691 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:11:19.183  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:11:19.191 13109 17691 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:11:24.186  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:11:24.326   434 13233 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:11:24.409   434  6034 I ActivityManager: Start proc 17706:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:11:24.551   434  6034 W ActivityManager: Slow operation: 82ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:11:24.629   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:11:24.676 17706 17706 D com.getqardio.android.wearable.utils.crashlytics.CrashlyticsWear: Initialize CrachlyticsUncaughtExceptionHandler
+01-24 20:11:24.748 17706 17722 D OpenGLRenderer: HWUI GL Pipeline
+01-24 20:11:24.956 17706 17722 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 20:11:24.956 17706 17722 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 20:11:24.956 17706 17722 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 20:11:24.956 17706 17722 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 20:11:24.956 17706 17722 I Adreno-EGL: Remote Branch: 
+01-24 20:11:24.956 17706 17722 I Adreno-EGL: Local Patches: 
+01-24 20:11:24.956 17706 17722 I Adreno-EGL: Reconstruct Branch: 
+01-24 20:11:24.963 17706 17722 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:11:24.977 17706 17722 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 20:11:24.977 17706 17722 D OpenGLRenderer: Swap behavior 1
+01-24 20:11:25.009 17722 17722 W RenderThread: type=1400 audit(0.0:581): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 20:11:25.024 17706 17722 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 20:11:25.036 17706 17722 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 20:11:25.039 17706 17722 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:11:25.064 17706 17716 I zygote  : Background concurrent copying GC freed 1099(261KB) AllocSpace objects, 0(0B) LOS objects, 31% free, 1098KB/1610KB, paused 7.070ms total 270.596ms
+01-24 20:11:25.189   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=168954685850232)
+01-24 20:11:25.211 17706 17722 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:11:25.273   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +864ms
+01-24 20:11:27.896   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:11:29.192  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:11:30.586 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 20:11:34.197  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:11:39.205  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:11:41.551 17727 17727 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:11:42.713 17727 17727 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:11:42.739   434  2560 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:11:42.740   434  2560 I ActivityManager: Killing 17706:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:11:42.746   434  2560 W ActivityManager: Force removing ActivityRecord{5ece5a0 u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t498}: app died, no saved state
+01-24 20:11:42.941   434   660 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 17706 uid 10051
+01-24 20:11:43.037 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:11:43.041   434   454 W Looper  : Dispatch took 301ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:11:43.044   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17706
+01-24 20:11:43.053   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:11:43.105   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:11:43.110   335   335 I keystore: clear_uid 10051
+01-24 20:11:43.117   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:11:43.197 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:11:43.197 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:11:43.197 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:11:43.199 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:11:43.216 17727 17727 I app_process: System.exit called, status: 0
+01-24 20:11:43.216 17727 17727 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:11:43.290 13109 17747 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:11:43.295 13109 17747 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:11:43.313   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:11:43.364 13109 17747 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:11:43.366 13109 17747 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:11:44.206  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:11:48.682   434   660 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:11:48.768   434 13083 I ActivityManager: Start proc 17754:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:11:48.926   434 13083 W ActivityManager: Slow operation: 84ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:11:48.967   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:11:49.054 17754 17754 D com.getqardio.android.wearable.utils.crashlytics.CrashlyticsWear: Initialize CrachlyticsUncaughtExceptionHandler
+01-24 20:11:49.139 17754 17770 D OpenGLRenderer: HWUI GL Pipeline
+01-24 20:11:49.212  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:11:49.307   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=168978806444338)
+01-24 20:11:49.345 17754 17770 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 20:11:49.345 17754 17770 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 20:11:49.345 17754 17770 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 20:11:49.345 17754 17770 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 20:11:49.345 17754 17770 I Adreno-EGL: Remote Branch: 
+01-24 20:11:49.345 17754 17770 I Adreno-EGL: Local Patches: 
+01-24 20:11:49.345 17754 17770 I Adreno-EGL: Reconstruct Branch: 
+01-24 20:11:49.350 17754 17770 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:11:49.365 17754 17770 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 20:11:49.365 17754 17770 D OpenGLRenderer: Swap behavior 1
+01-24 20:11:49.369 17770 17770 W RenderThread: type=1400 audit(0.0:582): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 20:11:49.380 17754 17770 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 20:11:49.393 17754 17770 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 20:11:49.395 17754 17770 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:11:49.437 17754 17764 I zygote  : Background concurrent copying GC freed 1106(292KB) AllocSpace objects, 0(0B) LOS objects, 30% free, 1162KB/1674KB, paused 1.279ms total 343.319ms
+01-24 20:11:49.573 17754 17770 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:11:49.630   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +878ms
+01-24 20:11:52.243   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:11:54.217  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:11:59.225  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:12:00.014 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 20:12:00.028 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 20:12:00.034 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 20:12:04.226  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:12:05.928 17776 17776 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:12:07.209 17776 17776 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:12:07.233   434 13083 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:12:07.235   434 13083 I ActivityManager: Killing 17754:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:12:07.242   434 13083 W ActivityManager: Force removing ActivityRecord{44884eb u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t499}: app died, no saved state
+01-24 20:12:07.573   335   335 I keystore: clear_uid 10051
+01-24 20:12:07.587   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:12:07.588 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:12:07.599   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17754
+01-24 20:12:07.600   434   454 W Looper  : Dispatch took 366ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:12:07.607   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:12:07.638   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:12:07.777 15691 15701 I zygote  : Background concurrent copying GC freed 4755(402KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1307KB/1819KB, paused 494us total 174.964ms
+01-24 20:12:07.825 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:12:07.825 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:12:07.825 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:12:07.835 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:12:07.861 17776 17776 I app_process: System.exit called, status: 0
+01-24 20:12:07.861 17776 17776 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:12:07.914 13109 17787 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:12:07.916   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:12:07.917 13109 17787 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:12:07.978 13109 17787 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:12:07.986 13109 17787 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:12:08.501 13109 13122 I zygote  : Background concurrent copying GC freed 34876(2MB) AllocSpace objects, 0(0B) LOS objects, 20% free, 7MB/9MB, paused 13.176ms total 497.907ms
+01-24 20:12:08.617   434   443 I zygote  : Background concurrent copying GC freed 19102(1483KB) AllocSpace objects, 22(532KB) LOS objects, 14% free, 11MB/13MB, paused 7.869ms total 1.072s
+01-24 20:12:09.231  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:12:11.937   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 20:12:11.939 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 341  /isUsbOrAc: 1
+01-24 20:12:11.949   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 20:12:11.949   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 20:12:11.965   434   756 E BatteryStatsService: no controller energy info supplied
+01-24 20:12:11.967   434   756 I chatty  : uid=1000(system) Binder:434_6 identical 1 line
+01-24 20:12:11.967   434   756 E BatteryStatsService: no controller energy info supplied
+01-24 20:12:13.239   434 13083 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:12:13.314   434  5002 I ActivityManager: Start proc 17802:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:12:13.486   434  5002 W ActivityManager: Slow operation: 86ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:12:13.490   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:12:13.616 17802 17802 D com.getqardio.android.wearable.utils.crashlytics.CrashlyticsWear: Initialize CrachlyticsUncaughtExceptionHandler
+01-24 20:12:13.711 17802 17820 D OpenGLRenderer: HWUI GL Pipeline
+01-24 20:12:13.910 17802 17812 I zygote  : Background concurrent copying GC freed 970(333KB) AllocSpace objects, 0(0B) LOS objects, 30% free, 1186KB/1698KB, paused 13.924ms total 280.707ms
+01-24 20:12:13.937 17802 17820 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 20:12:13.937 17802 17820 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 20:12:13.937 17802 17820 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 20:12:13.937 17802 17820 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 20:12:13.937 17802 17820 I Adreno-EGL: Remote Branch: 
+01-24 20:12:13.937 17802 17820 I Adreno-EGL: Local Patches: 
+01-24 20:12:13.937 17802 17820 I Adreno-EGL: Reconstruct Branch: 
+01-24 20:12:13.944 17802 17820 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:12:13.959 17820 17820 W RenderThread: type=1400 audit(0.0:583): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 20:12:13.959 17802 17820 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 20:12:13.960 17802 17820 D OpenGLRenderer: Swap behavior 1
+01-24 20:12:13.968 17802 17820 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 20:12:13.980 17802 17820 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 20:12:13.983 17802 17820 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:12:14.153 17802 17820 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:12:14.208   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +896ms
+01-24 20:12:14.237  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:12:16.879   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:12:24.246  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 2 lines
+01-24 20:12:29.246  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:12:30.285 17825 17825 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:12:31.496 17825 17825 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:12:31.523   434   756 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:12:31.526   434   756 I ActivityManager: Killing 17802:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:12:31.531   434   756 W ActivityManager: Force removing ActivityRecord{2e11233 u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t500}: app died, no saved state
+01-24 20:12:31.729   434   454 W Looper  : Dispatch took 204ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:12:31.787   335   335 I keystore: clear_uid 10051
+01-24 20:12:31.789   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:12:31.789   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:12:31.820 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:12:31.823   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17802
+01-24 20:12:31.834   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:12:31.959 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:12:31.960 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:12:31.960 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:12:31.962 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:12:31.996 17825 17825 I app_process: System.exit called, status: 0
+01-24 20:12:31.996 17825 17825 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:12:32.051 13109 17837 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:12:32.059 13109 17837 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:12:32.083   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:12:32.162 13109 17837 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:12:32.164 13109 17837 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:12:34.252  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:12:37.425   434  2560 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:12:37.507   434   756 I ActivityManager: Start proc 17852:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:12:37.687   434  2560 W ActivityManager: Slow operation: 86ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:12:37.748   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:12:37.868 17852 17852 D com.getqardio.android.wearable.utils.crashlytics.CrashlyticsWear: Initialize CrachlyticsUncaughtExceptionHandler
+01-24 20:12:37.981 17852 17868 D OpenGLRenderer: HWUI GL Pipeline
+01-24 20:12:37.984 17852 17862 I zygote  : Background concurrent copying GC freed 917(331KB) AllocSpace objects, 0(0B) LOS objects, 31% free, 1122KB/1634KB, paused 1.134ms total 133.496ms
+01-24 20:12:38.190 17852 17868 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 20:12:38.190 17852 17868 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 20:12:38.190 17852 17868 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 20:12:38.190 17852 17868 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 20:12:38.190 17852 17868 I Adreno-EGL: Remote Branch: 
+01-24 20:12:38.190 17852 17868 I Adreno-EGL: Local Patches: 
+01-24 20:12:38.190 17852 17868 I Adreno-EGL: Reconstruct Branch: 
+01-24 20:12:38.196 17852 17868 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:12:38.209 17868 17868 W RenderThread: type=1400 audit(0.0:584): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 20:12:38.212 17852 17868 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 20:12:38.212 17852 17868 D OpenGLRenderer: Swap behavior 1
+01-24 20:12:38.218 17852 17868 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 20:12:38.229 17852 17868 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 20:12:38.232 17852 17868 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:12:38.399 17852 17868 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:12:38.489   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +974ms
+01-24 20:12:39.256  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:12:41.074   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:12:49.271  7206  7251 I chatty  : uid=10025(u0_a25) handle_total_da identical 2 lines
+01-24 20:12:54.276  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:12:54.607 17874 17874 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:12:55.827 17874 17874 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:12:55.856   434  7909 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:12:55.858   434  7909 I ActivityManager: Killing 17852:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:12:55.869   434  7909 W ActivityManager: Force removing ActivityRecord{a9e7e0a u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t501}: app died, no saved state
+01-24 20:12:56.008   434  1099 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 17852 uid 10051
+01-24 20:12:56.079   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:12:56.095   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:12:56.097   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17852
+01-24 20:12:56.102   434   454 W Looper  : Dispatch took 245ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:12:56.157 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:12:56.161   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:12:56.171   335   335 I keystore: clear_uid 10051
+01-24 20:12:56.250   434  7909 I zygote  : IncrementDisableThreadFlip blocked for 7.077ms
+01-24 20:12:56.265 17874 17874 I app_process: System.exit called, status: 0
+01-24 20:12:56.265 17874 17874 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:12:56.285 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:12:56.287 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:12:56.288 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:12:56.288 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:12:56.343   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:12:56.509 13109 17895 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:12:56.517 13109 17895 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:12:56.572 13109 17895 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:12:56.576 13109 17895 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:12:56.884   434   443 I zygote  : Background concurrent copying GC freed 21368(1626KB) AllocSpace objects, 19(472KB) LOS objects, 15% free, 11MB/13MB, paused 6.679ms total 641.318ms
+01-24 20:12:59.282  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:13:00.020 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 20:13:00.058 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 20:13:00.062 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 20:13:01.689   434  7909 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=com.getqardio.android/.wearable.ui.activity.MenuActivity} from uid 2000
+01-24 20:13:01.766   434  4786 I ActivityManager: Start proc 17901:com.getqardio.android/u0a51 for activity com.getqardio.android/.wearable.ui.activity.MenuActivity
+01-24 20:13:01.944   434  4786 W ActivityManager: Slow operation: 83ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 20:13:01.968   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:13:02.046 17901 17901 I zygote  : IncrementDisableThreadFlip blocked for 8.499ms
+01-24 20:13:02.121 17901 17911 I zygote  : Background concurrent copying GC freed 837(382KB) AllocSpace objects, 0(0B) LOS objects, 34% free, 960KB/1472KB, paused 23.112ms total 112.855ms
+01-24 20:13:02.139 17901 17901 D com.getqardio.android.wearable.utils.crashlytics.CrashlyticsWear: Initialize CrachlyticsUncaughtExceptionHandler
+01-24 20:13:02.202 17901 17917 D OpenGLRenderer: HWUI GL Pipeline
+01-24 20:13:02.407 17901 17917 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 20:13:02.407 17901 17917 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 20:13:02.407 17901 17917 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 20:13:02.407 17901 17917 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 20:13:02.407 17901 17917 I Adreno-EGL: Remote Branch: 
+01-24 20:13:02.407 17901 17917 I Adreno-EGL: Local Patches: 
+01-24 20:13:02.407 17901 17917 I Adreno-EGL: Reconstruct Branch: 
+01-24 20:13:02.414 17901 17917 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:13:02.419 17917 17917 W RenderThread: type=1400 audit(0.0:585): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 20:13:02.429 17901 17917 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 20:13:02.429 17901 17917 D OpenGLRenderer: Swap behavior 1
+01-24 20:13:02.436 17901 17917 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 20:13:02.449 17901 17917 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 20:13:02.451 17901 17917 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:13:02.494 17901 17911 I zygote  : NativeAllocBackground concurrent copying GC freed 821(148KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 1084KB/1596KB, paused 670us total 114.769ms
+01-24 20:13:02.632 17901 17917 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 20:13:02.676   434   461 I ActivityManager: Displayed com.getqardio.android/.wearable.ui.activity.MenuActivity: +936ms
+01-24 20:13:02.831 31332 31342 I zygote  : Background concurrent copying GC freed 363(400KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 1008KB/1520KB, paused 6.202ms total 76.930ms
+01-24 20:13:04.288  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:13:05.244   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:13:09.295  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:13:11.957   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 20:13:11.963 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 341  /isUsbOrAc: 1
+01-24 20:13:11.974   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 20:13:11.974   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 20:13:12.004   434   874 E BatteryStatsService: no controller energy info supplied
+01-24 20:13:12.006   434   874 I chatty  : uid=1000(system) Binder:434_7 identical 1 line
+01-24 20:13:12.007   434   874 E BatteryStatsService: no controller energy info supplied
+01-24 20:13:12.170   723   737 I zygote  : Background concurrent copying GC freed 7537(637KB) AllocSpace objects, 2(192KB) LOS objects, 24% free, 1974KB/2MB, paused 3.437ms total 102.393ms
+01-24 20:13:14.296  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:13:16.842   434 17923 D NetworkMonitor/NetworkAgentInfo [WIFI () - 448]: PROBE_DNS www.google.com 56ms FAIL
+01-24 20:13:16.848   434 17924 D NetworkMonitor/NetworkAgentInfo [WIFI () - 448]: PROBE_DNS connectivitycheck.gstatic.com 61ms FAIL
+01-24 20:13:16.862   434 17923 D NetworkMonitor/NetworkAgentInfo [WIFI () - 448]: PROBE_HTTPS https://www.google.com/generate_204 Probably not a portal: exception java.net.UnknownHostException: Unable to resolve host "www.google.com": No address associated with hostname
+01-24 20:13:16.868   434 17924 D NetworkMonitor/NetworkAgentInfo [WIFI () - 448]: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 Probably not a portal: exception java.net.UnknownHostException: Unable to resolve host "connectivitycheck.gstatic.com": No address associated with hostname
+01-24 20:13:16.879   434  1808 D NetworkMonitor/NetworkAgentInfo [WIFI () - 448]: PROBE_FALLBACK http://www.google.com/gen_204 Probably not a portal: exception java.net.UnknownHostException: Unable to resolve host "www.google.com": No address associated with hostname
+01-24 20:13:16.884   434   517 D ConnectivityService: NetworkAgentInfo [WIFI () - 448] validation failed
+01-24 20:13:16.885   434   514 D WifiStateMachine: NETWORK_STATUS_UNWANTED_VALIDATION_FAILED
+01-24 20:13:18.858 17927 17927 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 20:13:19.297  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 20:13:20.045 17927 17927 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 20:13:20.071   434   874 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=0: clear data
+01-24 20:13:20.072   434   874 I ActivityManager: Killing 17901:com.getqardio.android/u0a51 (adj 0): stop com.getqardio.android
+01-24 20:13:20.078   434   874 W ActivityManager: Force removing ActivityRecord{714f972 u0 com.getqardio.android/.wearable.ui.activity.MenuActivity t502}: app died, no saved state
+01-24 20:13:20.340   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 17901
+01-24 20:13:20.343   434   454 W Looper  : Dispatch took 271ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 20:13:20.382   434   453 I ActivityManager: Force stopping com.getqardio.android appid=10051 user=-1: clearApplicationUserData
+01-24 20:13:20.407   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 20:13:20.423   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 20:13:20.433   335   335 I keystore: clear_uid 10051
+01-24 20:13:20.460 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 20:13:20.527 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 20:13:20.528 31332 31332 D Avrcp   : packageName: com.getqardio.android removed: true
+01-24 20:13:20.528 31332 31332 V Avrcp   : isBrowseSupported for com.getqardio.android: false
+01-24 20:13:20.534 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=com.getqardio.android]
+01-24 20:13:20.553 17927 17927 I app_process: System.exit called, status: 0
+01-24 20:13:20.553 17927 17927 I AndroidRuntime: VM exiting with result code 0.
+01-24 20:13:20.626 13109 17943 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:13:20.636 13109 17943 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:13:20.679   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 20:13:20.722 13109 17943 I Fitness : Clearing all cached OAuth tokens for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:13:20.724 13109 17943 I Fitness : Removing all subscriptions for: com.getqardio.android [CONTEXT service_id=17 ]
+01-24 20:13:24.302  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+
+

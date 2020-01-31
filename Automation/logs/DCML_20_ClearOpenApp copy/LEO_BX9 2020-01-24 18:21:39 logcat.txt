@@ -1,0 +1,1204 @@
+--------- beginning of system
+01-24 18:13:30.294   434  5328 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+--------- beginning of main
+01-24 18:13:27.589  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:13:30.380   434  5328 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:13:30.412   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:13:30.451   434  2021 I ActivityManager: Start proc 12844:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:13:30.652   434  2021 W ActivityManager: Slow operation: 77ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:13:30.657   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:13:30.801 12844 12844 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:13:31.142 12844 12854 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:13:31.550 12844 12870 I chatty  : uid=10060(u0_a60) expire 9 lines
+01-24 18:13:31.757 12844 12863 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:13:31.981   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=161881494439649)
+01-24 18:13:32.159 12870 12870 I chatty  : uid=10060(u0_a60) org.dclm.live expire 1 line
+01-24 18:13:32.206  2732  2732 I chatty  : uid=0(root) /system/bin/sysproxy expire 2 lines
+01-24 18:13:32.516  2732  2732 D sysproxy: [T:81] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:13:32.531   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +2s98ms
+01-24 18:13:32.591  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:13:33.934   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:13:34.338  2732  2732 D sysproxy: [D:66a4] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:13:34.417  2732  2732 D sysproxy: [D:66a4] Resolved s3-1-w.amazonaws.com to 52.216.145.99.
+01-24 18:13:34.437  2732  2732 D sysproxy: [T:82] Establishing a new TCP stream to: 52.216.145.99:443 (uid=10060) (package=org.dclm.live)
+01-24 18:13:34.475   434   443 I zygote  : Background concurrent copying GC freed 35157(1863KB) AllocSpace objects, 12(424KB) LOS objects, 15% free, 10MB/12MB, paused 4.869ms total 571.219ms
+01-24 18:13:37.596  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:13:42.602  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:13:43.986  2732  2732 D sysproxy: [T:82] Closed stream. RX/TX: 486/150272
+01-24 18:13:47.608  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:13:47.862 12889 12889 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:13:49.127 12889 12889 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:13:49.156   434   660 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:13:49.159   434   660 I ActivityManager: Killing 12844:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:13:49.168   434   660 W ActivityManager: Force removing ActivityRecord{1b7cf06 u0 org.dclm.live/.MainActivity t415}: app died, no saved state
+01-24 18:13:49.410   434   454 W Looper  : Dispatch took 251ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:13:49.420   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 12844
+01-24 18:13:49.462   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:13:49.462   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:13:49.469 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:13:49.490   335   335 I keystore: clear_uid 10060
+01-24 18:13:49.501  2732  2732 D sysproxy: [T:81] Local application closed connection; closing stream.
+01-24 18:13:49.502  2732  2732 D sysproxy: [T:81] Closed stream. RX/TX: 687/11663
+01-24 18:13:49.516   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:13:49.627 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:13:49.630 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:13:49.630 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:13:49.630 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:13:49.639 12889 12889 I app_process: System.exit called, status: 0
+01-24 18:13:49.639 12889 12889 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:13:49.715   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:13:49.763 13109 12900 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:13:49.767 13109 12900 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:13:49.859 13109 12900 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:13:49.867 13109 12900 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:13:52.613  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:13:55.054   434   756 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:13:55.072   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:13:55.148   434   660 I ActivityManager: Start proc 12917:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:13:55.322 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 18:13:55.360 12917 12927 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:13:55.363   434   756 W ActivityManager: Slow operation: 105ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:13:55.370   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:13:55.453 12917 12917 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:13:55.916 12917 12933 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:13:55.920 12917 12941 I chatty  : uid=10060(u0_a60) expire 9 lines
+01-24 18:13:55.955  2732  2732 D sysproxy: [T:83] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:13:56.089 12941 12941 I chatty  : uid=10060(u0_a60) org.dclm.live expire 1 line
+01-24 18:13:56.448   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s317ms
+01-24 18:13:57.616  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:13:57.635  2732  2732 D sysproxy: [D:7347] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:13:57.688  2732  2732 D sysproxy: [D:7347] Resolved s3-1-w.amazonaws.com to 52.217.4.60.
+01-24 18:13:57.723  2732  2732 D sysproxy: [T:84] Establishing a new TCP stream to: 52.217.4.60:443 (uid=10060) (package=org.dclm.live)
+01-24 18:13:58.621   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:14:00.004 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 18:14:00.015 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 18:14:00.020 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 18:14:02.623  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:14:07.068  2732  2732 D sysproxy: [T:84] Closed stream. RX/TX: 486/150272
+01-24 18:14:07.631  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:14:11.959 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 346  /isUsbOrAc: 1
+01-24 18:14:11.961   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 18:14:11.994   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 18:14:11.995   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 18:14:12.034   434 13081 E BatteryStatsService: no controller energy info supplied
+01-24 18:14:12.036   434 13081 I chatty  : uid=1000(system) Binder:434_1E identical 1 line
+01-24 18:14:12.036   434 13081 E BatteryStatsService: no controller energy info supplied
+01-24 18:14:12.463 12957 12957 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:14:12.636  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:14:13.673 12957 12957 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:14:13.700   434 13081 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:14:13.702   434 13081 I ActivityManager: Killing 12917:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:14:13.710   434 13081 W ActivityManager: Force removing ActivityRecord{6c25cb4 u0 org.dclm.live/.MainActivity t416}: app died, no saved state
+01-24 18:14:13.869   434  2021 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 12917 uid 10060
+01-24 18:14:13.937  2732  2732 D sysproxy: [T:83] Local application closed connection; closing stream.
+01-24 18:14:13.938  2732  2732 D sysproxy: [T:83] Closed stream. RX/TX: 687/11663
+01-24 18:14:14.016   434   454 W Looper  : Dispatch took 302ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:14:14.022   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 12917
+01-24 18:14:14.047   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:14:14.058   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:14:14.073 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:14:14.089   335   335 I keystore: clear_uid 10060
+01-24 18:14:14.097   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:14:14.176 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:14:14.188 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:14:14.193 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:14:14.193 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:14:14.204 12957 12957 I app_process: System.exit called, status: 0
+01-24 18:14:14.204 12957 12957 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:14:14.273 31332 31342 I zygote  : Background concurrent copying GC freed 918(382KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 1042KB/1554KB, paused 18.828ms total 325.155ms
+01-24 18:14:14.320 13109 12973 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:14:14.323   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:14:14.332 13109 12973 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:14:14.443 13109 12973 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:14:14.447 13109 12973 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:14:14.485   712   726 I zygote  : Background concurrent copying GC freed 9607(398KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1266KB/1778KB, paused 1.560ms total 271.513ms
+01-24 18:14:17.641  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:14:19.573   434 13233 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:14:19.663   434  4786 I ActivityManager: Start proc 12984:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:14:19.882   434  4786 W ActivityManager: Slow operation: 83ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:14:19.896   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:14:19.975 12984 12984 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:14:20.359 12984 12994 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:14:20.424 12984 13002 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:14:20.456 12984 13008 I chatty  : uid=10060(u0_a60) expire 9 lines
+01-24 18:14:20.489  2732  2732 D sysproxy: [T:85] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:14:20.639 13008 13008 I chatty  : uid=10060(u0_a60) org.dclm.live expire 1 line
+01-24 18:14:21.009   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s370ms
+01-24 18:14:22.562  2732  2732 D sysproxy: [D:5aac] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:14:22.622  2732  2732 D sysproxy: [D:5aac] Resolved s3-1-w.amazonaws.com to 52.216.145.147.
+01-24 18:14:22.643  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:14:22.644  2732  2732 D sysproxy: [T:86] Establishing a new TCP stream to: 52.216.145.147:443 (uid=10060) (package=org.dclm.live)
+01-24 18:14:23.152   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:14:27.648  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:14:32.136  2732  2732 D sysproxy: [T:86] Closed stream. RX/TX: 486/150272
+01-24 18:14:32.654  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:14:34.823   434   443 I zygote  : Background concurrent copying GC freed 20723(1490KB) AllocSpace objects, 18(452KB) LOS objects, 15% free, 10MB/12MB, paused 9.263ms total 563.980ms
+01-24 18:14:36.845 13025 13025 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:14:37.657  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:14:38.101 13025 13025 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:14:38.131   434 13083 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:14:38.132   434 13083 I ActivityManager: Killing 12984:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:14:38.144   434 13083 W ActivityManager: Force removing ActivityRecord{448d29d u0 org.dclm.live/.MainActivity t417}: app died, no saved state
+01-24 18:14:38.274  2732  2732 D sysproxy: [T:85] Local application closed connection; closing stream.
+01-24 18:14:38.274  2732  2732 D sysproxy: [T:85] Closed stream. RX/TX: 687/11663
+01-24 18:14:38.429   434   454 W Looper  : Dispatch took 297ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:14:38.432   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:14:38.433   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:14:38.473   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 12984
+01-24 18:14:38.483   335   335 I keystore: clear_uid 10060
+01-24 18:14:38.491   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:14:38.495 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:14:38.566 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:14:38.568 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:14:38.568 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:14:38.568 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:14:38.587 13025 13025 I app_process: System.exit called, status: 0
+01-24 18:14:38.587 13025 13025 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:14:38.629   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:14:38.785 13109 13044 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:14:38.795 13109 13044 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:14:38.847 13109 13044 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:14:38.849 13109 13044 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:14:42.662  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:14:44.108   434  4786 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:14:44.125   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:14:44.195   434 13233 I ActivityManager: Start proc 13051:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:14:44.360   434 13233 W ActivityManager: Slow operation: 77ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:14:44.377   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:14:44.433 13051 13051 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:14:44.873 13051 13067 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:14:44.907 13051 13075 I chatty  : uid=10060(u0_a60) expire 9 lines
+01-24 18:14:44.930  2732  2732 D sysproxy: [T:87] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:14:45.079 13075 13075 I chatty  : uid=10060(u0_a60) org.dclm.live expire 1 line
+01-24 18:14:45.455   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s270ms
+01-24 18:14:46.277 13051 13061 I chatty  : uid=10060(u0_a60) expire 2 lines
+01-24 18:14:46.318   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=161955813197746)
+01-24 18:14:46.516  2732  2732 D sysproxy: [D:1148] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:14:46.583  2732  2732 D sysproxy: [D:1148] Resolved s3-1-w.amazonaws.com to 52.217.14.116.
+01-24 18:14:46.619  2732  2732 D sysproxy: [T:88] Establishing a new TCP stream to: 52.217.14.116:443 (uid=10060) (package=org.dclm.live)
+01-24 18:14:47.666  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:14:47.691   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:14:52.673  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:14:55.749  2732  2732 D sysproxy: [T:88] Closed stream. RX/TX: 486/150272
+01-24 18:14:57.679  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:15:00.023 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 18:15:00.057 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 18:15:00.066 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 18:15:01.218 13093 13093 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:15:02.444 13093 13093 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:15:02.478   434  4786 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:15:02.480   434  4786 I ActivityManager: Killing 13051:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:15:02.487   434  4786 W ActivityManager: Force removing ActivityRecord{9e0e45d u0 org.dclm.live/.MainActivity t418}: app died, no saved state
+01-24 18:15:02.679  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:15:02.739   434   454 W Looper  : Dispatch took 259ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:15:02.782   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:15:02.786  2732  2732 D sysproxy: [T:87] Local application closed connection; closing stream.
+01-24 18:15:02.786  2732  2732 D sysproxy: [T:87] Closed stream. RX/TX: 687/11665
+01-24 18:15:02.820   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 13051
+01-24 18:15:02.821 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:15:02.822   335   335 I keystore: clear_uid 10060
+01-24 18:15:02.826   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:15:02.846   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:15:02.921 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:15:02.927 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:15:02.928 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:15:02.928 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:15:02.933 13093 13093 I app_process: System.exit called, status: 0
+01-24 18:15:02.933 13093 13093 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:15:02.993 13109 13104 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:15:02.995 13109 13104 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:15:03.044   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:15:03.085 13109 13104 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:15:03.087 13109 13104 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:15:07.685  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:15:08.338   434  7909 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:15:08.432   434 13083 I ActivityManager: Start proc 13127:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:15:08.607   434  7909 W ActivityManager: Slow operation: 88ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:15:08.614   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:15:08.665 13127 13127 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:15:08.957 13127 13138 I chatty  : uid=10060(u0_a60) expire 2 lines
+01-24 18:15:09.119 13127 13145 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:15:09.134 13127 13153 I chatty  : uid=10060(u0_a60) expire 9 lines
+01-24 18:15:09.159  2732  2732 D sysproxy: [T:89] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:15:09.309 13153 13153 I chatty  : uid=10060(u0_a60) org.dclm.live expire 1 line
+01-24 18:15:09.697   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s280ms
+01-24 18:15:11.233 13127 13138 I chatty  : uid=10060(u0_a60) expire 2 lines
+01-24 18:15:11.249  2732  2732 D sysproxy: [D:475c] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:15:11.320  2732  2732 D sysproxy: [D:475c] Resolved s3-1-w.amazonaws.com to 52.216.82.224.
+01-24 18:15:11.341  2732  2732 D sysproxy: [T:90] Establishing a new TCP stream to: 52.216.82.224:443 (uid=10060) (package=org.dclm.live)
+01-24 18:15:11.925   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:15:11.950   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 18:15:11.953 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 346  /isUsbOrAc: 1
+01-24 18:15:11.974   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 18:15:11.975   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 18:15:12.005   434  4786 E BatteryStatsService: no controller energy info supplied
+01-24 18:15:12.325   723   737 I zygote  : Background concurrent copying GC freed 7212(632KB) AllocSpace objects, 2(192KB) LOS objects, 24% free, 1991KB/2MB, paused 3.522ms total 259.001ms
+01-24 18:15:12.691  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:15:17.697  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:15:20.498  2732  2732 D sysproxy: [T:90] Closed stream. RX/TX: 486/150272
+01-24 18:15:22.703  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:15:25.740 13172 13172 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:15:26.935 13172 13172 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:15:12.008   434  4786 I chatty  : uid=1000(system) Binder:434_14 identical 1 line
+01-24 18:15:12.008   434  4786 E BatteryStatsService: no controller energy info supplied
+01-24 18:15:26.971   434 13083 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:15:26.972   434 13083 I ActivityManager: Killing 13127:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:15:26.979   434 13083 W ActivityManager: Force removing ActivityRecord{6f89092 u0 org.dclm.live/.MainActivity t419}: app died, no saved state
+01-24 18:15:27.201  2732  2732 D sysproxy: [T:89] Local application closed connection; closing stream.
+01-24 18:15:27.201  2732  2732 D sysproxy: [T:89] Closed stream. RX/TX: 687/11665
+01-24 18:15:27.305   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:15:27.334   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:15:27.342   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:15:27.368   434   454 W Looper  : Dispatch took 395ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:15:27.382   335   335 I keystore: clear_uid 10060
+01-24 18:15:27.405 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:15:27.416   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 13127
+01-24 18:15:27.552 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:15:27.552 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:15:27.552 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:15:27.557 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:15:27.567 13172 13172 I app_process: System.exit called, status: 0
+01-24 18:15:27.568 13172 13172 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:15:27.578   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:15:27.678 13109 13183 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:15:27.688 13109 13183 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:15:27.707  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:15:27.756 13109 13183 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:15:27.767 13109 13183 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:15:28.177   434   443 I zygote  : Background concurrent copying GC freed 19616(1473KB) AllocSpace objects, 18(452KB) LOS objects, 15% free, 11MB/13MB, paused 5.347ms total 913.190ms
+01-24 18:15:31.695   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 18:15:31.696   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 18:15:31.717   434   456 E BatteryStatsService: no controller energy info supplied
+01-24 18:15:31.717   434   456 I chatty  : uid=1000(system) batterystats-sy identical 1 line
+01-24 18:15:31.717   434   456 E BatteryStatsService: no controller energy info supplied
+01-24 18:15:32.711  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:15:33.028   434  5328 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:15:33.045   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:15:33.110   434 13083 I ActivityManager: Start proc 13201:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:15:33.304   434  5328 W ActivityManager: Slow operation: 79ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:15:33.341   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:15:33.354 13201 13201 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:15:33.665 13201 13222 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:15:33.799 13201 13231 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:15:33.841 13201 13242 I chatty  : uid=10060(u0_a60) expire 9 lines
+01-24 18:15:33.893  2732  2732 D sysproxy: [T:91] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:15:34.019 13242 13242 I chatty  : uid=10060(u0_a60) org.dclm.live expire 1 line
+01-24 18:15:34.380   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s287ms
+01-24 18:15:36.043  2732  2732 D sysproxy: [D:5a06] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:15:36.109  2732  2732 D sysproxy: [D:5a06] Resolved s3-1-w.amazonaws.com to 52.216.146.139.
+01-24 18:15:36.124  2732  2732 D sysproxy: [T:92] Establishing a new TCP stream to: 52.216.146.139:443 (uid=10060) (package=org.dclm.live)
+01-24 18:15:36.580   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:15:37.717  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:15:42.724  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:15:45.667  2732  2732 D sysproxy: [T:92] Closed stream. RX/TX: 486/150272
+01-24 18:15:47.726  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:15:50.357 13259 13259 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:15:51.625 13259 13259 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:15:51.652   434 13083 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:15:51.654   434 13083 I ActivityManager: Killing 13201:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:15:51.664   434 13083 W ActivityManager: Force removing ActivityRecord{f7a1f52 u0 org.dclm.live/.MainActivity t420}: app died, no saved state
+01-24 18:15:51.808  2732  2732 D sysproxy: [T:91] Local application closed connection; closing stream.
+01-24 18:15:51.808  2732  2732 D sysproxy: [T:91] Closed stream. RX/TX: 687/11665
+01-24 18:15:51.936   434   454 W Looper  : Dispatch took 283ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:15:51.945   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 13201
+01-24 18:15:51.993   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:15:51.994   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:15:52.010 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:15:52.026   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:15:52.028   335   335 I keystore: clear_uid 10060
+01-24 18:15:52.150 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:15:52.150 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:15:52.150 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:15:52.162 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:15:52.234 13259 13259 I app_process: System.exit called, status: 0
+01-24 18:15:52.234 13259 13259 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:15:52.269   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:15:52.274 13109 13272 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:15:52.293 13109 13272 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:15:52.337 13109 13272 I zygote  : IncrementDisableThreadFlip blocked for 8.885ms
+01-24 18:15:52.381 13109 13272 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:15:52.397 13109 13272 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:15:52.663 13109 13122 I zygote  : Background concurrent copying GC freed 34456(2MB) AllocSpace objects, 0(0B) LOS objects, 20% free, 7MB/9MB, paused 14.734ms total 359.950ms
+01-24 18:15:52.726  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:15:57.607   434  2560 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:15:57.614 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 18:15:57.730  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:15:57.743   434  7909 I ActivityManager: Start proc 13287:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:15:57.802   434   462 W ProcessCpuTracker: Skipping unknown process pid 13283
+01-24 18:15:57.807   434   462 W ProcessCpuTracker: Skipping unknown process pid 13285
+01-24 18:15:57.918   434  7909 W ActivityManager: Slow operation: 83ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:15:57.921   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:15:57.999 13287 13287 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:15:58.098 13287 13298 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:15:58.441 13287 13305 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:15:58.460 13287 13313 I chatty  : uid=10060(u0_a60) expire 9 lines
+01-24 18:15:58.519  2732  2732 D sysproxy: [T:93] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:15:58.629 13313 13313 I chatty  : uid=10060(u0_a60) org.dclm.live expire 1 line
+01-24 18:15:59.011   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s277ms
+01-24 18:16:00.241 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 18:16:00.303 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 18:16:00.365 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 18:16:00.595  2732  2732 D sysproxy: [D:0c46] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:16:00.630  2732  2732 D sysproxy: [D:0c46] Resolved s3-1-w.amazonaws.com to 52.216.108.203.
+01-24 18:16:00.646  2732  2732 D sysproxy: [T:94] Establishing a new TCP stream to: 52.216.108.203:443 (uid=10060) (package=org.dclm.live)
+01-24 18:16:01.172   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:16:02.737  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:16:05.384   434   434 I EntropyMixer: Writing entropy...
+01-24 18:16:07.743  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:16:09.795  2732  2732 D sysproxy: [T:94] Closed stream. RX/TX: 486/150272
+01-24 18:16:11.953   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 18:16:11.968 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 346  /isUsbOrAc: 1
+01-24 18:16:11.981   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 18:16:11.981   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 18:16:12.018   434 13083 E BatteryStatsService: no controller energy info supplied
+01-24 18:16:12.021   434 13083 I chatty  : uid=1000(system) Binder:434_1F identical 1 line
+01-24 18:16:12.022   434 13083 E BatteryStatsService: no controller energy info supplied
+01-24 18:16:12.577   434   443 I zygote  : Background concurrent copying GC freed 18727(1433KB) AllocSpace objects, 22(584KB) LOS objects, 15% free, 10MB/12MB, paused 13.519ms total 501.618ms
+01-24 18:16:12.748  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:16:14.882 13329 13329 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:16:16.041 13329 13329 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:16:16.067   434 13083 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:16:16.068   434 13083 I ActivityManager: Killing 13287:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:16:16.079   434 13083 W ActivityManager: Force removing ActivityRecord{b886e12 u0 org.dclm.live/.MainActivity t421}: app died, no saved state
+01-24 18:16:16.223  2732  2732 D sysproxy: [T:93] Local application closed connection; closing stream.
+01-24 18:16:16.224  2732  2732 D sysproxy: [T:93] Closed stream. RX/TX: 687/11665
+01-24 18:16:16.382   434   454 W Looper  : Dispatch took 313ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:16:16.382   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 13287
+01-24 18:16:16.384   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:16:16.401 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:16:16.424   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:16:16.485   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:16:16.495 13109 13109 D QueuedWork: waited: [<1: 0, <2: 812, <4: 68, <8: 42, <16: 36, <32: 35, <64: 19, <128: 11, <256: 1, <512: 0, <1024: 0, <2048: 0, <4096: 0, <8192: 0, <16384: 0, >=16384: 0]
+01-24 18:16:16.512   335   335 I keystore: clear_uid 10060
+01-24 18:16:16.578 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:16:16.580 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:16:16.580 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:16:16.580 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:16:16.624 13329 13329 I app_process: System.exit called, status: 0
+01-24 18:16:16.625 13329 13329 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:16:16.658 13109 13351 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:16:16.661 13109 13351 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:16:16.713   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:16:16.769 13109 13351 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:16:16.795 13109 13351 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:16:17.754  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:16:21.597 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 18:16:22.014   434 13083 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:16:22.032   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:16:22.101   434  2426 I ActivityManager: Start proc 13363:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:16:22.271   434   462 W ProcessCpuTracker: Skipping unknown process pid 13359
+01-24 18:16:22.273   434   462 W ProcessCpuTracker: Skipping unknown process pid 13361
+01-24 18:16:22.325   434 13083 W ActivityManager: Slow operation: 100ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:16:22.361   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:16:22.376 13363 13363 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:16:22.600 13363 13373 I chatty  : uid=10060(u0_a60) expire 2 lines
+01-24 18:16:22.759  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:16:22.854 13363 13380 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:16:22.863 13363 13388 I chatty  : uid=10060(u0_a60) expire 9 lines
+01-24 18:16:22.891  2732  2732 D sysproxy: [T:95] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:16:23.039 13388 13388 I chatty  : uid=10060(u0_a60) org.dclm.live expire 1 line
+01-24 18:16:23.421   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s307ms
+01-24 18:16:24.378  2732  2732 D sysproxy: [D:a8c7] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:16:24.441  2732  2732 D sysproxy: [D:a8c7] Resolved s3-1-w.amazonaws.com to 52.216.102.43.
+01-24 18:16:24.465  2732  2732 D sysproxy: [T:96] Establishing a new TCP stream to: 52.216.102.43:443 (uid=10060) (package=org.dclm.live)
+01-24 18:16:25.606   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:16:27.766  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:16:32.774  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:16:33.609  2732  2732 D sysproxy: [T:96] Closed stream. RX/TX: 486/150272
+01-24 18:16:37.781  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:16:39.185 13404 13404 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:16:40.386 13404 13404 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:16:40.414   434  7909 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:16:40.416   434  7909 I ActivityManager: Killing 13363:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:16:40.424   434  7909 W ActivityManager: Force removing ActivityRecord{e5051a3 u0 org.dclm.live/.MainActivity t422}: app died, no saved state
+01-24 18:16:40.651   434   454 W Looper  : Dispatch took 221ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:16:40.669   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:16:40.713 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:16:40.725   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:16:40.738   335   335 I keystore: clear_uid 10060
+01-24 18:16:40.739   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:16:40.865 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:16:40.874 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:16:40.874 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:16:40.874 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:16:40.900  2732  2732 D sysproxy: [T:95] Local application closed connection; closing stream.
+01-24 18:16:40.900  2732  2732 D sysproxy: [T:95] Closed stream. RX/TX: 687/11665
+01-24 18:16:40.907 13404 13404 I app_process: System.exit called, status: 0
+01-24 18:16:40.907 13404 13404 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:16:40.909   434   455 E zygote  : failed to kill 1 processes for processgroup 13363
+01-24 18:16:40.913   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 13363
+01-24 18:16:40.938 13109 13415 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:16:40.957 13109 13415 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:16:41.005   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:16:41.048 13109 13415 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:16:41.052 13109 13415 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:16:42.787  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:16:46.461   434  2093 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:16:46.581   434   462 W ProcessCpuTracker: Skipping unknown process pid 13428
+01-24 18:16:46.582   434   462 W ProcessCpuTracker: Skipping unknown process pid 13431
+01-24 18:16:46.600   434  7909 I ActivityManager: Start proc 13433:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:16:46.760   434  7909 W ActivityManager: Slow operation: 85ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:16:46.769   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:16:46.885 13433 13433 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:16:46.897 13433 13444 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:16:47.301 13433 13453 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:16:47.333  2732  2732 D sysproxy: [T:97] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:16:47.333 13433 13459 I chatty  : uid=10060(u0_a60) expire 9 lines
+01-24 18:16:47.509 13459 13459 I chatty  : uid=10060(u0_a60) org.dclm.live expire 1 line
+01-24 18:16:47.801  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:16:47.878   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s338ms
+01-24 18:16:49.445  2732  2732 D sysproxy: [D:da1f] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:16:49.487  2732  2732 D sysproxy: [D:da1f] Resolved s3-1-w.amazonaws.com to 52.216.106.212.
+01-24 18:16:49.500  2732  2732 D sysproxy: [T:98] Establishing a new TCP stream to: 52.216.106.212:443 (uid=10060) (package=org.dclm.live)
+01-24 18:16:50.019   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:16:51.477   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=162080973253011)
+01-24 18:16:52.808  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:16:57.815  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:16:58.850  2732  2732 D sysproxy: [T:98] Closed stream. RX/TX: 486/150272
+01-24 18:17:00.021 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 18:17:00.035 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 18:17:00.043 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 18:17:02.127 31332 31342 I zygote  : Background concurrent copying GC freed 211(399KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 1024KB/1536KB, paused 10.584ms total 95.717ms
+01-24 18:17:02.817  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:17:03.739 13476 13476 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:17:04.925 13476 13476 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:17:04.952   434  7909 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:17:04.953   434  7909 I ActivityManager: Killing 13433:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:17:04.958   434  7909 W ActivityManager: Force removing ActivityRecord{b01d963 u0 org.dclm.live/.MainActivity t423}: app died, no saved state
+01-24 18:17:05.199   434   454 W Looper  : Dispatch took 246ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:17:05.242   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:17:05.271   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 13433
+01-24 18:17:05.308   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:17:05.315 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:17:05.362  2732  2732 D sysproxy: [T:97] Local application closed connection; closing stream.
+01-24 18:17:05.363  2732  2732 D sysproxy: [T:97] Closed stream. RX/TX: 687/11665
+01-24 18:17:05.434   335   335 I keystore: clear_uid 10060
+01-24 18:17:05.439   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:17:05.519 15691 15701 I zygote  : Background concurrent copying GC freed 4303(399KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1304KB/1816KB, paused 21.394ms total 232.596ms
+01-24 18:17:05.556 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:17:05.556 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:17:05.556 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:17:05.572 13476 13476 I app_process: System.exit called, status: 0
+01-24 18:17:05.573 13476 13476 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:17:05.574 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:17:05.644 13109 13487 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:17:05.654 13109 13487 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:17:05.667   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:17:05.757 13109 13487 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:17:05.773 13109 13487 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:17:06.497   434   443 I zygote  : Background concurrent copying GC freed 24618(1704KB) AllocSpace objects, 16(320KB) LOS objects, 15% free, 10MB/12MB, paused 3.674ms total 407.973ms
+01-24 18:17:07.818  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:17:11.068 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 18:17:11.122   434   874 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:17:11.143   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:17:11.254   434  1694 I ActivityManager: Start proc 13502:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:17:11.282   434   462 W ProcessCpuTracker: Skipping unknown process pid 13498
+01-24 18:17:11.283   434   462 W ProcessCpuTracker: Skipping unknown process pid 13500
+01-24 18:17:11.398 13502 13514 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:17:11.453   434  1694 W ActivityManager: Slow operation: 99ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:17:11.458   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:17:11.534 13502 13502 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:17:11.867 13502 13514 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:17:11.982 31787 31787 I ADVLog  : ADV.SensorService:/BatteryTemperature: 346  /isUsbOrAc: 1
+01-24 18:17:11.988   723   723 I battery : BatteryService: mInternalBatteryReceiver onReceive() action = android.intent.action.BATTERY_CHANGED
+01-24 18:17:12.005   319   319 D WifiHAL : In DebugCommand::handleResponse
+01-24 18:17:12.006   319   319 D WifiHAL : len = 4, expected len = 4
+01-24 18:17:12.009 13502 13528 I chatty  : uid=10060(u0_a60) expire 9 lines
+01-24 18:17:12.013 13502 13523 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:17:12.029   434  1694 E BatteryStatsService: no controller energy info supplied
+01-24 18:17:12.029   434  1694 I chatty  : uid=1000(system) Binder:434_C identical 1 line
+01-24 18:17:12.029   434  1694 E BatteryStatsService: no controller energy info supplied
+01-24 18:17:12.072  2732  2732 D sysproxy: [T:99] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:17:12.209 13528 13528 I chatty  : uid=10060(u0_a60) org.dclm.live expire 1 line
+01-24 18:17:12.325   723   737 I zygote  : Background concurrent copying GC freed 7109(626KB) AllocSpace objects, 2(192KB) LOS objects, 24% free, 1989KB/2MB, paused 1.674ms total 213.065ms
+01-24 18:17:12.589   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s353ms
+01-24 18:17:12.820  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:17:14.085  2732  2732 D sysproxy: [D:ca93] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:17:14.133  2732  2732 D sysproxy: [D:ca93] Resolved s3-1-w.amazonaws.com to 52.216.114.91.
+01-24 18:17:14.170  2732  2732 D sysproxy: [T:100] Establishing a new TCP stream to: 52.216.114.91:443 (uid=10060) (package=org.dclm.live)
+01-24 18:17:14.706   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:17:17.826  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:17:22.830  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:17:23.254  2732  2732 D sysproxy: [T:100] Closed stream. RX/TX: 486/150272
+01-24 18:17:27.836  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:17:28.505 13544 13544 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:17:29.792 13544 13544 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:17:29.827   434 13083 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:17:29.829   434 13083 I ActivityManager: Killing 13502:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:17:29.835   434 13083 W ActivityManager: Force removing ActivityRecord{d85f620 u0 org.dclm.live/.MainActivity t424}: app died, no saved state
+01-24 18:17:30.070   434   454 W Looper  : Dispatch took 241ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:17:30.111   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:17:30.115 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:17:30.151   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:17:30.153   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 13502
+01-24 18:17:30.154   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:17:30.156   335   335 I keystore: clear_uid 10060
+01-24 18:17:30.169  2732  2732 D sysproxy: [T:99] Local application closed connection; closing stream.
+01-24 18:17:30.169  2732  2732 D sysproxy: [T:99] Closed stream. RX/TX: 687/11665
+01-24 18:17:30.324 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:17:30.325 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:17:30.325 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:17:30.325 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:17:30.339 13544 13544 I app_process: System.exit called, status: 0
+01-24 18:17:30.339 13544 13544 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:17:30.448   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:17:30.550 13109 13563 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:17:30.552 13109 13563 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:17:30.601 13109 13563 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:17:30.604 13109 13563 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:17:32.841  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:17:35.716   434  1694 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:17:35.807 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 18:17:35.850   434   462 W ProcessCpuTracker: Skipping unknown process pid 13566
+01-24 18:17:35.851   434   462 W ProcessCpuTracker: Skipping unknown process pid 13568
+01-24 18:17:35.856   434 13083 I ActivityManager: Start proc 13570:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:17:35.991 13570 13580 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:17:36.082   434 13083 W ActivityManager: Slow operation: 89ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:17:36.114   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:17:36.129 13570 13570 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:17:36.304   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=162125810984608)
+01-24 18:17:36.555 13570 13586 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:17:36.575 13570 13594 I chatty  : uid=10060(u0_a60) expire 9 lines
+01-24 18:17:36.643  2732  2732 D sysproxy: [T:101] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:17:36.759 13594 13594 I chatty  : uid=10060(u0_a60) org.dclm.live expire 1 line
+01-24 18:17:37.128   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s302ms
+01-24 18:17:37.847  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:17:38.703  2732  2732 D sysproxy: [D:fef0] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:17:38.808  2732  2732 D sysproxy: [D:fef0] Resolved s3-1-w.amazonaws.com to 52.216.141.252.
+01-24 18:17:38.838  2732  2732 D sysproxy: [T:102] Establishing a new TCP stream to: 52.216.141.252:443 (uid=10060) (package=org.dclm.live)
+01-24 18:17:39.274   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:17:42.853  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:17:47.858  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:17:48.083  2732  2732 D sysproxy: [T:102] Closed stream. RX/TX: 486/150272
+01-24 18:17:52.862  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:17:52.969 13612 13612 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:17:54.167 13612 13612 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:17:54.197   434  1694 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:17:54.198   434  1694 I ActivityManager: Killing 13570:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:17:54.210   434  1694 W ActivityManager: Force removing ActivityRecord{8aec2e0 u0 org.dclm.live/.MainActivity t425}: app died, no saved state
+01-24 18:17:54.384   434  4786 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 13570 uid 10060
+01-24 18:17:54.413  2732  2732 D sysproxy: [T:101] Local application closed connection; closing stream.
+01-24 18:17:54.415  2732  2732 D sysproxy: [T:101] Closed stream. RX/TX: 687/11665
+01-24 18:17:54.513   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 13570
+01-24 18:17:54.530   434   454 W Looper  : Dispatch took 332ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:17:54.538   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:17:54.569 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:17:54.570   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:17:54.581   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:17:54.595   335   335 I keystore: clear_uid 10060
+01-24 18:17:54.660   434   462 W ProcessCpuTracker: Skipping unknown process pid 13570
+01-24 18:17:54.728 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:17:54.729 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:17:54.729 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:17:54.730 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:17:54.749 13612 13612 I app_process: System.exit called, status: 0
+01-24 18:17:54.749 13612 13612 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:17:54.798   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:17:54.830 31332 31342 I zygote  : Background concurrent copying GC freed 228(416KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 1024KB/1536KB, paused 3.801ms total 391.386ms
+01-24 18:17:54.878 13109 13623 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:17:54.881 13109 13623 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:17:54.939 13109 13623 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:17:54.943 13109 13623 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:17:55.046   712   726 I zygote  : Background concurrent copying GC freed 11353(431KB) AllocSpace objects, 0(0B) LOS objects, 29% free, 1234KB/1746KB, paused 1.174ms total 252.472ms
+01-24 18:17:57.866  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:18:00.037 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 18:18:00.078 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 18:18:00.082 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 18:18:00.134   434  1694 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:18:00.269   434  2093 I ActivityManager: Start proc 13638:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:18:00.519   434  2093 W ActivityManager: Slow operation: 110ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:18:00.565   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:18:00.579 13638 13638 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:18:00.736   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=162150167722255)
+01-24 18:18:00.985 13638 13648 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:18:01.028 13638 13663 I chatty  : uid=10060(u0_a60) expire 9 lines
+01-24 18:18:01.061 13638 13655 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:18:01.119  2732  2732 D sysproxy: [T:103] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:18:01.229 13663 13663 I chatty  : uid=10060(u0_a60) org.dclm.live expire 1 line
+01-24 18:18:01.289   434   443 I zygote  : Background concurrent copying GC freed 17566(1379KB) AllocSpace objects, 19(472KB) LOS objects, 15% free, 11MB/13MB, paused 6.433ms total 1.140s
+01-24 18:18:01.596   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s378ms
+01-24 18:18:02.705   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=162152201801525)
+01-24 18:18:02.867  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:18:02.923   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=162152424181161)
+01-24 18:18:03.072  2732  2732 D sysproxy: [D:900a] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:18:03.166  2732  2732 D sysproxy: [D:900a] Resolved s3-1-w.amazonaws.com to 52.216.109.163.
+01-24 18:18:03.190  2732  2732 D sysproxy: [T:104] Establishing a new TCP stream to: 52.216.109.163:443 (uid=10060) (package=org.dclm.live)
+01-24 18:18:03.727   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:18:05.703   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=162155209553087)
+01-24 18:18:07.872  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:18:12.626  2732  2732 D sysproxy: [T:104] Closed stream. RX/TX: 486/150272
+01-24 18:18:12.877  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:18:17.825 13681 13681 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:18:17.883  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:18:19.044 13681 13681 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:18:19.071   434 13083 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:18:19.072   434 13083 I ActivityManager: Killing 13638:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:18:19.088   434 13083 W ActivityManager: Force removing ActivityRecord{68ed759 u0 org.dclm.live/.MainActivity t426}: app died, no saved state
+01-24 18:18:19.224  2732  2732 D sysproxy: [T:103] Local application closed connection; closing stream.
+01-24 18:18:19.224  2732  2732 D sysproxy: [T:103] Closed stream. RX/TX: 687/11665
+01-24 18:18:19.331   434   454 W Looper  : Dispatch took 256ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:18:19.345   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 13638
+01-24 18:18:19.364   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:18:19.364   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:18:19.398 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:18:19.403   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:18:19.428   335   335 I keystore: clear_uid 10060
+01-24 18:18:19.462   434   462 W ProcessCpuTracker: Skipping unknown process pid 13638
+01-24 18:18:19.567 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:18:19.576 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:18:19.576 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:18:19.576 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:18:19.583 13681 13681 I app_process: System.exit called, status: 0
+01-24 18:18:19.584 13681 13681 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:18:19.650 13109 13693 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:18:19.652 13109 13693 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:18:19.748   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:18:19.770 13109 13693 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:18:19.785 13109 13693 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:18:20.094 13109 13122 I zygote  : Background concurrent copying GC freed 30354(1985KB) AllocSpace objects, 0(0B) LOS objects, 20% free, 7MB/9MB, paused 616us total 347.011ms
+01-24 18:18:22.889  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:18:24.949   434 13083 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:18:25.058   434  4786 I ActivityManager: Start proc 13708:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:18:25.137   434   462 W ProcessCpuTracker: Skipping unknown process pid 13703
+01-24 18:18:25.138   434   462 W ProcessCpuTracker: Skipping unknown process pid 13705
+01-24 18:18:25.250   434  4786 W ActivityManager: Slow operation: 77ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:18:25.260   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:18:25.317 13708 13708 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:18:25.626 13708 13719 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:18:25.784 13708 13727 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:18:25.798 13708 13733 I chatty  : uid=10060(u0_a60) expire 9 lines
+01-24 18:18:25.862  2732  2732 D sysproxy: [T:105] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:18:25.969 13733 13733 I chatty  : uid=10060(u0_a60) org.dclm.live expire 1 line
+01-24 18:18:26.345   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s299ms
+01-24 18:18:27.894  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:18:27.913  2732  2732 D sysproxy: [D:9ae4] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:18:27.968  2732  2732 D sysproxy: [D:9ae4] Resolved s3-1-w.amazonaws.com to 52.217.46.172.
+01-24 18:18:27.982  2732  2732 D sysproxy: [T:106] Establishing a new TCP stream to: 52.217.46.172:443 (uid=10060) (package=org.dclm.live)
+01-24 18:18:28.508   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:18:32.896  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:18:37.069  2732  2732 D sysproxy: [T:106] Closed stream. RX/TX: 486/150272
+01-24 18:18:37.903  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:18:42.063 13751 13751 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:18:42.907  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:18:43.251 13751 13751 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:18:43.281   434  4786 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:18:43.285   434  4786 I ActivityManager: Killing 13708:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:18:43.293   434  4786 W ActivityManager: Force removing ActivityRecord{c180519 u0 org.dclm.live/.MainActivity t427}: app died, no saved state
+01-24 18:18:43.578   434   454 W Looper  : Dispatch took 293ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:18:43.586   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:18:43.616   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:18:43.639 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:18:43.654   335   335 I keystore: clear_uid 10060
+01-24 18:18:43.670   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:18:43.732   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 13708
+01-24 18:18:43.738  2732  2732 D sysproxy: [T:105] Local application closed connection; closing stream.
+01-24 18:18:43.738  2732  2732 D sysproxy: [T:105] Closed stream. RX/TX: 687/11665
+01-24 18:18:43.802 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:18:43.802 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:18:43.802 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:18:43.809 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:18:43.817 13751 13751 I app_process: System.exit called, status: 0
+01-24 18:18:43.817 13751 13751 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:18:43.885 13109 13762 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:18:43.888 13109 13762 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:18:43.933   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:18:43.975 13109 13762 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:18:43.988 13109 13762 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:18:47.912  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:18:49.247   434  7888 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:18:49.309 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 18:18:49.367   434   660 I ActivityManager: Start proc 13778:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:18:49.385   434   462 W ProcessCpuTracker: Skipping unknown process pid 13774
+01-24 18:18:49.386   434   462 W ProcessCpuTracker: Skipping unknown process pid 13776
+01-24 18:18:49.556   434   660 W ActivityManager: Slow operation: 74ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:18:49.562   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:18:49.635 13778 13778 I chatty  : uid=10060(u0_a60) expire 3 lines
+01-24 18:18:49.931 13778 13788 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:18:50.073 13778 13796 I chatty  : uid=10060(u0_a60) expire 1 line
+01-24 18:18:50.101  2732  2732 D sysproxy: [D:e6bc] Look up airtime.dclm.org.
+01-24 18:18:50.106 13778 13802 I chatty  : uid=10060(u0_a60) expire 7 lines
+01-24 18:18:50.269 13802 13802 I chatty  : uid=10060(u0_a60) org.dclm.live expire 1 line
+01-24 18:18:50.296 13778 13802 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:18:50.359 13778 13802 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:18:50.396  2732  2732 D sysproxy: [D:e6bc] Resolved airtime.dclm.org to 52.7.24.245.
+01-24 18:18:50.439  2732  2732 D sysproxy: [T:107] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:18:50.632   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s317ms
+01-24 18:18:51.722 13778 13788 I zygote  : NativeAllocBackground concurrent copying GC freed 997(165KB) AllocSpace objects, 0(0B) LOS objects, 26% free, 1386KB/1898KB, paused 1.423ms total 104.409ms
+01-24 18:18:51.744  2732  2732 D sysproxy: [D:d297] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:18:51.793  2732  2732 D sysproxy: [D:d297] Resolved s3-1-w.amazonaws.com to 52.217.14.76.
+01-24 18:18:51.822  2732  2732 D sysproxy: [T:108] Establishing a new TCP stream to: 52.217.14.76:443 (uid=10060) (package=org.dclm.live)
+01-24 18:18:52.819   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:18:52.918  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:18:57.925  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:19:00.017 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 18:19:00.028 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 18:19:00.037 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 18:19:01.194  2732  2732 D sysproxy: [T:108] Closed stream. RX/TX: 486/150272
+01-24 18:19:02.932  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:19:06.515 13818 13818 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:19:07.712 13818 13818 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:19:07.739   434 13233 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:19:07.740   434 13233 I ActivityManager: Killing 13778:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:19:07.748   434 13233 W ActivityManager: Force removing ActivityRecord{564f2d9 u0 org.dclm.live/.MainActivity t428}: app died, no saved state
+01-24 18:19:07.937  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:19:07.989  2732  2732 D sysproxy: [T:107] Local application closed connection; closing stream.
+01-24 18:19:07.990  2732  2732 D sysproxy: [T:107] Closed stream. RX/TX: 687/11663
+01-24 18:19:08.050   434   454 W Looper  : Dispatch took 310ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:19:08.069   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:19:08.070   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:19:08.109 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:19:08.115   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 13778
+01-24 18:19:08.129   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:19:08.145   335   335 I keystore: clear_uid 10060
+01-24 18:19:08.272 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:19:08.273 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:19:08.273 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:19:08.273 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:19:08.304 13818 13818 I app_process: System.exit called, status: 0
+01-24 18:19:08.304 13818 13818 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:19:08.355 13109 13829 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:19:08.361   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:19:08.363 13109 13829 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:19:08.432 13109 13829 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:19:08.454 13109 13829 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:19:08.891   434   443 I zygote  : Background concurrent copying GC freed 24010(1649KB) AllocSpace objects, 19(380KB) LOS objects, 15% free, 11MB/13MB, paused 5.231ms total 653.160ms
+01-24 18:19:12.943  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:19:13.687   434 13233 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:19:13.709   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:19:13.768   434  2021 I ActivityManager: Start proc 13845:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:19:13.918   434   462 W ProcessCpuTracker: Skipping unknown process pid 13841
+01-24 18:19:13.919   434   462 W ProcessCpuTracker: Skipping unknown process pid 13843
+01-24 18:19:13.979   434  2021 W ActivityManager: Slow operation: 104ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:19:13.988   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:19:14.044 13845 13845 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:19:14.075 13845 13845 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:19:14.237 13845 13855 I zygote  : Background concurrent copying GC freed 939(340KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 1009KB/1521KB, paused 1ms total 104.793ms
+01-24 18:19:14.487 13845 13855 I zygote  : NativeAllocBackground concurrent copying GC freed 153(45KB) AllocSpace objects, 0(0B) LOS objects, 29% free, 1213KB/1725KB, paused 1.873ms total 112.866ms
+01-24 18:19:14.494 13845 13863 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+01-24 18:19:14.521 13845 13869 D OpenGLRenderer: HWUI GL Pipeline
+01-24 18:19:14.554  2732  2732 D sysproxy: [T:109] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:19:14.601 13845 13845 I ExoPlayerImpl: Init cc2a12c [ExoPlayerLib/2.10.6] [sawfish, LEO-BX9, HUAWEI, 26]
+01-24 18:19:14.674 13845 13869 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 18:19:14.674 13845 13869 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 18:19:14.674 13845 13869 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 18:19:14.674 13845 13869 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 18:19:14.674 13845 13869 I Adreno-EGL: Remote Branch: 
+01-24 18:19:14.674 13845 13869 I Adreno-EGL: Local Patches: 
+01-24 18:19:14.674 13845 13869 I Adreno-EGL: Reconstruct Branch: 
+01-24 18:19:14.682 13845 13869 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:19:14.689 13869 13869 W RenderThread: type=1400 audit(0.0:512): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 18:19:14.696 13845 13869 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 18:19:14.696 13845 13869 D OpenGLRenderer: Swap behavior 1
+01-24 18:19:14.702 13845 13869 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 18:19:14.715 13845 13869 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 18:19:14.717 13845 13869 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:19:14.780 13845 13869 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:19:15.046   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s300ms
+01-24 18:19:16.313 13845 13855 I zygote  : Background concurrent copying GC freed 6748(384KB) AllocSpace objects, 0(0B) LOS objects, 26% free, 1402KB/1914KB, paused 2.295ms total 103.169ms
+01-24 18:19:16.618  2732  2732 D sysproxy: [D:f128] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:19:16.659  2732  2732 D sysproxy: [D:f128] Resolved s3-1-w.amazonaws.com to 52.217.44.252.
+01-24 18:19:16.673 13845 13855 I zygote  : NativeAllocBackground concurrent copying GC freed 1037(177KB) AllocSpace objects, 0(0B) LOS objects, 26% free, 1417KB/1929KB, paused 2.286ms total 195.388ms
+01-24 18:19:16.702  2732  2732 D sysproxy: [T:110] Establishing a new TCP stream to: 52.217.44.252:443 (uid=10060) (package=org.dclm.live)
+01-24 18:19:17.278   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:19:17.946  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:19:22.953  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:19:26.053  2732  2732 D sysproxy: [T:110] Closed stream. RX/TX: 486/150272
+01-24 18:19:27.958  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:19:31.134 13886 13886 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:19:32.360 13886 13886 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:19:32.393   434  2021 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:19:32.395   434  2021 I ActivityManager: Killing 13845:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:19:32.408   434  2021 W ActivityManager: Force removing ActivityRecord{91a2f5e u0 org.dclm.live/.MainActivity t429}: app died, no saved state
+01-24 18:19:32.669   434   454 W Looper  : Dispatch took 275ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:19:32.695   335   335 I keystore: clear_uid 10060
+01-24 18:19:32.720   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:19:32.721   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:19:32.724 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:19:32.733   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:19:32.843   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 13845
+01-24 18:19:32.848  2732  2732 D sysproxy: [T:109] Local application closed connection; closing stream.
+01-24 18:19:32.848  2732  2732 D sysproxy: [T:109] Closed stream. RX/TX: 687/11663
+01-24 18:19:32.903 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:19:32.903 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:19:32.903 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:19:32.904 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:19:32.960 13886 13886 I app_process: System.exit called, status: 0
+01-24 18:19:32.960 13886 13886 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:19:32.961  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:19:32.985   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:19:32.987 13109 13897 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:19:33.015 13109 13897 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:19:33.110 13109 13897 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:19:33.120 13109 13897 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:19:37.966  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:19:38.310   434  1099 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:19:38.408   434  5002 I ActivityManager: Start proc 13912:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:19:38.428   434   462 W ProcessCpuTracker: Skipping unknown process pid 13908
+01-24 18:19:38.429   434   462 W ProcessCpuTracker: Skipping unknown process pid 13910
+01-24 18:19:38.629   434  5002 W ActivityManager: Slow operation: 79ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:19:38.652   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:19:38.683 13912 13912 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:19:38.742 13912 13912 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:19:38.901 13912 13922 I zygote  : Background concurrent copying GC freed 894(360KB) AllocSpace objects, 0(0B) LOS objects, 34% free, 985KB/1497KB, paused 3.810ms total 146.550ms
+01-24 18:19:39.113 13912 13922 I zygote  : NativeAllocBackground concurrent copying GC freed 206(87KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 1014KB/1526KB, paused 2.067ms total 135.846ms
+01-24 18:19:39.238 13912 13928 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+01-24 18:19:39.250 13912 13936 D OpenGLRenderer: HWUI GL Pipeline
+01-24 18:19:39.317  2732  2732 D sysproxy: [T:111] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:19:39.344 13912 13912 I ExoPlayerImpl: Init cc2a12c [ExoPlayerLib/2.10.6] [sawfish, LEO-BX9, HUAWEI, 26]
+01-24 18:19:39.420 13912 13936 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 18:19:39.420 13912 13936 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 18:19:39.420 13912 13936 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 18:19:39.420 13912 13936 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 18:19:39.420 13912 13936 I Adreno-EGL: Remote Branch: 
+01-24 18:19:39.420 13912 13936 I Adreno-EGL: Local Patches: 
+01-24 18:19:39.420 13912 13936 I Adreno-EGL: Reconstruct Branch: 
+01-24 18:19:39.428 13912 13936 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:19:39.439 13936 13936 W RenderThread: type=1400 audit(0.0:513): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 18:19:39.444 13912 13936 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 18:19:39.445 13912 13936 D OpenGLRenderer: Swap behavior 1
+01-24 18:19:39.452 13912 13936 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 18:19:39.463 13912 13936 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 18:19:39.465 13912 13936 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:19:39.527 13912 13936 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:19:39.767 30846 30867 I Finsky  : [1245] jwq.run(3): Stats for Executor: BlockingExecutor jyi@923c909[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 289]
+01-24 18:19:39.768 30846 30867 I Finsky  : [1245] jwq.run(3): Stats for Executor: LightweightExecutor jyi@173870e[Running, pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 64]
+01-24 18:19:39.848   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s447ms
+01-24 18:19:41.268 13912 13922 I zygote  : NativeAllocBackground concurrent copying GC freed 1281(196KB) AllocSpace objects, 0(0B) LOS objects, 26% free, 1395KB/1907KB, paused 1.899ms total 125.368ms
+01-24 18:19:41.305  2732  2732 D sysproxy: [D:4dd4] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:19:41.357  2732  2732 D sysproxy: [D:4dd4] Resolved s3-1-w.amazonaws.com to 52.216.8.83.
+01-24 18:19:41.428  2732  2732 D sysproxy: [T:112] Establishing a new TCP stream to: 52.216.8.83:443 (uid=10060) (package=org.dclm.live)
+01-24 18:19:41.741 30846 30867 I Finsky  : [1245] jwq.run(3): Stats for Executor: bgExecutor jyi@5e72822[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 1075]
+01-24 18:19:41.891   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:19:42.288 13912 13922 I zygote  : Background concurrent copying GC freed 8175(402KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 1466KB/1978KB, paused 960us total 117.163ms
+01-24 18:19:42.973  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:19:43.173   323   403 W HWComposer: Ignoring duplicate VSYNC event from HWC (t=162252677300133)
+01-24 18:19:47.981  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:19:50.494  2732  2732 D sysproxy: [T:112] Closed stream. RX/TX: 486/150272
+01-24 18:19:52.990  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:19:53.906 15691 15701 I zygote  : Background concurrent copying GC freed 4297(401KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 1259KB/1771KB, paused 5.153ms total 66.754ms
+01-24 18:19:55.909 13953 13953 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:19:57.215 13953 13953 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:19:57.251   434  1099 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:19:57.253   434  1099 I ActivityManager: Killing 13912:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:19:57.263   434  1099 W ActivityManager: Force removing ActivityRecord{3bd6a1e u0 org.dclm.live/.MainActivity t430}: app died, no saved state
+01-24 18:19:57.405   434  5002 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 13912 uid 10060
+01-24 18:19:57.441  2732  2732 D sysproxy: [T:111] Local application closed connection; closing stream.
+01-24 18:19:57.441  2732  2732 D sysproxy: [T:111] Closed stream. RX/TX: 687/11663
+01-24 18:19:57.579   434   454 W Looper  : Dispatch took 326ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:19:57.625   335   335 I keystore: clear_uid 10060
+01-24 18:19:57.627   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:19:57.642   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 13912
+01-24 18:19:57.656 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:19:57.666   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:19:57.692   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:19:57.755 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:19:57.756 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:19:57.756 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:19:57.773 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:19:57.817 13953 13953 I app_process: System.exit called, status: 0
+01-24 18:19:57.817 13953 13953 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:19:57.898   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:19:57.994  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:19:58.008 13109 13972 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:19:58.013 13109 13972 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:19:58.054 13109 13972 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:19:58.056 13109 13972 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:20:00.016 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 18:20:00.031 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 18:20:00.035 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 18:20:02.793 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 18:20:03.001  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:20:03.155   434 13233 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:20:03.268   434  1099 I ActivityManager: Start proc 13979:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:20:03.285   434   462 W ProcessCpuTracker: Skipping unknown process pid 13975
+01-24 18:20:03.286   434   462 W ProcessCpuTracker: Skipping unknown process pid 13977
+01-24 18:20:03.496   434  1099 W ActivityManager: Slow operation: 91ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:20:03.566   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:20:03.580 13979 13979 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:20:03.609 13979 13979 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:20:03.800 13979 13989 I zygote  : Background concurrent copying GC freed 620(378KB) AllocSpace objects, 0(0B) LOS objects, 31% free, 1100KB/1612KB, paused 25.135ms total 281.987ms
+01-24 18:20:04.017 13979 13995 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+01-24 18:20:04.060  2732  2732 D sysproxy: [T:113] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:20:04.071 13979 14005 D OpenGLRenderer: HWUI GL Pipeline
+01-24 18:20:04.166 13979 13979 I ExoPlayerImpl: Init cc2a12c [ExoPlayerLib/2.10.6] [sawfish, LEO-BX9, HUAWEI, 26]
+01-24 18:20:04.244 13979 14005 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 18:20:04.244 13979 14005 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 18:20:04.244 13979 14005 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 18:20:04.244 13979 14005 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 18:20:04.244 13979 14005 I Adreno-EGL: Remote Branch: 
+01-24 18:20:04.244 13979 14005 I Adreno-EGL: Local Patches: 
+01-24 18:20:04.244 13979 14005 I Adreno-EGL: Reconstruct Branch: 
+01-24 18:20:04.250 13979 14005 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:20:04.259 14005 14005 W RenderThread: type=1400 audit(0.0:514): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 18:20:04.268 13979 14005 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 18:20:04.268 13979 14005 D OpenGLRenderer: Swap behavior 1
+01-24 18:20:04.275 13979 14005 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 18:20:04.286 13979 14005 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 18:20:04.288 13979 14005 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:20:04.333   856   866 I zygote  : Background concurrent copying GC freed 3443(171KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 1078KB/1590KB, paused 51.229ms total 233.019ms
+01-24 18:20:04.351 13979 14005 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:20:04.643   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s396ms
+01-24 18:20:05.640   856   856 W SensorDataChecker: Potential sensor issue: No new accel samples in the last 150ms! Exiting.
+01-24 18:20:05.730   328   328 D shd     : ProcessSensorDeactive sensor:0x0, handle:0 
+01-24 18:20:05.779 13979 13989 I zygote  : NativeAllocBackground concurrent copying GC freed 3201(312KB) AllocSpace objects, 0(0B) LOS objects, 27% free, 1374KB/1886KB, paused 5.644ms total 134.714ms
+01-24 18:20:05.800  2732  2732 D sysproxy: [D:5833] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:20:05.802   328   328 D shd     : Process sensor Batch sensor:0, period:10, batch:10
+01-24 18:20:05.803   328   328 D shd     : ProcessSensorActive sensor:0x0, handle:0, option:0
+01-24 18:20:05.859  2732  2732 D sysproxy: [D:5833] Resolved s3-1-w.amazonaws.com to 52.216.237.171.
+01-24 18:20:05.888  2732  2732 D sysproxy: [T:114] Establishing a new TCP stream to: 52.216.237.171:443 (uid=10060) (package=org.dclm.live)
+01-24 18:20:06.738   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:20:08.004  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:20:13.007  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:20:15.038  2732  2732 D sysproxy: [T:114] Closed stream. RX/TX: 486/150272
+01-24 18:20:18.012  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:20:20.455 14019 14019 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:20:21.688 14019 14019 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:20:21.717   434  1099 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:20:21.718   434  1099 I ActivityManager: Killing 13979:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:20:21.725   434  1099 W ActivityManager: Force removing ActivityRecord{f1fc6bf u0 org.dclm.live/.MainActivity t431}: app died, no saved state
+01-24 18:20:21.899   434 13233 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 13979 uid 10060
+01-24 18:20:21.979  2732  2732 D sysproxy: [T:113] Local application closed connection; closing stream.
+01-24 18:20:21.980  2732  2732 D sysproxy: [T:113] Closed stream. RX/TX: 687/11663
+01-24 18:20:22.026   434   454 W Looper  : Dispatch took 308ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:20:22.054   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:20:22.060 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:20:22.121   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 13979
+01-24 18:20:22.143   335   335 I keystore: clear_uid 10060
+01-24 18:20:22.150   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:20:22.178   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:20:22.210   434   462 W ProcessCpuTracker: Skipping unknown process pid 13979
+01-24 18:20:22.276 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:20:22.276 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:20:22.276 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:20:22.277 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:20:22.336 14019 14019 I app_process: System.exit called, status: 0
+01-24 18:20:22.336 14019 14019 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:20:22.366   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:20:22.382 13109 14035 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:20:22.387 13109 14035 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:20:22.436   434   454 W Looper  : Dispatch took 170ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:20:22.480 13109 14035 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:20:22.484 13109 14035 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:20:22.914   434   443 I zygote  : Background concurrent copying GC freed 21155(1590KB) AllocSpace objects, 21(432KB) LOS objects, 14% free, 11MB/13MB, paused 16.519ms total 835.776ms
+01-24 18:20:23.016  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:20:27.793   434   756 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:20:27.811   434   488 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:20:27.921   434 13233 I ActivityManager: Start proc 14043:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:20:27.932   434   462 W ProcessCpuTracker: Skipping unknown process pid 14039
+01-24 18:20:27.933   434   462 W ProcessCpuTracker: Skipping unknown process pid 14041
+01-24 18:20:28.022  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:20:28.150   434 13233 W ActivityManager: Slow operation: 82ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:20:28.200 14043 14043 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:20:28.218   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:20:28.258 14043 14043 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:20:28.651 14043 14062 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+01-24 18:20:28.689 14043 14068 D OpenGLRenderer: HWUI GL Pipeline
+01-24 18:20:28.714  2732  2732 D sysproxy: [T:115] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:20:28.774 14043 14043 I ExoPlayerImpl: Init cc2a12c [ExoPlayerLib/2.10.6] [sawfish, LEO-BX9, HUAWEI, 26]
+01-24 18:20:28.859 14043 14068 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 18:20:28.859 14043 14068 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 18:20:28.859 14043 14068 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 18:20:28.859 14043 14068 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 18:20:28.859 14043 14068 I Adreno-EGL: Remote Branch: 
+01-24 18:20:28.859 14043 14068 I Adreno-EGL: Local Patches: 
+01-24 18:20:28.859 14043 14068 I Adreno-EGL: Reconstruct Branch: 
+01-24 18:20:28.865 14043 14068 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:20:28.879 14068 14068 W RenderThread: type=1400 audit(0.0:515): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 18:20:28.880 14043 14068 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 18:20:28.880 14043 14068 D OpenGLRenderer: Swap behavior 1
+01-24 18:20:28.886 14043 14068 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 18:20:28.898 14043 14068 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 18:20:28.901 14043 14068 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:20:28.968 14043 14068 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:20:29.224   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s359ms
+01-24 18:20:30.790 14043 14053 I zygote  : NativeAllocBackground concurrent copying GC freed 2577(254KB) AllocSpace objects, 0(0B) LOS objects, 26% free, 1387KB/1899KB, paused 10.366ms total 138.886ms
+01-24 18:20:30.794  2732  2732 D sysproxy: [D:3bb3] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:20:30.847  2732  2732 D sysproxy: [D:3bb3] Resolved s3-1-w.amazonaws.com to 52.216.94.211.
+01-24 18:20:30.881  2732  2732 D sysproxy: [T:116] Establishing a new TCP stream to: 52.216.94.211:443 (uid=10060) (package=org.dclm.live)
+01-24 18:20:31.369   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:20:32.000 14043 14053 I zygote  : Background concurrent copying GC freed 7957(412KB) AllocSpace objects, 0(0B) LOS objects, 26% free, 1449KB/1961KB, paused 942us total 106.658ms
+01-24 18:20:33.029  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:20:38.034  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:20:40.319  2732  2732 D sysproxy: [T:116] Closed stream. RX/TX: 486/150272
+01-24 18:20:43.036  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:20:44.974 14084 14084 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:20:46.166 14084 14084 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:20:46.198   434  1099 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:20:46.200   434  1099 I ActivityManager: Killing 14043:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:20:46.226   434  1099 W ActivityManager: Force removing ActivityRecord{ad9ca7f u0 org.dclm.live/.MainActivity t432}: app died, no saved state
+01-24 18:20:46.464   434   454 W Looper  : Dispatch took 264ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:20:46.525   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:20:46.547  2732  2732 D sysproxy: [T:115] Local application closed connection; closing stream.
+01-24 18:20:46.547  2732  2732 D sysproxy: [T:115] Closed stream. RX/TX: 687/11556
+01-24 18:20:46.569 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:20:46.571   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 14043
+01-24 18:20:46.620   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:20:46.651   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:20:46.654   335   335 I keystore: clear_uid 10060
+01-24 18:20:46.743 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:20:46.743 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:20:46.743 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:20:46.745 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:20:46.757 14084 14084 I app_process: System.exit called, status: 0
+01-24 18:20:46.757 14084 14084 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:20:46.849   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:20:46.959 13109 14103 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:20:46.961 13109 14103 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:20:47.013 13109 14103 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:20:47.019 13109 14103 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:20:47.251 13109 13122 I zygote  : Background concurrent copying GC freed 35299(2MB) AllocSpace objects, 0(0B) LOS objects, 20% free, 7MB/9MB, paused 944us total 299.574ms
+01-24 18:20:48.040  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:20:52.119   434 13081 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:20:52.200   434   756 I ActivityManager: Start proc 14110:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:20:52.290   434   462 W ProcessCpuTracker: Skipping unknown process pid 14106
+01-24 18:20:52.291   434   462 W ProcessCpuTracker: Skipping unknown process pid 14108
+01-24 18:20:52.308 31332 31384 E bt_btif : bta_dm_pm_btm_status hci_status=35
+01-24 18:20:52.374   283 14114 I zygote  : Background concurrent copying GC freed 583(416KB) AllocSpace objects, 0(0B) LOS objects, 36% free, 876KB/1388KB, paused 938us total 158.485ms
+01-24 18:20:52.465   434   756 W ActivityManager: Slow operation: 81ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:20:52.470   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:20:52.572 14110 14110 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:20:52.608 14110 14110 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:20:52.910 14110 14120 I zygote  : NativeAllocBackground concurrent copying GC freed 730(140KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 1020KB/1532KB, paused 926us total 165.851ms
+01-24 18:20:53.034 14110 14128 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+01-24 18:20:53.038 14110 14120 I zygote  : NativeAllocBackground concurrent copying GC freed 223(47KB) AllocSpace objects, 0(0B) LOS objects, 27% free, 1273KB/1753KB, paused 9.784ms total 95.170ms
+01-24 18:20:53.043 14110 14134 D OpenGLRenderer: HWUI GL Pipeline
+01-24 18:20:53.045  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:20:53.078  2732  2732 D sysproxy: [T:117] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:20:53.122 14110 14110 I ExoPlayerImpl: Init cc2a12c [ExoPlayerLib/2.10.6] [sawfish, LEO-BX9, HUAWEI, 26]
+01-24 18:20:53.197 14110 14134 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 18:20:53.197 14110 14134 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 18:20:53.197 14110 14134 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 18:20:53.197 14110 14134 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 18:20:53.197 14110 14134 I Adreno-EGL: Remote Branch: 
+01-24 18:20:53.197 14110 14134 I Adreno-EGL: Local Patches: 
+01-24 18:20:53.197 14110 14134 I Adreno-EGL: Reconstruct Branch: 
+01-24 18:20:53.203 14110 14134 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:20:53.219 14134 14134 W RenderThread: type=1400 audit(0.0:516): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 18:20:53.221 14110 14134 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 18:20:53.221 14110 14134 D OpenGLRenderer: Swap behavior 1
+01-24 18:20:53.229 14110 14134 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 18:20:53.239 14110 14134 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 18:20:53.241 14110 14134 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:20:53.306 14110 14134 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:20:53.595   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s388ms
+01-24 18:20:55.115  2732  2732 D sysproxy: [D:14ce] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:20:55.155  2732  2732 D sysproxy: [D:14ce] Resolved s3-1-w.amazonaws.com to 52.216.111.51.
+01-24 18:20:55.191  2732  2732 D sysproxy: [T:118] Establishing a new TCP stream to: 52.216.111.51:443 (uid=10060) (package=org.dclm.live)
+01-24 18:20:55.699   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:20:58.053  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:21:00.017 15691 15691 D WallpaperUtil: InternalCache: available=1546M
+01-24 18:21:00.029 15691 15691 E Watchface: WeatherManager::checkUpdateDisplayWeather() mWeatherInfo is null !
+01-24 18:21:00.039 32131 32131 W OngoingChipController: Attempting to remove non-existent UI for chip [com.google.android.wearable.app, media_controls]
+01-24 18:21:03.059  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:21:04.444  2732  2732 D sysproxy: [T:118] Closed stream. RX/TX: 486/150272
+01-24 18:21:08.064  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:21:09.420 14150 14150 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:21:10.684 14150 14150 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:21:10.709   434 13233 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:21:10.714   434 13233 I ActivityManager: Killing 14110:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:21:10.720   434 13233 W ActivityManager: Force removing ActivityRecord{21d8e3f u0 org.dclm.live/.MainActivity t433}: app died, no saved state
+01-24 18:21:10.977   434   454 W Looper  : Dispatch took 265ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:21:10.998  2732  2732 D sysproxy: [T:117] Local application closed connection; closing stream.
+01-24 18:21:10.999  2732  2732 D sysproxy: [T:117] Closed stream. RX/TX: 687/11557
+01-24 18:21:11.039 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:21:11.039   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:21:11.041   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 14110
+01-24 18:21:11.041   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:21:11.044   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:21:11.101   335   335 I keystore: clear_uid 10060
+01-24 18:21:11.221 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:21:11.223 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:21:11.223 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:21:11.223 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:21:11.286 14150 14150 I app_process: System.exit called, status: 0
+01-24 18:21:11.288 14150 14150 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:21:11.307   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:21:11.341 13109 14161 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:21:11.359 13109 14161 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:21:11.407 13109 14161 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:21:11.410 13109 14161 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:21:13.066  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:21:16.685   434  1099 I ActivityManager: START u0 {act=api.android.category.MAIN cat=[api.android.intent.LAUNCHER] flg=0x10000000 cmp=org.dclm.live/.MainActivity} from uid 2000
+01-24 18:21:16.795   434   874 I ActivityManager: Start proc 14175:org.dclm.live/u0a60 for activity org.dclm.live/.MainActivity
+01-24 18:21:16.914   434   462 W ProcessCpuTracker: Skipping unknown process pid 14171
+01-24 18:21:16.915   434   462 W ProcessCpuTracker: Skipping unknown process pid 14173
+01-24 18:21:16.961   434   874 W ActivityManager: Slow operation: 96ms so far, now at attachApplicationLocked: after mServices.attachApplicationLocked
+01-24 18:21:16.984   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:21:17.012 14175 14175 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:21:17.053 14175 14175 W ResourceType: ResTable_typeSpec entry count inconsistent: given 111, previously 105
+01-24 18:21:17.432 14175 14193 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+01-24 18:21:17.481  2732  2732 D sysproxy: [T:119] Establishing a new TCP stream to: 52.7.24.245:443 (uid=10060) (package=org.dclm.live)
+01-24 18:21:17.496 14175 14201 D OpenGLRenderer: HWUI GL Pipeline
+01-24 18:21:17.574 14175 14175 I ExoPlayerImpl: Init cc2a12c [ExoPlayerLib/2.10.6] [sawfish, LEO-BX9, HUAWEI, 26]
+01-24 18:21:17.649 14175 14201 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: EGL 1.4 QUALCOMM build:  (I7af58d6928)
+01-24 18:21:17.649 14175 14201 I Adreno-EGL: OpenGL ES Shader Compiler Version: E031.35.01.00
+01-24 18:21:17.649 14175 14201 I Adreno-EGL: Build Date: 09/14/17 Thu
+01-24 18:21:17.649 14175 14201 I Adreno-EGL: Local Branch: gfx-adreno.lnx.1.0
+01-24 18:21:17.649 14175 14201 I Adreno-EGL: Remote Branch: 
+01-24 18:21:17.649 14175 14201 I Adreno-EGL: Local Patches: 
+01-24 18:21:17.649 14175 14201 I Adreno-EGL: Reconstruct Branch: 
+01-24 18:21:17.654 14175 14201 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:21:17.659 14201 14201 W RenderThread: type=1400 audit(0.0:517): avc: denied { read } for name="gpuclk" dev="sysfs" ino=18862 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+01-24 18:21:17.668 14175 14201 I OpenGLRenderer: Initialized EGL, version 1.4
+01-24 18:21:17.669 14175 14201 D OpenGLRenderer: Swap behavior 1
+01-24 18:21:17.674 14175 14201 W Adreno-ES20: <get_gpu_clk:229>: open failed: errno 13
+01-24 18:21:17.687 14175 14201 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+01-24 18:21:17.690 14175 14201 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:21:17.750 14175 14201 I vndksupport: sphal namespace is not configured for this process. Loading /vendor/lib/hw/gralloc.msm8909.so from the current namespace instead.
+01-24 18:21:18.021   434   461 I ActivityManager: Displayed org.dclm.live/.MainActivity: +1s241ms
+01-24 18:21:18.072  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:21:19.570 14175 14185 I zygote  : NativeAllocBackground concurrent copying GC freed 988(159KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 1471KB/1983KB, paused 12.168ms total 100.117ms
+01-24 18:21:19.582  2732  2732 D sysproxy: [D:5e6a] Look up dclmcloud.s3.amazonaws.com.
+01-24 18:21:19.626  2732  2732 D sysproxy: [D:5e6a] Resolved s3-1-w.amazonaws.com to 52.216.146.211.
+01-24 18:21:19.637  2732  2732 D sysproxy: [T:120] Establishing a new TCP stream to: 52.216.146.211:443 (uid=10060) (package=org.dclm.live)
+01-24 18:21:20.248   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:21:23.073  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:21:24.193 13109  2805 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+01-24 18:21:24.685 31850 32271 I Checkin : [EventLogChimeraService] Opted in for usage reporting: false
+01-24 18:21:24.689 31850 32271 I Checkin : [EventLogChimeraService] Aggregate from 1579884863842 (log), 1579884863842 (data)
+01-24 18:21:24.897   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 18:21:24.898   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:21:24.941   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+01-24 18:21:24.942   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:21:25.068   434   443 I zygote  : Background concurrent copying GC freed 27199(1794KB) AllocSpace objects, 21(420KB) LOS objects, 15% free, 11MB/13MB, paused 12.088ms total 741.038ms
+01-24 18:21:25.273 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 18:21:25.273 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 18:21:25.273 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 18:21:25.274 13109 13229 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 18:21:25.412 13109 13109 W BoundBrokerSvc: No bound-service is registered for action: com.google.android.gms.udc.service.START
+01-24 18:21:25.413 13109 13109 E BoundBrokerSvc: Proxy without impl failing onBind(): Intent { act=com.google.android.gms.udc.service.START pkg=com.google.android.gms }
+01-24 18:21:25.413 13109 13109 W GmsApiChimeraSvc: Failed in attempt to reload bound-service.
+01-24 18:21:25.417 13109 13229 I GmsApiChimeraSvc: Using MissingApiServiceBroker for com.google.android.gms.udc.service.START due to missing BoundService implementation
+01-24 18:21:28.082  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:21:29.069  2732  2732 D sysproxy: [T:120] Closed stream. RX/TX: 486/150272
+01-24 18:21:33.086  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+01-24 18:21:33.944 14222 14222 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+01-24 18:21:35.210 14222 14222 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+01-24 18:21:35.244   434   756 I ActivityManager: Force stopping org.dclm.live appid=10060 user=0: clear data
+01-24 18:21:35.245   434   756 I ActivityManager: Killing 14175:org.dclm.live/u0a60 (adj 0): stop org.dclm.live
+01-24 18:21:35.259   434   756 W ActivityManager: Force removing ActivityRecord{68c8bcc u0 org.dclm.live/.MainActivity t434}: app died, no saved state
+01-24 18:21:35.435   434 13233 W InputMethodManagerService: Got RemoteException sending setActive(false) notification to pid 14175 uid 10060
+01-24 18:21:35.483  2732  2732 D sysproxy: [T:119] Local application closed connection; closing stream.
+01-24 18:21:35.483  2732  2732 D sysproxy: [T:119] Closed stream. RX/TX: 687/11557
+01-24 18:21:35.571   434   454 W Looper  : Dispatch took 326ms on android.ui, h=Handler (com.android.server.am.ActivityManagerService$UiHandler) {dee4953} cb=null msg=53
+01-24 18:21:35.584   434   461 W ActivityManager: setHasOverlayUi called on unknown pid: 14175
+01-24 18:21:35.605   434   453 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+01-24 18:21:35.605   434   453 I ActivityManager: Force stopping org.dclm.live appid=10060 user=-1: clearApplicationUserData
+01-24 18:21:35.679   335   335 I keystore: clear_uid 10060
+01-24 18:21:35.684 15691 15691 E Watchface: CocosWatchFaceService::Handler msg: -5 0.0;--
+01-24 18:21:35.694   434   536 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-24 18:21:35.789 31332 31332 D Avrcp   : AvrcpServiceBroadcastReceiver-> Action: android.intent.action.PACKAGE_DATA_CLEARED
+01-24 18:21:35.790 31332 31332 D Avrcp   : packageName: org.dclm.live removed: true
+01-24 18:21:35.790 31332 31332 V Avrcp   : isBrowseSupported for org.dclm.live: false
+01-24 18:21:35.793 13109 13109 I GeofencerStateMachine: removeGeofences: removeRequest=RemoveGeofencingRequest[REMOVE_ALL packageName=org.dclm.live]
+01-24 18:21:35.846 14222 14222 I app_process: System.exit called, status: 0
+01-24 18:21:35.847 14222 14222 I AndroidRuntime: VM exiting with result code 0.
+01-24 18:21:35.858 13109 14237 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:21:35.860 13109 14237 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:21:35.908   712   712 D RegisteredNfcFServicesCache: Service unchanged, not updating
+01-24 18:21:35.927 13109 14237 I Fitness : Clearing all cached OAuth tokens for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:21:35.930 13109 14237 I Fitness : Removing all subscriptions for: org.dclm.live [CONTEXT service_id=17 ]
+01-24 18:21:36.060   712   726 I zygote  : Background concurrent copying GC freed 9547(398KB) AllocSpace objects, 0(0B) LOS objects, 29% free, 1252KB/1764KB, paused 844us total 248.981ms
+01-24 18:21:38.091  7206  7251 I dailytrack: HealthSportDataCacheUtil::saveData(),currentThread4=handle_total_data
+
+
