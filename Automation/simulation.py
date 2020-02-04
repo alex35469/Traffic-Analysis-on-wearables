@@ -7,6 +7,7 @@ from watch_moves import *
 sys.path.append(r"/Users/alexandredumur/Documents/EPFL/PDM/Traffic-Analysis_on_wearables/Automation/yaml")
 import yaml
 import logging
+import controler_to_ellisys
 
 launchTime = time.strftime("%H:%M:%S", time.localtime())
 
