@@ -26,15 +26,14 @@ On the **controller (MAC)**:
 
   2. adb (Android Debug Bridge):
 
-    1. Should also come with Android Studio
-
-    2. Shoud be located in : */Users/<user>/Library/Android/sdk/platform-tools*
+      1. Should also come with Android Studio
+      2. Shoud be located in : */Users/<user>/Library/Android/sdk/platform-tools*
 
 
 On the **Ellisys laptop (Windows)**:
   1. AutoIt3
   2. Ellisys software
-  3. Ellisys software connected to the
+  3. Ellisys hardware
 
 
 On the **watch**:
@@ -49,7 +48,7 @@ On the **watch**:
 
 Steps:
 
-On the controler:
+On the **controler**:
 
   1. Go to the Automation directory on the controler
   2. Connect the watch to the controler: `adb connect <ip>:5555`
@@ -57,11 +56,10 @@ On the controler:
   4. run: `monkeyrunner simulation.py`
 
 
-On Ellisys laptop:
+On **Ellisys laptop**:
 
   1. Power and once the light is blue, connect to ellisys hard. to ellisys soft.
-
-  2. go to Automation directory:  
+  2. go to Automation directory  
 
 On the watch:
 
