@@ -60,6 +60,7 @@ On **Ellisys laptop**:
 
   1. Power and once the light is blue, connect to ellisys hard. to ellisys soft.
   2. go to Automation directory  
+  3. run `python ellisys_to_controler.py`
 
 On the watch:
 
