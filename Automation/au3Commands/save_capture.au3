@@ -2,13 +2,10 @@
 
 $FNAME = $CmdLine[1]
 
-Sleep(2000)
-; WinWaitActive("Recording from BV1-26140 - Ellisys Bluetooth Analyzer")
-Send("!{LSHIFT}r")
-
-Sleep(500)
+WinActivate("Untitled* - Ellisys Bluetooth Analyzer")
 Send("^s")
 
 WinWaitActive("Save", "File &name:")
 Send($FNAME)
 Send("{ENTER}")
+WinWaitActive($FNAME & ".btt - Ellisys Bluetooth Analyzer")

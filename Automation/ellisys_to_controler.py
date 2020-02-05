@@ -2,27 +2,17 @@
 
 import socket
 import os
+import psutil
 
-HOST = '192.168.1.101'  # Standard loopback interface address (localhost)
-PORT = 65432        # Port to listen on (non-privileged ports are > 1023)
+# TO CHANGE if not connected to mobnet
+HOST = '192.168.1.101'  # IP address of this computer (reachable by the MAC)
+
+
+PORT = 65432        # Port to listen on (no need to change)
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((HOST, PORT))
 
-"""
-print("Starting server")
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.bind((HOST, PORT))
-    s.listen()
-    conn, addr = s.accept()
-    with conn:
-        print('Connected by', addr)
-        while True:
-            data = conn.recv(1024)
-            if not data:
-                break
-            conn.sendall(data)
-"""
 
 print("Starting server")
 while True:
@@ -32,36 +22,48 @@ while True:
 
         response = client.recv(255)
         response = response.decode('utf-8')
-        print(response)
+        print("-> " + response)
 
-        # Check that the message is correct
-        if len(response) < 12:
-            print("Incorrect command: ", response)
-            client.sendall(b"Command unkown")
-
-        if response == "start ellisys":
-            print("Starting Ellisys")
+        if response == "open ellisys":
+            print("<- Starting Ellisys")
             os.system('cmd /c "AutoIt3 au3Commands\\open_ellisys.au3"')
-            client.sendall(b"Ellisys started")
+            client.sendall(b"Ellisys opened")
+            print("<- Ellisys opened")
 
-        if response == "stop ellysis":
-            print("Stopping Ellisys")
+        if response == "close ellisys":
+
             os.system('cmd /c "AutoIt3 au3Commands\\close_ellisys.au3"')
-            client.sendall(b"Ellisys au3Commands\\stopped")
+            client.sendall(b"Ellisys closed")
+            print("<- Ellisys closed")
 
-        if response == "start capture":
-            print("Starting capture")
-            os.system('cmd /c "AutoIt3 au3Commands\\start_capture.au3"')
-            client.sendall(b"Capture started")
-
-        if respone[:12] == "save capture":
+        if response[:13] == "start capture":
             fname = response.split(", ")
-            print("Stopping capture")
-            os.system('cmd /c "AutoIt3 au3Commands\\stop_capture.au3"')
+            if len(fname) == 2:
+                fname = fname[1]
 
-            print("Saving capture: ", fname)
-            os.system('cmd /c "AutoIt3 au3Commands\\save_capture.au3"')
-            client.sendall(b"Capture stopped and saved")
+                os.system('cmd /c "AutoIt3 au3Commands\\start_capture.au3 {}"'.format(fname))
+            else:
+                os.system('cmd /c "AutoIt3 au3Commands\\start_capture.au3"')
+            client.sendall(b"Capture started")
+            print("<- Capture started")
+
+        if response == "stop capture":
+
+            os.system('cmd /c "AutoIt3 au3Commands\\stop_capture.au3"')
+            client.sendall(b"Capture stopped")
+            print("<- capture stoped")
+
+        if response[:12] == "save capture":
+            fname = response.split(", ")[1]
+            print("Saving capture: ", fname, ".btt")
+            os.system('cmd /c "AutoIt3 au3Commands\\save_capture.au3 {}"'.format(fname))
+            client.sendall(str.encode("Capture " +fname+" saved"))
+        else:
+            client.sendall(b"Failure. Command unkown")
+        cpu = psutil.cpu_percent()
+        ram = psutil.virtual_memory().percent
+
+        print("   CPU usage: {}% \n   Memory usage: {}".format(cpu, ram))
 
 print("Close")
 client.close()
