@@ -3,37 +3,41 @@ Automation of bluetooth captures originated from Android devices.
 
 ## Devices
 
-**controler (MAC)**
+**controler (MAC):**
 Orchestrate all the communication and commands sent to other devices
 
-**Watch**
+**Watch:**
 Where touches are automated
 
-**Phone**
+**Phone:**
 Where touches are automated (TODO)
 
-**Ellisys laptop (WINDOWS)**
+**Ellisys laptop (WINDOWS):**
 Launch and issues command to ellisys soft.
 
 ## Requirements
 
-On the controller (MAC):
+On the **controller (MAC)**:
   1. monkeyrunner (comes with the Android studio)
-    1. Download address: https://developer.android.com/studio
-    2. Shoud be located in : */Users/<user>/Library/Android/sdk/tools/
-    bin/monkeyrunner*
-    3. Need to set Path variable to it.
 
-  2. adb (Android Debug Bridge)
+      1. Download address: https://developer.android.com/studio
+      2. Shoud be located in : */Users/<user>/Library/Android/sdk/tools/bin/monkeyrunner*
+      3. Need to set Path variable to it.
+
+  2. adb (Android Debug Bridge):
+
     1. Should also come with Android Studio
+
     2. Shoud be located in : */Users/<user>/Library/Android/sdk/platform-tools*
 
-On the Ellisys laptop (Windows):
+
+On the **Ellisys laptop (Windows)**:
   1. AutoIt3
   2. Ellisys software
   3. Ellisys software connected to the
 
-On the watch:
+
+On the **watch**:
   1. Developper mode enabled
   2. adb enable
   3. adb over wifi enabled
@@ -44,19 +48,24 @@ On the watch:
 
 
 Steps:
+
 On the controler:
-  0. Go to the Automation directory on the controler
-  1. Connect the watch to the controler: `adb connect <ip>:5555`
-  2. make sure it is connected: `adb devices`
-  3. run: `monkeyrunner simulation.py`
+
+  1. Go to the Automation directory on the controler
+  2. Connect the watch to the controler: `adb connect <ip>:5555`
+  3. make sure it is connected: `adb devices`
+  4. run: `monkeyrunner simulation.py`
 
 
 On Ellisys laptop:
-  0. Power and once the light is blue, connect to ellisys hard. to ellisys soft.
-  0. go to Automation directory:  
+
+  1. Power and once the light is blue, connect to ellisys hard. to ellisys soft.
+
+  2. go to Automation directory:  
 
 On the watch:
-  0. Nothing. Better to not touch it.
+
+  1. Nothing. Better to not touch it.
 
 ## Troubleshooting
 
