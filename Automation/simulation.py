@@ -14,7 +14,7 @@ import messages
 # TODO: move this in config.py, give very explicit names like "N_REPEAT_CAPTURE" instead of "repeat", etc.
 addr = "192.168.1.134:5555"  # Watch ip address. Change if not connected to Mobnet
 watchName = "HuaweiWatch2"  # Hardcoded for now...
-repeat = 300  # Number of time to repeat action.
+repeat = 3  # Number of time to repeat action.
 timeout = 3  # timeout after watch not connected (First instruction)
 skipOpenAndClose = False
 restartEllisysWhenChangingApp = True
@@ -24,7 +24,7 @@ DEBUG_WATCH = False  # Does not communiacte with ellisys controller
 
 # Applications to keep for the automation
 # To see what action to simulate, see application_action.yaml under keepOnly field
-keepOnly = ["DiabeteM"] #, "DailyTracking", "DCMLRadio"]
+keepOnly = ["Endomondo", "MapMyRun"] #, "DailyTracking", "DCMLRadio"]
 blacklist = []  # TODO Does not work yet
 
 
@@ -43,13 +43,14 @@ launchTime = time.strftime("%H:%M:%S", time.localtime())  # for log file name
 # Connects to the current device, returning a MonkeyDevice object
 device = None
 width = None
-lastInfo = ""
+lastFilename = ""
 lastApp = False  # Ensure we do not open and close twice
 
 ##### Connection with the watch
 # Ensure that the connection proprely worked
 tries = 0
 
+print("Accessing device...")
 while width is None:
 
     device = MonkeyRunner.waitForConnection(deviceId=addr, timeout=timeout)
@@ -62,8 +63,8 @@ while width is None:
         print("Connection with device error.\naborting...")
         sys.exit(1)
     tries += 1
-
 print("Device accessed")
+
 width = int(width) - 1
 height = int(height) - 1
 display = (width, height)
@@ -88,7 +89,6 @@ for appName in apps:
         appNb += 1
 
         # Extract info about applications
-        info = appName
         app = apps[appName]
         package = app["package"]
         activity = app["activity"]
@@ -109,13 +109,13 @@ for appName in apps:
             # Loop on a particular action
             for j in range(repeat):
                 j += 1
-                # TODO: rename in "filename" or something clearer
-                info = watchName + "_" +appName +"_Action"+ str(i)+ "_Classic_enc_" + str(j) + " : "
-                print("Info:", info)
+
+                filename = watchName + "_" +appName +"_"+ actionName+ "_Classic_enc_" + str(j)
+                print("Info: filename: ", filename)
 
                 # Start capture
                 if not DEBUG_WATCH:
-                    send_instruction(messages.NewStartCaptureCommand(payload=lastInfo))
+                    send_instruction(messages.NewStartCaptureCommand(payload=lastFilename))
 
                 #  launch action
                 infoSim = simulate(device, display, package, activity, action)
@@ -123,20 +123,17 @@ for appName in apps:
                 # Stop Capture
                 if not DEBUG_WATCH:
                     send_instruction(messages.CMD_STOP_CAPTURE)
+                    send_instruction(messages.NewSaveCaptureCommand(payload=filename))
 
-                    # TODO: why -3 here ? explain / make clearer. If it's to cut the extention, use the correct python thingy to do it (os.path....)
-                    send_instruction(messages.NewSaveCaptureCommand(payload=info[:-3]))
+                log += filename + '\n' + infoSim
 
-                log += info + '\n' + infoSim
-
-                #TODO: what's the use of "lastInfo" in this context ? does it build up in the loop ?
-                lastInfo = ", " + info
+                lastFilename = ", " + filename
                 time.sleep(2)
 
         # Restart Ellisys
         if (restartEllisysWhenChangingApp and len(actionsKeepOnly) != 0) and not appName == app and not DEBUG_WATCH:
             send_instruction(messages.CMD_CLOSE_ELLISYS)
-            lastInfo = ""
+            lastFilename = ""
 
             if appNb != len(keepOnly):
                 time.sleep(10)  # Sleeping a bit before capturing new app
