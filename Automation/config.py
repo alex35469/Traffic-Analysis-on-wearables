@@ -1,4 +1,20 @@
 
+# Watches
+HUWAWEI_WATCH_IP_PORT = "192.168.1.134:5555"  # Watch ip config.WATCH_IP_PORTess. Change if not connected to Mobnet
+FOSILL_WATCH_IP_PORT = "192.168.1.130:5555"
+
+DEBUG_WATCH = False  # Does not communiacte with ellisys controller
+WATCH_CONNECTION_TIMEOUT = 5  # timeout after watch not connected (First instruction)
+
+
+# simulation param
+RESTART_ELLISYS_WHEN_CHANGING_APP = True
+N_REPEAT_CAPTURE = 2
+WAITING_TIME_AFTER_START_CAPTURE = 2
+WAITING_TIME_BEFORE_STOP_CAPTURE = 2
+KEEP_ONLY = ["Endomondo", "DailyTracking"]  # Applications to keep for the automation
+DEVICES = [HUWAWEI_WATCH_IP_PORT, FOSILL_WATCH_IP_PORT]
+DEVICES = [HUWAWEI_WATCH_IP_PORT]
 
 # Windows PC connected to the Ellisys
 ELLISYS_HOST = '192.168.1.101'

@@ -1,11 +1,9 @@
-# IMPORTANT: TO ADD ACTIONS, PLEASE ADD THEM AT THE BOTTOM OF THE List
-# TO ENSURE THE SAVED FILENAME IS CONSITENT WITH THE ACTION.
 
 # Previously analysed
 Endomondo:
   package: com.endomondo.android
   activity: com.endomondo.android.wear.ui.WearAppActivity
-  keepOnly: [2]  # Action to be selected starting at 1.
+  keepOnly: ["openAndClose", "playGreenButton"]  # Action to be selected starting at 1.
   sequence: [("openAndClose", 1), (background, 5)]
   actions :
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
@@ -17,7 +15,7 @@ Endomondo:
 MapMyRun:
   package: com.mapmyrun.android2
   activity: com.mapmyfitness.android.view.MainActivity
-  keepOnly: []
+  keepOnly: [1]
   actions:
   # 1. Open, wait and close
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
@@ -45,7 +43,7 @@ AthkarOfPrayer:
 DCMLRadio:
   package: org.dclm.live
   activity: .MainActivity
-  keepOnly: [2]
+  keepOnly: [1, 2]
   actions:
     # 1. open and close
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
@@ -130,7 +128,7 @@ HeartRate:
 DailyTracking:
   package : com.huawei.health
   activity: com.huawei.bone.view.dailytrack.activity.DailyTrackMainActivity
-  keepOnly: [2]
+  keepOnly: ["openAndClose", "logIn"]
   actions:
     # 1 Open, wait and close
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
