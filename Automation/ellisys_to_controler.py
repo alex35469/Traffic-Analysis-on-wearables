@@ -92,13 +92,12 @@ while True:
 
         else:
             sendFail(client, "Command unknown.")
-            sys.exit(1)
 
         printCPUMemoryLogs()
 
         if not successfull:
-            sendFail( "AutoIt command time out: {}s reached ".format(config.ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED))
-            sys.exit(1)
+            sendFail(client, "AutoIt command time out: {}s reached ".format(config.ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED))
+            autoItRunAndWait('stop_capture.au3')
 
 print("Server closed")
 client.close()
