@@ -3,68 +3,76 @@
 import socket
 import os
 import psutil
-
-# TO CHANGE if not connected to mobnet
-HOST = '192.168.1.101'  # IP address of this computer (reachable by the MAC)
-
-
-PORT = 65432        # Port to listen on (no need to change)
+import messages
+import config
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind((HOST, PORT))
+s.bind((config.ELLISYS_HOST, config.ELLISYS_PORT))
 
+def autoItRunAndWait(file):
+    print('Running AutoIT file "AutoIt3 au3Commands\\{0}"'.format(file))
+    os.system('cmd /c "AutoIt3 au3Commands\\{0}"'.format(file))
 
-print("Starting server")
+def printCPUMemoryLogs():
+    cpu = psutil.cpu_percent()
+    ram = psutil.virtual_memory().percent
+    print("CPU usage: {}%, Memory usage: {}".format(cpu, ram))
+
+def sendAck(client, payload):
+    print('Sending ACK message with payload "{0}"'.format(payload))
+    message = str.encode(messages.NewACK(payload))
+    client.sendall(message)
+
+print("Starting server...")
 while True:
         s.listen(5)
         client, address = s.accept()
-        print("{} connected".format( address ))
+        print("New client: {}, waiting on command".format( address ))
 
-        response = client.recv(255)
+        # receive command
+        response = client.recv(config.SOCKET_RECEIVE_BUFFER) # TODO: increased from 255 to 1024 (to avoid having an extra magic number), maybe it will cause problems ? to check
         response = response.decode('utf-8')
-        print("-> " + response)
 
-        if response == "open ellisys":
-            print("<- Starting Ellisys")
-            os.system('cmd /c "AutoIt3 au3Commands\\open_ellisys.au3"')
-            client.sendall(b"Ellisys opened")
-            print("<- Ellisys opened")
+        # parse
+        command, payload = response, ''
+        if ',' in response:
+            parts = response.split(',')
+            command = parts[0].strip()
+            payload = parts[1].strip()
+        
+        print('-> Received message "{0}", parsed as "{1}" args "{2}"'.format(response, command, payload))
 
-        if response == "close ellisys":
+        if command == messages.CMD_OPEN_ELLISYS:
+            autoItRunAndWait('open_ellisys.au3')
+            sendAck(client, "Ellisys opened")
 
-            os.system('cmd /c "AutoIt3 au3Commands\\close_ellisys.au3"')
-            client.sendall(b"Ellisys closed")
-            print("<- Ellisys closed")
+        elif command == messages.CMD_CLOSE_ELLISYS:
+            autoItRunAndWait('close_ellisys.au3')
+            sendAck(client, "Ellisys closed")
 
-        if response[:13] == "start capture":
-            fname = response.split(", ")
-            if len(fname) == 2:
-                fname = fname[1]
-
-                os.system('cmd /c "AutoIt3 au3Commands\\start_capture.au3 {}"'.format(fname))
+        #TODO: why is the filename needed here
+        elif command == messages.CMD_START_CAPTURE:
+            if payload != '': #TODO: if that's not needed anymore, remove
+                filename = payload
+                autoItRunAndWait('start_capture.au3 {}'.format(filename))
             else:
-                os.system('cmd /c "AutoIt3 au3Commands\\start_capture.au3"')
-            client.sendall(b"Capture started")
-            print("<- Capture started")
+                autoItRunAndWait('start_capture.au3')
+            sendAck(client, "Capture started")
 
-        if response == "stop capture":
+        elif command == messages.CMD_STOP_CAPTURE:
+            autoItRunAndWait('stop_capture.au3')
+            sendAck(client, "Capture stopped")
 
-            os.system('cmd /c "AutoIt3 au3Commands\\stop_capture.au3"')
-            client.sendall(b"Capture stopped")
-            print("<- capture stoped")
+        elif command == messages.CMD_SAVE_CAPTURE:
+            filename = payload
+            autoItRunAndWait('save_capture.au3 {}'.format(filename))
+            sendAck(client, "Capture " +filename + " saved")
 
-        if response[:12] == "save capture":
-            fname = response.split(", ")[1]
-            print("Saving capture: ", fname, ".btt")
-            os.system('cmd /c "AutoIt3 au3Commands\\save_capture.au3 {}"'.format(fname))
-            client.sendall(str.encode("Capture " +fname+" saved"))
         else:
-            client.sendall(b"Failure. Command unkown")
-        cpu = psutil.cpu_percent()
-        ram = psutil.virtual_memory().percent
+            sendAck(client, "Failure. Command unknown.")
+    
+        printCPUMemoryLogs()
 
-        print("   CPU usage: {}% \n   Memory usage: {}".format(cpu, ram))
-
-print("Close")
+print("Server closed")
 client.close()
 s.close()
