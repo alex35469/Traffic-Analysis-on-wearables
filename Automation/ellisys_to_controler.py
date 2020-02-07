@@ -52,7 +52,7 @@ while True:
 
         # parse
         command, payload = response, ''
-        if ',' in response:
+        if ' ' in response:
             parts = response.split(' ', 1)
             command = parts[0].strip()
             payload = parts[1].strip()
