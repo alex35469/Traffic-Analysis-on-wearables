@@ -5,13 +5,24 @@ import os
 import psutil
 import messages
 import config
+import subprocess
+import sys
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((config.ELLISYS_HOST, config.ELLISYS_PORT))
 
 def autoItRunAndWait(file):
     print('Running AutoIT file "AutoIt3 au3Commands\\{0}"'.format(file))
-    os.system('cmd /c "AutoIt3 au3Commands\\{0}"'.format(file))
+    p = subprocess.Popen('cmd /c "AutoIt3 au3Commands\\{0}"'.format(file))
+    successfull = True
+    try:
+        p.wait(config.ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED)
+    except subprocess.TimeoutExpired:
+        p.kill()
+        successfull = False
+
+    return successfull
+
 
 def printCPUMemoryLogs():
     cpu = psutil.cpu_percent()
@@ -23,6 +34,13 @@ def sendAck(client, payload):
     message = str.encode(messages.NewACK(payload))
     client.sendall(message)
 
+def sendFail(client, payload):
+    print('"Sending a FAIL message with payload "{0}"'.format(payload))
+    message = str.encode(messages.NewFAIL(payload))
+    client.sendall(message)
+
+
+
 print("Starting server...")
 while True:
         s.listen(5)
@@ -30,24 +48,26 @@ while True:
         print("New client: {}, waiting on command".format( address ))
 
         # receive command
-        response = client.recv(config.SOCKET_RECEIVE_BUFFER) # TODO: increased from 255 to 1024 (to avoid having an extra magic number), maybe it will cause problems ? to check
-        response = response.decode('utf-8')
+        response = client.recv(config.SOCKET_RECEIVE_BUFFER).decode('utf-8')
 
         # parse
         command, payload = response, ''
         if ',' in response:
-            parts = response.split(',')
+            parts = response.split(' ', 1)
             command = parts[0].strip()
             payload = parts[1].strip()
 
         print('-> Received message "{0}", parsed as "{1}" args "{2}"'.format(response, command, payload))
 
+
+        successfull = False
+
         if command == messages.CMD_OPEN_ELLISYS:
-            autoItRunAndWait('open_ellisys.au3')
+            successfull = autoItRunAndWait('open_ellisys.au3')
             sendAck(client, "Ellisys opened")
 
         elif command == messages.CMD_CLOSE_ELLISYS:
-            autoItRunAndWait('close_ellisys.au3')
+            successfull = autoItRunAndWait('close_ellisys.au3')
             sendAck(client, "Ellisys closed")
 
         # The file name is needed in order to AutoIt
@@ -56,24 +76,29 @@ while True:
         elif command == messages.CMD_START_CAPTURE:
             if payload != '':
                 filename = payload
-                autoItRunAndWait('start_capture.au3 {}'.format(filename))
+                successfull = autoItRunAndWait('start_capture.au3 {}'.format(filename))
             else:
-                autoItRunAndWait('start_capture.au3')
+                successfull = autoItRunAndWait('start_capture.au3')
             sendAck(client, "Capture started")
 
         elif command == messages.CMD_STOP_CAPTURE:
-            autoItRunAndWait('stop_capture.au3')
+            successfull = autoItRunAndWait('stop_capture.au3')
             sendAck(client, "Capture stopped")
 
         elif command == messages.CMD_SAVE_CAPTURE:
             filename = payload
-            autoItRunAndWait('save_capture.au3 {}'.format(filename))
+            successfull = autoItRunAndWait('save_capture.au3 {}'.format(filename))
             sendAck(client, "Capture " +filename + " saved")
 
         else:
-            sendAck(client, "Failure. Command unknown.")
+            sendFail(client, "Command unknown.")
+            sys.exit(1)
 
         printCPUMemoryLogs()
+
+        if not successfull:
+            sendFail( "AutoIt command time out: {}s reached ".format(config.ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED))
+            sys.exit(1)
 
 print("Server closed")
 client.close()
