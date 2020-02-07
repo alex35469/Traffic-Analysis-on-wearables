@@ -9,23 +9,9 @@ sys.path.append(r"/Users/alexandredumur/Documents/EPFL/PDM/Traffic-Analysis_on_w
 import yaml
 from controler_to_ellisys import send_instruction
 import messages
+import config
 
-################## PARAMETERS ########################
-# TODO: move this in config.py, give very explicit names like "N_REPEAT_CAPTURE" instead of "repeat", etc.
-addr = "192.168.1.134:5555"  # Watch ip address. Change if not connected to Mobnet
-watchName = "HuaweiWatch2"  # Hardcoded for now...
-repeat = 3  # Number of time to repeat action.
-timeout = 3  # timeout after watch not connected (First instruction)
-skipOpenAndClose = False
-restartEllisysWhenChangingApp = True
 
-#TODO: All constants as UPPER_CASE like this
-DEBUG_WATCH = False  # Does not communiacte with ellisys controller
-
-# Applications to keep for the automation
-# To see what action to simulate, see application_action.yaml under keepOnly field
-keepOnly = ["Endomondo", "MapMyRun"] #, "DailyTracking", "DCMLRadio"]
-blacklist = []  # TODO Does not work yet
 
 
 ######################## MAIN ########################
@@ -37,41 +23,56 @@ l = f.read()
 f.close()
 apps = yaml.load(l)
 
+def write_logs(launchTime, log, how):
+    f = open("./logs/"+ "capture-" + launchTime + ".yaml", how)
+    f.write(log)
+    f.close()
+
 
 launchTime = time.strftime("%H:%M:%S", time.localtime())  # for log file name
+write_logs(launchTime, "--- Log init ---  \n", 'w')
+log = ""
 
-# Connects to the current device, returning a MonkeyDevice object
-device = None
-width = None
-lastFilename = ""
-lastApp = False  # Ensure we do not open and close twice
+##### Connection with the watch(es)
 
-##### Connection with the watch
-# Ensure that the connection proprely worked
 tries = 0
 
-print("Accessing device...")
-while width is None:
-
-    device = MonkeyRunner.waitForConnection(deviceId=addr, timeout=timeout)
+print("Accessing device(s)...")
 
 
-    width = device.getProperty("display.width")
-    height = device.getProperty("display.height")
-    time.sleep(0.5)
-    if tries > 10:
-        print("Connection with device error.\naborting...")
-        sys.exit(1)
-    tries += 1
-print("Device accessed")
+devices = []
+for device_addr in config.DEVICES:
 
-width = int(width) - 1
-height = int(height) - 1
-display = (width, height)
+    # Connects to the current device, returning a MonkeyDevice object
+    device = None
+    width = None
+    lastFilename = ""
+    lastApp = False  # Ensure we do not open and close twice
+
+    while width is None:
+
+        device = MonkeyRunner.waitForConnection(deviceId=device_addr, timeout=config.WATCH_CONNECTION_TIMEOUT)
+
+
+        width = device.getProperty("display.width")
+        height = device.getProperty("display.height")
+        watchName = device.getProperty("build.model")
+
+        time.sleep(0.5)
+        if tries > 10:
+            print("Connection with device error.\naborting...")
+            sys.exit(1)
+        tries += 1
+
+    watchName = str(watchName.replace(" ", "-"))
+    print("Device: " + watchName + " connected")
+    devices.append((device, (int(width) - 1, int(height) -1), watchName))
+
+print("All devices are connected")
 
 
 # MAIN
-if not DEBUG_WATCH:
+if not config.DEBUG_WATCH:
     send_instruction(messages.CMD_OPEN_ELLISYS)
 
 
@@ -80,11 +81,7 @@ log = ""
 
 # Loop on applications
 for appName in apps:
-    if appName in keepOnly or len(keepOnly) == 0:
-
-
-        if appName in blacklist:
-            continue
+    if appName in config.KEEP_ONLY or len(config.KEEP_ONLY) == 0:
 
         appNb += 1
 
@@ -94,61 +91,54 @@ for appName in apps:
         activity = app["activity"]
         actions = app["actions"]
         actionsKeepOnly = app["keepOnly"]
-        lastApp = (appName == keepOnly[-1])
+        lastApp = (appName == config.KEEP_ONLY[-1])
 
         # Loop on the set of actions of a patricular app
-        for i, actionName in enumerate(actions):
+        for i, actionName in enumerate(actionsKeepOnly):
             i += 1
-            if (skipOpenAndClose and i == 1) or i not in actionsKeepOnly:
-                continue
 
             # TODO: eval ? what's happening here ?
             action = [eval(a) for a in actions[actionName]]
 
 
             # Loop on a particular action
-            for j in range(repeat):
+            for j in range(config.N_REPEAT_CAPTURE):
                 j += 1
 
-                filename = watchName + "_" +appName +"_"+ actionName+ "_Classic_enc_" + str(j)
-                print("Info: filename: ", filename)
+                # Loop on watches
+                for deviceStruct in devices:
+                    device = deviceStruct[0]
+                    display = deviceStruct[1]
+                    watchName = deviceStruct[2]
+                    filename = watchName + "_" +appName +"_"+ actionName+ "_Classic_enc_" + str(j)
+                    print(filename)
 
-                # Start capture
-                if not DEBUG_WATCH:
-                    send_instruction(messages.NewStartCaptureCommand(payload=lastFilename))
+                    # Start capture
+                    if not config.DEBUG_WATCH:
+                        send_instruction(messages.NewStartCaptureCommand(payload=lastFilename))
 
-                #  launch action
-                infoSim = simulate(device, display, package, activity, action)
+                    #  launch action
+                    time.sleep(config.WAITING_TIME_AFTER_START_CAPTURE)
+                    infoSim = simulate(device, display, package, activity, action)
+                    time.sleep(config.WAITING_TIME_BEFORE_STOP_CAPTURE)
 
-                # Stop Capture
-                if not DEBUG_WATCH:
-                    send_instruction(messages.CMD_STOP_CAPTURE)
-                    send_instruction(messages.NewSaveCaptureCommand(payload=filename))
+                    # Stop Capture
+                    if not config.DEBUG_WATCH:
+                        send_instruction(messages.CMD_STOP_CAPTURE)
+                        send_instruction(messages.NewSaveCaptureCommand(payload=filename))
 
-                log += filename + '\n' + infoSim
-
-                lastFilename = ", " + filename
-                time.sleep(2)
+                    log = filename + '\n' + infoSim
+                    write_logs(launchTime, log, 'a')
+                    lastFilename = ", " + filename
+                    time.sleep(2)
 
         # Restart Ellisys
-        if (restartEllisysWhenChangingApp and len(actionsKeepOnly) != 0) and not appName == app and not DEBUG_WATCH:
+        if (config.RESTART_ELLISYS_WHEN_CHANGING_APP and len(actionsKeepOnly) != 0) and not appName == app and not config.DEBUG_WATCH:
             send_instruction(messages.CMD_CLOSE_ELLISYS)
             lastFilename = ""
 
-            if appNb != len(keepOnly):
+            if appNb != len(config.KEEP_ONLY):
                 time.sleep(10)  # Sleeping a bit before capturing new app
                 send_instruction(messages.CMD_OPEN_ELLISYS)
 
-
-
-# TODO: Ah, I see. Don't do that: if the program crashes, this is never executed. Have a "log()" function which prints to stdout *and* to a file continuously called in the loop, not only at the end
-
-print("---- LOG -----")
-print(log)
-
-
-
-f = open("./logs/"+ "capture-" + launchTime + ".yaml", "w")
-f.write(log)
-f.close()
 print("done")
