@@ -9,8 +9,20 @@ def swipe_left(device, display):
 
 def swipe_right(device, display):
     width, height = display[0], display[1]
-    device.drag((width, height/2), (width/3,height/2), 0.1)
+    device.drag((width - 30, height/2), (width/3,height/2), 0.05, 1)
     MonkeyRunner.sleep(0.5)
+
+def iter_swipe_right(device, display):
+    # Touch down screen
+    device.touch(300, 190, MonkeyDevice.DOWN)
+    # Move from 100, 500 to 300, 500
+    a = 1.6
+    for i in range(1, 15):
+        device.touch(350 - 3 * i * a * a , 190, MonkeyDevice.MOVE)
+        print "move ", 350 - 3 * i * a * a, 190
+        time.sleep(0.1)
+
+    device.touch(10, 20, MonkeyDevice.UP)
 
 def swipe_up(device, display):
     width = display[0]
@@ -71,6 +83,9 @@ def button_click_func(location):
 
     return click
 
+def background(device, display):
+    device.press('KEYCODE_HOME',MonkeyDevice.DOWN_AND_UP)
+
 
 def simulate(device, display, package, activity, actions_waiting):
     cumInfo = ""
@@ -83,7 +98,7 @@ def simulate(device, display, package, activity, actions_waiting):
             a(device, package)
         else:
             a(device, display)
-        info += ", "+time.strftime("%H:%M:%S", time.localtime()) 
+        info += ", "+time.strftime("%H:%M:%S", time.localtime())
         print(info)
         cumInfo += info + "\n"
         time.sleep(w)

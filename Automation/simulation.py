@@ -14,15 +14,15 @@ from controler_to_ellisys import send_instruction
 ################## PARAMETERS ########################
 addr = "192.168.1.134:5555"  # Watch ip address. Change if not connected to Mobnet
 watchName = "HuaweiWatch2"  # Hardcoded for now...
-repeat = 2  # Number of time to repeat action.
+repeat = 1  # Number of time to repeat action.
 timeout = 3  # timeout after watch not connected (First instruction)
 skipOpenAndClose = False
 restartEllisysWhenChangingApp = True
-DEBUG_WATCH = False  # Does not communiacte with ellisys controller
+DEBUG_WATCH = True  # Does not communiacte with ellisys controller
 
 # Applications to keep for the automation
 # To see what action to simulate, see application_action.yaml under keepOnly field
-keepOnly = ["Daily_tracking", "DCML_Radio", "Endomondo"]
+keepOnly = ["DiabeteM"] #, "DailyTracking", "DCMLRadio"]
 blacklist = []  # TODO Does not work yet
 
 
@@ -35,6 +35,7 @@ l = f.read()
 f.close()
 apps = yaml.load(l)
 
+
 launchTime = time.strftime("%H:%M:%S", time.localtime())  # for log file name
 
 # Connects to the current device, returning a MonkeyDevice object
@@ -46,6 +47,7 @@ lastApp = False  # Ensure we do not open and close twice
 ##### Connection with the watch
 # Ensure that the connection proprely worked
 tries = 0
+
 while width is None:
 
     device = MonkeyRunner.waitForConnection(deviceId=addr, timeout=timeout)
@@ -54,9 +56,10 @@ while width is None:
     width = device.getProperty("display.width")
     height = device.getProperty("display.height")
     time.sleep(0.5)
-    if tries > 15:
+    if tries > 10:
         print("Connection with device error.\naborting...")
         sys.exit(1)
+    tries += 1
 
 print("Device accessed")
 width = int(width) - 1
@@ -64,13 +67,11 @@ height = int(height) - 1
 display = (width, height)
 
 
-
 # MAIN
 if not DEBUG_WATCH:
     print("<- open ellisys")
     send_instruction("open ellisys")
-else:
-    repeat = 1
+
 
 appNb = 0
 log = ""
@@ -95,18 +96,20 @@ for appName in apps:
         lastApp = (appName == keepOnly[-1])
 
         # Loop on the set of actions of a patricular app
-        for i, action in enumerate(actions):
+        for i, actionName in enumerate(actions):
             i += 1
             if (skipOpenAndClose and i == 1) or i not in actionsKeepOnly:
                 continue
+            print(i)
+            print(actionsKeepOnly)
+            print(actions)
+            action = [eval(a) for a in actions[actionName]]
 
-            action = [eval(a) for a in action]
 
             # Loop on a particular action
             for j in range(repeat):
                 j += 1
-                info = watchName + "_" +appName +"_Action"+ str(i)+ "_Classic_enc_" + str(j) + " : "
-                print(info)
+                info = watchName + "_" +appName +"_"+ actionName + "_Classic_enc_" + str(j) + " : "
 
                 # Start capture
                 if not DEBUG_WATCH:

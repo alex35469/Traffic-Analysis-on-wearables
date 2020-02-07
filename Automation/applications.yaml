@@ -5,14 +5,13 @@
 Endomondo:
   package: com.endomondo.android
   activity: com.endomondo.android.wear.ui.WearAppActivity
-  keepOnly: [2, 3]
+  keepOnly: [2]  # Action to be selected starting at 1.
+  sequence: [("openAndClose", 1), (background, 5)]
   actions :
-    # 1. open and close
-    - ["(open_app, 20)", "(close_app, 5)"]
-    # 2. play
-    - ["(open_app, 7)", "(button_click_func((190,190)), 5)", "(swipe_left, 1)", "(close_app, 5)"] # "(button_click_func((190,190)), 3)"]
-    # 3. Bowse the map
-    - ["(open_app, 7)", "(swipe_right, 3)", "(scroll_right, 3)", "(scroll_up, 3)", "(scroll_up, 4)", "(scroll_right, 2)", "(close_app, 5)"] # "(button_click_func((190,190)), 3)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    openAndBackground: ["(open_app, 20)", "(background, 5)"]
+    playGreenButton: ["(open_app, 7)", "(button_click_func((190,190)), 5)", "(swipe_left, 1)", "(close_app, 5)"] # "(button_click_func((190,190)), 3)"]
+    browseMap: ["(open_app, 7)", "(swipe_right, 3)", "(scroll_right, 3)", "(scroll_up, 3)", "(scroll_up, 4)", "(scroll_right, 2)", "(close_app, 5)"] # "(button_click_func((190,190)), 3)"]
 
 
 MapMyRun:
@@ -21,45 +20,46 @@ MapMyRun:
   keepOnly: []
   actions:
   # 1. Open, wait and close
-    - ["(open_app, 20)", "(close_app, 5)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
 
 # Religious
-Bible_of_line:
+BibleOffline:
   package: com.bestweatherfor.bibleoffline_pt_ra
   activity: com.bestweatherfor.bibleoffline_pt_ra.MainActivity
   keepOnly: []
   actions:
     # Open, wait and close
-    - ["(open_app, 20)", "(close_app, 5)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
 
 
 
-Athkar_of_Prayer:
+AthkarOfPrayer:
   package: com.appsforall.athkaralsalah
   activity: com.appsforall.athkaralsalah.MainActivityWear
   keepOnly: []
   actions:
     # Open, wait and close
-    - ["(open_app, 20)", "(close_app, 5)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
 
 
-DCML_Radio:
+DCMLRadio:
   package: org.dclm.live
   activity: .MainActivity
   keepOnly: [2]
   actions:
     # 1. open and close
-    - ["(open_app, 20)", "(close_app, 5)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
     # 2. Listen to the radio 10 seconds
-    - ["(open_app, 8)", "(button_click_func((95, 190)), 12)", "(button_click_func((285, 190)), 5)", "(close_app, 5)"]
+    listenToRadioAndClose: ["(open_app, 8)", "(button_click_func((95, 190)), 12)", "(button_click_func((285, 190)), 5)", "(close_app, 5)"]
+    listenToRadioAndBackgroung: ["(open_app, 8)", "(button_click_func((95, 190)), 12)", "(background, 5)"]
 
-Salah_(Prayer)_time:
+Salah(Prayer)Time:
   package: online.makkahtv.salattime
   activity: online.makkahtv.salattime.activity.MainChooseActivity
   keepOnly: []
   actions:
     # 1. Open, wait and close
-    - ["(open_app, 20)", "(close_app, 5)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
 
 # Health
 Calm:
@@ -68,7 +68,7 @@ Calm:
   keepOnly: []
   actions:
     # 1. Open, wait and close
-    - ["(open_app, 20)", "(close_app, 5)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
 
 Qardio:
   package: com.getqardio.android
@@ -79,52 +79,66 @@ Qardio:
     - ["(open_app, 20)", "(close_app, 5)"]
 
 
-Google_fit:
+GoogleFit:
   package: com.google.android.apps.fitness
   activity: com.google.android.wearable.fitness.passive.ui.PassiveActivity
   keepOnly: []
   actions:
     # Open, wait and close
-    - ["(open_app, 20)", "(close_app, 5)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+
+DiabeteM:
+  package: com.mydiabetes
+  activity: com.mydiabetes.MainActivity
+  keepOnly: [1]
+  actions:
+    # Open, wait and close
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    swipe: ["(open_app, 5)", "(iter_swipe_right, 2)"]
+    savePlus1AndPlus10plus1: ["(open_app, 7)", "(swipe_right, 1)", "(swipe_right, 1)", "(button_click_func((190,20)), 2)", "(swipe_right, 1)", "(button_click_func((190,20)), 2)", "(button_click_func((190,20)), 2)", "(close_app, 5)"] # "(button_click_func((190,190)), 3)"]
+
+
+
 
 # Bank
-Mobillis_Budget:
+MobillisBudget:
   package: br.com.gerenciadorfinanceiro.controller
   activity: br.com.mobills.wear.views.MobillsWearActivity
   keepOnly: []
   actions:
     # Open, wait and close
-    - ["(open_app, 20)", "(close_app, 5)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
 
-ASB_Mobile_App:
+ASBMobileApp:
   package: nz.co.asb.asbmobile
   activity: nz.co.asb.wear.MainActivity
   keepOnly: []
   actions:
     # Open, wait and close
-    - ["(open_app, 20)", "(close_app, 5)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
 
 # Native
-Heart_rate:
+HeartRate:
   package: com.huawei.health
   activity: com.huawei.bone.view.heartrate.activity.HeartRateMainActivity
   keepOnly: []
   actions:
     # Open, wait for 25 seconds and close
-    - ["(open_app, 20)", "(close_app, 5)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    logIn: ["(open_app, 5), (50, 330))"]
 
-Daily_tracking:
+DailyTracking:
   package : com.huawei.health
   activity: com.huawei.bone.view.dailytrack.activity.DailyTrackMainActivity
   keepOnly: [2]
   actions:
     # 1 Open, wait and close
-    - ["(open_app, 20)", "(close_app, 5)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
     # 2 First use
-    - ["(open_app, 5)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(button_click_func((190,190)), 5)", "(close_app, 3)"]
+    logIn: ["(open_app, 5)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(button_click_func((190,190)), 5)", "(close_app, 3)"]
     # 3 Open, scroll down and close
-    - ["(open_app, 5)", "(swipe_down, 1)", "(swipe_down, 1)", "(swipe_down, 1)", "(close_app, 5)"]
+    scrollDown: ["(open_app, 5)", "(swipe_down, 1)", "(swipe_down, 1)", "(swipe_down, 1)", "(close_app, 5)"]
     # 4 Open VO2Max
-    - ["(open_app, 5)", "(swipe_right, 1)", "(button_click_func((150,190)), 3)", "(close_app, 3)"]
+    VO2Max: ["(open_app, 5)", "(swipe_right, 1)", "(button_click_func((150,190)), 3)", "(close_app, 3)"]
     # 5 Open BMI
-    - ["(open_app, 5)", "(swipe_right, 1)", "(button_click_func((250,190)), 3)", "(close_app, 3)"]
+    BMI: ["(open_app, 5)", "(swipe_right, 1)", "(button_click_func((250,190)), 3)", "(close_app, 3)"]
