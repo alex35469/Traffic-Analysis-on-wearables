@@ -39,7 +39,7 @@ while True:
             parts = response.split(',')
             command = parts[0].strip()
             payload = parts[1].strip()
-        
+
         print('-> Received message "{0}", parsed as "{1}" args "{2}"'.format(response, command, payload))
 
         if command == messages.CMD_OPEN_ELLISYS:
@@ -50,9 +50,11 @@ while True:
             autoItRunAndWait('close_ellisys.au3')
             sendAck(client, "Ellisys closed")
 
-        #TODO: why is the filename needed here
+        # The file name is needed in order to AutoIt
+        # to know which windws to activate (when saving a file the window name
+        # changes as well)
         elif command == messages.CMD_START_CAPTURE:
-            if payload != '': #TODO: if that's not needed anymore, remove
+            if payload != '':
                 filename = payload
                 autoItRunAndWait('start_capture.au3 {}'.format(filename))
             else:
@@ -70,7 +72,7 @@ while True:
 
         else:
             sendAck(client, "Failure. Command unknown.")
-    
+
         printCPUMemoryLogs()
 
 print("Server closed")
