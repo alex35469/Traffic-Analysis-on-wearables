@@ -10,24 +10,25 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((config.ELLISYS_HOST, config.ELLISYS_PORT))
 
 def autoItRunAndWait(file):
-    print('Running AutoIT file "AutoIt3 au3Commands\\{0}"'.format(file))
-    os.system('cmd /c "AutoIt3 au3Commands\\{0}"'.format(file))
+    print('Running AutoIT file "AutoIt3 au3Commands\\' + file + '"'
+    os.system('cmd /c "AutoIt3 au3Commands\\ + file)
 
 def printCPUMemoryLogs():
     cpu = psutil.cpu_percent()
     ram = psutil.virtual_memory().percent
-    print("CPU usage: {}%, Memory usage: {}".format(cpu, ram))
+    print("CPU usage: " + cpu + "%, Memory usage: " + ram
 
 def sendAck(client, payload):
-    print('Sending ACK message with payload "{0}"'.format(payload))
+    print('Sending ACK message with payload "' + payload + '"'
     message = str.encode(messages.NewACK(payload))
     client.sendall(message)
 
 print("Starting server...")
+
 while True:
         s.listen(5)
         client, address = s.accept()
-        print("New client: {}, waiting on command".format( address ))
+        print("New client: " + address + ", waiting on command")
 
         # receive command
         response = client.recv(config.SOCKET_RECEIVE_BUFFER) # TODO: increased from 255 to 1024 (to avoid having an extra magic number), maybe it will cause problems ? to check
@@ -39,9 +40,8 @@ while True:
             parts = response.split(',')
             command = parts[0].strip()
             payload = parts[1].strip()
-        
-        print('-> Received message "{0}", parsed as "{1}" args "{2}"'.format(response, command, payload))
 
+        print('-> Received message "' + response + '"", parsed as "' + command + '" args "payload"'
         if command == messages.CMD_OPEN_ELLISYS:
             autoItRunAndWait('open_ellisys.au3')
             sendAck(client, "Ellisys opened")
@@ -50,11 +50,13 @@ while True:
             autoItRunAndWait('close_ellisys.au3')
             sendAck(client, "Ellisys closed")
 
-        #TODO: why is the filename needed here
+        # The file name is needed in order to AutoIt
+        # to know which windws to activate (when saving a file the window name
+        # changes as well)
         elif command == messages.CMD_START_CAPTURE:
             if payload != '': #TODO: if that's not needed anymore, remove
                 filename = payload
-                autoItRunAndWait('start_capture.au3 {}'.format(filename))
+                autoItRunAndWait('start_capture.au3 ' + filename)
             else:
                 autoItRunAndWait('start_capture.au3')
             sendAck(client, "Capture started")
@@ -65,12 +67,12 @@ while True:
 
         elif command == messages.CMD_SAVE_CAPTURE:
             filename = payload
-            autoItRunAndWait('save_capture.au3 {}'.format(filename))
+            autoItRunAndWait('save_capture.au3 ' + filename)
             sendAck(client, "Capture " +filename + " saved")
 
         else:
             sendAck(client, "Failure. Command unknown.")
-    
+
         printCPUMemoryLogs()
 
 print("Server closed")

@@ -1,0 +1,6 @@
+
+
+# IP/PORT of the Windows PC connected to the Ellisys
+ELLISYS_HOST = '192.168.1.101'
+ELLISYS_PORT = 65432
+SOCKET_RECEIVE_BUFFER = 1024

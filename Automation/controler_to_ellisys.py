@@ -3,19 +3,17 @@
 # Program that controls the communication with the computer controlling the ellisys.
 
 import socket
-
-HOST = '192.168.1.101'  # The server's hostname or IP address
-PORT = 65432        # The port used by the server
-
+import config
 
 def send_instruction(instruction):
-    instructions = ["open ellisys", "close ellisys", "start capture", "stop capture"]
-    if instruction not in instructions and instruction[:12] != "save capture" and instruction[:13] != "start capture":
-        raise AttributeError("Should be either: " + ", ".join(instructions))
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.connect((HOST, PORT))
+    s.connect((config.ELLISYS_HOST, config.ELLISYS_PORT))
+
+    print(' -> Sending "' + instruction + '"'.format(instruction))
     s.sendall(str.encode(instruction))
-    data = s.recv(1024)
+    data = s.recv(config.SOCKET_RECEIVE_BUFFER)
     s.close()
-    print(" -> " + data.decode('utf-8'))
+
+    data = data.decode('utf-8')
+    print(' <- Received " ' + data + '"'.format(data))
     return data
