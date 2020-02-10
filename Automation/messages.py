@@ -27,3 +27,12 @@ def NewFAIL(payload):
     if payload != "":
         payload = " " + payload
     return MESSAGE_FAIL + payload
+
+def parse_msg(response):
+    # parse
+    command, payload = response, ''
+    if ' ' in response:
+        parts = response.split(' ', 1)
+        command = parts[0].strip()
+        payload = parts[1].strip()
+    return command, payload

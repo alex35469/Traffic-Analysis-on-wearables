@@ -77,14 +77,18 @@ def main():
 
     print("All devices are connected")
 
+    appNb = 0
+    log = ""
+    comm_log_start = ""
+    comm_log_stop = ""
+    comm_log_save = ""
 
     # MAIN
     if not config.DEBUG_WATCH:
-        send_instruction(messages.CMD_OPEN_ELLISYS)
+        log = send_instruction(messages.CMD_OPEN_ELLISYS)
 
 
-    appNb = 0
-    log = ""
+
 
 
     # Loop on applications
@@ -122,23 +126,23 @@ def main():
 
                     # Start capture
                     if not config.DEBUG_WATCH:
-                        send_instruction(messages.NewStartCaptureCommand(payload=lastFilename))
+                        comm_log_start = send_instruction(messages.NewStartCaptureCommand(payload=lastFilename)) + '\n'
 
 
                     #  launch action
                     time.sleep(config.WAITING_TIME_AFTER_START_CAPTURE)
-                    infoSim, infoCheck = simulate(device, display, package, activity, action, config.PHONE_NAME, check=config.PERFORM_EXTRA_CHECK)
+                    simulation_log, infoCheck = simulate(device, display, package, activity, action, config.PHONE_NAME, check=config.PERFORM_EXTRA_CHECK)
                     time.sleep(config.WAITING_TIME_BEFORE_STOP_CAPTURE)
 
 
                     # Stop Capture
                     if not config.DEBUG_WATCH:
-                        send_instruction(messages.CMD_STOP_CAPTURE)
-                        send_instruction(messages.NewSaveCaptureCommand(payload=filename))
+                        com_log_stop = send_instruction(messages.CMD_STOP_CAPTURE) + '\n'
+                        com_log_save = send_instruction(messages.NewSaveCaptureCommand(payload=filename)) + '\n'
 
-                    log = filename + '\n' + infoSim
+                    log = filename + '\n' + comm_log_start + simulation_log + infoCheck + com_log_stop + com_log_save
+
                     write_logs(launchTime, log, 'a')
-                    write_logs(launchTime, infoCheck, 'a')
                     lastFilename = ", " + filename
                     time.sleep(2)
 

@@ -67,11 +67,7 @@ while True:
         response = client.recv(config.SOCKET_RECEIVE_BUFFER).decode('utf-8')
 
         # parse
-        command, payload = response, ''
-        if ' ' in response:
-            parts = response.split(' ', 1)
-            command = parts[0].strip()
-            payload = parts[1].strip()
+        command, payload = messages.parse_msg(response)
 
         currentTime = time.strftime("%d/%m/%y %H:%M:%S", time.localtime())
         print(' [' + currentTime + '] -> Received message "{0}", parsed as "{1}" args "{2}"'.format(response, command, payload))

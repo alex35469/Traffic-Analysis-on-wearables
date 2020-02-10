@@ -7,7 +7,7 @@ HOME_PACKAGE = "com.google.android.wearable.app"
 # phone
 PHONE_NAME = "Pixel 2"
 
-DEBUG_WATCH = True  # Does not communiacte with ellisys controller
+DEBUG_WATCH = False  # Does not communiacte with ellisys controller
 WATCH_CONNECTION_TIMEOUT = 5  # timeout after watch not connected (First instruction)
 
 
