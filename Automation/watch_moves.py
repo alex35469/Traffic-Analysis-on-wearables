@@ -1,5 +1,7 @@
 from com.android.monkeyrunner import MonkeyRunner, MonkeyDevice
 import time
+import config
+
 def swipe_left(device, display):
     width = display[0]
     height = display[1]
@@ -83,24 +85,62 @@ def button_click_func(location):
 
     return click
 
-def background(device, display):
+def background(device, package):
     device.press('KEYCODE_HOME',MonkeyDevice.DOWN_AND_UP)
 
 
-def simulate(device, display, package, activity, actions_waiting):
+##### CHECK METHODE
+
+def check_bluetooth_enabled(device, phoneName):
+    answ = str(device.shell("dumpsys bluetooth_manager"))
+
+    if phoneName in answ:
+        return "   CHECK: Bluetooth connection OK"
+    else:
+        return "   CHECK: Bluetooth connection FAIL"
+
+def check_package_opened(device, package):
+    status = str(device.shell("dumpsys window windows | grep Focus"))
+
+    if package in status:
+        return "   CHECK: Package opened OK"
+    else:
+        return "   CHECK: Package opened FAIL\n        Status: "+status 
+
+def check_package_closed(device, package):
+    status = str(device.shell("dumpsys window windows | grep Focus"))
+    if config.HOME_PACKAGE in status:
+        return "   CHECK: Package closed OK"
+    else:
+        return "   CHECK: Package closed FAIL\n        Status: "+status
+
+# SIMULATION
+
+
+def simulate(device, display, package, activity, actions_waiting, phoneName, check=True):
     cumInfo = ""
+    checkInfo = ""
     # Simulate a sequence of action
+    if check:
+        checkInfo += check_bluetooth_enabled(device, phoneName) + '\n'
+
     for a, w in actions_waiting:
         info = "    - " + a.__name__ +", "+time.strftime("%H:%M:%S", time.localtime())
         if a.__name__ == "open_app":
             a(device, package, activity)
-        elif a.__name__ == "close_app":
+            checkInfo += check_package_opened(device, package) + '\n'
+
+        elif a.__name__ == "close_app" or a.__name__ == "background" :
             a(device, package)
+            checkInfo += check_package_closed(device, package) + '\n'
+
+
         else:
             a(device, display)
         info += ", "+time.strftime("%H:%M:%S", time.localtime())
         print(info)
         cumInfo += info + "\n"
         time.sleep(w)
+    print(checkInfo)
 
-    return cumInfo
+    return cumInfo, checkInfo

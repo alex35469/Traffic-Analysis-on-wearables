@@ -9,11 +9,13 @@ def send_instruction(instruction):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((config.ELLISYS_HOST, config.ELLISYS_PORT))
 
-    print(' -> Sending "' + instruction + '"')
+    currentTime = time.strftime("%d/%m/%y %H:%M:%S", time.localtime())
+    print(' [' + currentTime + '] -> Sending "' + instruction + '"')
     s.sendall(str.encode(instruction))
     data = s.recv(config.SOCKET_RECEIVE_BUFFER)
     s.close()
 
     data = data.decode('utf-8')
-    print(' <- Received "' + data + '"')
+    currentTime = time.strftime("%d/%m/%y %H:%M:%S", time.localtime())
+    print(' [' + currentTime + ']  <- Received "' + data + '"')
     return data

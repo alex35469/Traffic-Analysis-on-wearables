@@ -4,84 +4,92 @@ from com.android.monkeyrunner import MonkeyRunner, MonkeyDevice
 import time
 import sys
 from watch_moves import *
-#TODO: not portable, put a relative path
-sys.path.append(r"/Users/alexandredumur/Documents/EPFL/PDM/Traffic-Analysis_on_wearables/Automation/yaml")
+sys.path.append(r"./yaml")
 import yaml
 from controler_to_ellisys import send_instruction
 import messages
 import config
-
+from java.util.logging import Level, Logger, StreamHandler, SimpleFormatter
+from java.io import ByteArrayOutputStream
+import signal
+import subprocess
 
 
 
 ######################## MAIN ########################
 
-###### Capture Preparation
-# Read the applications info file
-f = open("applications.yaml")
-l = f.read()
-f.close()
-apps = yaml.load(l)
-
-def write_logs(launchTime, log, how):
-    f = open("./logs/"+ "capture-" + launchTime + ".yaml", how)
-    f.write(log)
+def main():
+    ###### Capture Preparation
+    # Read the applications info file
+    f = open("applications.yaml")
+    l = f.read()
     f.close()
+    apps = yaml.load(l)
+
+    def write_logs(launchTime, log, how):
+        fname = "./logs/" + launchTime + ".log"
+        f = open(fname, how)
+        f.write(log)
+        f.close()
+        if how == "w":
+            print("log file: " + fname +" init")
 
 
-launchTime = time.strftime("%H:%M:%S", time.localtime())  # for log file name
-write_logs(launchTime, "--- Log init ---  \n", 'w')
-log = ""
 
-##### Connection with the watch(es)
+    launchTime = time.strftime("%d-%m-%y_%H-%M-%S", time.localtime()) # for log file name
+    write_logs(launchTime, "--- Log init ---  \n", 'w')
+    log = ""
 
-tries = 0
+    ##### Connection with the watch(es)
 
-print("Accessing device(s)...")
+    tries = 0
 
-
-devices = []
-for device_addr in config.DEVICES:
-
-    # Connects to the current device, returning a MonkeyDevice object
-    device = None
-    width = None
-    lastFilename = ""
-    lastApp = False  # Ensure we do not open and close twice
-
-    while width is None:
-
-        device = MonkeyRunner.waitForConnection(deviceId=device_addr, timeout=config.WATCH_CONNECTION_TIMEOUT)
+    print("Accessing device(s)...")
 
 
-        width = device.getProperty("display.width")
-        height = device.getProperty("display.height")
-        watchName = device.getProperty("build.model")
+    devices = []
+    for device_addr in config.DEVICES:
 
-        time.sleep(0.5)
-        if tries > 10:
-            print("Connection with device error.\naborting...")
-            sys.exit(1)
-        tries += 1
+        # Connects to the current device, returning a MonkeyDevice object
+        device = None
+        width = None
+        lastFilename = ""
+        lastApp = False  # Ensure we do not open and close twice
 
-    watchName = str(watchName.replace(" ", "-"))
-    print("Device: " + watchName + " connected")
-    devices.append((device, (int(width) - 1, int(height) -1), watchName))
+        while width is None:
 
-print("All devices are connected")
+            device = MonkeyRunner.waitForConnection(deviceId=device_addr, timeout=config.WATCH_CONNECTION_TIMEOUT)
 
 
-# MAIN
-if not config.DEBUG_WATCH:
-    send_instruction(messages.CMD_OPEN_ELLISYS)
+            width = device.getProperty("display.width")
+            height = device.getProperty("display.height")
+            watchName = device.getProperty("build.model")
+
+            time.sleep(0.5)
+            if tries > 10:
+                print("Connection with device error.\naborting...")
+                sys.exit(1)
+            tries += 1
+
+        watchName = str(watchName.replace(" ", "-"))
+        print("Device: " + watchName + " connected")
+        devices.append((device, (int(width) - 1, int(height) -1), watchName))
+
+    print("All devices are connected")
 
 
-appNb = 0
-log = ""
+    # MAIN
+    if not config.DEBUG_WATCH:
+        send_instruction(messages.CMD_OPEN_ELLISYS)
 
-# Loop on applications
-for appName in apps:
-    if appName in config.KEEP_ONLY or len(config.KEEP_ONLY) == 0:
+
+    appNb = 0
+    log = ""
+
+
+    # Loop on applications
+    for appName in config.KEEP_ONLY:
+
 
         appNb += 1
 
@@ -94,10 +102,9 @@ for appName in apps:
         lastApp = (appName == config.KEEP_ONLY[-1])
 
         # Loop on the set of actions of a patricular app
-        for i, actionName in enumerate(actionsKeepOnly):
-            i += 1
+        for actionName in actionsKeepOnly:
 
-            # TODO: eval ? what's happening here ?
+            # Parse the actions contained in applications.yaml
             action = [eval(a) for a in actions[actionName]]
 
 
@@ -117,10 +124,12 @@ for appName in apps:
                     if not config.DEBUG_WATCH:
                         send_instruction(messages.NewStartCaptureCommand(payload=lastFilename))
 
+
                     #  launch action
                     time.sleep(config.WAITING_TIME_AFTER_START_CAPTURE)
-                    infoSim = simulate(device, display, package, activity, action)
+                    infoSim, infoCheck = simulate(device, display, package, activity, action, config.PHONE_NAME, check=config.PERFORM_EXTRA_CHECK)
                     time.sleep(config.WAITING_TIME_BEFORE_STOP_CAPTURE)
+
 
                     # Stop Capture
                     if not config.DEBUG_WATCH:
@@ -129,6 +138,7 @@ for appName in apps:
 
                     log = filename + '\n' + infoSim
                     write_logs(launchTime, log, 'a')
+                    write_logs(launchTime, infoCheck, 'a')
                     lastFilename = ", " + filename
                     time.sleep(2)
 
@@ -141,4 +151,21 @@ for appName in apps:
                 time.sleep(10)  # Sleeping a bit before capturing new app
                 send_instruction(messages.CMD_OPEN_ELLISYS)
 
-print("done")
+    print("done")
+
+
+
+def exitGracefully(signum, frame):
+    """
+    Kill monkey on the device or future connections will fail
+    """
+    print "Exiting Gracefully..."
+    try:
+        subprocess.call("adb shell kill -9 $(adb shell ps | grep monkey | awk '{print $2}')", shell=True)
+    except Exception, e:
+        print(e)
+    sys.exit(1)
+
+if __name__ == '__main__':
+    signal.signal(signal.SIGINT, exitGracefully)
+    main()

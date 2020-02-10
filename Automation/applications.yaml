@@ -80,7 +80,7 @@ Qardio:
 GoogleFit:
   package: com.google.android.apps.fitness
   activity: com.google.android.wearable.fitness.passive.ui.PassiveActivity
-  keepOnly: []
+  keepOnly: ["openAndClose"]
   actions:
     # Open, wait and close
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]

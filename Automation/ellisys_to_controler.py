@@ -7,9 +7,18 @@ import messages
 import config
 import subprocess
 import sys
+import time
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((config.ELLISYS_HOST, config.ELLISYS_PORT))
+
+def write_logs(launchTime, log, how):
+    fname = "./logs/ellisys" + launchTime + ".log"
+    f = open(fname, how)
+    f.write(log)
+    f.close()
+    if how == "w":
+        print("log file: " + fname +" init")
 
 def autoItRunAndWait(file):
     print('Running AutoIT file "AutoIt3 au3Commands\\{0}"'.format(file))
@@ -27,7 +36,11 @@ def autoItRunAndWait(file):
 def printCPUMemoryLogs():
     cpu = psutil.cpu_percent()
     ram = psutil.virtual_memory().percent
-    print("CPU usage: {}%, Memory usage: {}".format(cpu, ram))
+
+    currentTime = time.strftime("%d/%m/%y %H:%M:%S", time.localtime())
+    sysInfo = ' [' + currentTime + ']CPU usage: {}%, Memory usage: {}'.format(cpu, ram)
+    print(sysInfo)
+    return sysInfo
 
 def sendAck(client, payload):
     print('Sending ACK message with payload "{0}"'.format(payload))
@@ -40,6 +53,9 @@ def sendFail(client, payload):
     client.sendall(message)
 
 
+launchTime = time.strftime("%d-%m-%y_%H-%M-%S", time.localtime()) # for log file name
+write_logs(launchTime, "--- Log init ---  \n", 'w')
+log = ""
 
 print("Starting server...")
 while True:
@@ -57,7 +73,8 @@ while True:
             command = parts[0].strip()
             payload = parts[1].strip()
 
-        print('-> Received message "{0}", parsed as "{1}" args "{2}"'.format(response, command, payload))
+        currentTime = time.strftime("%d/%m/%y %H:%M:%S", time.localtime())
+        print(' [' + currentTime + '] -> Received message "{0}", parsed as "{1}" args "{2}"'.format(response, command, payload))
 
 
         successfull = False
@@ -93,11 +110,15 @@ while True:
         else:
             sendFail(client, "Command unknown.")
 
-        printCPUMemoryLogs()
+        sysInfo = printCPUMemoryLogs()
+        write_logs(launchTime, sysInfo, "a")
 
         if not successfull:
             sendFail(client, "AutoIt command time out: {}s reached ".format(config.ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED))
             autoItRunAndWait('stop_capture.au3')
+            time.sleep(10)
+            autoItRunAndWait("start_capture.au3")
+
 
 print("Server closed")
 client.close()
