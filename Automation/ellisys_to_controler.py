@@ -13,7 +13,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((config.ELLISYS_HOST, config.ELLISYS_PORT))
 
 def write_logs(launchTime, log, how):
-    fname = "./logs/ellisys" + launchTime + ".log"
+    fname = "./logs/ellisys_" + launchTime + ".log"
     f = open(fname, how)
     f.write(log)
     f.close()
@@ -38,7 +38,7 @@ def printCPUMemoryLogs():
     ram = psutil.virtual_memory().percent
 
     currentTime = time.strftime("%d/%m/%y %H:%M:%S", time.localtime())
-    sysInfo = ' [' + currentTime + ']CPU usage: {}%, Memory usage: {}'.format(cpu, ram)
+    sysInfo = ' [' + currentTime + '] CPU usage: {}%, Memory usage: {}'.format(cpu, ram)
     print(sysInfo)
     return sysInfo
 
@@ -73,15 +73,15 @@ while True:
         print(' [' + currentTime + '] -> Received message "{0}", parsed as "{1}" args "{2}"'.format(response, command, payload))
 
 
-        successfull = False
-
         if command == messages.CMD_OPEN_ELLISYS:
             successfull = autoItRunAndWait('open_ellisys.au3')
-            sendAck(client, "Ellisys opened")
+            if successfull:
+                sendAck(client, "Ellisys opened")
 
         elif command == messages.CMD_CLOSE_ELLISYS:
             successfull = autoItRunAndWait('close_ellisys.au3')
-            sendAck(client, "Ellisys closed")
+            if successfull:
+                sendAck(client, "Ellisys closed")
 
         # The file name is needed in order to AutoIt
         # to know which windws to activate (when saving a file the window name
@@ -92,16 +92,19 @@ while True:
                 successfull = autoItRunAndWait('start_capture.au3 {}'.format(filename))
             else:
                 successfull = autoItRunAndWait('start_capture.au3')
-            sendAck(client, "Capture started")
+            if successfull:
+                sendAck(client, "Capture started")
 
         elif command == messages.CMD_STOP_CAPTURE:
             successfull = autoItRunAndWait('stop_capture.au3')
-            sendAck(client, "Capture stopped")
+            if successfull:
+                sendAck(client, "Capture stopped")
 
         elif command == messages.CMD_SAVE_CAPTURE:
             filename = payload
             successfull = autoItRunAndWait('save_capture.au3 {}'.format(filename))
-            sendAck(client, "Capture " +filename + " saved")
+            if successfull:
+                sendAck(client, "Capture " +filename + " saved")
 
         else:
             sendFail(client, "Command unknown.")
@@ -111,9 +114,9 @@ while True:
 
         if not successfull:
             sendFail(client, "AutoIt command time out: {}s reached ".format(config.ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED))
-            autoItRunAndWait('stop_capture.au3')
+            autoItRunAndWait('close_ellisys.au3')
             time.sleep(10)
-            autoItRunAndWait("start_capture.au3")
+            autoItRunAndWait("open_ellisys.au3")
 
 
 print("Server closed")
