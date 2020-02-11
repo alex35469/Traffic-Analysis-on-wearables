@@ -2,9 +2,9 @@
 # Watches
 HUWAWEI_WATCH_IP_PORT = "192.168.1.134:5555"  # Watch ip config.WATCH_IP_PORTess. Change if not connected to Mobnet
 FOSILL_WATCH_IP_PORT = "192.168.1.130:5555"
-HOME_PACKAGE = "com.google.android.wearable.app"
+HOME_PACKAGE = "com.google.android.wearable.app"  # To check thaz the home is indeed reached
 
-# phone
+# phone connected to both devices
 PHONE_NAME = "Pixel 2"
 
 DEBUG_WATCH = False  # Does not communiacte with ellisys controller
@@ -16,10 +16,12 @@ RESTART_ELLISYS_WHEN_CHANGING_APP = True
 N_REPEAT_CAPTURE = 2
 WAITING_TIME_AFTER_START_CAPTURE = 2
 WAITING_TIME_BEFORE_STOP_CAPTURE = 2
-KEEP_ONLY = ["GoogleFit", "DailyTracking"]  # Applications to keep for the automation
+KEEP_ONLY = ["DiabeteM", "GoogleFit"]  # Applications to keep for the automation
 DEVICES = [HUWAWEI_WATCH_IP_PORT, FOSILL_WATCH_IP_PORT]
 DEVICES = [HUWAWEI_WATCH_IP_PORT]
 PERFORM_EXTRA_CHECK = True  # Check that packages have been proprely opened
+CLOSING_METHOD = "close_app" # Either close_app or background
+
 
 # Windows PC connected to the Ellisys
 ELLISYS_HOST = '192.168.1.101'

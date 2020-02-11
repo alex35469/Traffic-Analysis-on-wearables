@@ -88,13 +88,14 @@ GoogleFit:
 DiabeteM:
   package: com.mydiabetes
   activity: com.mydiabetes.MainActivity
-  keepOnly: [1]
+  keepOnly: [lowlevelSwipeRight, highLevelSwipeRight]
   actions:
     # Open, wait and close
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
     swipe: ["(open_app, 5)", "(iter_swipe_right, 2)"]
     savePlus1AndPlus10plus1: ["(open_app, 7)", "(swipe_right, 1)", "(swipe_right, 1)", "(button_click_func((190,20)), 2)", "(swipe_right, 1)", "(button_click_func((190,20)), 2)", "(button_click_func((190,20)), 2)", "(close_app, 5)"] # "(button_click_func((190,190)), 3)"]
-
+    lowlevelSwipeRight: ["(lowlevel_swipe_right, 2)", "(lowlevel_swipe_right, 2)", "(lowlevel_swipe_right, 2)"]
+    highLevelSwipeRight: ["(swipe_right, 2)", "(swipe_right, 2)", "(swipe_right, 2)"]
 
 
 

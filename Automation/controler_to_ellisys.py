@@ -24,7 +24,7 @@ def send_instruction(instruction):
     rcv_msg = ' [' + currentTime + '] <- Received "' + data + '"'
     print(rcv_msg)
     if data.split(' ', 1)[0] == messages.MESSAGE_FAIL:
-        print("COMME ERROR")
+        print("timeout error. \naborting")
         sys.exit(1)
 
     return send_msg + '\n' + rcv_msg
