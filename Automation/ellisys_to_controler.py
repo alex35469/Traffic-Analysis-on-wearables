@@ -8,17 +8,15 @@ import config
 import subprocess
 import sys
 import time
+from helpers import write_logs
+
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((config.ELLISYS_HOST, config.ELLISYS_PORT))
 
-def write_logs(launchTime, log, how):
-    fname = "./logs/ellisys_" + launchTime + ".log"
-    f = open(fname, how)
-    f.write(log)
-    f.close()
-    if how == "w":
-        print("log file: " + fname +" init")
+
+
+
 
 def autoItRunAndWait(file):
     print('Running AutoIT file "AutoIt3 au3Commands\\{0}"'.format(file))
@@ -116,7 +114,8 @@ while True:
             sendFail(client, "AutoIt command time out: {}s reached ".format(config.ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED))
             autoItRunAndWait('close_ellisys.au3')
             time.sleep(10)
-            autoItRunAndWait("open_ellisys.au3")
+
+            sys.exit(1)
 
 
 print("Server closed")

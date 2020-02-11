@@ -3,17 +3,15 @@
 from com.android.monkeyrunner import MonkeyRunner, MonkeyDevice
 import time
 import sys
-from watch_moves import *
+from watch_moves import simulate, open_app, close_app, background
 sys.path.append(r"./yaml")
 import yaml
 from controler_to_ellisys import send_instruction
 import messages
 import config
-from java.util.logging import Level, Logger, StreamHandler, SimpleFormatter
-from java.io import ByteArrayOutputStream
 import signal
 import subprocess
-
+from helpers import write_logs
 
 
 ######################## MAIN ########################
@@ -26,18 +24,11 @@ def main():
     f.close()
     apps = yaml.load(l)
 
-    def write_logs(launchTime, log, how):
-        fname = "./logs/" + launchTime + ".log"
-        f = open(fname, how)
-        f.write(log)
-        f.close()
-        if how == "w":
-            print("log file: " + fname +" init")
-
 
 
     launchTime = time.strftime("%d-%m-%y_%H-%M-%S", time.localtime()) # for log file name
-    write_logs(launchTime, "--- Log init ---  \n", 'w')
+    log_fname = "controller_" + "launchTime"
+    write_logs(log_fname, "--- Log init ---  \n", 'w')
     log = ""
 
     ##### Connection with the watch(es)
@@ -77,7 +68,6 @@ def main():
 
     print("All devices are connected")
 
-    appNb = 0
     log = ""
     comm_log_start = ""
     comm_log_stop = ""
@@ -86,7 +76,7 @@ def main():
     # MAIN
     if not config.DEBUG_WATCH:
         log = send_instruction(messages.CMD_OPEN_ELLISYS)
-
+        write_logs()
 
 
 
@@ -94,8 +84,6 @@ def main():
     # Loop on applications
     for appName in config.KEEP_ONLY:
 
-
-        appNb += 1
 
         # Extract info about applications
         app = apps[appName]
@@ -111,7 +99,6 @@ def main():
             # Parse the actions contained in applications.yaml
             action = [eval(a) for a in actions[actionName]]
 
-
             # Loop on a particular action
             for j in range(config.N_REPEAT_CAPTURE):
                 j += 1
@@ -124,25 +111,32 @@ def main():
                     filename = watchName + "_" +appName +"_"+ actionName+ "_Classic_enc_" + str(j)
                     print(filename)
 
+                    # Action to be perform before the start of the capture
+                    # Here
+                    #
+
                     # Start capture
                     if not config.DEBUG_WATCH:
-                        comm_log_start = send_instruction(messages.NewStartCaptureCommand(payload=lastFilename)) + '\n'
-
+                        comm_start_log = send_instruction(messages.NewStartCaptureCommand(payload=lastFilename)) + '\n'
+                        write_logs(log_fname, comm_start_log)
 
                     #  launch action
                     time.sleep(config.WAITING_TIME_AFTER_START_CAPTURE)
                     simulation_log, infoCheck = simulate(device, display, package, activity, action, config.PHONE_NAME, check=config.PERFORM_EXTRA_CHECK)
+                    write_logs(log_fname, simulation_log)
                     time.sleep(config.WAITING_TIME_BEFORE_STOP_CAPTURE)
 
 
                     # Stop Capture
                     if not config.DEBUG_WATCH:
-                        com_log_stop = send_instruction(messages.CMD_STOP_CAPTURE) + '\n'
-                        com_log_save = send_instruction(messages.NewSaveCaptureCommand(payload=filename)) + '\n'
+                        com_stop_log = send_instruction(messages.CMD_STOP_CAPTURE) + '\n'
+                        com_save_log_save = send_instruction(messages.NewSaveCaptureCommand(payload=filename)) + '\n'
+                        write_logs(log_fname, comm_start_log)
 
-                    log = filename + '\n' + comm_log_start + simulation_log + infoCheck + com_log_stop + com_log_save
 
-                    write_logs(launchTime, log, 'a')
+                    # Action to be perform after the stop of the capture
+                    # Here
+
                     lastFilename = ", " + filename
                     time.sleep(2)
 
@@ -151,7 +145,7 @@ def main():
             send_instruction(messages.CMD_CLOSE_ELLISYS)
             lastFilename = ""
 
-            if appNb != len(config.KEEP_ONLY):
+            if appName == config.KEEP_ONLY[-1]
                 time.sleep(10)  # Sleeping a bit before capturing new app
                 send_instruction(messages.CMD_OPEN_ELLISYS)
 
@@ -163,7 +157,7 @@ def exitGracefully(signum, frame):
     """
     Kill monkey on the device or future connections will fail
     """
-    print "Exiting Gracefully..."
+    print "killing monkey on the device"
     try:
         subprocess.call("adb shell kill -9 $(adb shell ps | grep monkey | awk '{print $2}')", shell=True)
     except Exception, e:

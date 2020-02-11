@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Simulation of applications oppenning and closing
+# Does not need monkeyrunner
 
 ##### PARAMETERS
 
