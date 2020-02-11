@@ -8,7 +8,7 @@ import config
 import subprocess
 import sys
 import time
-from helpers import write_logs
+from helper import write_logs
 
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -38,21 +38,26 @@ def printCPUMemoryLogs():
     currentTime = time.strftime("%d/%m/%y %H:%M:%S", time.localtime())
     sysInfo = ' [' + currentTime + '] CPU usage: {}%, Memory usage: {}'.format(cpu, ram)
     print(sysInfo)
-    return sysInfo
+    write_logs(log_fname, sysInfo, "a")
 
 def sendAck(client, payload):
-    print('Sending ACK message with payload "{0}"'.format(payload))
+    info = 'Sending ACK message with payload "{0}"'.format(payload)
+    print(info)
+    write_logs(log_fname, info + '\n', 'a')
     message = str.encode(messages.NewACK(payload))
     client.sendall(message)
 
 def sendFail(client, payload):
-    print('"Sending a FAIL message with payload "{0}"'.format(payload))
+    info ='"Sending a FAIL message with payload "{0}"'.format(payload)
+    print(info)
+    write_logs(log_fname, info + '\n', 'a')
     message = str.encode(messages.NewFAIL(payload))
     client.sendall(message)
 
 
 launchTime = time.strftime("%d-%m-%y_%H-%M-%S", time.localtime()) # for log file name
-write_logs(launchTime, "--- Log init ---  \n", 'w')
+log_fname = "ellisys_" + launchTime
+write_logs(log_fname, "--- Log init ---  \n", 'w')
 log = ""
 
 print("Starting server...")
@@ -68,7 +73,9 @@ while True:
         command, payload = messages.parse_msg(response)
 
         currentTime = time.strftime("%d/%m/%y %H:%M:%S", time.localtime())
-        print(' [' + currentTime + '] -> Received message "{0}", parsed as "{1}" args "{2}"'.format(response, command, payload))
+        info=' [' + currentTime + '] -> Received message "{0}", parsed as "{1}" args "{2}"'.format(response, command, payload)
+        print(info)
+        write_logs(log_fname, info + '\n', 'a')
 
 
         if command == messages.CMD_OPEN_ELLISYS:
@@ -107,8 +114,8 @@ while True:
         else:
             sendFail(client, "Command unknown.")
 
-        sysInfo = printCPUMemoryLogs()
-        write_logs(launchTime, sysInfo, "a")
+        printCPUMemoryLogs()
+
 
         if not successfull:
             sendFail(client, "AutoIt command time out: {}s reached ".format(config.ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED))
