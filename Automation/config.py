@@ -4,8 +4,6 @@ HUWAWEI_WATCH_IP_PORT = "192.168.1.134:5555"  # Watch ip config.WATCH_IP_PORTess
 FOSILL_WATCH_IP_PORT = "192.168.1.130:5555"
 HOME_PACKAGE = "com.google.android.wearable.app"  # To check thaz the home is indeed reached
 
-# phone connected to both devices
-PHONE_NAME = "Pixel 2"
 
 DEBUG_WATCH = False  # Does not communiacte with ellisys controller
 WATCH_CONNECTION_TIMEOUT = 5  # timeout after watch not connected (First instruction)
@@ -13,10 +11,10 @@ WATCH_CONNECTION_TIMEOUT = 5  # timeout after watch not connected (First instruc
 
 # simulation param
 RESTART_ELLISYS_WHEN_CHANGING_APP = True
-N_REPEAT_CAPTURE = 2
-WAITING_TIME_AFTER_START_CAPTURE = 2
+N_REPEAT_CAPTURE = 1
+WAITING_TIME_AFTER_START_CAPTURE = 4
 WAITING_TIME_BEFORE_STOP_CAPTURE = 2
-KEEP_ONLY = ["DiabeteM", "GoogleFit"]  # Applications to keep for the automation
+KEEP_ONLY = ["Endomondo", "AthkarOfPrayer"]  # Applications to keep for the automation
 DEVICES = [HUWAWEI_WATCH_IP_PORT, FOSILL_WATCH_IP_PORT]
 DEVICES = [HUWAWEI_WATCH_IP_PORT]
 PERFORM_EXTRA_CHECK = True  # Check that packages have been proprely opened

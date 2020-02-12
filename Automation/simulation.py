@@ -25,19 +25,16 @@ def main():
     apps = yaml.load(l)
 
 
-
+    # Create log file
     launchTime = time.strftime("%d-%m-%y_%H-%M-%S", time.localtime()) # for log file name
     log_fname = "controller_" + launchTime
     write_logs(log_fname, "--- Log init ---  \n", 'w')
-    log = ""
 
     ##### Connection with the watch(es)
 
-    tries = 0
-
     print("Accessing device(s)...")
 
-
+    tries = 0
     devices = []
     for device_addr in config.DEVICES:
 
@@ -68,11 +65,9 @@ def main():
 
     print("All devices are connected")
 
-
-    # MAIN
+    # Openning Ellisys
     if not config.DEBUG_WATCH:
-        log = send_instruction(messages.CMD_OPEN_ELLISYS)
-        write_logs(log_fname, log)
+        send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
 
     counter = 0
 
@@ -99,9 +94,19 @@ def main():
 
                 # Loop on watches
                 for deviceStruct in devices:
+
+                    # Extract device info
                     device = deviceStruct[0]
                     display = deviceStruct[1]
                     watchName = deviceStruct[2]
+
+                    # actions variables
+                    success = True
+                    success_command_sent = True
+                    success_check_opened = True
+                    success_close_command_sent = True
+                    success_check_closed = True
+
                     filename = '\n' + watchName + "_" +appName +"_"+ actionName+ "_Classic_enc_" + str(j)
                     print(filename)
                     write_logs(log_fname, filename + '\n')
@@ -109,39 +114,48 @@ def main():
                     # Open Application if the first instruction is not open
                     # (Openning the application is not part of the capture)
                     if action[0][0].__name__ != "open_app":
-                        command_sent = open_app(device, package, activity) + '\n'
-                        write_logs(log_fname, command_sent)
-                        check_opened = check_package_opened(device, package) + '\n'
-                        write_logs(log_fname, check_opened)
-                    #
+                        command_sent, success_command_sent = open_app(device, package, activity)
+                        write_logs(log_fname, command_sent + '\n')
+                        check_opened, success_check_opened  = check_package_opened(device, package)
+                        write_logs(log_fname, check_opened + '\n')
 
                     # Start capture
                     if not config.DEBUG_WATCH:
-                        comm_start_log = send_instruction(messages.NewStartCaptureCommand(payload=lastFilename)) + '\n'
-                        write_logs(log_fname, comm_start_log)
+                        send_instruction(messages.NewStartCaptureCommand(payload=lastFilename), log_fname)
 
                     #  launch action
                     time.sleep(config.WAITING_TIME_AFTER_START_CAPTURE)
-                    simulation_log = simulate(device, display, package, activity, action, config.PHONE_NAME, log_fname, check=config.PERFORM_EXTRA_CHECK)
-                    write_logs(log_fname, simulation_log)
+                    success_simulate = simulate(device, display, package, activity, action, log_fname, check=config.PERFORM_EXTRA_CHECK)
                     time.sleep(config.WAITING_TIME_BEFORE_STOP_CAPTURE)
-
 
                     # Stop Capture
                     if not config.DEBUG_WATCH:
-                        comm_stop_log = send_instruction(messages.CMD_STOP_CAPTURE) + '\n'
-                        write_logs(log_fname, comm_stop_log)
-                        comm_save_log = send_instruction(messages.NewSaveCaptureCommand(payload=filename)) + '\n'
-                        write_logs(log_fname, comm_save_log)
+                        send_instruction(messages.CMD_STOP_CAPTURE, log_fname)
 
 
-                    # close the application if it is required
+
+                    # close the application if the last instruction is not background or close app
                     if action[-1][0].__name__ != "close_app" and action[-1][0].__name__ != "background":
-                        close_command_sent = eval(config.CLOSING_METHOD)(device, package)
-                        if close_command_sent is not None :
+                        if config.CLOSING_METHOD == "close_app":
+                            close_command_sent, success_close_command_sent = eval(config.CLOSING_METHOD)(device, package)
                             write_logs(log_fname, close_command_sent + '\n')
-                        check_closed = check_package_closed(device, package) + '\n'
-                        write_logs(log_fname, check_closed + '\n')
+                            check_closed, success_check_closed = check_package_closed(device, package)
+                            write_logs(log_fname, check_closed + '\n')
+                        else:
+                            eval(config.CLOSING_METHOD)(device, package)
+                            check_closed, successTmp = check_package_closed(device, package)
+                            write_logs(log_fname, check_closed + '\n')
+
+
+                    # Save capture under a different name if an error occured
+                    success = success and success_simulate and success_command_sent and success_check_closed and success_close_command_sent
+
+                    if not success:
+                        filename = filename + "_error"
+                    # Save capture
+                    if not config.DEBUG_WATCH:
+                        send_instruction(messages.NewSaveCaptureCommand(payload=filename), log_fname)
+
 
                     # Add a space to the log file
                     write_logs(log_fname, '\n')
@@ -151,13 +165,13 @@ def main():
 
         # Restart Ellisys
         if (config.RESTART_ELLISYS_WHEN_CHANGING_APP and len(actionsKeepOnly) != 0) and not config.DEBUG_WATCH:
-            send_instruction(messages.CMD_CLOSE_ELLISYS)
+            send_instruction(messages.CMD_CLOSE_ELLISYS, log_fname)
             lastFilename = ""
 
             # if the app is not the last app
             if appName != config.KEEP_ONLY[-1]:
                 time.sleep(10)  # Sleeping a bit before capturing new app
-                send_instruction(messages.CMD_OPEN_ELLISYS)
+                send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
 
     print("done")
 

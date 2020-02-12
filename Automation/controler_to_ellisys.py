@@ -7,8 +7,9 @@ import config
 import time
 import sys
 import messages
+from helper import write_logs
 
-def send_instruction(instruction):
+def send_instruction(instruction, log_fname):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((config.ELLISYS_HOST, config.ELLISYS_PORT))
 
@@ -27,4 +28,5 @@ def send_instruction(instruction):
         print("timeout error. \naborting")
         sys.exit(1)
 
-    return send_msg + '\n' + rcv_msg
+    comm = send_msg + '\n' + rcv_msg
+    write_logs(log_fname, comm)

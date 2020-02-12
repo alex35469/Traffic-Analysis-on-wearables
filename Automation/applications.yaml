@@ -3,12 +3,12 @@
 Endomondo:
   package: com.endomondo.android
   activity: com.endomondo.android.wear.ui.WearAppActivity
-  keepOnly: ["openAndClose", "playGreenButton"]  # Action to be selected starting at 1.
+  keepOnly: ["playGreenButton", "openAndClose"]  # Action to be selected starting at 1.
   sequence: [("openAndClose", 1), (background, 5)]
   actions :
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
     openAndBackground: ["(open_app, 20)", "(background, 5)"]
-    playGreenButton: ["(open_app, 7)", "(button_click_func((190,190)), 5)", "(swipe_left, 1)", "(close_app, 5)"] # "(button_click_func((190,190)), 3)"]
+    playGreenButton: ["(button_click_func((190,190)), 5)", "(swipe_left, 1)"] # "(button_click_func((190,190)), 3)"]
     browseMap: ["(open_app, 7)", "(swipe_right, 3)", "(scroll_right, 3)", "(scroll_up, 3)", "(scroll_up, 4)", "(scroll_right, 2)", "(close_app, 5)"] # "(button_click_func((190,190)), 3)"]
 
 
@@ -34,10 +34,11 @@ BibleOffline:
 AthkarOfPrayer:
   package: com.appsforall.athkaralsalah
   activity: com.appsforall.athkaralsalah.MainActivityWear
-  keepOnly: []
+  keepOnly: [openAndClose, switchTabAndScrollDown]
   actions:
     # Open, wait and close
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    switchTabAndScrollDown: ["(button_click_func((260, 30)), 5)", "(swipe_up, 5)"]
 
 
 DCMLRadio:
@@ -80,7 +81,7 @@ Qardio:
 GoogleFit:
   package: com.google.android.apps.fitness
   activity: com.google.android.wearable.fitness.passive.ui.PassiveActivity
-  keepOnly: ["openAndClose"]
+  keepOnly: [openAndClose]
   actions:
     # Open, wait and close
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
@@ -88,14 +89,13 @@ GoogleFit:
 DiabeteM:
   package: com.mydiabetes
   activity: com.mydiabetes.MainActivity
-  keepOnly: [lowlevelSwipeRight, highLevelSwipeRight]
+  keepOnly: [swipeRight]
   actions:
     # Open, wait and close
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
     swipe: ["(open_app, 5)", "(iter_swipe_right, 2)"]
     savePlus1AndPlus10plus1: ["(open_app, 7)", "(swipe_right, 1)", "(swipe_right, 1)", "(button_click_func((190,20)), 2)", "(swipe_right, 1)", "(button_click_func((190,20)), 2)", "(button_click_func((190,20)), 2)", "(close_app, 5)"] # "(button_click_func((190,190)), 3)"]
-    lowlevelSwipeRight: ["(lowlevel_swipe_right, 2)", "(lowlevel_swipe_right, 2)", "(lowlevel_swipe_right, 2)"]
-    highLevelSwipeRight: ["(swipe_right, 2)", "(swipe_right, 2)", "(swipe_right, 2)"]
+    swipeRight: ["(swipe_left, 2)", "(swipe_left, 2)", "(swipe_left, 2)"]
 
 
 
