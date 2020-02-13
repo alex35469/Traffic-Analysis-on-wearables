@@ -3,23 +3,28 @@
 HUWAWEI_WATCH_IP_PORT = "192.168.1.134:5555"  # Watch ip config.WATCH_IP_PORTess. Change if not connected to Mobnet
 FOSILL_WATCH_IP_PORT = "192.168.1.130:5555"
 HOME_PACKAGE = "com.google.android.wearable.app"  # To check thaz the home is indeed reached
+DEVICES = [HUWAWEI_WATCH_IP_PORT] #, FOSILL_WATCH_IP_PORT]
 
 
 DEBUG_WATCH = False  # Does not communiacte with ellisys controller
-WATCH_CONNECTION_TIMEOUT = 5  # timeout after watch not connected (First instruction)
+WATCH_CONNECTION_TIMEOUT = 10  # timeout after watch not connected (First instruction)
 
 
-# simulation param
-RESTART_ELLISYS_WHEN_CHANGING_APP = True
-N_REPEAT_CAPTURE = 1
-WAITING_TIME_AFTER_START_CAPTURE = 4
+# Apps
+APPLICATIONS_FNAME = "applications.yaml"  # Applications actions instr. & data
+N_REPEAT_CAPTURE = 20
+WAITING_TIME_AFTER_START_CAPTURE = 4  # Before lauching an action on the watch
 WAITING_TIME_BEFORE_STOP_CAPTURE = 2
-KEEP_ONLY = ["Endomondo", "AthkarOfPrayer"]  # Applications to keep for the automation
-DEVICES = [HUWAWEI_WATCH_IP_PORT, FOSILL_WATCH_IP_PORT]
-DEVICES = [HUWAWEI_WATCH_IP_PORT]
-PERFORM_EXTRA_CHECK = True  # Check that packages have been proprely opened
-CLOSING_METHOD = "close_app" # Either close_app or background
+KEEP_ONLY = "all"  # Applications to keep for the automation
 
+
+CLOSING_METHOD = "close_app" # Either close_app or background
+WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION = 10  # Such that the app reach a stable stat
+CLEAN_ALL_APPS = False
+
+# Ellisys
+N_CAPTURE_AFTER_ELLISYS_RESART = 15 # 0 for none
+RESTART_ELLISYS_WHEN_CHANGING_APP = True
 
 # Windows PC connected to the Ellisys
 ELLISYS_HOST = '192.168.1.101'

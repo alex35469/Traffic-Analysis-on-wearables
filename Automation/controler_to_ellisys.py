@@ -29,4 +29,4 @@ def send_instruction(instruction, log_fname):
         sys.exit(1)
 
     comm = send_msg + '\n' + rcv_msg
-    write_logs(log_fname, comm)
+    write_logs(log_fname, comm + '\n')

@@ -96,6 +96,10 @@ def open_app(device, package, activity):
 
 def close_app(device, package):
     success = False
+    if package == "com.google.android.wearable.app":
+        result = "   CHECK: Sending command pm clear FAIL (package 'com.google.android.wearable.app' can not be close this way)"
+        print(result)
+        return result, success
     for _ in range(3):
         response = device.shell("pm clear " + package)
         success = response == "Success\n"
@@ -199,9 +203,24 @@ def simulate(device, display, package, activity, actions_waiting, log_fname, che
     return success
 
 
-def clean_apps(device, apps):
-    print("Cleaning applications")
+def clean_apps(device, apps, log_fname):
+    info = "Cleaning applications"
+    print(info)
+    write_logs(log_fname, info + '\n')
     for app in apps:
-        print("Clearing "+ app)
-        print(apps[app]["package"])
-        close_app(device,apps[app]["package"] )
+        info = " -"+ app + ": package - " + apps[app]["package"]
+        print(info)
+        write_logs(log_fname, info + '\n')
+        if apps[app]["package"] != "com.google.android.wearable.app":
+            _ , success = close_app(device, apps[app]["package"])
+            write_logs(log_fname, info + '\n')
+            time.sleep(1) # Otherwise shellCommandUnresponsive
+
+        else:
+            info = "Skipping..."
+            print(info)
+            write_logs(log_fname, info + '\n')
+
+    info="\n ---- cleaning finished -----\n"
+    print(info)
+    write_logs(log_fname, info)

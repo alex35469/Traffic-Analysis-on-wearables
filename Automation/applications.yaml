@@ -1,64 +1,56 @@
 
-# Previously analysed
-Endomondo:
-  package: com.endomondo.android
-  activity: com.endomondo.android.wear.ui.WearAppActivity
-  keepOnly: ["playGreenButton", "openAndClose"]  # Action to be selected starting at 1.
-  sequence: [("openAndClose", 1), (background, 5)]
+## Does not work
+# Agenda:
+#   package: com.google.android.wearable.app
+#   activity: com.google.android.clockwork.home.calendar.EventListActivity2
+#   keepOnly: []  # Action to be selected starting at 1.
+#   actions :
+#     open: ["(open_app, 20)"]
+
+Alarm:
+  package: com.google.android.deskclock
+  activity: com.google.android.deskclock.AlarmGatewayActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
-    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
-    openAndBackground: ["(open_app, 20)", "(background, 5)"]
-    playGreenButton: ["(button_click_func((190,190)), 5)", "(swipe_left, 1)"] # "(button_click_func((190,190)), 3)"]
-    browseMap: ["(open_app, 7)", "(swipe_right, 3)", "(scroll_right, 3)", "(scroll_up, 3)", "(scroll_up, 4)", "(scroll_right, 2)", "(close_app, 5)"] # "(button_click_func((190,190)), 3)"]
+    open: ["(open_app, 20)"]
 
-
-MapMyRun:
-  package: com.mapmyrun.android2
-  activity: com.mapmyfitness.android.view.MainActivity
-  keepOnly: [1]
+ASB:
+  package: nz.co.asb.asbmobile
+  activity: nz.co.asb.wear.MainActivity
+  keepOnly: [open]
   actions:
-  # 1. Open, wait and close
-    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    open: ["(open_app, 20)"]
 
-# Religious
-BibleOffline:
-  package: com.bestweatherfor.bibleoffline_pt_ra
-  activity: com.bestweatherfor.bibleoffline_pt_ra.MainActivity
-  keepOnly: []
+
+AppInTheAir:
+  package: com.aita
+  activity: com.aita.mainscreen.MainActivity
+  keepOnly: [open]
   actions:
-    # Open, wait and close
-    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
-
-
+    open: ["(open_app, 20)"]
 
 AthkarOfPrayer:
   package: com.appsforall.athkaralsalah
   activity: com.appsforall.athkaralsalah.MainActivityWear
-  keepOnly: [openAndClose, switchTabAndScrollDown]
+  keepOnly: [open]
   actions:
-    # Open, wait and close
+    open: ["(open_app, 20)"]
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
-    switchTabAndScrollDown: ["(button_click_func((260, 30)), 5)", "(swipe_up, 5)"]
+    switchTabAndScrollDown: ["(click_func((260, 30)), 5)", "(swipe_up, 5)"]
 
+Battery:
+  package: com.huawei.watch.supersavepower
+  activity: com.huawei.watch.supersavepower.view.BatteryActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
 
-DCMLRadio:
-  package: org.dclm.live
-  activity: .MainActivity
-  keepOnly: [1, 2]
-  actions:
-    # 1. open and close
-    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
-    # 2. Listen to the radio 10 seconds
-    listenToRadioAndClose: ["(open_app, 8)", "(button_click_func((95, 190)), 12)", "(button_click_func((285, 190)), 5)", "(close_app, 5)"]
-    listenToRadioAndBackgroung: ["(open_app, 8)", "(button_click_func((95, 190)), 12)", "(background, 5)"]
-
-Salah(Prayer)Time:
-  package: online.makkahtv.salattime
-  activity: online.makkahtv.salattime.activity.MainChooseActivity
-  keepOnly: []
-  actions:
-    # 1. Open, wait and close
-    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+Bring!:
+  package:  ch.publisheria.bring
+  activity: ch.publisheria.bring.activities.login.BringWearWelcomeActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
 
 # Health
 Calm:
@@ -66,8 +58,235 @@ Calm:
   activity: com.calm.android.activities.MainWearActivity
   keepOnly: []
   actions:
-    # 1. Open, wait and close
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+
+Camera:
+  package: com.google.android.GoogleCamera
+  activity: com.google.android.apps.camera.wear.wearappv2.WearCameraActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Citymapper:
+  package: com.citymapper.app.release
+  activity: com.citymapper.app.wear.WearErrorActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+# Contacts:
+#   package: com.google.android.wearable.app
+#   activity: com.google.android.clockwork.home.contacts.ContactsActivity
+#   keepOnly: [open]  # Action to be selected starting at 1.
+#   actions :
+#     open: ["(open_app, 20)"]
+
+DailyTracking:
+  package : com.huawei.health
+  activity: com.huawei.bone.view.dailytrack.activity.DailyTrackMainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    # 2 First use
+    logIn: ["(open_app, 5)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(click_func((190,190)), 5)", "(close_app, 3)"]
+    # 3 Open, scroll down and close
+    scrollDown: ["(open_app, 5)", "(swipe_down, 1)", "(swipe_down, 1)", "(swipe_down, 1)", "(close_app, 5)"]
+    # 4 Open VO2Max
+    VO2Max: ["(open_app, 5)", "(swipe_right, 1)", "(click_func((150,190)), 3)", "(close_app, 3)"]
+    # 5 Open BMI
+    BMI: ["(open_app, 5)", "(swipe_right, 1)", "(click_func((250,190)), 3)", "(close_app, 3)"]
+
+
+DCLMRadio:
+  package: org.dclm.live
+  activity: .MainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    # 2. Listen to the radio 10 seconds
+    listenToRadioAndClose: ["(open_app, 8)", "(click_func((95, 190)), 12)", "(click_func((285, 190)), 5)", "(close_app, 5)"]
+    listenToRadioAndBackgroung: ["(open_app, 8)", "(click_func((95, 190)), 12)", "(background, 5)"]
+
+DiabetesM:
+  package: com.mydiabetes
+  activity: com.mydiabetes.MainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    swipe: ["(open_app, 5)", "(iter_swipe_right, 2)"]
+    savePlus1AndPlus10plus1: ["(swipe_left, 0)",  "(click_func((190,55)), 0)", "(swipe_left, 0)", "(click_func((190,55)), 0)","(swipe_left, 0)", "(swipe_left, 0)", "(click_func((190,55)), 0)", "(swipe_left, 0)", "(click_func((190,55)), 0)" ] # "(click_func((190,190)), 3)"]
+
+DuaKhatqmAlQuran:
+  package: com.appsforall.duakhatamalquran
+  activity: com.appsforall.duakhatamalquran.MainActivityWear
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Endomondo:
+  package: com.endomondo.android
+  activity: com.endomondo.android.wear.ui.WearAppActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    openAndBackground: ["(open_app, 20)", "(background, 5)"]
+    playGreenButton: ["(click_func((190,190)), 5)", "(swipe_left, 1)"] # "(click_func((190,190)), 3)"]
+    browseMap: ["(open_app, 7)", "(swipe_right, 3)", "(scroll_right, 3)", "(scroll_up, 3)", "(scroll_up, 4)", "(scroll_right, 2)", "(close_app, 5)"] # "(click_func((190,190)), 3)"]
+
+FindMyPhone:
+  package: com.google.android.gms
+  activity: com.google.android.gms.mdm.RingMyPhoneActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Fit:
+  package: com.google.android.apps.fitness
+  activity: com.google.android.wearable.fitness.application.welcome.WelcomeActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+FitBreathe:
+  package:  com.google.android.apps.fitness
+  activity: com.google.android.wearable.fitness.onboarding.RedirectionActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+FitWorkout:
+  package:  com.google.android.apps.fitness
+  activity: com.google.android.wearable.fitness.onboarding.RedirectionActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+FITIVPlus:
+  package: com.fitiv.fitivapplication
+  activity: .activities.WorkoutListActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Flashlight:
+  package: com.google.android.clockwork.flashlight
+  activity: com.google.android.clockwork.flashlight.FlashlightActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+
+FoursquareCityGuide:
+  package:  com.joelapenna.foursquared
+  activity: .wearable.MainActivity
+  keepOnly: [open]
+  actions:
+    open: ["(open_app, 20)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+
+Glide:
+  package: com.google.android.apps.wearable.phone
+  activity: com.google.android.clockwork.phone.dialer.DialerActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+# GooglePay:
+#   package: com.google.android.wearable.app
+#   activity: com.google.android.clockwork.home.pay.FastPayActivity
+#   keepOnly: []  # Action to be selected starting at 1.
+#   actions :
+#     open: ["(open_app, 20)"]
+
+HealthyRecipes:
+  package: com.endless.healthyrecipes
+  activity: com.endless.healthyrecipes.MainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+HeartRate:
+  package: com.huawei.health
+  activity: com.huawei.bone.view.dailytrack.activity.InitialSettingActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+KeepNotes:
+  package: com.google.android.keep
+  activity: com.google.android.keep.wear.MicroBrowseActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Lifesum:
+  package: com.sillens.shapeupclub
+  activity: com.sillens.shapeupclub.onboarding.LoginActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+MapMyRun:
+  package: com.mapmyrun.android2
+  activity: com.mapmyfitness.android.view.MainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Maps:
+  package: com.google.android.apps.maps
+  activity: com.google.android.apps.gmmwearable.MainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Medisafe:
+  package: com.medisafe.android.client
+  activity: com.medisafe.android.wear.CustomWearableList
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+  # Bank
+Mobilis:
+  package: br.com.gerenciadorfinanceiro.controller
+  activity: br.com.mobills.wear.views.MobillsWearActivity
+  keepOnly: []
+  actions:
+    # Open, wait and close
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+
+Outlook:
+  package: com.microsoft.office.outlook
+  activity: .activities.HubActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Phone:
+  package: com.google.android.apps.wearable.phone
+  activity: com.google.android.clockwork.phone.dialer.DialerActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+PlayMusic:
+  package: com.google.android.music
+  activity: com.google.android.music.wear.ui.onboarding.OnboardingActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+PlayStore:
+  package: com.google.android.apps.wearable.phone
+  activity: com.google.android.finsky.wear.activities.MainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
 
 Qardio:
   package: com.getqardio.android
@@ -77,67 +296,116 @@ Qardio:
     # 1. Open, wait and close
     - ["(open_app, 20)", "(close_app, 5)"]
 
+Reminders:
+  package: com.google.android.apps.wearable.phone
+  activity: com.google.android.clockwork.phone.dialer.DialerActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
 
-GoogleFit:
-  package: com.google.android.apps.fitness
-  activity: com.google.android.wearable.fitness.passive.ui.PassiveActivity
-  keepOnly: [openAndClose]
-  actions:
-    # Open, wait and close
-    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+Running:
+  package: com.runtastic.android
+  activity: .wear.ui.sessionsetup.SessionSetupActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
 
-DiabeteM:
-  package: com.mydiabetes
-  activity: com.mydiabetes.MainActivity
-  keepOnly: [swipeRight]
-  actions:
-    # Open, wait and close
-    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
-    swipe: ["(open_app, 5)", "(iter_swipe_right, 2)"]
-    savePlus1AndPlus10plus1: ["(open_app, 7)", "(swipe_right, 1)", "(swipe_right, 1)", "(button_click_func((190,20)), 2)", "(swipe_right, 1)", "(button_click_func((190,20)), 2)", "(button_click_func((190,20)), 2)", "(close_app, 5)"] # "(button_click_func((190,190)), 3)"]
-    swipeRight: ["(swipe_left, 2)", "(swipe_left, 2)", "(swipe_left, 2)"]
-
-
-
-# Bank
-MobillisBudget:
-  package: br.com.gerenciadorfinanceiro.controller
-  activity: br.com.mobills.wear.views.MobillsWearActivity
+SalatTime:
+  package: online.makkahtv.salattime
+  activity: online.makkahtv.salattime.activity.MainChooseActivity
   keepOnly: []
   actions:
-    # Open, wait and close
+    # 1. Open, wait and close
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
 
-ASBMobileApp:
-  package: nz.co.asb.asbmobile
-  activity: nz.co.asb.wear.MainActivity
-  keepOnly: []
-  actions:
-    # Open, wait and close
-    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
 
-# Native
-HeartRate:
+Sleep:
   package: com.huawei.health
-  activity: com.huawei.bone.view.heartrate.activity.HeartRateMainActivity
-  keepOnly: []
-  actions:
-    # Open, wait for 25 seconds and close
-    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
-    logIn: ["(open_app, 5), (50, 330))"]
+  activity: com.huawei.bone.view.sleep.activity.SleepMainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
 
-DailyTracking:
-  package : com.huawei.health
-  activity: com.huawei.bone.view.dailytrack.activity.DailyTrackMainActivity
-  keepOnly: ["openAndClose", "logIn"]
-  actions:
-    # 1 Open, wait and close
-    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
-    # 2 First use
-    logIn: ["(open_app, 5)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(button_click_func((190,190)), 5)", "(close_app, 3)"]
-    # 3 Open, scroll down and close
-    scrollDown: ["(open_app, 5)", "(swipe_down, 1)", "(swipe_down, 1)", "(swipe_down, 1)", "(close_app, 5)"]
-    # 4 Open VO2Max
-    VO2Max: ["(open_app, 5)", "(swipe_right, 1)", "(button_click_func((150,190)), 3)", "(close_app, 3)"]
-    # 5 Open BMI
-    BMI: ["(open_app, 5)", "(swipe_right, 1)", "(button_click_func((250,190)), 3)", "(close_app, 3)"]
+SleepTracking:
+  package: com.urbandroid.sleep
+  activity: .wear.Sleep
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Spotify:
+  package: com.spotify.music
+  activity: com.spotify.music.MainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Stopwatch:
+  package: com.google.android.deskclock
+  activity: com.google.android.deskclock.StopwatchActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Strava:
+  package: com.strava
+  activity: com.strava.OAuthActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Telegram:
+  package: org.telegram.messenger
+  activity: org.telegram.messenger.wear.MainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Timer:
+  package: com.google.android.deskclock
+  activity: com.google.android.deskclock.TimerGatewayActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Translate:
+  package: com.google.android.apps.translate
+  activity: com.google.android.wearable.translate.MainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+UARecord:
+  package: com.ua.record
+  activity: com.ua.record.wear.ui.MainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+WashPost:
+  package: com.washingtonpost.android
+  activity: com.wapo.flagship.article.WearArticleActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+WearCasts:
+  package: com.krisdb.wearcasts
+  activity: com.krisdb.wearcasts.Activities.MainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+# Weather:
+#   package: com.google.android.wearable.app
+#   activity: com.google.android.clockwork.home.weather.WeatherActivity
+#   keepOnly: [open]  # Action to be selected starting at 1.
+#   actions :
+#     open: ["(open_app, 20)"]
+
+Workout:
+  package: com.huawei.health
+  activity: com.huawei.bone.view.dailytrack.activity.InitialSettingActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]

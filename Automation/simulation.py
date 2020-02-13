@@ -66,7 +66,7 @@ def main():
 
     if config.CLEAN_ALL_APPS:
         for device, _ , _ in devices:
-            clean_apps(device, apps_all)
+            clean_apps(device, apps_all, log_fname)
 
     # Openning Ellisys
     if not config.DEBUG_WATCH:
