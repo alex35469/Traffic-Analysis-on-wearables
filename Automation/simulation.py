@@ -5,13 +5,12 @@ import time
 import sys
 from watch_commands import *  # it is important to import all the functions
 sys.path.append(r"./yaml")
-import yaml
 from controler_to_ellisys import send_instruction
 import messages
 import config
 import signal
 import subprocess
-from helper import write_logs
+from helper import write_logs, read_app
 
 
 ######################## MAIN ########################
@@ -19,10 +18,9 @@ from helper import write_logs
 def main():
     ###### Capture Preparation
     # Read the applications info file
-    f = open("applications.yaml")
-    l = f.read()
-    f.close()
-    apps = yaml.load(l)
+    apps_all = read_app(config.APPLICATIONS_FNAME)
+
+
 
 
     # Create log file
@@ -65,18 +63,26 @@ def main():
 
     print("All devices are connected")
 
+
+    if config.CLEAN_ALL_APPS:
+        for device, _ , _ in devices:
+            clean_apps(device, apps_all)
+
     # Openning Ellisys
     if not config.DEBUG_WATCH:
         send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
 
-    counter = 0
+    apps = config.KEEP_ONLY
+    if config.KEEP_ONLY == "all":
+        apps = apps_all
 
+    counter = 0
     # Loop on applications
-    for appName in config.KEEP_ONLY:
+    for appName in apps:
 
 
         # Extract info about applications
-        app = apps[appName]
+        app = apps_all[appName]
         package = app["package"]
         activity = app["activity"]
         actions = app["actions"]
@@ -101,11 +107,8 @@ def main():
                     watchName = deviceStruct[2]
 
                     # actions variables
-                    success = True
-                    success_command_sent = True
-                    success_check_opened = True
-                    success_close_command_sent = True
-                    success_check_closed = True
+                    success, success_command_sent, success_check_opened = True, True, True
+                    success_close_command_sent, success_check_closed = True, True
 
                     filename = '\n' + watchName + "_" +appName +"_"+ actionName+ "_Classic_enc_" + str(j)
                     print(filename)
@@ -118,6 +121,8 @@ def main():
                         write_logs(log_fname, command_sent + '\n')
                         check_opened, success_check_opened  = check_package_opened(device, package)
                         write_logs(log_fname, check_opened + '\n')
+                        if config.DEBUG_WATCH:
+                            time.sleep(config.WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION)
 
                     # Start capture
                     if not config.DEBUG_WATCH:
@@ -125,14 +130,12 @@ def main():
 
                     #  launch action
                     time.sleep(config.WAITING_TIME_AFTER_START_CAPTURE)
-                    success_simulate = simulate(device, display, package, activity, action, log_fname, check=config.PERFORM_EXTRA_CHECK)
+                    success_simulate = simulate(device, display, package, activity, action, log_fname)
                     time.sleep(config.WAITING_TIME_BEFORE_STOP_CAPTURE)
 
                     # Stop Capture
                     if not config.DEBUG_WATCH:
                         send_instruction(messages.CMD_STOP_CAPTURE, log_fname)
-
-
 
                     # close the application if the last instruction is not background or close app
                     if action[-1][0].__name__ != "close_app" and action[-1][0].__name__ != "background":
@@ -143,7 +146,7 @@ def main():
                             write_logs(log_fname, check_closed + '\n')
                         else:
                             eval(config.CLOSING_METHOD)(device, package)
-                            check_closed, successTmp = check_package_closed(device, package)
+                            check_closed, success_check_closed = check_package_closed(device, package)
                             write_logs(log_fname, check_closed + '\n')
 
 
@@ -163,16 +166,16 @@ def main():
                     counter = counter + 1
                     time.sleep(2)
 
-        # Restart Ellisys
-        if (config.RESTART_ELLISYS_WHEN_CHANGING_APP and len(actionsKeepOnly) != 0) and not config.DEBUG_WATCH:
-            send_instruction(messages.CMD_CLOSE_ELLISYS, log_fname)
-            lastFilename = ""
+                    # Restart Ellisys each N captures
+                    if counter != 0 and not config.DEBUG_WATCH and counter % config.N_CAPTURE_AFTER_ELLISYS_RESART == 0 :
+                        send_instruction(messages.CMD_CLOSE_ELLISYS, log_fname)
+                        lastFilename = ""
+                        time.sleep(10)  # Sleeping a bit before capturing new app
+                        send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
 
-            # if the app is not the last app
-            if appName != config.KEEP_ONLY[-1]:
-                time.sleep(10)  # Sleeping a bit before capturing new app
-                send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
 
+    if not config.DEBUG_WATCH:
+        send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
     print("done")
 
 

@@ -30,9 +30,9 @@ def swipe_right(device, display):
 
 def swipe_left(device, display):
     width, height = display[0], display[1]
-    x1, y1 = (width - 5, int(height/2))
-    x2, y2 = (width/3, height/2)
-    duration = 100
+    x1, y1 = (width - 10, int(height/2))
+    x2, y2 = (width/5, height/2)
+    duration = 120
     device.shell("input swipe "+ str(x1)+" "+ str(y1)+" "+ str(x2)+" "+ str(y2)+" "+ str(duration))
 
 
@@ -62,6 +62,18 @@ def scroll_down(device, display):
     height = display[1]
     device.drag((width/2, height/3), (width/2, 2 * height/3), 0.1)
     MonkeyRunner.sleep(0.5)
+
+
+def click_func(location):
+    """Return a function the perform a button touch
+    on the device with the location = (x, y)"""
+
+    def click(device, display):
+        assert 0 < location[0] < display[0]
+        assert 0 < location[1] < display[1]
+        device.shell("input tap " + str(location[0]) + " " +str(location[1]))
+
+    return click
 
 
 def open_app(device, package, activity):
@@ -97,17 +109,6 @@ def close_app(device, package):
     return result, success
 
 
-def button_click_func(location):
-    """Return a function the perform a button touch
-    on the device with the location = (x, y)"""
-
-    def click(device, display):
-        assert 0 < location[0] < display[0]
-        assert 0 < location[1] < display[1]
-        device.touch(location[0], location[1], "DOWN_AND_UP")
-
-    return click
-
 def background(device, package):
     device.press('KEYCODE_HOME',MonkeyDevice.DOWN_AND_UP)
 
@@ -127,8 +128,12 @@ def check_bluetooth_enabled(device):
 
 
 def check_package_opened(device, package):
-    status = str(device.shell("dumpsys window windows | grep Focus"))
-    success = package in status
+    for _ in range(3):
+        status = str(device.shell("dumpsys window windows | grep Focus"))
+        success = package in status
+        if success:
+            break
+        time.sleep(0.5)
     if success:
         result = "   CHECK: Package opened OK"
     else:
@@ -137,8 +142,14 @@ def check_package_opened(device, package):
     return result, success
 
 def check_package_closed(device, package):
-    status = str(device.shell("dumpsys window windows | grep Focus"))
-    success = config.HOME_PACKAGE in status
+    for _ in range(3):
+        status = str(device.shell("dumpsys window windows | grep Focus"))
+        success = config.HOME_PACKAGE in status
+        if success:
+            break
+        print("No success")
+        time.sleep(0.5)
+
     if success:
         result = "   CHECK: Watch on home screen OK"
     else:
@@ -152,10 +163,10 @@ def simulate(device, display, package, activity, actions_waiting, log_fname, che
     checkInfo = ""
     success = True
     # Checks
-    if check:
-        check_bluetooth, successTmp = check_bluetooth_enabled(device)
-        write_logs(log_fname, check_bluetooth + '\n')
-        success = success and successTmp
+
+    check_bluetooth, successTmp = check_bluetooth_enabled(device)
+    write_logs(log_fname, check_bluetooth + '\n')
+    success = success and successTmp
 
     # Simulate a sequence of action
     for a, w in actions_waiting:
@@ -186,3 +197,11 @@ def simulate(device, display, package, activity, actions_waiting, log_fname, che
         write_logs(log_fname, info + '\n')
         time.sleep(w)
     return success
+
+
+def clean_apps(device, apps):
+    print("Cleaning applications")
+    for app in apps:
+        print("Clearing "+ app)
+        print(apps[app]["package"])
+        close_app(device,apps[app]["package"] )
