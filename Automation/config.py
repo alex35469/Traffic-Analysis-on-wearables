@@ -8,7 +8,7 @@ DEVICES = [HUWAWEI_WATCH_IP_PORT] #, FOSILL_WATCH_IP_PORT]
 
 DEBUG_WATCH = False  # Does not communiacte with ellisys controller
 WATCH_CONNECTION_TIMEOUT = 10  # timeout after watch not connected (First instruction)
-
+DEBUG_ELLISYS = True
 
 # Apps
 APPLICATIONS_FNAME = "applications.yaml"  # Applications actions instr. & data

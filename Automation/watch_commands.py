@@ -1,7 +1,7 @@
 from com.android.monkeyrunner import MonkeyRunner, MonkeyDevice
 import time
 import config
-from helper import write_logs
+from helper import write_logs, tprint
 
 
 def swipe_down(device, display):
@@ -76,7 +76,7 @@ def click_func(location):
     return click
 
 
-def open_app(device, package, activity):
+def open_app(device, package, activity, log_fname):
     package_and_activity = package + "/" + activity
     success = True
     cmd = "am start -c api.android.intent.LAUNCHER -a api.android.category.MAIN " + package_and_activity
@@ -91,14 +91,15 @@ def open_app(device, package, activity):
         result = "   CHECK: When sending command: '"+ cmd + "' OK"
     else:
         result = "   CHECK: When sending command: '"+ cmd + "' FAIL"
-    print(result)
+    tprint(result, log_fname)
     return result, success
 
-def close_app(device, package):
+
+def close_app(device, package, log_fname):
     success = False
     if package == "com.google.android.wearable.app":
         result = "   CHECK: Sending command pm clear FAIL (package 'com.google.android.wearable.app' can not be close this way)"
-        print(result)
+        tprint(result, log_fname)
         return result, success
     for _ in range(3):
         response = device.shell("pm clear " + package)
@@ -109,7 +110,7 @@ def close_app(device, package):
         result = "   CHECK: Sending command pm clear OK"
     else:
         result = "   CHECK: Sending command pm clear FAIL"
-    print(result)
+    tprint(result, log_fname)
     return result, success
 
 
@@ -119,7 +120,7 @@ def background(device, package):
 
 ##### CHECK METHODE
 
-def check_bluetooth_enabled(device):
+def check_bluetooth_enabled(device, log_fname):
     answ = device.shell("dumpsys bluetooth_manager")
     answ = answ.encode('utf8')
     success = "curState=Connected" in answ
@@ -127,11 +128,11 @@ def check_bluetooth_enabled(device):
         result = "   CHECK: Bluetooth connection OK"
     else:
         result = "   CHECK: Bluetooth connection FAIL"
-    print(result)
+    tprint(result, log_fname)
     return result, success
 
 
-def check_package_opened(device, package):
+def check_package_opened(device, package, log_fname):
     for _ in range(3):
         status = str(device.shell("dumpsys window windows | grep Focus"))
         success = package in status
@@ -142,23 +143,22 @@ def check_package_opened(device, package):
         result = "   CHECK: Package opened OK"
     else:
         result = "   CHECK: Package opened FAIL\n        Status: "+status
-    print(result)
+    tprint(result, log_fname)
     return result, success
 
-def check_package_closed(device, package):
+def check_package_closed(device, package, log_fname):
     for _ in range(3):
         status = str(device.shell("dumpsys window windows | grep Focus"))
         success = config.HOME_PACKAGE in status
         if success:
             break
-        print("No success")
         time.sleep(0.5)
 
     if success:
         result = "   CHECK: Watch on home screen OK"
     else:
         result = "   CHECK: Watch on home sceen FAIL\n        Status: '"+status + "'"
-    print(result)
+    tprint(result, log_fname)
     return result, success
 # SIMULATION
 
@@ -168,25 +168,20 @@ def simulate(device, display, package, activity, actions_waiting, log_fname, che
     success = True
     # Checks
 
-    check_bluetooth, successTmp = check_bluetooth_enabled(device)
-    write_logs(log_fname, check_bluetooth + '\n')
+    check_bluetooth, successTmp = check_bluetooth_enabled(device, log_fname)
     success = success and successTmp
 
     # Simulate a sequence of action
     for a, w in actions_waiting:
         info = "    - " + a.__name__ +", "+time.strftime("%H:%M:%S", time.localtime())
         if a.__name__ == "open_app":
-            command_sent, successTmp1 = a(device, package, activity)
-            write_logs(log_fname, command_sent + '\n')
-            check_opened, successTmp2 = check_package_opened(device, package)
-            write_logs(log_fname, check_opened + '\n')
+            _, successTmp1 = a(device, package, activity, log_fname)
+            _, successTmp2 = check_package_opened(device, package, log_fname)
             success = success and successTmp1 and successTmp2
 
         elif a.__name__ == "close_app":
-            close_command_sent, successTmp1 = a(device, package)
-            write_logs(log_fname, close_command_sent + '\n')
-            check_closed, successTmp2 = check_package_closed(device, package)
-            write_logs(log_fname, check_closed + '\n')
+            close_command_sent, successTmp1 = a(device, package, log_fname)
+            check_closed, successTmp2 = check_package_closed(device, package, log_fname)
             success = success and successTmp1 and successTmp2
 
         elif a.__name__ == "background":
@@ -197,30 +192,24 @@ def simulate(device, display, package, activity, actions_waiting, log_fname, che
         else:
             a(device, display)
         info += ", "+time.strftime("%H:%M:%S", time.localtime())
-        print(info)
-        write_logs(log_fname, info + '\n')
+        tprint(info, log_fname)
         time.sleep(w)
     return success
 
 
 def clean_apps(device, apps, log_fname):
     info = "Cleaning applications"
-    print(info)
-    write_logs(log_fname, info + '\n')
+    tprint(info, log_fname)
     for app in apps:
         info = " -"+ app + ": package - " + apps[app]["package"]
-        print(info)
-        write_logs(log_fname, info + '\n')
+        tprint(info, log_fname)
         if apps[app]["package"] != "com.google.android.wearable.app":
             _ , success = close_app(device, apps[app]["package"])
-            write_logs(log_fname, info + '\n')
             time.sleep(1) # Otherwise shellCommandUnresponsive
 
         else:
             info = "Skipping..."
-            print(info)
-            write_logs(log_fname, info + '\n')
+            tprint(info, log_fname)
 
     info="\n ---- cleaning finished -----\n"
-    print(info)
-    write_logs(log_fname, info)
+    tprint(info, log_fname)

@@ -10,7 +10,8 @@ import messages
 import config
 import signal
 import subprocess
-from helper import write_logs, read_app
+import yaml
+from helper import write_logs, read_app, tprint
 
 
 ######################## MAIN ########################
@@ -30,7 +31,7 @@ def main():
 
     ##### Connection with the watch(es)
 
-    print("Accessing device(s)...")
+    tprint("Accessing device(s)...", log_fname)
 
     tries = 0
     devices = []
@@ -53,15 +54,15 @@ def main():
 
             time.sleep(0.5)
             if tries > 10:
-                print("Connection with device error. Max tries "+ str(tries) +" reached.\naborting...")
+                tprint("Connection with device error. Max tries "+ str(tries) +" reached.\naborting...")
                 sys.exit(1)
             tries += 1
 
         watchName = str(watchName.replace(" ", "-"))
-        print("Device: " + watchName + " connected")
+        tprint("Device: " + watchName + " connected")
         devices.append((device, (int(width) - 1, int(height) -1), watchName))
 
-    print("All devices are connected")
+    tprint("All devices are connected")
 
 
     if config.CLEAN_ALL_APPS:
@@ -110,9 +111,11 @@ def main():
                     success, success_command_sent, success_check_opened = True, True, True
                     success_close_command_sent, success_check_closed = True, True
 
-                    filename = '\n' + watchName + "_" +appName +"_"+ actionName+ "_Classic_enc_" + str(j)
-                    print(filename)
-                    write_logs(log_fname, filename + '\n')
+                    filename = watchName + "_" +appName +"_"+ actionName+ "_Classic_enc_" + str(j)
+
+                    # Add a space to the log file
+                    tprint('', log_fname)
+                    tprint("starting: " + filename, log_fname)
 
                     # Open Application if the first instruction is not open
                     # (Openning the application is not part of the capture)
@@ -140,14 +143,11 @@ def main():
                     # close the application if the last instruction is not background or close app
                     if action[-1][0].__name__ != "close_app" and action[-1][0].__name__ != "background":
                         if config.CLOSING_METHOD == "close_app":
-                            close_command_sent, success_close_command_sent = eval(config.CLOSING_METHOD)(device, package)
-                            write_logs(log_fname, close_command_sent + '\n')
-                            check_closed, success_check_closed = check_package_closed(device, package)
-                            write_logs(log_fname, check_closed + '\n')
+                            _, success_close_command_sent = eval(config.CLOSING_METHOD)(device, package, log_fname)
+                            _, success_check_closed = check_package_closed(device, package, log_fname)
                         else:
-                            eval(config.CLOSING_METHOD)(device, package)
-                            check_closed, success_check_closed = check_package_closed(device, package)
-                            write_logs(log_fname, check_closed + '\n')
+                            eval(config.CLOSING_METHOD)(device, package, log_fname)
+                            _, success_check_closed = check_package_closed(device, package, log_fname)
 
 
                     # Save capture under a different name if an error occured
@@ -160,8 +160,7 @@ def main():
                         send_instruction(messages.NewSaveCaptureCommand(payload=filename), log_fname)
 
 
-                    # Add a space to the log file
-                    write_logs(log_fname, '\n')
+
                     lastFilename = ", " + filename
                     counter = counter + 1
                     time.sleep(2)
@@ -172,11 +171,14 @@ def main():
                         lastFilename = ""
                         time.sleep(10)  # Sleeping a bit before capturing new app
                         send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
+        info = "\n ---- " + appName + " capture finished --- \n"
+        tprint(info, log_fname)
+
 
 
     if not config.DEBUG_WATCH:
         send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
-    print("done")
+    tprint("done", log_fname)
 
 
 
