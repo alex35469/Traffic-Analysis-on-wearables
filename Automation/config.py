@@ -6,28 +6,33 @@ HOME_PACKAGE = "com.google.android.wearable.app"  # To check thaz the home is in
 DEVICES = [HUWAWEI_WATCH_IP_PORT] #, FOSILL_WATCH_IP_PORT]
 
 
-DEBUG_WATCH = True  # Does not communiacte with ellisys controller
+DEBUG_WATCH = False  # Does not communiacte with ellisys controller
 WATCH_CONNECTION_TIMEOUT = 10  # timeout after watch not connected (First instruction)
 DEBUG_ELLISYS = True
 
 # Apps
 APPLICATIONS_FNAME = "applications.yaml"  # Applications actions instr. & data
-N_REPEAT_CAPTURE = 1
+N_REPEAT_CAPTURE = 20
 WAITING_TIME_AFTER_START_CAPTURE = 4  # Before lauching an action on the watch
 WAITING_TIME_BEFORE_STOP_CAPTURE = 2
 KEEP_ONLY = "all"  # Applications to keep for the automation
-SKIPPING = ["Spotify"]
+SKIPPING = ["Outlook", "DailyTracking", "Spotify", "Stopwatch", "Flashlight"]
 
 CLOSING_METHOD = "close_app" # Either close_app or background
 WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION = 10  # Such that the app reach a stable stat
-CLEAN_ALL_APPS = True
+
+# Cleaning
+CLEAN_ALL_APPS = False
+INTER_CLEANING_WAITING_TIME = 5
+FORCE_STOP = True
+CLEAR_DATA = False
 
 # Ellisys
 N_CAPTURE_AFTER_ELLISYS_RESART = 15 # 0 for none
 RESTART_ELLISYS_WHEN_CHANGING_APP = True
 
 # Windows PC connected to the Ellisys
-ELLISYS_HOST = '192.168.1.101'
+ELLISYS_HOST = '192.168.1.146'
 ELLISYS_PORT = 65432
 SOCKET_RECEIVE_BUFFER = 1024
 ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED = 150  # Error msg after timeout reached after receiving Command

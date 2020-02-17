@@ -217,9 +217,11 @@ def clean_apps(device, apps, log_fname):
         info = " -"+ app + ": package - " + apps[app]["package"]
         tprint(info, log_fname)
         if apps[app]["package"] != "com.google.android.wearable.app":
-            close_app(device, apps[app]["package"], log_fname)
-            force_stop(device, apps[app]["package"], log_fname)
-            time.sleep(1) # Otherwise shellCommandUnresponsive
+            if config.CLEAR_DATA:
+                close_app(device, apps[app]["package"], log_fname)
+            if config.FORCE_STOP:
+                force_stop(device, apps[app]["package"], log_fname)
+            time.sleep(config.INTER_CLEANING_WAITING_TIME) # Otherwise shellCommandUnresponsive
 
         else:
             info = "Skipping..."

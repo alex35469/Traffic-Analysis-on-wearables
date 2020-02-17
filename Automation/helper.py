@@ -5,6 +5,8 @@ and the ellisys laptop
 """
 import time
 import yaml
+
+
 def write_logs(log_fname, log, how='a'):
     "Write to log"
     path = "./logs/" + log_fname + ".log"
@@ -15,6 +17,25 @@ def write_logs(log_fname, log, how='a'):
         print("log file: " + path +" init")
 
 
+def dump_yaml(data, fname):
+    f = open(fname, "w")
+    yaml.dump(data, f)
+    f.close()
+
+
+def get_action_numb(action, appName, data):
+
+
+    if appName in data:
+        actions = data[appName]
+        if action in actions:
+            return data, actions[action]
+        else:
+            data[appName][action] = 0
+            return data, 0
+    else:
+        data[appName] = {action:0}
+        return data, 0
 
 # Read the applications info file
 def read_app(app_fname):

@@ -1,0 +1,9 @@
+WearCasts: {open: 5}
+HeartRate: {open: 21}
+PlayStore: {open: 20}
+Last_Fail: LEO-BX9_HeartRate_open_Classic_enc_1
+Fail: true
+Qardio: {open: 20}
+Endomondo: {open: 20}
+KeepNotes: {open: 20}
+DailyTracking: {open: 20}

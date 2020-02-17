@@ -11,7 +11,7 @@ import config
 import signal
 import subprocess
 import yaml
-from helper import write_logs, read_app, tprint
+from helper import write_logs, read_app, tprint, dump_yaml, get_action_numb
 
 
 ######################## MAIN ########################
@@ -21,6 +21,8 @@ def main():
     # Read the applications info file
     apps_all = read_app(config.APPLICATIONS_FNAME)
 
+    # Read the left_state
+    left_state = read_app("left_state.yaml")
 
 
 
@@ -92,16 +94,21 @@ def main():
         actionsKeepOnly = app["keepOnly"]
         lastApp = (appName == config.KEEP_ONLY[-1])
 
+
         info = " ---- " + appName + " capture started ---"
+
+        # Add a space to the log file
+        tprint('', log_fname)
         tprint(info, log_fname)
         # Loop on the set of actions of a patricular app
         for actionName in actionsKeepOnly:
             # Parse the actions contained in applications.yaml
             action = [eval(a) for a in actions[actionName]]
 
+            left_state, left_nb = data, last_capt = get_action_numb(actionName, appName, left_state)
             # Loop on a particular action
-            for j in range(config.N_REPEAT_CAPTURE):
-                j += 1
+            for i in range(config.N_REPEAT_CAPTURE):
+                capt_number =  (i + 1) + left_nb
 
                 # Loop on watches
                 for deviceStruct in devices:
@@ -115,10 +122,9 @@ def main():
                     success, success_command_sent, success_check_opened = True, True, True
                     success_close_command_sent, success_check_closed = True, True
 
-                    filename = watchName + "_" +appName +"_"+ actionName+ "_Classic_enc_" + str(j)
+                    filename = watchName + "_" +appName +"_"+ actionName+ "_Classic_enc_" + str(capt_number)
 
-                    # Add a space to the log file
-                    tprint('', log_fname)
+
                     tprint("starting: " + filename, log_fname)
 
                     # Open Application if the first instruction is not open
@@ -146,12 +152,11 @@ def main():
                     # close the application if the last instruction is not background or close app
                     if action[-1][0].__name__ != "close_app" and action[-1][0].__name__ != "background":
                         if config.CLOSING_METHOD == "close_app":
-                            _, success_close_command_sent = eval(config.CLOSING_METHOD)(device, package, log_fname)
+                            _, success_close_command_sent = close_app(device, package, log_fname)
                             _, success_check_closed = check_package_closed(device, package, log_fname)
                         else:
-                            eval(config.CLOSING_METHOD)(device, package, log_fname)
+                            background(device, package, log_fname)
                             _, success_check_closed = check_package_closed(device, package, log_fname)
-
 
                     # Save capture under a different name if an error occured
                     success = success and success_simulate and success_command_sent and success_check_closed and success_close_command_sent
@@ -161,8 +166,8 @@ def main():
                     # Save capture
                     if not config.DEBUG_WATCH:
                         send_instruction(messages.NewSaveCaptureCommand(payload=filename), log_fname)
-
-
+                        left_state[appName][actionName] += 1
+                        dump_yaml(left_state, "left_state.yaml")
 
                     lastFilename = ", " + filename
                     counter = counter + 1
@@ -174,6 +179,7 @@ def main():
                         lastFilename = ""
                         time.sleep(10)  # Sleeping a bit before capturing new app
                         send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
+
         info = " ---- " + appName + " capture finished --- "
         tprint(info, log_fname)
 
