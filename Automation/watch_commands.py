@@ -1,6 +1,7 @@
 from com.android.monkeyrunner import MonkeyRunner, MonkeyDevice
 import time
 import config
+import os
 from helper import write_logs, tprint
 
 
@@ -81,8 +82,7 @@ def open_app(device, package, activity, log_fname):
     success = True
     cmd = "am start -c api.android.intent.LAUNCHER -a api.android.category.MAIN " + package_and_activity
     for _ in range(3):
-        response = device.shell(cmd)
-        response = response.encode('utf8')
+        response = os.popen("adb shell "+cmd).read()
         if not "Error" in response and response is not None:
             break
         else:
@@ -101,8 +101,10 @@ def close_app(device, package, log_fname):
         result = "   CHECK: Sending command pm clear FAIL (package 'com.google.android.wearable.app' can not be close this way)"
         tprint(result, log_fname)
         return result, success
+
+    cmd = "adb shell pm clear " + package
     for _ in range(3):
-        response = device.shell("pm clear " + package)
+        response = os.popen(cmd).read()
         success = response == "Success\n"
         if success:
             break
@@ -196,6 +198,17 @@ def simulate(device, display, package, activity, actions_waiting, log_fname, che
         time.sleep(w)
     return success
 
+def force_stop(device, package, log_fname):
+        cmd = "adb shell am force-stop " + package
+
+        response = os.system(cmd)
+        success = response == 0
+        if success:
+            result = "   CHECK: force stopping OK"
+        else:
+            result = "   CHECK: force stopping FAIL"
+        tprint(result, log_fname)
+        return result, success
 
 def clean_apps(device, apps, log_fname):
     info = "Cleaning applications"
@@ -204,7 +217,8 @@ def clean_apps(device, apps, log_fname):
         info = " -"+ app + ": package - " + apps[app]["package"]
         tprint(info, log_fname)
         if apps[app]["package"] != "com.google.android.wearable.app":
-            _ , success = close_app(device, apps[app]["package"])
+            close_app(device, apps[app]["package"], log_fname)
+            force_stop(device, apps[app]["package"], log_fname)
             time.sleep(1) # Otherwise shellCommandUnresponsive
 
         else:
