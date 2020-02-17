@@ -6,21 +6,21 @@ HOME_PACKAGE = "com.google.android.wearable.app"  # To check thaz the home is in
 DEVICES = [HUWAWEI_WATCH_IP_PORT] #, FOSILL_WATCH_IP_PORT]
 
 
-DEBUG_WATCH = False  # Does not communiacte with ellisys controller
+DEBUG_WATCH = True  # Does not communiacte with ellisys controller
 WATCH_CONNECTION_TIMEOUT = 10  # timeout after watch not connected (First instruction)
 DEBUG_ELLISYS = True
 
 # Apps
 APPLICATIONS_FNAME = "applications.yaml"  # Applications actions instr. & data
-N_REPEAT_CAPTURE = 20
+N_REPEAT_CAPTURE = 1
 WAITING_TIME_AFTER_START_CAPTURE = 4  # Before lauching an action on the watch
 WAITING_TIME_BEFORE_STOP_CAPTURE = 2
 KEEP_ONLY = "all"  # Applications to keep for the automation
-
+SKIPPING = ["Spotify"]
 
 CLOSING_METHOD = "close_app" # Either close_app or background
 WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION = 10  # Such that the app reach a stable stat
-CLEAN_ALL_APPS = False
+CLEAN_ALL_APPS = True
 
 # Ellisys
 N_CAPTURE_AFTER_ELLISYS_RESART = 15 # 0 for none

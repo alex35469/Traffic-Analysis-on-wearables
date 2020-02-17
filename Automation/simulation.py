@@ -81,7 +81,9 @@ def main():
     # Loop on applications
     for appName in apps:
 
-
+        # If app is in skipping
+        if appName in config.SKIPPING:
+            continue
         # Extract info about applications
         app = apps_all[appName]
         package = app["package"]
@@ -90,6 +92,8 @@ def main():
         actionsKeepOnly = app["keepOnly"]
         lastApp = (appName == config.KEEP_ONLY[-1])
 
+        info = " ---- " + appName + " capture started ---"
+        tprint(info, log_fname)
         # Loop on the set of actions of a patricular app
         for actionName in actionsKeepOnly:
             # Parse the actions contained in applications.yaml
@@ -120,10 +124,9 @@ def main():
                     # Open Application if the first instruction is not open
                     # (Openning the application is not part of the capture)
                     if action[0][0].__name__ != "open_app":
-                        command_sent, success_command_sent = open_app(device, package, activity)
-                        write_logs(log_fname, command_sent + '\n')
-                        check_opened, success_check_opened  = check_package_opened(device, package)
-                        write_logs(log_fname, check_opened + '\n')
+                        _, success_command_sent = open_app(device, package, activity, log_fname)
+                        _, success_check_opened  = check_package_opened(device, package, log_fname)
+
                         if config.DEBUG_WATCH:
                             time.sleep(config.WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION)
 
@@ -171,7 +174,7 @@ def main():
                         lastFilename = ""
                         time.sleep(10)  # Sleeping a bit before capturing new app
                         send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
-        info = "\n ---- " + appName + " capture finished --- \n"
+        info = " ---- " + appName + " capture finished --- "
         tprint(info, log_fname)
 
 

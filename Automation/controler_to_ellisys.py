@@ -48,7 +48,7 @@ def send_instruction(instruction, log_fname):
                     cmd == "startArgs"
 
             print("'" + cmd + "', '" + payload + "'")
-            raw_input("timeout error. Ellisys program is stuck or is not responsive.\n Fix it to the required state: : '" + instr_to_required_state[cmd] + payload + "' and enter a key: ")
+            raw_input("timeout error. Ellisys program is stuck or is not responsive.\n Fix it to the required state: : '" + instr_to_required_state[cmd] + payload + "' press enter to continue: ")
             print("issuing the command again. Keep in mind that the capture "+ payload + " might be corrupted")
             break
 

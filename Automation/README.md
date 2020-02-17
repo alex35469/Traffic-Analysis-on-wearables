@@ -68,4 +68,11 @@ On the watch:
 
 ## Troubleshooting
 
+#### Ellisys
+
 1. **Ellisys hard. is not recognized by ellisys soft.** In this case, try to shutdown ellisys hard wait 5 sec turn on and wait for the blue light comming then connect to the computer with the cable  
+
+
+#### Watches
+
+1. If multiple watches are used, make sure they are recognized in wearOS app. otherwise somme applications does not detect them
