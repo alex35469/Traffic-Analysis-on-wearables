@@ -3,7 +3,7 @@
 All the fonctions that can be both used by the controller
 and the ellisys laptop
 """
-import yaml
+
 def write_logs(log_fname, log, how='a'):
     "Write to log"
     path = "./logs/" + log_fname + ".log"
