@@ -47,7 +47,7 @@ Battery:
 
 Bring!:
   package:  ch.publisheria.bring
-  activity: ch.publisheria.bring.activities.login.BringWearWelcomeActivity
+  activity: ch.publisheria.bring.activities.BringWearMainActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -56,9 +56,9 @@ Bring!:
 Calm:
   package: com.calm.android
   activity: com.calm.android.activities.MainWearActivity
-  keepOnly: []
-  actions:
-    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
 
 Camera:
   package: com.google.android.GoogleCamera
@@ -69,7 +69,7 @@ Camera:
 
 Citymapper:
   package: com.citymapper.app.release
-  activity: com.citymapper.app.wear.WearErrorActivity
+  activity: com.citymapper.app.wear.EntryActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -81,21 +81,21 @@ Citymapper:
 #   actions :
 #     open: ["(open_app, 20)"]
 
-DailyTracking:
-  package : com.huawei.health
-  activity: com.huawei.bone.view.dailytrack.activity.DailyTrackMainActivity
-  keepOnly: [open]  # Action to be selected starting at 1.
-  actions :
-    open: ["(open_app, 20)"]
-    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
-    # 2 First use
-    logIn: ["(open_app, 5)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(click_func((190,190)), 5)", "(close_app, 3)"]
-    # 3 Open, scroll down and close
-    scrollDown: ["(open_app, 5)", "(swipe_down, 1)", "(swipe_down, 1)", "(swipe_down, 1)", "(close_app, 5)"]
-    # 4 Open VO2Max
-    VO2Max: ["(open_app, 5)", "(swipe_right, 1)", "(click_func((150,190)), 3)", "(close_app, 3)"]
-    # 5 Open BMI
-    BMI: ["(open_app, 5)", "(swipe_right, 1)", "(click_func((250,190)), 3)", "(close_app, 3)"]
+# DailyTracking:
+#   package : com.huawei.health
+#   activity: com.huawei.bone.view.dailytrack.activity.DailyTrackMainActivity
+#   keepOnly: [open]  # Action to be selected starting at 1.
+#   actions :
+#     open: ["(open_app, 20)"]
+#     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+#     # 2 First use
+#     logIn: ["(open_app, 5)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(click_func((190,190)), 5)", "(close_app, 3)"]
+#     # 3 Open, scroll down and close
+#     scrollDown: ["(open_app, 5)", "(swipe_down, 1)", "(swipe_down, 1)", "(swipe_down, 1)", "(close_app, 5)"]
+#     # 4 Open VO2Max
+#     VO2Max: ["(open_app, 5)", "(swipe_right, 1)", "(click_func((150,190)), 3)", "(close_app, 3)"]
+#     # 5 Open BMI
+#     BMI: ["(open_app, 5)", "(swipe_right, 1)", "(click_func((250,190)), 3)", "(close_app, 3)"]
 
 
 DCLMRadio:
@@ -146,28 +146,28 @@ FindMyPhone:
 
 Fit:
   package: com.google.android.apps.fitness
-  activity: com.google.android.wearable.fitness.application.welcome.WelcomeActivity
+  activity: com.google.android.wearable.fitness.passive.ui.PassiveActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
 
 FitBreathe:
   package:  com.google.android.apps.fitness
-  activity: com.google.android.wearable.fitness.onboarding.RedirectionActivity
+  activity: com.google.android.wearable.fitness.realtime.breathe.BreatheLauncherActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
 
 FitWorkout:
   package:  com.google.android.apps.fitness
-  activity: com.google.android.wearable.fitness.onboarding.RedirectionActivity
+  activity: com.google.android.wearable.fitness.realtime.RealtimeActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
 
 FITIVPlus:
   package: com.fitiv.fitivapplication
-  activity: .activities.WorkoutListActivity
+  activity: om.fitiv.fitivapplication.activities.SplashActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -189,8 +189,8 @@ FoursquareCityGuide:
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
 
 Glide:
-  package: com.google.android.apps.wearable.phone
-  activity: com.google.android.clockwork.phone.dialer.DialerActivity
+  package: com.glidetalk.glideapp
+  activity: com.glidetalk.glideapp.ThreadListActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -204,14 +204,15 @@ Glide:
 
 HealthyRecipes:
   package: com.endless.healthyrecipes
-  activity: com.endless.healthyrecipes.MainActivity
+  activity: com.endless.healthyrecipes.HomeActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
 
+#  Permission Denial
 HeartRate:
   package: com.huawei.health
-  activity: com.huawei.bone.view.dailytrack.activity.InitialSettingActivity
+  activity: com.huawei.bone.view.heartrate.activity.HeartRateMainActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -225,7 +226,7 @@ KeepNotes:
 
 Lifesum:
   package: com.sillens.shapeupclub
-  activity: com.sillens.shapeupclub.onboarding.LoginActivity
+  activity: com.sillens.shapeupclub.onboarding.StartActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -260,12 +261,12 @@ Mobilis:
     # Open, wait and close
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
 
-Outlook:
-  package: com.microsoft.office.outlook
-  activity: .activities.HubActivity
-  keepOnly: [open]  # Action to be selected starting at 1.
-  actions :
-    open: ["(open_app, 20)"]
+# Outlook:
+#   package: com.microsoft.office.outlook
+#   activity: .activities.HubActivity
+#   keepOnly: [open]  # Action to be selected starting at 1.
+#   actions :
+#     open: ["(open_app, 20)"]
 
 Phone:
   package: com.google.android.apps.wearable.phone
@@ -276,13 +277,13 @@ Phone:
 
 PlayMusic:
   package: com.google.android.music
-  activity: com.google.android.music.wear.ui.onboarding.OnboardingActivity
+  activity: com.google.android.music.wear.ui.HomeActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
 
 PlayStore:
-  package: com.google.android.apps.wearable.phone
+  package: com.android.vending
   activity: com.google.android.finsky.wear.activities.MainActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
@@ -291,21 +292,20 @@ PlayStore:
 Qardio:
   package: com.getqardio.android
   activity: com.getqardio.android.wearable.ui.activity.MenuActivity
-  keepOnly: []
-  actions:
-    # 1. Open, wait and close
-    - ["(open_app, 20)", "(close_app, 5)"]
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
 
 Reminders:
-  package: com.google.android.apps.wearable.phone
-  activity: com.google.android.clockwork.phone.dialer.DialerActivity
+  package: com.google.android.googlequicksearchbox
+  activity: com.google.android.wearable.reminders.frontend.MainActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
 
 Running:
   package: com.runtastic.android
-  activity: .wear.ui.sessionsetup.SessionSetupActivity
+  activity: com.runtastic.android.wear.ui.LaunchActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -340,16 +340,16 @@ Spotify:
   actions :
     open: ["(open_app, 20)"]
 
-Stopwatch:
-  package: com.google.android.deskclock
-  activity: com.google.android.deskclock.StopwatchActivity
-  keepOnly: [open]  # Action to be selected starting at 1.
-  actions :
-    open: ["(open_app, 20)"]
+# Stopwatch:
+#   package: com.google.android.deskclock
+#   activity: com.google.android.deskclock.StopwatchActivity
+#   keepOnly: [open]  # Action to be selected starting at 1.
+#   actions :
+#     open: ["(open_app, 20)"]
 
 Strava:
   package: com.strava
-  activity: com.strava.OAuthActivity
+  activity: com.strava.WearActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -384,7 +384,7 @@ UARecord:
 
 WashPost:
   package: com.washingtonpost.android
-  activity: com.wapo.flagship.article.WearArticleActivity
+  activity: com.wapo.flagship.WearMainActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -405,7 +405,7 @@ WearCasts:
 
 Workout:
   package: com.huawei.health
-  activity: com.huawei.bone.view.dailytrack.activity.InitialSettingActivity
+  activity: com.huawei.bone.view.workout.activity.WorkoutMainActivity
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
