@@ -78,7 +78,7 @@ def main():
     apps = config.KEEP_ONLY
     if config.KEEP_ONLY == "all":
         apps = apps_all
-
+    skipped = False
     counter = 0
     # Loop on applications
     for appName in apps:
@@ -124,6 +124,15 @@ def main():
 
                     filename = watchName + "_" +appName +"_"+ actionName+ "_Classic_enc_" + str(capt_number)
 
+                    # skip until we reach the last capture state
+                    if not config.DEBUG_WATCH and not skipped:
+                        lastCapAppName = left_state["lastCapture"].split("_")[1]
+                        currCapAppName = filename.split("_")[1])
+                        if currCapAppName!= lastCapAppName:
+                            print("Skipping " + filename)
+                            continue
+                        else:
+                            skipped = True
 
                     tprint("starting: " + filename, log_fname)
 
@@ -167,6 +176,7 @@ def main():
                     if not config.DEBUG_WATCH:
                         send_instruction(messages.NewSaveCaptureCommand(payload=filename), log_fname)
                         left_state[appName][actionName] += 1
+                        left_state["lastCapture"] = filename
                         dump_yaml(left_state, "left_state.yaml")
 
                     lastFilename = ", " + filename

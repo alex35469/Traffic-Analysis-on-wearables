@@ -45,7 +45,7 @@ Battery:
   actions :
     open: ["(open_app, 20)"]
 
-Bring!:
+Bring:
   package:  ch.publisheria.bring
   activity: ch.publisheria.bring.activities.BringWearMainActivity
   keepOnly: [open]  # Action to be selected starting at 1.

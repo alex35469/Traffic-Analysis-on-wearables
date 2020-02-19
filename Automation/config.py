@@ -16,7 +16,9 @@ N_REPEAT_CAPTURE = 20
 WAITING_TIME_AFTER_START_CAPTURE = 4  # Before lauching an action on the watch
 WAITING_TIME_BEFORE_STOP_CAPTURE = 2
 KEEP_ONLY = "all"  # Applications to keep for the automation
-SKIPPING = ["Outlook", "DailyTracking", "Spotify", "Stopwatch", "Flashlight"]
+SKIPPING = ["Endomondo", "Reminders", "FindMyPhone","DiabetesM", "PlayStore",
+            "WearCasts", "KeepNotes", "HeartRate", "ASB","Qardio", "Outlook",
+            "DailyTracking", "Spotify", "Stopwatch", "Flashlight"]
 
 CLOSING_METHOD = "close_app" # Either close_app or background
 WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION = 10  # Such that the app reach a stable stat
@@ -24,15 +26,15 @@ WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION = 10  # Such that the app rea
 # Cleaning
 CLEAN_ALL_APPS = False
 INTER_CLEANING_WAITING_TIME = 5
-FORCE_STOP = True
-CLEAR_DATA = False
+FORCE_STOP_CLEANING = True
+CLEAR_DATA_CLEANING = False
 
 # Ellisys
 N_CAPTURE_AFTER_ELLISYS_RESART = 15 # 0 for none
 RESTART_ELLISYS_WHEN_CHANGING_APP = True
 
 # Windows PC connected to the Ellisys
-ELLISYS_HOST = '192.168.1.146'
+ELLISYS_HOST = '192.168.1.101'
 ELLISYS_PORT = 65432
 SOCKET_RECEIVE_BUFFER = 1024
 ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED = 150  # Error msg after timeout reached after receiving Command
