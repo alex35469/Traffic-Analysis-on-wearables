@@ -18,7 +18,8 @@ If $CmdLine[0] == 0 Then
   ControlClick($HWND, "", "[CLASS:WindowsForms10.Window.8.app.0.ea119_r6_ad1; NAME:toolBar]", "left", 1, 819, 10)
   WinWaitActive("Device Traffic Filters", "&OK")
   Sleep(500)
-  Send("Pixel 2")
+  ;Send("Pixel 2")
+  Send("HUAWEI WATCH 2")
   Send("{ENTER}")
   Send("{ENTER}")
 EndIf

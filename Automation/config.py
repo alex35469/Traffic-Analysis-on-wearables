@@ -37,7 +37,7 @@ RESTART_ELLISYS_WHEN_CHANGING_APP = True
 ELLISYS_HOST = '192.168.1.101'
 ELLISYS_PORT = 65432
 SOCKET_RECEIVE_BUFFER = 1024
-ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED = 150  # Error msg after timeout reached after receiving Command
+ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED = 40  # Error msg after timeout reached after receiving Command
 
 # Controller MAC laptop connected to the watch and the Window PC
 CONTROLLER_HOST = ""

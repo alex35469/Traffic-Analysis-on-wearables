@@ -119,10 +119,7 @@ while True:
 
         if not successfull:
             sendFail(client, "AutoIt command time out: {}s reached ".format(config.ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED))
-            autoItRunAndWait('close_ellisys.au3')
-            time.sleep(10)
-
-            sys.exit(1)
+            print("Waiting for fix...")
 
 
 print("Server closed")

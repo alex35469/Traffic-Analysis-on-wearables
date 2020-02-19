@@ -1,11 +1,14 @@
-# logs 
+.DS_Store
+
+# Automation
 Automation/logs/*
+Automation/sdb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
+*.DS_Store
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -29,3 +32,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+
+# Data (use resilio to get them)
+Classification/ludovic/data/*
+Classification/ludovic/plots/*
+datasets
