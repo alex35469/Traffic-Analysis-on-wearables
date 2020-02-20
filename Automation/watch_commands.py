@@ -80,7 +80,7 @@ def click_func(location):
 def open_app(device, package, activity, log_fname):
     package_and_activity = package + "/" + activity
     success = True
-    cmd = "am start -c api.android.intent.LAUNCHER -a api.android.category.MAIN " + package_and_activity
+    cmd = "am start " + package_and_activity
     for _ in range(3):
         response = os.popen("adb shell "+cmd).read()
         if not "Error" in response and response is not None:

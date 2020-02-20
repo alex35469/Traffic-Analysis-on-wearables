@@ -102,21 +102,26 @@ def main():
         tprint(info, log_fname)
         # Loop on the set of actions of a patricular app
         for actionName in actionsKeepOnly:
+
+            lastActionIsBackground = False
             # Parse the actions contained in applications.yaml
             action = [eval(a) for a in actions[actionName]]
 
             left_state, left_nb = data, last_capt = get_action_numb(actionName, appName, left_state)
-            # Loop on a particular action
-            for i in range(config.N_REPEAT_CAPTURE):
-                capt_number =  (i + 1) + left_nb
 
-                # Loop on watches
-                for deviceStruct in devices:
+            # Loop on watches
+            for deviceStruct in devices:
 
-                    # Extract device info
-                    device = deviceStruct[0]
-                    display = deviceStruct[1]
-                    watchName = deviceStruct[2]
+                # Extract device info
+                device = deviceStruct[0]
+                display = deviceStruct[1]
+                watchName = deviceStruct[2]
+
+                # Loop on a particular action
+                for i in range(config.N_REPEAT_CAPTURE):
+                    capt_number =  (i + 1) + left_nb
+
+
 
                     # actions variables
                     success, success_command_sent, success_check_opened = True, True, True
@@ -125,9 +130,9 @@ def main():
                     filename = watchName + "_" +appName +"_"+ actionName+ "_Classic_enc_" + str(capt_number)
 
                     # skip until we reach the last capture state
-                    if not config.DEBUG_WATCH and not skipped:
+                    if not config.DEBUG_WATCH and not skipped and config.REACH_LEFT_STATE:
                         lastCapAppName = left_state["lastCapture"].split("_")[1]
-                        currCapAppName = filename.split("_")[1])
+                        currCapAppName = filename.split("_")[1]
                         if currCapAppName!= lastCapAppName:
                             print("Skipping " + filename)
                             continue
@@ -164,8 +169,14 @@ def main():
                             _, success_close_command_sent = close_app(device, package, log_fname)
                             _, success_check_closed = check_package_closed(device, package, log_fname)
                         else:
-                            background(device, package, log_fname)
+                            background(device, package)
+                            tprint("    - background command sent", log_fname)
                             _, success_check_closed = check_package_closed(device, package, log_fname)
+                            lastActionIsBackground = True
+
+                        if not config.DEBUG_WATCH:
+                            tprint("   sleeping after closing " + str(config.WAITING_TIME_AFTER_CLOSING_WHEN_CLOSING_IS_NOT_AN_ACTION) + "s to reach steady state")
+                            time.sleep(config.WAITING_TIME_AFTER_CLOSING_WHEN_CLOSING_IS_NOT_AN_ACTION)
 
                     # Save capture under a different name if an error occured
                     success = success and success_simulate and success_command_sent and success_check_closed and success_close_command_sent
@@ -190,6 +201,15 @@ def main():
                         time.sleep(10)  # Sleeping a bit before capturing new app
                         send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
 
+                    # Event loop
+                    tprint("", log_fname)  # add a space for more visibility
+                # watch loop
+
+            # Action loop
+            if lastActionIsBackground and config.CLEAR_WHEN_CHANGE_APP_AFTER_BACKGROUND:
+                close_app(device, package, log_fname)
+
+        # App loop
         info = " ---- " + appName + " capture finished --- "
         tprint(info, log_fname)
 
