@@ -80,42 +80,51 @@ def main():
         apps = apps_all
     skipped = False
     counter = 0
-    # Loop on applications
-    for appName in apps:
 
-        # If app is in skipping
-        if appName in config.SKIPPING:
-            continue
-        # Extract info about applications
-        app = apps_all[appName]
-        package = app["package"]
-        activity = app["activity"]
-        actions = app["actions"]
-        actionsKeepOnly = app["keepOnly"]
-        lastApp = (appName == config.KEEP_ONLY[-1])
+    # Loop on watches
+    for deviceStruct in devices:
+
+        # Extract device info
+        device = deviceStruct[0]
+        display = deviceStruct[1]
+        watchName = deviceStruct[2]
+
+        # Loop on applications
+        for appName in apps:
+
+            # If app is in skipping
+            if appName in config.SKIPPING:
+                continue
+            # Extract info about applications
+            app = apps_all[appName]
+            package = app["package"]
+            activity = app["activity"]
+            actions = app["actions"]
+            actionsKeepOnly = app["keepOnly"]
+            # login = app["login"]
+            lastApp = (appName == config.KEEP_ONLY[-1])
 
 
-        info = " ---- " + appName + " capture started ---"
+            info = " ---- " + appName + " capture started ---"
 
-        # Add a space to the log file
-        tprint('', log_fname)
-        tprint(info, log_fname)
-        # Loop on the set of actions of a patricular app
-        for actionName in actionsKeepOnly:
+            # Add a space to the log file
+            tprint('', log_fname)
+            tprint(info, log_fname)
 
-            lastActionIsBackground = False
-            # Parse the actions contained in applications.yaml
-            action = [eval(a) for a in actions[actionName]]
+            # # Application Preambule
+            # if login:
+            #     simulate(device, display, package, activity, action, log_fname)
 
-            left_state, left_nb = data, last_capt = get_action_numb(actionName, appName, left_state)
+            # Loop on the set of actions of a patricular app
+            for actionName in actionsKeepOnly:
 
-            # Loop on watches
-            for deviceStruct in devices:
+                lastActionIsBackground = False
+                # Parse the actions contained in applications.yaml
+                action = [eval(a) for a in actions[actionName]]
 
-                # Extract device info
-                device = deviceStruct[0]
-                display = deviceStruct[1]
-                watchName = deviceStruct[2]
+                left_state, left_nb = data, last_capt = get_action_numb(actionName, appName, left_state)
+
+
 
                 # Loop on a particular action
                 for i in range(config.N_REPEAT_CAPTURE):
@@ -168,9 +177,15 @@ def main():
                         if config.CLOSING_METHOD == "close_app":
                             _, success_close_command_sent = close_app(device, package, log_fname)
                             _, success_check_closed = check_package_closed(device, package, log_fname)
-                        else:
+
+                        if config.CLOSING_METHOD == "background":
                             background(device, package)
                             tprint("    - background command sent", log_fname)
+                            _, success_check_closed = check_package_closed(device, package, log_fname)
+                            lastActionIsBackground = True
+
+                        if config.CLOSING_METHOD == "force_stop":
+                            force_stop(device, package, log_fname)
                             _, success_check_closed = check_package_closed(device, package, log_fname)
                             lastActionIsBackground = True
 
@@ -203,15 +218,17 @@ def main():
 
                     # Event loop
                     tprint("", log_fname)  # add a space for more visibility
-                # watch loop
 
-            # Action loop
-            if lastActionIsBackground and config.CLEAR_WHEN_CHANGE_APP_AFTER_BACKGROUND:
-                close_app(device, package, log_fname)
 
-        # App loop
-        info = " ---- " + appName + " capture finished --- "
-        tprint(info, log_fname)
+                # Action loop
+                if lastActionIsBackground and config.CLEAR_WHEN_CHANGE_APP_AFTER_BACKGROUND:
+                    close_app(device, package, log_fname)
+
+            # App loop
+            info = " ---- " + appName + " capture finished --- "
+            tprint(info, log_fname)
+
+        # watch loop
 
 
 

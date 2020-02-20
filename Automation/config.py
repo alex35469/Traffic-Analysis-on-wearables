@@ -6,7 +6,7 @@ HOME_PACKAGE = "com.google.android.wearable.app"  # To check thaz the home is in
 DEVICES = [HUWAWEI_WATCH_IP_PORT] #, FOSILL_WATCH_IP_PORT]
 
 
-DEBUG_WATCH = False  # Does not communiacte with ellisys controller
+DEBUG_WATCH = True  # Does not communiacte with ellisys controller
 WATCH_CONNECTION_TIMEOUT = 10  # timeout after watch not connected (First instruction)
 DEBUG_ELLISYS = True
 
@@ -19,15 +19,20 @@ WAITING_TIME_BEFORE_STOP_CAPTURE = 2
 KEEP_ONLY = "all"  # Applications to keep for the automation
 SKIPPING = []
 
-CLOSING_METHOD = "background" # Either close_app or background
-CLEAR_WHEN_CHANGE_APP_AFTER_BACKGROUND = True  # Make a clear when changing to a new action after a background close
+# Simulation
+CLOSING_METHOD = "force_stop" # Either close_app or background or force_stop
+CLEAR_WHEN_CHANGE_APP_AFTER_BACKGROUND = False  # Make a clear when changing to a new action after a background close
+LOGIN_BEFORE_CAPTURE = True
 WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION = 10  # Such that the app reach a stable stat
 WAITING_TIME_AFTER_CLOSING_WHEN_CLOSING_IS_NOT_AN_ACTION = 10 # Such that the app reach a stable stat after closing
+PACKAGE_NOT_TO_STOP = ["com.google.android.wearable.app", "com.huawei.health"]
+
+
 # Cleaning
 CLEAN_ALL_APPS = False
 INTER_CLEANING_WAITING_TIME = 5
-FORCE_STOP_CLEANING = True
-CLEAR_DATA_CLEANING = False
+CLEANING_FORCE_STOP = True
+CLEANING_CLEAR_DATA = False
 
 # Ellisys
 N_CAPTURE_AFTER_ELLISYS_RESART = 15 # 0 for none
