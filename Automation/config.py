@@ -12,22 +12,27 @@ DEBUG_ELLISYS = True
 
 # Apps
 APPLICATIONS_FNAME = "applications.yaml"  # Applications actions instr. & data
-N_REPEAT_CAPTURE = 20
+N_REPEAT_CAPTURE = 30
+REACH_LEFT_STATE = False
 WAITING_TIME_AFTER_START_CAPTURE = 4  # Before lauching an action on the watch
 WAITING_TIME_BEFORE_STOP_CAPTURE = 2
 KEEP_ONLY = "all"  # Applications to keep for the automation
-SKIPPING = ["Endomondo", "Reminders", "FindMyPhone","DiabetesM", "PlayStore",
-            "WearCasts", "KeepNotes", "HeartRate", "ASB","Qardio", "Outlook",
-            "DailyTracking", "Spotify", "Stopwatch", "Flashlight"]
+SKIPPING = []
 
-CLOSING_METHOD = "close_app" # Either close_app or background
+# Simulation
+CLOSING_METHOD = "force_stop" # Either close_app or background or force_stop
+CLEAR_WHEN_CHANGE_APP_AFTER_BACKGROUND = False  # Make a clear when changing to a new action after a background close
+LOGIN_BEFORE_CAPTURE = True
 WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION = 10  # Such that the app reach a stable stat
+WAITING_TIME_AFTER_CLOSING_WHEN_CLOSING_IS_NOT_AN_ACTION = 10 # Such that the app reach a stable stat after closing
+PACKAGE_NOT_TO_STOP = ["com.google.android.wearable.app", "com.huawei.health"]
+
 
 # Cleaning
 CLEAN_ALL_APPS = False
 INTER_CLEANING_WAITING_TIME = 5
-FORCE_STOP_CLEANING = True
-CLEAR_DATA_CLEANING = False
+CLEANING_FORCE_STOP = True
+CLEANING_CLEAR_DATA = False
 
 # Ellisys
 N_CAPTURE_AFTER_ELLISYS_RESART = 15 # 0 for none

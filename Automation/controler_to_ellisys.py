@@ -21,6 +21,7 @@ instr_to_required_state = {
 
 def send_instruction(instruction, log_fname):
 
+    errorEllisys = False
 
     while True:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -38,18 +39,23 @@ def send_instruction(instruction, log_fname):
         rcv_msg = '<- Received "' + data + '"'
         tprint(rcv_msg, log_fname)
 
-        if data.split(' ', 1)[0] == messages.MESSAGE_FAIL:
+        msg = data.split(' ', 1)
+        if msg[0] == messages.MESSAGE_FAIL:
             instructionSplited = instruction.split(' ', 1)
             payload = ""
             cmd = instructionSplited[0]
             if len(instructionSplited) == 2:
                 payload = instructionSplited[1]
-                if cmd == "start":
-                    cmd == "startArgs"
+            if len(msg) == 2:
+                if msg[1] == "EllisysErrorSave":
+                    errorEllisys = True
+                    return errorEllisys
+
+
 
             print("'" + cmd + "', '" + payload + "'")
             raw_input("timeout error. Ellisys program is stuck or is not responsive.\n Fix it to the required state: : '" + instr_to_required_state[cmd] + payload + "' press enter to continue: ")
             print("issuing the command again. Keep in mind that the capture "+ payload + " might be corrupted")
             break
 
-        break
+        return errorEllisys

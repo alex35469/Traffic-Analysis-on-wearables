@@ -80,7 +80,7 @@ def click_func(location):
 def open_app(device, package, activity, log_fname):
     package_and_activity = package + "/" + activity
     success = True
-    cmd = "am start -c api.android.intent.LAUNCHER -a api.android.category.MAIN " + package_and_activity
+    cmd = "am start " + package_and_activity
     for _ in range(3):
         response = os.popen("adb shell "+cmd).read()
         if not "Error" in response and response is not None:
@@ -199,16 +199,25 @@ def simulate(device, display, package, activity, actions_waiting, log_fname, che
     return success
 
 def force_stop(device, package, log_fname):
-        cmd = "adb shell am force-stop " + package
+    if package in config.PACKAGE_NOT_TO_STOP:
+        info = "    - force stopping not apply because sys package. Home screen instead"
+        tprint(info, log_fname)
+        background(device, package)
+        tprint("    - sleeping 15s. to replace package force stop", log_fname)
+        time.sleep(15)
+        return True, info
 
-        response = os.system(cmd)
-        success = response == 0
-        if success:
-            result = "   CHECK: force stopping OK"
-        else:
-            result = "   CHECK: force stopping FAIL"
-        tprint(result, log_fname)
-        return result, success
+    cmd = "adb shell am force-stop " + package
+    tprint( "    - force stop", log_fname)
+    response = os.system(cmd)
+    success = response == 0
+    if success:
+        result = "   CHECK: force stopping OK"
+    else:
+        result = "   CHECK: force stopping FAIL"
+
+    tprint(result, log_fname)
+    return result, success
 
 def clean_apps(device, apps, log_fname):
     info = "Cleaning applications"
@@ -217,9 +226,9 @@ def clean_apps(device, apps, log_fname):
         info = " -"+ app + ": package - " + apps[app]["package"]
         tprint(info, log_fname)
         if apps[app]["package"] != "com.google.android.wearable.app":
-            if config.CLEAR_DATA:
+            if config.CLEANING_CLEAR_DATA:
                 close_app(device, apps[app]["package"], log_fname)
-            if config.FORCE_STOP:
+            if config.CLEANING_FORCE_STOP:
                 force_stop(device, apps[app]["package"], log_fname)
             time.sleep(config.INTER_CLEANING_WAITING_TIME) # Otherwise shellCommandUnresponsive
 
