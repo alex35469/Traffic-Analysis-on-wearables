@@ -6,7 +6,7 @@ HOME_PACKAGE = "com.google.android.wearable.app"  # To check thaz the home is in
 DEVICES = [HUWAWEI_WATCH_IP_PORT] #, FOSILL_WATCH_IP_PORT]
 
 
-DEBUG_WATCH = True  # Does not communiacte with ellisys controller
+DEBUG_WATCH = False  # Does not communiacte with ellisys controller
 WATCH_CONNECTION_TIMEOUT = 10  # timeout after watch not connected (First instruction)
 DEBUG_ELLISYS = True
 

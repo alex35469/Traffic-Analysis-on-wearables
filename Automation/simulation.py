@@ -197,13 +197,19 @@ def main():
                     success = success and success_simulate and success_command_sent and success_check_closed and success_close_command_sent
 
                     if not success:
-                        filename = filename + "_error"
+                        filename = filename + "_errorWatch"
+
                     # Save capture
                     if not config.DEBUG_WATCH:
-                        send_instruction(messages.NewSaveCaptureCommand(payload=filename), log_fname)
-                        left_state[appName][actionName] += 1
-                        left_state["lastCapture"] = filename
-                        dump_yaml(left_state, "left_state.yaml")
+                        errorEllisys = send_instruction(messages.NewSaveCaptureCommand(payload=filename), log_fname)
+
+                        if errorEllisys:
+                            filename = filename + "_errorEllisys"
+
+                        if not "error" in filename:
+                            left_state[appName][actionName] += 1
+                            left_state["lastCapture"] = filename
+                            dump_yaml(left_state, "left_state.yaml")
 
                     lastFilename = ", " + filename
                     counter = counter + 1
