@@ -7,3 +7,5 @@ For $j = 1 To $process[0][0]
 Next
 
 Sleep(1000)
+
+Exit(0)

@@ -27,3 +27,5 @@ EndIf
 WinActivate($WinName)
 Send("^r")
 WinWaitActive("Recording from BV1-26140 - Ellisys Bluetooth Analyzer", "")
+
+Exit(0)

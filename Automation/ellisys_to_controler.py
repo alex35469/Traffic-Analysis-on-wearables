@@ -20,13 +20,13 @@ s.bind((config.ELLISYS_HOST, config.ELLISYS_PORT))
 
 def autoItRunAndWait(file):
     print('Running AutoIT file "AutoIt3 au3Commands\\{0}"'.format(file))
-    p = subprocess.Popen('cmd /c "AutoIt3 au3Commands\\{0}"'.format(file))
-    successfull = True
+    p = subprocess.Popen('cmd /c "AutoIt3 au3Commands\\{0}"'.format(file), stdout = subprocess.PIPE)
+    successfull = False
     try:
         p.wait(config.ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED)
+        successfull = (p.returncode == 0)
     except subprocess.TimeoutExpired:
         p.kill()
-        successfull = False
 
     return successfull
 
@@ -110,6 +110,9 @@ while True:
             successfull = autoItRunAndWait('save_capture.au3 {}'.format(filename))
             if successfull:
                 sendAck(client, "Capture " +filename + " saved")
+            else :
+                sendFail(client, "EllisysErrorSave")
+                continue
 
         else:
             sendFail(client, "Command unknown.")

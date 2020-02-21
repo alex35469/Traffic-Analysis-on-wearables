@@ -3,4 +3,6 @@
 
 WinActivate("Recording from BV1-26140 - Ellisys Bluetooth Analyzer")
 Send("^+r")
-WinWaitActive("Untitled* - Ellisys Bluetooth Analyzer")
+WinWaitActive("Untitled* - Ellisys Bluetooth Analyzer", "", 15)
+
+Exit(0)
