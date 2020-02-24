@@ -250,6 +250,14 @@ KeepNotes:
   actions :
     open: ["(open_app, 20)"]
 
+Krone:
+  package: at.krone
+  activity: at.krone.MainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
 Lifesum:
   package: com.sillens.shapeupclub
   activity: com.sillens.shapeupclub.onboarding.StartActivity
@@ -277,6 +285,14 @@ Maps:
 Medisafe:
   package: com.medisafe.android.client
   activity: com.medisafe.android.wear.CustomWearableList
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
+Meduza:
+  package: io.meduza.android
+  activity: io.meduza.android.RootActivity
   login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
@@ -355,7 +371,15 @@ SalatTime:
   keepOnly: [open]
   actions:
     # 1. Open, wait and close
-    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    open: ["(open_app, 20)"]
+
+Shazam:
+  package: com.shazam.android
+  activity: com.shazam.android.wear.activity.TaggingActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
 
 
 Sleep:
@@ -396,6 +420,7 @@ Strava:
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
+
 
 Telegram:
   package: org.telegram.messenger
@@ -445,12 +470,12 @@ WearCasts:
   actions :
     open: ["(open_app, 20)"]
 
-# Weather:
-#   package: com.google.android.wearable.app
-#   activity: com.google.android.clockwork.home.weather.WeatherActivity
-#   keepOnly: [open]  # Action to be selected starting at 1.
-#   actions :
-#     open: ["(open_app, 20)"]
+Weather:
+  package: com.google.android.wearable.app
+  activity: com.google.android.clockwork.home.weather.WeatherActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
 
 Workout:
   package: com.huawei.health
