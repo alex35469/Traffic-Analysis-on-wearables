@@ -16,8 +16,8 @@ N_REPEAT_CAPTURE = 40
 REACH_LEFT_STATE = False
 WAITING_TIME_AFTER_START_CAPTURE = 4  # Before lauching an action on the watch
 WAITING_TIME_BEFORE_STOP_CAPTURE = 2
-KEEP_ONLY ="all"  # Applications to keep for the automation
-SKIPPING = ["Stopwatch", "Flashlight", "FITIVPlus"]
+KEEP_ONLY =["HealthyRecipes", "Sleep", "Medisafe","Lifesum", "Qardio", "DiabetesM"] # FindMyPhone Applications to keep for the automation
+SKIPPING = ["Stopwatch"]
 
 # Simulation
 CLOSING_METHOD = "force_stop" # Either close_app or background or force_stop
@@ -28,10 +28,10 @@ WAITING_TIME_AFTER_CLOSING_WHEN_CLOSING_IS_NOT_AN_ACTION = 25 # Such that the ap
 PACKAGE_NOT_TO_STOP = ["com.google.android.wearable.app", "com.huawei.health", "com.huawei.watch.supersavepower"]
 
 N_CAPTURE_AFTER_FAKE = 20  # 0 to not make any fake captures
-FAKE_WAITTING_TIME = 22
+FAKE_WAITTING_TIME = 50
 
 # numbering
-FLUSH_CAPTURE_NUMBER = True
+FLUSH_CAPTURE_NUMBER = False
 FLUSH_CAPTURE_NUMBER = FLUSH_CAPTURE_NUMBER and not REACH_LEFT_STATE  ## Only flush if we do not want to reach the left state
 EXPERIENCE_NUMBER = 3
 

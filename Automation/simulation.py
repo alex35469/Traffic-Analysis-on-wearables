@@ -190,7 +190,7 @@ def main():
 
                     # Stop Capture
                     if not config.DEBUG_WATCH:
-                        send_instruction(messages.CMD_STOP_CAPTURE, log_fname)
+                        errorStop = send_instruction(messages.CMD_STOP_CAPTURE, log_fname)
 
                     # close the application if the last instruction is not background or close app
                     if action[-1][0].__name__ != "close_app" and action[-1][0].__name__ != "background" and not faking:
@@ -218,6 +218,9 @@ def main():
 
                     if not success:
                         filename = filename + "_errorWatch"
+
+                    if errorStop:
+                        filename = filename + "_errorStop"
 
                     # Save capture
                     if not config.DEBUG_WATCH:

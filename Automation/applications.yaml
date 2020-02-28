@@ -124,7 +124,7 @@ DiabetesM:
   package: com.mydiabetes
   activity: com.mydiabetes.MainActivity
   login: None
-  keepOnly: [open]  # Action to be selected starting at 1.
+  keepOnly: [savePlus1AndPlus10plus1]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
@@ -185,7 +185,7 @@ FitWorkout:
 
 FITIVPlus:
   package: com.fitiv.fitivapplication
-  activity: om.fitiv.fitivapplication.activities.SplashActivity
+  activity: com.fitiv.fitivapplication.activities.SplashActivity
   login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :

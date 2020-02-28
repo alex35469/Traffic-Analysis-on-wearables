@@ -50,6 +50,9 @@ def send_instruction(instruction, log_fname):
                 if msg[1] == "EllisysErrorSave":
                     errorEllisys = True
                     return errorEllisys
+                if msg[1] == "EllisysErrorStop":
+                    errorEllisys = True
+                    return errorEllisys
 
 
 
