@@ -11,8 +11,8 @@ import config
 import signal
 import subprocess
 import yaml
-from helper import write_logs, read_app, tprint, dump_yaml, get_action_numb
-
+from helper_controller import *
+from helper import *
 
 ######################## MAIN ########################
 
@@ -21,10 +21,15 @@ def main():
     # Read the applications info file
     apps_all = read_app(config.APPLICATIONS_FNAME)
 
+    # numbering the experiements
+    flush_left_state_number()
+
     # Read the left_state
     left_state = read_app("left_state.yaml")
 
-
+    # faking current number
+    _, left_faking = get_action_numb("NoAction", "NoApp", left_state)
+    left_faking = left_faking + 1
 
     # Create log file
     launchTime = time.strftime("%d-%m-%y_%H-%M-%S", time.localtime()) # for log file name
@@ -88,7 +93,7 @@ def main():
         device = deviceStruct[0]
         display = deviceStruct[1]
         watchName = deviceStruct[2]
-
+        faking_nb = 0
         # Loop on applications
         for appName in apps:
 
@@ -122,26 +127,35 @@ def main():
                 # Parse the actions contained in applications.yaml
                 action = [eval(a) for a in actions[actionName]]
 
-                left_state, left_nb = data, last_capt = get_action_numb(actionName, appName, left_state)
+                left_state, left_nb = get_action_numb(actionName, appName, left_state)
 
 
 
                 # Loop on a particular action
-                for i in range(config.N_REPEAT_CAPTURE):
-                    capt_number =  (i + 1) + left_nb
-
-
+                i = 0
+                while i < config.N_REPEAT_CAPTURE:
+                    i = i + 1
+                    capt_number =  i + left_nb
+                    faking = counter % config.N_CAPTURE_AFTER_FAKE == 1
 
                     # actions variables
                     success, success_command_sent, success_check_opened = True, True, True
                     success_close_command_sent, success_check_closed = True, True
-
+                    success_simulate = True
                     filename = watchName + "_" +appName +"_"+ actionName+ "_Classic_enc_" + str(capt_number)
+
+                    if faking:
+
+                        filename = watchName + "_NoApp_NoAction_Classic_enc_" + str(left_faking + faking_nb)
+                        faking_nb = faking_nb + 1
+                        i = i - 1
 
                     # skip until we reach the last capture state
                     if not config.DEBUG_WATCH and not skipped and config.REACH_LEFT_STATE:
                         lastCapAppName = left_state["lastCapture"].split("_")[1]
+                        last_nb = left_state["lastCapture"].split("_")[5]
                         currCapAppName = filename.split("_")[1]
+                        curr_nb = filename.split("_")[5]
                         if currCapAppName!= lastCapAppName:
                             print("Skipping " + filename)
                             continue
@@ -165,7 +179,13 @@ def main():
 
                     #  launch action
                     time.sleep(config.WAITING_TIME_AFTER_START_CAPTURE)
-                    success_simulate = simulate(device, display, package, activity, action, log_fname)
+                    if not faking and not config.DEBUG_ELLISYS :
+                        success_simulate = simulate(device, display, package, activity, action, log_fname)
+                    else:
+
+                        tprint("    - fake capture no app opening. Sleeping " + str(config.FAKE_WAITTING_TIME) + "s", log_fname)
+                        time.sleep(config.FAKE_WAITTING_TIME)
+
                     time.sleep(config.WAITING_TIME_BEFORE_STOP_CAPTURE)
 
                     # Stop Capture
@@ -173,7 +193,7 @@ def main():
                         send_instruction(messages.CMD_STOP_CAPTURE, log_fname)
 
                     # close the application if the last instruction is not background or close app
-                    if action[-1][0].__name__ != "close_app" and action[-1][0].__name__ != "background":
+                    if action[-1][0].__name__ != "close_app" and action[-1][0].__name__ != "background" and not faking:
                         if config.CLOSING_METHOD == "close_app":
                             _, success_close_command_sent = close_app(device, package, log_fname)
                             _, success_check_closed = check_package_closed(device, package, log_fname)
@@ -201,14 +221,19 @@ def main():
 
                     # Save capture
                     if not config.DEBUG_WATCH:
+
                         errorEllisys = send_instruction(messages.NewSaveCaptureCommand(payload=filename), log_fname)
 
                         if errorEllisys:
                             filename = filename + "_errorEllisys"
 
                         if not "error" in filename:
-                            left_state[appName][actionName] += 1
-                            left_state["lastCapture"] = filename
+                            if not faking:
+                                left_state[appName][actionName] += 1
+                                left_state["lastCapture"] = filename
+                            else:
+                                left_state["NoApp"]["NoAction"] += 1
+
                             dump_yaml(left_state, "left_state.yaml")
 
                     lastFilename = ", " + filename

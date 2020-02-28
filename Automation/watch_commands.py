@@ -88,9 +88,9 @@ def open_app(device, package, activity, log_fname):
         else:
             success = False
     if success:
-        result = "   CHECK: When sending command: '"+ cmd + "' OK"
+        result = "   CHECK: Sending '"+ cmd + "' OK"
     else:
-        result = "   CHECK: When sending command: '"+ cmd + "' FAIL"
+        result = "   CHECK: Sending '"+ cmd + "' FAIL"
     tprint(result, log_fname)
     return result, success
 
@@ -98,7 +98,7 @@ def open_app(device, package, activity, log_fname):
 def close_app(device, package, log_fname):
     success = False
     if package == "com.google.android.wearable.app":
-        result = "   CHECK: Sending command pm clear FAIL (package 'com.google.android.wearable.app' can not be close this way)"
+        result = "   CHECK: Sending pm clear FAIL (package 'com.google.android.wearable.app' can not be close this way)"
         tprint(result, log_fname)
         return result, success
 
@@ -124,6 +124,9 @@ def background(device, package):
 
 def check_bluetooth_enabled(device, log_fname):
     answ = device.shell("dumpsys bluetooth_manager")
+    if answ is None:
+        # TODO: RECOVERY MODE WITH ADB
+        return "   CHECK: Bluetooth connection return NoneType FAIL", False
     answ = answ.encode('utf8')
     success = "curState=Connected" in answ
     if success:
@@ -136,7 +139,10 @@ def check_bluetooth_enabled(device, log_fname):
 
 def check_package_opened(device, package, log_fname):
     for _ in range(3):
-        status = str(device.shell("dumpsys window windows | grep Focus"))
+        status = device.shell("dumpsys window windows | grep Focus")
+        if status is None:
+            return "   CHECK: Package opened FAIL\n   Received NoneType", False
+        status = status.encode('utf8')
         success = package in status
         if success:
             break
@@ -144,14 +150,19 @@ def check_package_opened(device, package, log_fname):
     if success:
         result = "   CHECK: Package opened OK"
     else:
-        result = "   CHECK: Package opened FAIL\n        Status: "+status
+        result = "   CHECK: Package opened FAIL\n   Status: '"+status+"'"
     tprint(result, log_fname)
     return result, success
 
 def check_package_closed(device, package, log_fname):
     for _ in range(3):
-        status = str(device.shell("dumpsys window windows | grep Focus"))
+        status = device.shell("dumpsys window windows | grep Focus")
+        if status is None:
+            return "   CHECK:  Watch on home sceen FAIL\n   Received NoneType", False
+        status = status.encode('utf8')
+
         success = config.HOME_PACKAGE in status
+
         if success:
             break
         time.sleep(0.5)
@@ -238,3 +249,4 @@ def clean_apps(device, apps, log_fname):
 
     info="\n ---- cleaning finished -----\n"
     tprint(info, log_fname)
+    tprint("Sleeping after cleaning " + str(config.SLEEP_AFTER_CLEANING) + "s ", log_fname)
