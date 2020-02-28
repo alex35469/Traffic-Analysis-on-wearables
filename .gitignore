@@ -35,6 +35,16 @@ venv.bak/
 
 
 # Data (use resilio to get them)
-Classification/ludovic/data/*
-Classification/ludovic/plots/*
+data
+.cache
+plots
 datasets
+
+# Virtual Share
+Virtual_Share
+
+# apk folders (Used to discover information about the package)
+apk
+
+# Use to snoop bluetooth directly on the watch but not appropriate technique
+btsnoop
