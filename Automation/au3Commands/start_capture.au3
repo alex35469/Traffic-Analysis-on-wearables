@@ -14,7 +14,6 @@ EndIf
 ; Filter on pixel 2 (only at the start)
 If $CmdLine[0] == 0 Then
   $HWND = WinActivate($WinName)
-  ; ControlClick($HWND, "", "[CLASS:WindowsForms10.Window.8.app.0.ea119_r6_ad1; INSTANCE:" & $InstanceNb &"]", "left", 1, 819, 10)
   ControlClick($HWND, "", "[CLASS:WindowsForms10.Window.8.app.0.ea119_r6_ad1; NAME:toolBar]", "left", 1, 819, 10)
   WinWaitActive("Device Traffic Filters", "&OK")
   Sleep(500)

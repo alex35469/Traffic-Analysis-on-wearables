@@ -1,7 +1,7 @@
 #Include <File.au3>
 #Include <Array.au3>
 
-$path = "C:\Users\ellisys\Desktop\Traffic-Analysis-on-wearables\Classification\data\open\"
+$path = "C:\Users\ellisys\Desktop\Traffic-Analysis-on-wearables\Classification\data\open_2\"
 $FileList = _FileListToArray($path, "*.btt")
 
 $ellisys_app = "C:\Program Files (x86)\Ellisys\Ellisys Bluetooth Analyzer\Ellisys.BluetoothAnalyzer.exe"
@@ -16,18 +16,7 @@ Run($ellisys_app)
 WinWaitActive("Ellisys Bluetooth Analyzer", "Welcome")
 
 For $i = 1 To UBound($FileList)-1
-
 	$f = $FileList[$i]
-	ConsoleWrite($f & @CRLF)
-
-	; WinKill("Ellisys Bluetooth Analyzer")
-	; Local $process = ProcessList("Ellisys.BluetoothAnalyzer.exe")
-	; For $j = 1 To $process[0][0]
-	; 	ProcessClose($process[$j][1])
-	; Next
-
-	
-
 	Send("^o")
 	WinWaitActive("Open", "&Open")
 	Sleep(100)
@@ -48,6 +37,7 @@ For $i = 1 To UBound($FileList)-1
 	WinWaitActive("Export", "&Next >")
 	Send("{TAB 8}")
 	Send("{DOWN 2}")
+	Sleep(100)
 	Send("!n")
 	WinWaitActive("Export", "Fi&nish")
 	Send("!n")

@@ -18,7 +18,7 @@ If $res == 0 Then
   Send("{ENTER}")
   _RunAU3("au3Commands\start_capture.au3")
   WinWaitActive("Recording from BV1-26140 - Ellisys Bluetooth Analyzer")
-  Sleep(2000)  
+  Sleep(2000)
   _RunAU3("au3Commands\stop_capture.au3")
   Sleep(1500)
 
@@ -26,7 +26,7 @@ If $res == 0 Then
   Send("^s")
 
   WinWaitActive("Save", "File &name:")
-  Send($FNAME & "_errorSave")
+  Send($FNAME & "_errorEllisys")
   Send("{ENTER}")
   Exit(1)
 
@@ -37,6 +37,10 @@ Send("{ENTER}")
 
 $res = WinWaitActive($FNAME & ".btt - Ellisys Bluetooth Analyzer", "", 5)
 
+If $res == 0 Then
+	WinWaitActive("Conflict", "OK", 5)
+	Send("{ENTER}")	
+EndIf
 
 Exit(0)
 
