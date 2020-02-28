@@ -3,6 +3,12 @@
 
 WinActivate("Recording from BV1-26140 - Ellisys Bluetooth Analyzer")
 Send("^+r")
-WinWaitActive("Untitled* - Ellisys Bluetooth Analyzer", "", 15)
+$res = WinWaitActive("Untitled* - Ellisys Bluetooth Analyzer", "", 15)
+
+If $res == 0 Then
+	Exit(1)
+EndIf
+
+
 
 Exit(0)
