@@ -75,6 +75,14 @@ Camera:
   actions :
     open: ["(open_app, 20)"]
 
+ChinaDaily:
+  package: com.chinadaily.wear
+  activity: com.chinadaily.NewsHomeActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
 Citymapper:
   package: com.citymapper.app.release
   activity: com.citymapper.app.wear.EntryActivity
@@ -124,7 +132,7 @@ DiabetesM:
   package: com.mydiabetes
   activity: com.mydiabetes.MainActivity
   login: None
-  keepOnly: [savePlus1AndPlus10plus1]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
@@ -303,10 +311,10 @@ Mobilis:
   package: br.com.gerenciadorfinanceiro.controller
   activity: br.com.mobills.wear.views.MobillsWearActivity
   login: None
-  keepOnly: []
+  keepOnly: [open]
   actions:
     # Open, wait and close
-    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    open: ["(open_app, 20)"]
 
 Outlook:
   package: com.microsoft.office.outlook
@@ -397,6 +405,15 @@ SleepTracking:
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
+
+SmokingLog:
+  package: com.ccswe.SmokingLog
+  activity: com.ccswe.SmokingLog.LauncherActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+
 
 Spotify:
   package: com.spotify.music

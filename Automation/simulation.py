@@ -103,18 +103,22 @@ def main():
             # Extract info about applications
             app = apps_all[appName]
             package = app["package"]
+
             activity = app["activity"]
             actions = app["actions"]
             actionsKeepOnly = app["keepOnly"]
             # login = app["login"]
             lastApp = (appName == config.KEEP_ONLY[-1])
 
-
             info = " ---- " + appName + " capture started ---"
 
             # Add a space to the log file
             tprint('', log_fname)
             tprint(info, log_fname)
+
+            _, package_exist = verify_package_exist(device, package, log_fname)
+            if not package_exist:
+                continue
 
             # # Application Preambule
             # if login:
@@ -219,11 +223,14 @@ def main():
                     if not success:
                         filename = filename + "_errorWatch"
 
-                    if errorStop:
-                        filename = filename + "_errorStop"
 
                     # Save capture
                     if not config.DEBUG_WATCH:
+
+
+
+                        if errorStop:
+                            filename = filename + "_errorStop"
 
                         errorEllisys = send_instruction(messages.NewSaveCaptureCommand(payload=filename), log_fname)
 
