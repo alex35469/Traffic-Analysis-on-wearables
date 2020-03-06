@@ -65,16 +65,29 @@ def scroll_down(device, display):
     MonkeyRunner.sleep(0.5)
 
 
-def click_func(location):
+def click(location):
     """Return a function the perform a button touch
     on the device with the location = (x, y)"""
 
-    def click(device, display):
+    def click_func(device, display):
         assert 0 < location[0] < display[0]
         assert 0 < location[1] < display[1]
         device.shell("input tap " + str(location[0]) + " " +str(location[1]))
 
-    return click
+    return click_func
+
+def press_random_letters(device, display, n_press=3):
+    alphabet = "abcdefghijklmnopqrstuvwxyz "
+    text = "".join(random.choices(alphabet, k=n_press))
+
+    def press_random_letters_func(device, display):
+        device.shell("input text " + text)
+    return press_random_letters_func
+
+def press_random_numbers(device, display, n_press=3):
+    numbers = "1234567890"
+    text = "".join(random.choices(alphabet, k=n_press))
+    device.shell("input text " + text)
 
 
 def open_app(device, package, activity, log_fname):
@@ -129,7 +142,6 @@ def check_bluetooth_enabled(device, log_fname):
         return "   CHECK: Bluetooth connection return NoneType FAIL", False
     answ = answ.encode('utf8')
     success = "curState=Connected" in answ
-    success = success or "ScanMode: SCAN_MODE_NONE" in answ 
     if success:
         result = "   CHECK: Bluetooth connection OK"
     else:
@@ -230,28 +242,6 @@ def force_stop(device, package, log_fname):
 
     tprint(result, log_fname)
     return result, success
-
-
-def verify_package_exist(device, package, log_fname):
-    expected_return = "package:"+package
-    for _ in range(3):
-        answ = device.shell("pm list packages " + package)
-        if answ is None:
-            success = False
-            time.sleep(0.5)
-            continue
-        answ = answ.encode('utf8').strip()
-        success = expected_return in answ
-        if success:
-            break
-        time.sleep(0.5)
-    if success:
-        result = "   CHECK: Package exist OK"
-    else:
-        result = "   CHECK: Package exist FAIL"
-    tprint(result, log_fname)
-    return result, success
-
 
 def clean_apps(device, apps, log_fname):
     info = "Cleaning applications"
