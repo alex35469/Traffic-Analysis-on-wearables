@@ -2,8 +2,10 @@ from com.android.monkeyrunner import MonkeyRunner, MonkeyDevice
 import time
 import config
 import os
-from helper import write_logs, tprint
+from helper import *
+import random
 
+################ Swipes ############################
 
 def swipe_down(device, display):
     width, height = display[0], display[1]
@@ -37,6 +39,7 @@ def swipe_left(device, display):
     device.shell("input swipe "+ str(x1)+" "+ str(y1)+" "+ str(x2)+" "+ str(y2)+" "+ str(duration))
 
 
+##################### Scolls #############################
 
 def scroll_left(device, display):
     width = display[0]
@@ -65,6 +68,9 @@ def scroll_down(device, display):
     MonkeyRunner.sleep(0.5)
 
 
+################### Clicks ####################################
+
+
 def click(location):
     """Return a function the perform a button touch
     on the device with the location = (x, y)"""
@@ -76,18 +82,41 @@ def click(location):
 
     return click_func
 
-def press_random_letters(device, display, n_press=3):
-    alphabet = "abcdefghijklmnopqrstuvwxyz "
-    text = "".join(random.choices(alphabet, k=n_press))
 
+##################### Presses ################################
+
+
+def press_random_letters(n_press=(4,10)):
+    alphabet = "abcdefghijklmnopqrstuvwxyz "
     def press_random_letters_func(device, display):
+        n_press_actual = random.randint(n_press[0], n_press[1])
+        text = "".join(choices(alphabet, k=n_press_actual))
         device.shell("input text " + text)
     return press_random_letters_func
 
+
+def press_deterministic_letter(input):
+    def press_deterministic_letters_func(device, display):
+        device.shell("input text " + input)
+    return press_deterministic_letters_func
+
+
+def press_coherent_letter(field):
+    assert filed in coherentWords
+    population = coherentWords[field]
+    def press_coherent_letter_func(device, display):
+        n_press_actual = random.randint(n_press[0], n_press[1])
+        text = "".join(choices(population, k=1))
+        device.shell("input text " + text)
+    return press_coherent_letter_func
+
 def press_random_numbers(device, display, n_press=3):
     numbers = "1234567890"
-    text = "".join(random.choices(alphabet, k=n_press))
+    text = "".join(choices(numbers, k=n_press))
     device.shell("input text " + text)
+
+
+################# Open - and close techniques ##################
 
 
 def open_app(device, package, activity, log_fname):
@@ -133,7 +162,52 @@ def background(device, package):
     device.shell("input keyevent 3")
 
 
-##### CHECK METHODE
+def force_stop(device, package, log_fname):
+    if package in config.PACKAGE_NOT_TO_STOP:
+        info = "    - force stopping not apply because sys package. Home screen instead"
+        tprint(info, log_fname)
+        background(device, package)
+        tprint("    - sleeping 15s. to replace package force stop", log_fname)
+        time.sleep(15)
+        return True, info
+
+    cmd = "adb shell am force-stop " + package
+    tprint( "    - force stop", log_fname)
+    response = os.system(cmd)
+    success = response == 0
+    if success:
+        result = "   CHECK: force stopping OK"
+    else:
+        result = "   CHECK: force stopping FAIL"
+
+    tprint(result, log_fname)
+    return result, success
+
+
+def clean_apps(device, apps, log_fname):
+    info = "Cleaning applications"
+    tprint(info, log_fname)
+    for app in apps:
+        info = " -"+ app + ": package - " + apps[app]["package"]
+        tprint(info, log_fname)
+        if apps[app]["package"] != "com.google.android.wearable.app":
+            if config.CLEANING_CLEAR_DATA:
+                close_app(device, apps[app]["package"], log_fname)
+            if config.CLEANING_FORCE_STOP:
+                force_stop(device, apps[app]["package"], log_fname)
+            time.sleep(config.INTER_CLEANING_WAITING_TIME) # Otherwise shellCommandUnresponsive
+
+        else:
+            info = "Skipping..."
+            tprint(info, log_fname)
+
+    info="\n ---- cleaning finished -----\n"
+    tprint(info, log_fname)
+    tprint("Sleeping after cleaning " + str(config.SLEEP_AFTER_CLEANING) + "s ", log_fname)
+    time.sleep(config.SLEEP_AFTER_CLEANING)
+
+
+#################### Checks #########################
 
 def verify_package_exist(device, package, log_fname):
     expected_return = "package:"+package
@@ -208,8 +282,9 @@ def check_package_closed(device, package, log_fname):
         result = "   CHECK: Watch on home sceen FAIL\n        Status: '"+status + "'"
     tprint(result, log_fname)
     return result, success
-# SIMULATION
 
+
+################### Simulation (main logic of the script) #################
 
 def simulate(device, display, package, activity, actions_waiting, log_fname, check=True):
     checkInfo = ""
@@ -227,7 +302,7 @@ def simulate(device, display, package, activity, actions_waiting, log_fname, che
             _, successTmp2 = check_package_opened(device, package, log_fname)
             success = success and successTmp1 and successTmp2
 
-        elif a.__name__ == "close_app":
+        elif a.__name__ == "close_app" or a.__name__ == "force_stop":
             close_command_sent, successTmp1 = a(device, package, log_fname)
             check_closed, successTmp2 = check_package_closed(device, package, log_fname)
             success = success and successTmp1 and successTmp2
@@ -243,46 +318,3 @@ def simulate(device, display, package, activity, actions_waiting, log_fname, che
         tprint(info, log_fname)
         time.sleep(w)
     return success
-
-def force_stop(device, package, log_fname):
-    if package in config.PACKAGE_NOT_TO_STOP:
-        info = "    - force stopping not apply because sys package. Home screen instead"
-        tprint(info, log_fname)
-        background(device, package)
-        tprint("    - sleeping 15s. to replace package force stop", log_fname)
-        time.sleep(15)
-        return True, info
-
-    cmd = "adb shell am force-stop " + package
-    tprint( "    - force stop", log_fname)
-    response = os.system(cmd)
-    success = response == 0
-    if success:
-        result = "   CHECK: force stopping OK"
-    else:
-        result = "   CHECK: force stopping FAIL"
-
-    tprint(result, log_fname)
-    return result, success
-
-def clean_apps(device, apps, log_fname):
-    info = "Cleaning applications"
-    tprint(info, log_fname)
-    for app in apps:
-        info = " -"+ app + ": package - " + apps[app]["package"]
-        tprint(info, log_fname)
-        if apps[app]["package"] != "com.google.android.wearable.app":
-            if config.CLEANING_CLEAR_DATA:
-                close_app(device, apps[app]["package"], log_fname)
-            if config.CLEANING_FORCE_STOP:
-                force_stop(device, apps[app]["package"], log_fname)
-            time.sleep(config.INTER_CLEANING_WAITING_TIME) # Otherwise shellCommandUnresponsive
-
-        else:
-            info = "Skipping..."
-            tprint(info, log_fname)
-
-    info="\n ---- cleaning finished -----\n"
-    tprint(info, log_fname)
-    tprint("Sleeping after cleaning " + str(config.SLEEP_AFTER_CLEANING) + "s ", log_fname)
-    time.sleep(config.SLEEP_AFTER_CLEANING)
