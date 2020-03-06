@@ -130,7 +130,7 @@ def close_app(device, package, log_fname):
 
 
 def background(device, package):
-    device.press('KEYCODE_HOME',MonkeyDevice.DOWN_AND_UP)
+    device.shell("input keyevent 3")
 
 
 ##### CHECK METHODE
@@ -142,6 +142,7 @@ def check_bluetooth_enabled(device, log_fname):
         return "   CHECK: Bluetooth connection return NoneType FAIL", False
     answ = answ.encode('utf8')
     success = "curState=Connected" in answ
+    success = success or "ScanMode: SCAN_MODE_NONE" in answ
     if success:
         result = "   CHECK: Bluetooth connection OK"
     else:
@@ -263,3 +264,4 @@ def clean_apps(device, apps, log_fname):
     info="\n ---- cleaning finished -----\n"
     tprint(info, log_fname)
     tprint("Sleeping after cleaning " + str(config.SLEEP_AFTER_CLEANING) + "s ", log_fname)
+    time.sleep(config.SLEEP_AFTER_CLEANING)
