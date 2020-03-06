@@ -135,6 +135,27 @@ def background(device, package):
 
 ##### CHECK METHODE
 
+def verify_package_exist(device, package, log_fname):
+    expected_return = "package:"+package
+    for _ in range(3):
+        answ = device.shell("pm list packages " + package)
+        if answ is None:
+            success = False
+            time.sleep(0.5)
+            continue
+        answ = answ.encode('utf8').strip()
+        success = expected_return in answ
+        if success:
+            break
+        time.sleep(0.5)
+    if success:
+        result = "   CHECK: Package exist OK"
+    else:
+        result = "   CHECK: Package exist FAIL"
+    tprint(result, log_fname)
+    return result, success
+
+
 def check_bluetooth_enabled(device, log_fname):
     answ = device.shell("dumpsys bluetooth_manager")
     if answ is None:
