@@ -149,11 +149,16 @@ DiabetesM:
   package: com.mydiabetes
   activity: com.mydiabetes.MainActivity
   login: None
-  keepOnly: [open]  # Action to be selected starting at 1.
+  keepOnly: [addCarbs]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force_stop, 20)"]
-    savePlus1AndPlus10plus1: ["(swipe_left, 0)",  "(click((190,55)), 0)", "(swipe_left, 0)", "(click((190,55)), 0)","(swipe_left, 0)", "(swipe_left, 0)", "(click((190,55)), 0)", "(swipe_left, 0)", "(click((190,55)), 0)" ] # "(click((190,190)), 3)"]
+    force-stop: ["(force-stop, 20)"]
+    addGlucose: ["(swipe_left, 0)",  "(click((190,55)), 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(click((190,55)), 8)" ]
+    addInsulin: ["(swipe_left, 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(click((190,55)), 0)", "(swipe_left, 0)", "(click((190,55)), 8)" ]
+    addCarbs: ["(swipe_left, 0)", "(swipe_left, 0)",  "(click((190,55)), 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(click((117,32)), 0)", "(swipe_left, 0)", "(click((190,55)), 8)" ]
+    addCal: ["(swipe_left, 0)", "(swipe_left, 0)", "(click((40,190)), 0)", "(click((190,55)), 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(click((190,55)), 8)" ]
+    addProt: ["(swipe_left, 0)", "(swipe_left, 0)", "(click((350,190)), 0)", "(click((190,55)), 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(click((190,55)), 8)" ]
+    addFat:  ["(swipe_left, 0)", "(swipe_left, 0)", "(click((40,190)), 0)", "(click((40,190)), 0)", "(click((190,55)), 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(click((190,55)), 8)" ]
 
 DuaKhatqmAlQuran:
   package: com.appsforall.duakhatamalquran
