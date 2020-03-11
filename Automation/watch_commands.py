@@ -7,6 +7,18 @@ import random
 
 ################ Swipes ############################
 
+
+def swipe(lstart, lstop):
+
+    def swipe_func(device, display):
+        """Return a function the perform a button touch
+        on the device with the location = (x, y)"""
+        device.shell("input swipe " + str(lstart[0]) + " " +str(lstart[1]) + " " + str(lstop[0]) + " " +str(lstop[1]))
+        #print("input swipe " + str(lstart[0]) + " " +str(lstart[1]) + str(lstop[0]) + " " +str(lstop[1]))
+
+    return swipe_func
+
+
 def swipe_down(device, display):
     width, height = display[0], display[1]
     x1, y1 = (int(width/2), 5)
@@ -95,13 +107,13 @@ def press_random_letters(n_press=(4,10)):
     return press_random_letters_func
 
 
-def press_deterministic_letter(input):
+def press_deterministic_letters(input):
     def press_deterministic_letters_func(device, display):
         device.shell("input text " + input)
     return press_deterministic_letters_func
 
 
-def press_coherent_letter(field):
+def press_coherent_letters(field):
     assert filed in coherentWords
     population = coherentWords[field]
     def press_coherent_letter_func(device, display):

@@ -240,11 +240,22 @@ FoursquareCityGuide:
   package:  com.joelapenna.foursquared
   activity: .wearable.MainActivity
   login: None
-  keepOnly: [force-stop]
+  keepOnly: [food, coffee, nightlife, fun, shopping]
   actions:
     open: ["(open_app, 20)"]
     force-stop: ["(force-stop, 20)"]
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    food: ["(click((250, 300)), 15)"]
+    coffee: ["(click((250, 370)), 15)"]
+    nightlife: ["(swipe((250, 370),(250, 50)), 0)", "(click((250, 50)), 15)"]
+    fun: ["(swipe((250, 370),(250, 50)), 0)", "(click((250, 150)), 15)"]
+    breakfast: ["(swipe((250, 370),(250, 50)), 0)", "(click((250, 250)), 15)"]
+    brunch: ["(swipe((250, 350),(250, 50)), 0)", "(click((250, 370)), 10)"]
+    lunch: ["(swipe((250, 370),(250, 50)), 0)", "(swipe((250, 350),(250, 50)), 0)", "(click((250, 150)), 10)"]
+    dinner: ["(swipe((250, 370),(250, 50)), 0)", "(swipe((250, 350),(250, 50)), 0)", "(click((250, 150)), 10)"]
+    dessert: ["(swipe((250, 370),(250, 50)), 0)", "(swipe((250, 350),(250, 50)), 0)", "(click((250, 250)), 10)"]
+    shopping: ["(swipe((250, 370),(250, 50)), 0)", "(swipe((250, 350),(250, 50)), 0)", "(click((250, 350)), 10)"]
+
 
 Glide:
   package: com.glidetalk.glideapp
@@ -305,10 +316,12 @@ Lifesum:
   package: com.sillens.shapeupclub
   activity: com.sillens.shapeupclub.onboarding.StartActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [addFood, addWater]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force-stop, 20)"]
+    addFood: ["(swipe((200, 330),(200, 0)), 0)", "(click((200, 50)), 0)",  "(click((230, 370)), 6)"]
+    addWater: ["(swipe((200, 300),(200, 0)), 0)", "(swipe((200, 330),(200, 0)), 0)", "(click((200, 50)), 6)"]
 
 MapMyRun:
   package: com.mapmyrun.android2
@@ -390,13 +403,13 @@ PlayStore:
   package: com.android.vending
   activity: com.google.android.finsky.wear.activities.MainActivity
   login: None
-  keepOnly: [randomBrowse]  # Action to be selected starting at 1.
+  keepOnly: [deterministicBrowse]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force-stop, 20)"]
     randomBrowse: ["(click((200,20)), 0)", "(click((270, 200)), 0)", "(press_random_letters(), 0)", "(click((300, 30)), 0)"]
     coherentBrowse: []
-    deterministicBrowse: ["(click((200,20)), 0)", "(click((270, 200)), 0)", "(press_deterministic_letters('test'), 0)", "(click((300, 30)), 0)"]
+    deterministicBrowse: ["(click((200,20)), 0)", "(click((270, 200)), 0)", "(press_deterministic_letters('religious'), 0)", "(click((300, 30)), 10)"]
 
 Qardio:
   package: com.getqardio.android
