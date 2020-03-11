@@ -2,47 +2,47 @@
 # Agenda:
 #   package: com.google.android.wearable.app
 #   activity: com.google.android.clockwork.home.calendar.EventListActivity2
-#   keepOnly: [force-stop]  # Action to be selected starting at 1.
+#   keepOnly: [open]  # Action to be selected starting at 1.
 #   actions :
 #     open: ["(open_app, 20)"]
-#     force-stop: ["(force-stop, 20)"]
+#     force-stop: ["(force_stop, 20)"]
 
 Alarm:
   package: com.google.android.deskclock
   activity: com.google.android.deskclock.AlarmGatewayActivity
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   login: None
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 # ASB:
 #   package: nz.co.asb.asbmobile
 #   activity: nz.co.asb.wear.MainActivity
-#   keepOnly: [force-stop] []
+#   keepOnly: [open] []
 #   login: None
 #   actions:
 #     open: ["(open_app, 20)"]
-#     force-stop: ["(force-stop, 20)"]
+#     force-stop: ["(force_stop, 20)"]
 
 
 AppInTheAir:
   package: com.aita
   activity: com.aita.mainscreen.MainActivity
   login: None
-  keepOnly: [force-stop]
+  keepOnly: [open]
   actions:
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 AthkarOfPrayer:
   package: com.appsforall.athkaralsalah
   activity: com.appsforall.athkaralsalah.MainActivityWear
   login: None
-  keepOnly: [switchTabAndScrollDown]
+  keepOnly: [open]
   actions:
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
     switchTabAndScrollDown: ["(click((260, 30)), 0)", "(swipe_up, 17)"]
 
@@ -50,19 +50,19 @@ Battery:
   package: com.huawei.watch.supersavepower
   activity: com.huawei.watch.supersavepower.view.BatteryActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Bring:
   package:  ch.publisheria.bring
   activity: ch.publisheria.bring.activities.BringWearMainActivity
   login: None
-  keepOnly: [addRandomItem]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
     addRandomItem: ["(click((150,80)), 0)", "(click((150,80)), 0)"]
 
 # Health
@@ -70,10 +70,10 @@ Calm:
   package: com.calm.android
   activity: com.calm.android.activities.MainWearActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
     seePersonalData: ["(click((250, 50)), 20)"]
     clickOnSunIcon: ["(click((200, 260)), 20)"]  # Subscription required
     clickOnMoonIcon: ["(click((300, 260)), 20)"]  # Subscription required
@@ -82,45 +82,45 @@ Camera:
   package: com.google.android.GoogleCamera
   activity: com.google.android.apps.camera.wear.wearappv2.WearCameraActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 ChinaDaily:
   package: com.chinadaily.wear
   activity: com.chinadaily.NewsHomeActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Citymapper:
   package: com.citymapper.app.release
   activity: com.citymapper.app.wear.EntryActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 # Contacts:
 #   package: com.google.android.wearable.app
 #   activity: com.google.android.clockwork.home.contacts.ContactsActivity
-#   keepOnly: [force-stop]  # Action to be selected starting at 1.
+#   keepOnly: [open]  # Action to be selected starting at 1.
 #   actions :
 #     open: ["(open_app, 20)"]
-#     force-stop: ["(force-stop, 20)"]
+#     force-stop: ["(force_stop, 20)"]
 
 DailyTracking:
   package : com.huawei.health
   activity: com.huawei.bone.view.dailytrack.activity.DailyTrackMainActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
     # 2 First use
     logIn: ["(open_app, 5)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(click((190,190)), 5)", "(close_app, 3)"]
@@ -136,10 +136,10 @@ DCLMRadio:
   package: org.dclm.live
   activity: .MainActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
     # 2. Listen to the radio 10 seconds
     listenToRadio15sec: ["(click((95, 190)), 15)"]
@@ -164,19 +164,19 @@ DuaKhatqmAlQuran:
   package: com.appsforall.duakhatamalquran
   activity: com.appsforall.duakhatamalquran.MainActivityWear
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Endomondo:
   package: com.endomondo.android
   activity: com.endomondo.android.wear.ui.WearAppActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
     playGreenButton: ["(click((190,190)), 5)"] # "(click((190,190)), 3)"]
     browseMap: ["(swipe_right, 0)", "(scroll_right, 3)", "(scroll_up, 3)", "(scroll_up, 4)", "(scroll_right, 2)"] # "(click((190,190)), 3)"]
     openMap: ["(swipe_right, 0)"]
@@ -185,65 +185,69 @@ FindMyPhone:
   package: com.google.android.gms
   activity: com.google.android.gms.mdm.RingMyPhoneActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Fit:
   package: com.google.android.apps.fitness
   activity: com.google.android.wearable.fitness.passive.ui.PassiveActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 FitBreathe:
   package:  com.google.android.apps.fitness
   activity: com.google.android.wearable.fitness.realtime.breathe.BreatheLauncherActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 FitWorkout:
   package:  com.google.android.apps.fitness
   activity: com.google.android.wearable.fitness.realtime.RealtimeActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 FITIVPlus:
   package: com.fitiv.fitivapplication
   activity: com.fitiv.fitivapplication.activities.SplashActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Flashlight:
   package: com.google.android.clockwork.flashlight
   activity: com.google.android.clockwork.flashlight.FlashlightActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 
 FoursquareCityGuide:
   package:  com.joelapenna.foursquared
   activity: .wearable.MainActivity
   login: None
+<<<<<<< HEAD
   keepOnly: [food, coffee, nightlife, fun, shopping]
+=======
+  keepOnly: [open]
+>>>>>>> 5eaeb7e69e024a02550c3827eff84b3cab3c8487
   actions:
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
     openAndClose: ["(open_app, 20)", "(close_app, 5)"]
     food: ["(click((250, 300)), 15)"]
     coffee: ["(click((250, 370)), 15)"]
@@ -261,152 +265,163 @@ Glide:
   package: com.glidetalk.glideapp
   activity: com.glidetalk.glideapp.ThreadListActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 GooglePay:
   package: com.google.android.wearable.app
   activity: com.google.android.clockwork.home.pay.FastPayActivity
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 
 HealthyRecipes:
   package: com.endless.healthyrecipes
   activity: com.endless.healthyrecipes.HomeActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
     researchRandomRecipes: ["()"]
 #  Permission Denial
 HeartRate:
   package: com.huawei.health
   activity: com.huawei.bone.view.heartrate.activity.HeartRateMainActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 KeepNotes:
   package: com.google.android.keep
   activity: com.google.android.keep.wear.MicroBrowseActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Krone:
   package: at.krone
   activity: at.krone.MainActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Lifesum:
   package: com.sillens.shapeupclub
   activity: com.sillens.shapeupclub.onboarding.StartActivity
   login: None
+<<<<<<< HEAD
   keepOnly: [addFood, addWater]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force-stop, 20)"]
     addFood: ["(swipe((200, 330),(200, 0)), 0)", "(click((200, 50)), 0)",  "(click((230, 370)), 6)"]
     addWater: ["(swipe((200, 300),(200, 0)), 0)", "(swipe((200, 330),(200, 0)), 0)", "(click((200, 50)), 6)"]
+=======
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+>>>>>>> 5eaeb7e69e024a02550c3827eff84b3cab3c8487
 
 MapMyRun:
   package: com.mapmyrun.android2
   activity: com.mapmyfitness.android.view.MainActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Maps:
   package: com.google.android.apps.maps
   activity: com.google.android.apps.gmmwearable.MainActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Medisafe:
   package: com.medisafe.android.client
   activity: com.medisafe.android.wear.CustomWearableList
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Meduza:
   package: io.meduza.android
   activity: io.meduza.android.RootActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
   # Bank
 Mobilis:
   package: br.com.gerenciadorfinanceiro.controller
   activity: br.com.mobills.wear.views.MobillsWearActivity
   login: None
-  keepOnly: [force-stop]
+  keepOnly: [open]
   actions:
     # Open, wait and close
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
     addExpense: ["(click((250 50)), 15)", "(,0)"]
 
 Outlook:
   package: com.microsoft.office.outlook
   activity: .activities.HubActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Phone:
   package: com.google.android.apps.wearable.phone
   activity: com.google.android.clockwork.phone.dialer.DialerActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 PlayMusic:
   package: com.google.android.music
   activity: com.google.android.music.wear.ui.HomeActivity
-  keepOnly: [close]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   login: None
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 
 PlayStore:
   package: com.android.vending
   activity: com.google.android.finsky.wear.activities.MainActivity
   login: None
+<<<<<<< HEAD
   keepOnly: [deterministicBrowse]  # Action to be selected starting at 1.
+=======
+  keepOnly: [open]  # Action to be selected starting at 1.
+>>>>>>> 5eaeb7e69e024a02550c3827eff84b3cab3c8487
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
     randomBrowse: ["(click((200,20)), 0)", "(click((270, 200)), 0)", "(press_random_letters(), 0)", "(click((300, 30)), 0)"]
     coherentBrowse: []
     deterministicBrowse: ["(click((200,20)), 0)", "(click((270, 200)), 0)", "(press_deterministic_letters('religious'), 0)", "(click((300, 30)), 10)"]
@@ -415,75 +430,75 @@ Qardio:
   package: com.getqardio.android
   activity: com.getqardio.android.wearable.ui.activity.MenuActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Reminders:
   package: com.google.android.googlequicksearchbox
   activity: com.google.android.wearable.reminders.frontend.MainActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Running:
   package: com.runtastic.android
   activity: com.runtastic.android.wear.ui.LaunchActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 SalatTime:
   package: online.makkahtv.salattime
   activity: online.makkahtv.salattime.activity.MainChooseActivity
   login: None
-  keepOnly: [force-stop]
+  keepOnly: [open]
   actions:
     # 1. Open, wait and close
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Shazam:
   package: com.shazam.android
   activity: com.shazam.android.wear.activity.TaggingActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 
 Sleep:
   package: com.huawei.health
   activity: com.huawei.bone.view.sleep.activity.SleepMainActivity
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   login: None
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 SleepTracking:
   package: com.urbandroid.sleep
   activity: .wear.Sleep
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 SmokingLog:
   package: com.ccswe.SmokingLog
   activity: com.ccswe.SmokingLog.LauncherActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
     smoke15sec: ["(click((215, 330)), 0)", "(click((215, 170)), 15)", "(click((215, 330)), 5)"]
     refuseToSmoke: []  # Must be played after smoke15sec
 
@@ -491,96 +506,96 @@ Spotify:
   package: com.spotify.music
   activity: com.spotify.music.MainActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 # Stopwatch:
 #   package: com.google.android.deskclock
 #   activity: com.google.android.deskclock.StopwatchActivity
-#   keepOnly: [force-stop]  # Action to be selected starting at 1.
+#   keepOnly: [open]  # Action to be selected starting at 1.
 #   actions :
 #     open: ["(open_app, 20)"]
-#     force-stop: ["(force-stop, 20)"]
+#     force-stop: ["(force_stop, 20)"]
 
 Strava:
   package: com.strava
   activity: com.strava.WearActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 
 Telegram:
   package: org.telegram.messenger
   activity: org.telegram.messenger.wear.MainActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Timer:
   package: com.google.android.deskclock
   activity: com.google.android.deskclock.TimerGatewayActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Translate:
   package: com.google.android.apps.translate
   activity: com.google.android.wearable.translate.MainActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 UARecord:
   package: com.ua.record
   activity: com.ua.record.wear.ui.MainActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 WashPost:
   package: com.washingtonpost.android
   activity: com.wapo.flagship.WearMainActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 WearCasts:
   package: com.krisdb.wearcasts
   activity: com.krisdb.wearcasts.Activities.MainActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Weather:
   package: com.google.android.wearable.app
   activity: com.google.android.clockwork.home.weather.WeatherActivity
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
 
 Workout:
   package: com.huawei.health
   activity: com.huawei.bone.view.workout.activity.WorkoutMainActivity
   login: None
-  keepOnly: [force-stop]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
-    force-stop: ["(force-stop, 20)"]
+    force-stop: ["(force_stop, 20)"]
