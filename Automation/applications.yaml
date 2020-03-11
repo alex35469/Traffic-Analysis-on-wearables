@@ -240,11 +240,7 @@ FoursquareCityGuide:
   package:  com.joelapenna.foursquared
   activity: .wearable.MainActivity
   login: None
-<<<<<<< HEAD
   keepOnly: [food, coffee, nightlife, fun, shopping]
-=======
-  keepOnly: [open]
->>>>>>> 5eaeb7e69e024a02550c3827eff84b3cab3c8487
   actions:
     open: ["(open_app, 20)"]
     force-stop: ["(force_stop, 20)"]
@@ -320,19 +316,12 @@ Lifesum:
   package: com.sillens.shapeupclub
   activity: com.sillens.shapeupclub.onboarding.StartActivity
   login: None
-<<<<<<< HEAD
   keepOnly: [addFood, addWater]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force-stop, 20)"]
     addFood: ["(swipe((200, 330),(200, 0)), 0)", "(click((200, 50)), 0)",  "(click((230, 370)), 6)"]
     addWater: ["(swipe((200, 300),(200, 0)), 0)", "(swipe((200, 330),(200, 0)), 0)", "(click((200, 50)), 6)"]
-=======
-  keepOnly: [open]  # Action to be selected starting at 1.
-  actions :
-    open: ["(open_app, 20)"]
-    force-stop: ["(force_stop, 20)"]
->>>>>>> 5eaeb7e69e024a02550c3827eff84b3cab3c8487
 
 MapMyRun:
   package: com.mapmyrun.android2
@@ -414,11 +403,7 @@ PlayStore:
   package: com.android.vending
   activity: com.google.android.finsky.wear.activities.MainActivity
   login: None
-<<<<<<< HEAD
   keepOnly: [deterministicBrowse]  # Action to be selected starting at 1.
-=======
-  keepOnly: [open]  # Action to be selected starting at 1.
->>>>>>> 5eaeb7e69e024a02550c3827eff84b3cab3c8487
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force_stop, 20)"]
