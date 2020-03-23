@@ -105,6 +105,7 @@ Citymapper:
     open: ["(open_app, 20)"]
     force-stop: ["(force_stop, 20)"]
 
+
 # Contacts:
 #   package: com.google.android.wearable.app
 #   activity: com.google.android.clockwork.home.contacts.ContactsActivity
@@ -149,7 +150,7 @@ DiabetesM:
   package: com.mydiabetes
   activity: com.mydiabetes.MainActivity
   login: None
-  keepOnly: [addCarbs]  # Action to be selected starting at 1.
+  keepOnly: [addGlucose, addInsulin, addCarbs, addCal, addProt, addFat]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force-stop, 20)"]
@@ -173,13 +174,13 @@ Endomondo:
   package: com.endomondo.android
   activity: com.endomondo.android.wear.ui.WearAppActivity
   login: None
-  keepOnly: [open]  # Action to be selected starting at 1.
+  keepOnly: [run, openMap]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force_stop, 20)"]
-    playGreenButton: ["(click((190,190)), 5)"] # "(click((190,190)), 3)"]
-    browseMap: ["(swipe_right, 0)", "(scroll_right, 3)", "(scroll_up, 3)", "(scroll_up, 4)", "(scroll_right, 2)"] # "(click((190,190)), 3)"]
-    openMap: ["(swipe_right, 0)"]
+    run: ["(click((190,190)), 13)", "(swipe_down, 0)", "(click((190,190)), 0)", "(click((250,250)), 2)"] # "(click((190,190)), 3)"]
+    browseMap: ["(swipe_left, 0)", "(scroll_right, 3)", "(scroll_up, 3)", "(scroll_up, 4)", "(scroll_right, 2)"] # "(click((190,190)), 3)"]
+    openMap: ["(swipe_left, 20)"]
 
 FindMyPhone:
   package: com.google.android.gms
@@ -240,7 +241,7 @@ FoursquareCityGuide:
   package:  com.joelapenna.foursquared
   activity: .wearable.MainActivity
   login: None
-  keepOnly: [food, coffee, nightlife, fun, shopping]
+  keepOnly: [open]
   actions:
     open: ["(open_app, 20)"]
     force-stop: ["(force_stop, 20)"]
@@ -316,7 +317,7 @@ Lifesum:
   package: com.sillens.shapeupclub
   activity: com.sillens.shapeupclub.onboarding.StartActivity
   login: None
-  keepOnly: [addFood, addWater]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force-stop, 20)"]
@@ -479,13 +480,21 @@ SleepTracking:
 SmokingLog:
   package: com.ccswe.SmokingLog
   activity: com.ccswe.SmokingLog.LauncherActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force_stop, 20)"]
     smoke15sec: ["(click((215, 330)), 0)", "(click((215, 170)), 15)", "(click((215, 330)), 5)"]
     refuseToSmoke: []  # Must be played after smoke15sec
+
+SmartZmanim:
+  package: com.wyre.zmanim
+  activity: com.wyre.zmanim.Activties.MainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
 
 Spotify:
   package: com.spotify.music

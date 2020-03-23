@@ -1,1 +1,0 @@
-1. As soon as the app is fully closed, one packet is exchanged from the master to the app. (My guess: the app does not fully close the bluetooth connection)

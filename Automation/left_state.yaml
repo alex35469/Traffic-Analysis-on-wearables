@@ -1,59 +1,62 @@
-Camera: {open: 1020}
-Running: {open: 1019}
-GooglePay: {open: 1020}
-FitBreathe: {open: 1020}
-ASB: {open: 1040}
-Telegram: {open: 1002}
-Shazam: {open: 1020}
-Mobilis: {open: 1020}
-DuaKhatqmAlQuran: {open: 1020}
-Phone: {open: 1020}
-Flashlight: {open: 1028}
-Alarm: {open: 1000}
-Meduza: {open: 1020}
-NoApp: {NoAction: 1039}
-WearCasts: {open: 1000}
-ChinaDaily: {open: 1020}
-Translate: {open: 1020}
-HeartRate: {open: 1000}
-Qardio: {open: 1015}
-Fit: {open: 1000}
-Timer: {open: 1000}
-Citymapper: {open: 1033}
-HealthyRecipes: {open: 1000}
-Workout: {open: 1000}
-Krone: {open: 1020}
-SmokingLog: {open: 1020}
-AppInTheAir: {open: 1020}
-WashPost: {open: 1020}
-UARecord: {open: 1000}
-Maps: {open: 1020}
-Glide: {open: 1020}
-DiabetesM: {open: 1020, savePlus1AndPlus10plus1: 17}
-lastCapture: Q-Explorist-HR_AthkarOfPrayer_open_Classic_enc_1012
-Stopwatch: {open: 1000}
-Weather: {open: 1000}
-FoursquareCityGuide: {open: 1019}
-DCLMRadio: {open: 1020}
-Calm: {open: 1020}
-FindMyPhone: {open: 1013}
-Endomondo: {open: 1020}
-Lifesum: {open: 1000}
-Outlook: {open: 1000}
-FITIVPlus: {open: 1000}
-Spotify: {open: 1020}
-SleepTracking: {open: 1020}
-PlayStore: {open: 1020}
-Strava: {open: 1019}
-Medisafe: {open: 1000}
-DailyTracking: {open: 1000}
-Sleep: {open: 1000}
-MapMyRun: {open: 1017}
-KeepNotes: {open: 1020}
-Bring: {open: 1020}
-FitWorkout: {open: 1026}
-Battery: {open: 1000}
-PlayMusic: {open: 1020}
-Reminders: {open: 1020}
-AthkarOfPrayer: {open: 1012}
-SalatTime: {open: 1000}
+DailyTracking: {force-stop: 4000, open: 4000}
+DuaKhatqmAlQuran: {force-stop: 4000, open: 4000}
+Running: {open: 4000, force-stop: 4000}
+Phone: {open: 4000}
+SleepTracking: {force-stop: 4000, open: 4000}
+lastCapture: LEO-BX9_DiabetesM_addFat_Classic_enc_4045
+FitBreathe: {force-stop: 4000, open: 4000}
+HealthyRecipes: {open: 4000, force-stop: 4000}
+PlayMusic: {force-stop: 4000, open: 4000}
+Strava: {open: 4000, force-stop: 4000}
+Qardio: {force-stop: 4000, open: 4000}
+NoApp: {NoAction: 4000}
+Endomondo: {open: 4000, openMap: 4000, playGreenButton: 4000, run: 4000, force-stop: 4000}
+Spotify: {force-stop: 4000, open: 4000}
+Camera: {open: 4000, force-stop: 4000}
+PlayStore: {force-stop: 4000, open: 4000, deterministicBrowse: 4000}
+Telegram: {open: 4000, force-stop: 4000}
+Glide: {force-stop: 4000, open: 4000}
+Meduza: {force-stop: 4000, open: 4000}
+GooglePay: {open: 4000, force-stop: 4000}
+AthkarOfPrayer: {open: 4000}
+FitWorkout: {open: 4000, force-stop: 4000}
+SmokingLog: {open: 4000, force-stop: 4000}
+Bring: {force-stop: 4000, open: 4000}
+Outlook: {open: 4000, force-stop: 4000}
+Shazam: {force-stop: 4000, open: 4000}
+WashPost: {open: 4000, force-stop: 4000}
+MapMyRun: {open: 4000, force-stop: 4000}
+Calm: {force-stop: 4000, open: 4000}
+DiabetesM: {addFat: 4045, addGlucose: 4045, addCal: 4045, savePlus1AndPlus10plus1: 4000,
+  open: 4000, addProt: 4045, addCarbs: 4045, force-stop: 4000, addInsulin: 4045}
+Battery: {force-stop: 4000, open: 4000}
+WearCasts: {open: 4000, force-stop: 4000}
+Alarm: {open: 4000}
+ASB: {open: 4000}
+Maps: {open: 4000, force-stop: 4000}
+UARecord: {open: 4000, force-stop: 4000}
+Medisafe: {open: 4000, force-stop: 4000}
+FindMyPhone: {open: 4000, force-stop: 4000}
+Sleep: {force-stop: 4000, open: 4000}
+DCLMRadio: {force-stop: 4000, open: 4000}
+FITIVPlus: {force-stop: 4000, open: 4000}
+Weather: {open: 4000, force-stop: 4000}
+AppInTheAir: {open: 4000, force-stop: 4000}
+HeartRate: {force-stop: 4000, open: 4000}
+Translate: {open: 4000, force-stop: 4000}
+Lifesum: {addWater: 4000, force-stop: 4000, open: 4000, addFood: 4000}
+Citymapper: {force-stop: 4000, open: 4000}
+Reminders: {open: 4000, force-stop: 4000}
+Timer: {open: 4000, force-stop: 4000}
+KeepNotes: {open: 4000, force-stop: 4000}
+Fit: {force-stop: 4000, open: 4000}
+Stopwatch: {open: 4000}
+Krone: {open: 4000, force-stop: 4000}
+Flashlight: {force-stop: 4000, open: 4000}
+ChinaDaily: {force-stop: 4000, open: 4000}
+SalatTime: {force-stop: 4000, open: 4000}
+Workout: {open: 4000, force-stop: 4000}
+Mobilis: {force-stop: 4000, open: 4000}
+SmartZmanim: {open: 4000}
+FoursquareCityGuide: {force-stop: 4000, food: 4000, open: 4000, coffee: 4000, nightlife: 4000,
+  shopping: 4000, fun: 4000}

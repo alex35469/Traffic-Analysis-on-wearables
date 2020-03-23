@@ -13,7 +13,6 @@ import subprocess
 import yaml
 from helper_controller import *
 from helper import *
-
 ######################## MAIN ########################
 
 def main():
@@ -48,7 +47,6 @@ def main():
         device = None
         width = None
         lastFilename = ""
-        lastApp = False  # Ensure we do not open and close twice
 
         while width is None:
 
@@ -76,7 +74,7 @@ def main():
         for device, _ , _ in devices:
             clean_apps(device, apps_all, log_fname)
 
-    # Openning Ellisys
+    # Openning Ellisys and start capture
     if not config.DEBUG_WATCH:
         send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
 
@@ -107,8 +105,6 @@ def main():
             activity = app["activity"]
             actions = app["actions"]
             actionsKeepOnly = app["keepOnly"]
-            # login = app["login"]
-            lastApp = (appName == config.KEEP_ONLY[-1])
 
             info = " ---- " + appName + " capture started ---"
 
@@ -127,7 +123,7 @@ def main():
             # Loop on the set of actions of a patricular app
             for actionName in actionsKeepOnly:
 
-                lastActionIsBackground = False
+                lastActionIsBackground = "background" in actions[actionName][-1]
                 # Parse the actions contained in applications.yaml
                 action = [eval(a) for a in actions[actionName]]
 
@@ -140,7 +136,9 @@ def main():
                 while i < config.N_REPEAT_CAPTURE:
                     i = i + 1
                     capt_number =  i + left_nb
-                    faking = counter % config.N_CAPTURE_AFTER_FAKE == 1
+
+
+                    faking = False if config.N_CAPTURE_AFTER_FAKE == 0 else counter % config.N_CAPTURE_AFTER_FAKE == 1
 
                     # actions variables
                     success, success_command_sent, success_check_opened = True, True, True
@@ -174,7 +172,8 @@ def main():
                         _, success_command_sent = open_app(device, package, activity, log_fname)
                         _, success_check_opened  = check_package_opened(device, package, log_fname)
 
-                        if config.DEBUG_WATCH:
+                        if not config.DEBUG_WATCH:
+                            tprint("Sleeping " + str(config.WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION) + "s after opening")
                             time.sleep(config.WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION)
 
                     # Start capture
@@ -197,7 +196,7 @@ def main():
                         errorStop = send_instruction(messages.CMD_STOP_CAPTURE, log_fname)
 
                     # close the application if the last instruction is not background or close app
-                    if action[-1][0].__name__ != "close_app" and action[-1][0].__name__ != "background" and not faking:
+                    if action[-1][0].__name__ != "close_app" and  action[-1][0].__name__ != "force_stop" and action[-1][0].__name__ != "background" and not faking:
                         if config.CLOSING_METHOD == "close_app":
                             _, success_close_command_sent = close_app(device, package, log_fname)
                             _, success_check_closed = check_package_closed(device, package, log_fname)
@@ -211,7 +210,7 @@ def main():
                         if config.CLOSING_METHOD == "force_stop":
                             force_stop(device, package, log_fname)
                             _, success_check_closed = check_package_closed(device, package, log_fname)
-                            lastActionIsBackground = True
+
 
                         if not config.DEBUG_WATCH:
                             tprint("   sleeping after closing " + str(config.WAITING_TIME_AFTER_CLOSING_WHEN_CLOSING_IS_NOT_AN_ACTION) + "s to reach steady state")
@@ -226,12 +225,8 @@ def main():
 
                     # Save capture
                     if not config.DEBUG_WATCH:
-
-
-
                         if errorStop:
                             filename = filename + "_errorStop"
-
                         errorEllisys = send_instruction(messages.NewSaveCaptureCommand(payload=filename), log_fname)
 
                         if errorEllisys:
@@ -243,7 +238,6 @@ def main():
                                 left_state["lastCapture"] = filename
                             else:
                                 left_state["NoApp"]["NoAction"] += 1
-
                             dump_yaml(left_state, "left_state.yaml")
 
                     lastFilename = ", " + filename
@@ -257,13 +251,14 @@ def main():
                         time.sleep(10)  # Sleeping a bit before capturing new app
                         send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
 
+
                     # Event loop
                     tprint("", log_fname)  # add a space for more visibility
 
 
                 # Action loop
                 if lastActionIsBackground and config.CLEAR_WHEN_CHANGE_APP_AFTER_BACKGROUND:
-                    close_app(device, package, log_fname)
+                    force_stop(device, package, log_fname)
 
             # App loop
             info = " ---- " + appName + " capture finished --- "
@@ -271,11 +266,6 @@ def main():
 
         # watch loop
 
-
-
-    if not config.DEBUG_WATCH:
-        send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
-    tprint("done", log_fname)
 
 
 

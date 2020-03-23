@@ -170,7 +170,7 @@ def close_app(device, package, log_fname):
     return result, success
 
 
-def background(device, package):
+def background(device, package, log_fname=None):
     device.shell("input keyevent 3")
 
 
@@ -184,7 +184,6 @@ def force_stop(device, package, log_fname):
         return True, info
 
     cmd = "adb shell am force-stop " + package
-    tprint( "    - force stop", log_fname)
     response = os.system(cmd)
     success = response == 0
     if success:
@@ -248,7 +247,8 @@ def check_bluetooth_enabled(device, log_fname):
         # TODO: RECOVERY MODE WITH ADB
         return "   CHECK: Bluetooth connection return NoneType FAIL", False
     answ = answ.encode('utf8')
-    success = "curState=Connected" in answ
+    # success = "curState=Connected" in answ
+    success = "  state: ON" in answ
     success = success or "ScanMode: SCAN_MODE_NONE" in answ
     if success:
         result = "   CHECK: Bluetooth connection OK"
@@ -256,6 +256,7 @@ def check_bluetooth_enabled(device, log_fname):
         result = "   CHECK: Bluetooth connection FAIL"
     tprint(result, log_fname)
     return result, success
+
 
 
 def check_package_opened(device, package, log_fname):
@@ -298,7 +299,7 @@ def check_package_closed(device, package, log_fname):
 
 ################### Simulation (main logic of the script) #################
 
-def simulate(device, display, package, activity, actions_waiting, log_fname, check=True):
+def simulate(device, display, package, activity, actions_waiting, log_fname, check=True, t_ref = None):
     checkInfo = ""
     success = True
     # Checks
@@ -327,6 +328,6 @@ def simulate(device, display, package, activity, actions_waiting, log_fname, che
         else:
             a(device, display)
         info += ", "+time.strftime("%H:%M:%S", time.localtime())
-        tprint(info, log_fname)
+        tprint(info, log_fname, t_ref)
         time.sleep(w)
     return success

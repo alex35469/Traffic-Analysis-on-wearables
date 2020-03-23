@@ -28,7 +28,7 @@ def send_instruction(instruction, log_fname):
         s.connect((config.ELLISYS_HOST, config.ELLISYS_PORT))
 
         currentTime = time.strftime("%d/%m/%y %H:%M:%S", time.localtime())
-        send_msg = '-> Sending "' + instruction + '"'
+        send_msg = '<- Sending "' + instruction + '"'
         tprint(send_msg, log_fname)
         s.sendall(str.encode(instruction))
         data = s.recv(config.SOCKET_RECEIVE_BUFFER)
@@ -36,7 +36,7 @@ def send_instruction(instruction, log_fname):
 
         data = data.decode('utf-8')
         currentTime = time.strftime("%d/%m/%y %H:%M:%S", time.localtime())
-        rcv_msg = '<- Received "' + data + '"'
+        rcv_msg = '-> Received "' + data + '"'
         tprint(rcv_msg, log_fname)
 
         msg = data.split(' ', 1)
