@@ -1,0 +1,590 @@
+## Does not work
+# Agenda:
+#   package: com.google.android.wearable.app
+#   activity: com.google.android.clockwork.home.calendar.EventListActivity2
+#   keepOnly: [open]  # Action to be selected starting at 1.
+#   actions :
+#     open: ["(open_app, 20)"]
+#     force-stop: ["(force_stop, 20)"]
+
+Alarm:
+  package: com.google.android.deskclock
+  activity: com.google.android.deskclock.AlarmGatewayActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  login: None
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+# ASB:
+#   package: nz.co.asb.asbmobile
+#   activity: nz.co.asb.wear.MainActivity
+#   keepOnly: [open] []
+#   login: None
+#   actions:
+#     open: ["(open_app, 20)"]
+#     force-stop: ["(force_stop, 20)"]
+
+
+AppInTheAir:
+  package: com.aita
+  activity: com.aita.mainscreen.MainActivity
+  login: None
+  keepOnly: [open]
+  actions:
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+AthkarOfPrayer:
+  package: com.appsforall.athkaralsalah
+  activity: com.appsforall.athkaralsalah.MainActivityWear
+  login: None
+  keepOnly: [open]
+  actions:
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    switchTabAndScrollDown: ["(click((260, 30)), 0)", "(swipe_up, 17)"]
+
+Battery:
+  package: com.huawei.watch.supersavepower
+  activity: com.huawei.watch.supersavepower.view.BatteryActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Bring:
+  package:  ch.publisheria.bring
+  activity: ch.publisheria.bring.activities.BringWearMainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+    addRandomItem: ["(click((150,80)), 0)", "(click((150,80)), 0)"]
+
+# Health
+Calm:
+  package: com.calm.android
+  activity: com.calm.android.activities.MainWearActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+    seePersonalData: ["(click((250, 50)), 20)"]
+    clickOnSunIcon: ["(click((200, 260)), 20)"]  # Subscription required
+    clickOnMoonIcon: ["(click((300, 260)), 20)"]  # Subscription required
+
+Camera:
+  package: com.google.android.GoogleCamera
+  activity: com.google.android.apps.camera.wear.wearappv2.WearCameraActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+ChinaDaily:
+  package: com.chinadaily.wear
+  activity: com.chinadaily.NewsHomeActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Citymapper:
+  package: com.citymapper.app.release
+  activity: com.citymapper.app.wear.EntryActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+
+# Contacts:
+#   package: com.google.android.wearable.app
+#   activity: com.google.android.clockwork.home.contacts.ContactsActivity
+#   keepOnly: [open]  # Action to be selected starting at 1.
+#   actions :
+#     open: ["(open_app, 20)"]
+#     force-stop: ["(force_stop, 20)"]
+
+DailyTracking:
+  package : com.huawei.health
+  activity: com.huawei.bone.view.dailytrack.activity.DailyTrackMainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    # 2 First use
+    logIn: ["(open_app, 5)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(swipe_right, 1)", "(click((190,190)), 5)", "(close_app, 3)"]
+    # 3 Open, scroll down and close
+    scrollDown: ["(open_app, 5)", "(swipe_down, 1)", "(swipe_down, 1)", "(swipe_down, 1)", "(close_app, 5)"]
+    # 4 Open VO2Max
+    VO2Max: ["(open_app, 5)", "(swipe_right, 1)", "(click((150,190)), 3)", "(close_app, 3)"]
+    # 5 Open BMI
+    BMI: ["(open_app, 5)", "(swipe_right, 1)", "(click((250,190)), 3)", "(close_app, 3)"]
+
+
+DCLMRadio:
+  package: org.dclm.live
+  activity: .MainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    # 2. Listen to the radio 10 seconds
+    listenToRadio15sec: ["(click((95, 190)), 15)"]
+    listenToRadioAndBackgroung: ["(open_app, 8)", "(click((95, 190)), 12)", "(background, 5)"]
+
+DiabetesM:
+  package: com.mydiabetes
+  activity: com.mydiabetes.MainActivity
+  login: None
+  keepOnly: [open, addInsulin, addCarbs, addGlucose, addCal, addProt, addFat]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force-stop, 20)"]
+    addGlucose: ["(swipe_left, 0)",  "(click((190,55)), 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(click((190,55)), 8)" ]
+    addInsulin: ["(swipe_left, 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(click((190,55)), 0)", "(swipe_left, 0)", "(click((190,55)), 8)" ]
+    addCarbs: ["(swipe_left, 0)", "(swipe_left, 0)",  "(click((190,55)), 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(click((117,32)), 0)", "(swipe_left, 0)", "(click((190,55)), 8)" ]
+    addCal: ["(swipe_left, 0)", "(swipe_left, 0)", "(click((40,190)), 0)", "(click((190,55)), 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(click((190,55)), 8)" ]
+    addProt: ["(swipe_left, 0)", "(swipe_left, 0)", "(click((350,190)), 0)", "(click((190,55)), 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(click((190,55)), 8)" ]
+    addFat:  ["(swipe_left, 0)", "(swipe_left, 0)", "(click((40,190)), 0)", "(click((40,190)), 0)", "(click((190,55)), 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(swipe_left, 0)", "(click((190,55)), 8)" ]
+
+DuaKhatqmAlQuran:
+  package: com.appsforall.duakhatamalquran
+  activity: com.appsforall.duakhatamalquran.MainActivityWear
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Endomondo:
+  package: com.endomondo.android
+  activity: com.endomondo.android.wear.ui.WearAppActivity
+  login: None
+  keepOnly: [open, run, browseMap]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+    run: ["(click((190,190)), 13)", "(swipe_down, 0)", "(click((190,190)), 0)", "(click((250,250)), 2)"] # "(click((190,190)), 3)"]
+    browseMap: ["(swipe_left, 0)", "(scroll_right, 3)", "(scroll_up, 3)", "(scroll_up, 4)", "(scroll_right, 2)"] # "(click((190,190)), 3)"]
+    openMap: ["(swipe_left, 20)"]
+
+FindMyPhone:
+  package: com.google.android.gms
+  activity: com.google.android.gms.mdm.RingMyPhoneActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Fit:
+  package: com.google.android.apps.fitness
+  activity: com.google.android.wearable.fitness.passive.ui.PassiveActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+FitBreathe:
+  package:  com.google.android.apps.fitness
+  activity: com.google.android.wearable.fitness.realtime.breathe.BreatheLauncherActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+FitWorkout:
+  package:  com.google.android.apps.fitness
+  activity: com.google.android.wearable.fitness.realtime.RealtimeActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+FITIVPlus:
+  package: com.fitiv.fitivapplication
+  activity: com.fitiv.fitivapplication.activities.SplashActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Flashlight:
+  package: com.google.android.clockwork.flashlight
+  activity: com.google.android.clockwork.flashlight.FlashlightActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+
+FoursquareCityGuide:
+  package:  com.joelapenna.foursquared
+  activity: .wearable.MainActivity
+  login: None
+  keepOnly: [open, coffee, food, fun, nightlife, shopping]
+  actions:
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+    openAndClose: ["(open_app, 20)", "(close_app, 5)"]
+    food: ["(click((250, 300)), 15)"]
+    coffee: ["(click((250, 370)), 15)"]
+    nightlife: ["(swipe((250, 370),(250, 50)), 0)", "(click((250, 50)), 15)"]
+    fun: ["(swipe((250, 370),(250, 50)), 0)", "(click((250, 150)), 15)"]
+    shopping: ["(swipe((250, 370),(250, 50)), 0)", "(swipe((250, 350),(250, 50)), 0)", "(click((250, 350)), 10)"]
+
+
+Glide:
+  package: com.glidetalk.glideapp
+  activity: com.glidetalk.glideapp.ThreadListActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+GooglePay:
+  package: com.google.android.wearable.app
+  activity: com.google.android.clockwork.home.pay.FastPayActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+
+HealthyRecipes:
+  package: com.endless.healthyrecipes
+  activity: com.endless.healthyrecipes.HomeActivity
+  login: None
+  keepOnly: [researchRecipy]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+    researchRecipy: ["(swipe((200, 250),(200, 150)), 0)", "(click((130, 275)), 0)", "(press_deterministic_letters('duck'), 0)", "(click((300, 60)), 15)"]
+#  Permission Denial
+HeartRate:
+  package: com.huawei.health
+  activity: com.huawei.bone.view.heartrate.activity.HeartRateMainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+KeepNotes:
+  package: com.google.android.keep
+  activity: com.google.android.keep.wear.MicroBrowseActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Krone:
+  package: at.krone
+  activity: at.krone.MainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Lifesum:
+  package: com.sillens.shapeupclub
+  activity: com.sillens.shapeupclub.onboarding.StartActivity
+  login: None
+  keepOnly: [open, addFood, addWater]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force-stop, 20)"]
+    addFood: ["(swipe((200, 330),(200, 0)), 0)", "(click((200, 50)), 0)",  "(click((230, 370)), 6)"]
+    addWater: ["(swipe((200, 300),(200, 0)), 0)", "(swipe((200, 330),(200, 0)), 0)", "(click((200, 50)), 6)"]
+
+MapMyRun:
+  package: com.mapmyrun.android2
+  activity: com.mapmyfitness.android.view.MainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Maps:
+  package: com.google.android.apps.maps
+  activity: com.google.android.apps.gmmwearable.MainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Medisafe:
+  package: com.medisafe.android.client
+  activity: com.medisafe.android.wear.CustomWearableList
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Meduza:
+  package: io.meduza.android
+  activity: io.meduza.android.RootActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+  # Bank
+Mobilis:
+  package: br.com.gerenciadorfinanceiro.controller
+  activity: br.com.mobills.wear.views.MobillsWearActivity
+  login: None
+  keepOnly: [open]
+  actions:
+    # Open, wait and close
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+    addExpense: ["(click((250 50)), 15)", "(,0)"]
+
+Outlook:
+  package: com.microsoft.office.outlook
+  activity: .activities.HubActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Phone:
+  package: com.google.android.apps.wearable.phone
+  activity: com.google.android.clockwork.phone.dialer.DialerActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+PlayMusic:
+  package: com.google.android.music
+  activity: com.google.android.music.wear.ui.HomeActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  login: None
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+
+PlayStore:
+  package: com.android.vending
+  activity: com.google.android.finsky.wear.activities.MainActivity
+  login: None
+  keepOnly: [open, deterministicBrowse]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+    randomBrowse: ["(click((200,20)), 0)", "(click((270, 200)), 0)", "(press_random_letters(), 0)", "(click((300, 30)), 0)"]
+    coherentBrowse: []
+    deterministicBrowse: ["(click((200,20)), 0)", "(click((270, 200)), 0)", "(press_deterministic_letters('religious'), 0)", "(click((300, 30)), 10)"]
+
+Qardio:
+  package: com.getqardio.android
+  activity: com.getqardio.android.wearable.ui.activity.MenuActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Reminders:
+  package: com.google.android.googlequicksearchbox
+  activity: com.google.android.wearable.reminders.frontend.MainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Running:
+  package: com.runtastic.android
+  activity: com.runtastic.android.wear.ui.LaunchActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+SalatTime:
+  package: online.makkahtv.salattime
+  activity: online.makkahtv.salattime.activity.MainChooseActivity
+  login: None
+  keepOnly: [open]
+  actions:
+    # 1. Open, wait and close
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Shazam:
+  package: com.shazam.android
+  activity: com.shazam.android.wear.activity.TaggingActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+
+Sleep:
+  package: com.huawei.health
+  activity: com.huawei.bone.view.sleep.activity.SleepMainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  login: None
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+SleepTracking:
+  package: com.urbandroid.sleep
+  activity: .wear.Sleep
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+SmokingLog:
+  package: com.ccswe.SmokingLog
+  activity: com.ccswe.SmokingLog.LauncherActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+    smoke15sec: ["(click((215, 330)), 0)", "(click((215, 170)), 15)", "(click((215, 330)), 5)"]
+    refuseToSmoke: []  # Must be played after smoke15sec
+
+SmartZmanim:
+  package: com.wyre.zmanim
+  activity: com.wyre.zmanim.Activties.MainActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+
+Spotify:
+  package: com.spotify.music
+  activity: com.spotify.music.MainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+# Stopwatch:
+#   package: com.google.android.deskclock
+#   activity: com.google.android.deskclock.StopwatchActivity
+#   keepOnly: [open]  # Action to be selected starting at 1.
+#   actions :
+#     open: ["(open_app, 20)"]
+#     force-stop: ["(force_stop, 20)"]
+
+Strava:
+  package: com.strava
+  activity: com.strava.WearActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+
+Telegram:
+  package: org.telegram.messenger
+  activity: org.telegram.messenger.wear.MainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Timer:
+  package: com.google.android.deskclock
+  activity: com.google.android.deskclock.TimerGatewayActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Translate:
+  package: com.google.android.apps.translate
+  activity: com.google.android.wearable.translate.MainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+UARecord:
+  package: com.ua.record
+  activity: com.ua.record.wear.ui.MainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+WashPost:
+  package: com.washingtonpost.android
+  activity: com.wapo.flagship.WearMainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+WearCasts:
+  package: com.krisdb.wearcasts
+  activity: com.krisdb.wearcasts.Activities.MainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Weather:
+  package: com.google.android.wearable.app
+  activity: com.google.android.clockwork.home.weather.WeatherActivity
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
+
+Workout:
+  package: com.huawei.health
+  activity: com.huawei.bone.view.workout.activity.WorkoutMainActivity
+  login: None
+  keepOnly: [open]  # Action to be selected starting at 1.
+  actions :
+    open: ["(open_app, 20)"]
+    force-stop: ["(force_stop, 20)"]
