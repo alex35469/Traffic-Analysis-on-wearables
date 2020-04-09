@@ -12,18 +12,22 @@ DEBUG_ELLISYS = False
 
 # Apps
 APPLICATIONS_FNAME = "applications.yaml"  # Applications actions instr. & data
-N_REPEAT_CAPTURE = 45
-REACH_LEFT_STATE = False
+N_REPEAT_CAPTURE = 30
 WAITING_TIME_AFTER_START_CAPTURE = 4  # Before lauching an action on the watch
 WAITING_TIME_BEFORE_STOP_CAPTURE = 2
-KEEP_ONLY = ["DiabetesM"] # FindMyPhone Applications to keep for the automation
-SKIPPING = ["Stopwatch", "DailyTracking", "AthkarOfPrayer", "Alarm", "ASB", "Flashlight", "Outlook", "Spotify"]
+KEEP_ONLY = ["Qardio", "AppInTheAir", "DCLMRadio"] # "all" # FindMyPhone Applications to keep for the automation
+SKIPPING = ['Timer', 'AppInTheAir', 'Camera',
+            'GooglePay', 'PlayMusic', 'ASB', "HealthyRecipes",
+            'DailyTracking', 'NoApp', 'Sleep', 'UARecord',
+            'Alarm', 'HeartRate', 'AthkarOfPrayer', 'WearCasts', 'Workout',
+            'Medisafe', 'Battery', 'Phone', 'Reminders',
+            'DuaKhatqmAlQuran', 'Flashlight', 'SmartZmanim']
 
 # Simulation
 CLOSING_METHOD = "force_stop" # Either close_app or background or force_stop
 CLEAR_WHEN_CHANGE_APP_AFTER_BACKGROUND = True  # Make a clear when changing to a new action after a background close
 LOGIN_BEFORE_CAPTURE = True
-WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION = 30  # Such that the app reach a stable stat
+WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION = 20  # Such that the app reach a stable stat
 WAITING_TIME_AFTER_CLOSING_WHEN_CLOSING_IS_NOT_AN_ACTION = 25 # Such that the app reach a stable stat after closing
 PACKAGE_NOT_TO_STOP = ["com.google.android.wearable.app", "com.huawei.health", "com.huawei.watch.supersavepower"]
 
@@ -32,7 +36,8 @@ FAKE_WAITTING_TIME = 22
 
 # numbering
 FLUSH_CAPTURE_NUMBER = True
-EXPERIENCE_NUMBER = 4
+EXPERIENCE_NUMBER = 99
+REACH_LEFT_STATE = False
 
 # Cleaning
 CLEAN_ALL_APPS = False
@@ -42,8 +47,7 @@ CLEANING_CLEAR_DATA = False
 SLEEP_AFTER_CLEANING = 180
 
 # Ellisys
-N_CAPTURE_AFTER_ELLISYS_RESART = 15 # 0 for none
-RESTART_ELLISYS_WHEN_CHANGING_APP = True
+N_CAPTURE_AFTER_ELLISYS_RESART = 1000 # 0 for none
 
 # Windows PC connected to the Ellisys
 ELLISYS_HOST = '192.168.1.101'

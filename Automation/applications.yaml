@@ -150,7 +150,7 @@ DiabetesM:
   package: com.mydiabetes
   activity: com.mydiabetes.MainActivity
   login: None
-  keepOnly: [addGlucose, addInsulin, addCarbs, addCal, addProt, addFat]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force-stop, 20)"]
@@ -174,7 +174,7 @@ Endomondo:
   package: com.endomondo.android
   activity: com.endomondo.android.wear.ui.WearAppActivity
   login: None
-  keepOnly: [run, openMap]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force_stop, 20)"]
@@ -284,7 +284,7 @@ HealthyRecipes:
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force_stop, 20)"]
-    researchRandomRecipes: ["()"]
+    researchRecipy: ["(swipe((200, 250),(200, 150)), 0)", "(click((130, 275)), 0)", "(press_deterministic_letters('duck'), 0)", "(click((300, 60)), 15)"]
 #  Permission Denial
 HeartRate:
   package: com.huawei.health
@@ -404,7 +404,7 @@ PlayStore:
   package: com.android.vending
   activity: com.google.android.finsky.wear.activities.MainActivity
   login: None
-  keepOnly: [deterministicBrowse]  # Action to be selected starting at 1.
+  keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force_stop, 20)"]

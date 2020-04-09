@@ -16,7 +16,7 @@ from helper_controller import *
 from helper import *
 from random import choice, uniform, expovariate
 import os
-
+from user_interact import user_interact_choice, user_interact_wait
 
 ######################## MAIN ########################
 
@@ -25,11 +25,18 @@ def main():
     # Read the applications info file
     apps_all = read_app(longrun_config.APPLICATIONS_FNAME)
 
-
+    savedCounter = 0
     # Create log file
-    launchTime = time.strftime("%d-%m-%y_%H-%M-%S", time.localtime()) # for log file name
-    log_fname = "longrunner_capture_expanded_" + launchTime
-    log_synthesis = "longrunner_capture_synth_" + launchTime
+    launchTime = time.strftime("%y-%m-%d_%H-%M-%S", time.localtime()) # for log file name
+    log_fname = "longrun_"+ longrun_config.WAITING_METHOD+"_expanded_" + launchTime
+    log_synthesis = "longrun_" + longrun_config.WAITING_METHOD+ "_" + launchTime
+    filename = "longrun_" + longrun_config.WAITING_METHOD +"_" + launchTime
+
+    if longrun_config.WAITING_METHOD == "user_interact_pattern":
+        filename += "_slot-" + str(savedCounter)
+        log_fname += "_slot-" + str(savedCounter)
+        log_synthesis += "_slot-" + str(savedCounter)
+
     write_logs(log_fname, "--- Log init ---  \n", 'w')
     write_logs(log_synthesis, "--- Log init ---  \n", 'w')
 
@@ -107,23 +114,43 @@ def main():
 
 
         # Loop on applications
-        savedCounter = 0
         i = 0
-        while i < longrun_config.N_REPEAT_CAPTURE:
+        while True:
             # Generate random sequence of action
-            appName, actionName = choice(all_action)
+            if longrun_config.APP_CHOICE == "equiprobable":
+                appName, actionName = choice(all_action)
+            elif longrun_config.APP_CHOICE == "user_interact_pattern":
+                appName, actionName = user_interact_choice()
+            else:
+                tprint("longrun_config.APP_CHOICE: " + longrun_config.APP_CHOICE + " not recognized", t_ref = t_ref)
+                tprint("aborting...", t_ref = t_ref)
+                sys.exit(1)
 
-            # Choose the waiting time
             if longrun_config.WAITING_METHOD == "exponential":
                 t_wait = int(expovariate(longrun_config.EXPOVARIATE_LAMBDA))
 
             elif longrun_config.WAITING_METHOD == "uniform":
-                t_wait = int(uniform(longrun_config.WAITING_LOWER, longrun_config.WAITING_UPPER))
+                t_wait = longrun_config.WAITING_TIME
+                t_wait = int(uniform(t_wait - longrun_config.WAITING_DEVIATION_LOWER, t_wait + longrun_config.WAITING_DEVIATION_UPPER))
+
+            elif longrun_config.WAITING_METHOD == "deterministic":
+                t_wait = longrun_config.WAITING_TIME
+
+            elif longrun_config.WAITING_METHOD == "user_interact_pattern":
+                t_wait = user_interact_wait(savedCounter)  # Here saved counter correspond to the slot
+                if longrun_config.USER_INTERACTION_PATTERN_DEVIATION:
+                    t_wait = int(uniform(t_wait + longrun_config.WAITING_DEVIATION_LOWER, t_wait + longrun_config.WAITING_DEVIATION_UPPER))
+
             else:
                 tprint("longrun_config.WAITING_METHOD: " + longrun_config.WAITING_METHOD + " not recognized", t_ref = t_ref)
                 tprint("aborting...", t_ref = t_ref)
                 sys.exit(1)
 
+            elapsed = time.time() - t_ref
+            if t_wait + elapsed > longrun_config.CAPTURE_DURATION:
+                tprint("Waiting time reach next slot. Sleep " + str(longrun_config.CAPTURE_DURATION - elapsed) +  " until next slot", log_fname)
+                time.sleep( longrun_config.CAPTURE_DURATION - elapsed)
+                t_wait = None
 
             # Extract info about applications
             app = apps_all[appName]
@@ -138,7 +165,7 @@ def main():
                 continue
 
             i = i + 1
-            tprint(str(i) + "/" +  str(longrun_config.N_REPEAT_CAPTURE) + " captures", t_ref = t_ref)
+            tprint(str(i) + " captures", t_ref = t_ref)
 
             # Parse the actions contained in applications.yaml
             action = [eval(a) for a in actions[actionName]]
@@ -148,87 +175,102 @@ def main():
             success_close_command_sent, success_check_closed = True, True
             success_simulate = True
 
-            tprint("starting: " + appName + " - " + actionName + ". t_wait=" + str(t_wait), log_fname, t_ref)
-            time.sleep(t_wait)
-            os.system("spd-say 'Launching application: " +appName + " action: " + actionName + "'")
-            # Open Application if the first instruction is not open
-            # (Openning the application is not part of the capture)
-            simulate_required = True
-            if action[0][0].__name__ != "open_app" or ( action[0][0].__name__ == "open_app" and len(action[0]) == 1):
-                tprint(" ! app " + appName +" openning", log_fname, t_ref=t_ref)
-                sprint(appName +" openning", log_synthesis, t_ref=t_ref)
-                _, success_command_sent = open_app(device, package, activity, log_fname)
-                _, success_check_opened  = check_package_opened(device, package, log_fname)
+            if t_wait:
+                tprint("starting: " + appName + " - " + actionName + ". t_wait=" + str(t_wait), log_fname, t_ref)
+                time.sleep(t_wait)
+                if longrun_config.SPEAK_UP_INSTRUCTION:
+                    os.system("spd-say 'Launching application: " +appName + " action: " + actionName + "'")
+                # Open Application if the first instruction is not open
+                # (Openning the application is not part of the capture)
+                simulate_required = True
+                if action[0][0].__name__ != "open_app" or ( action[0][0].__name__ == "open_app" and len(action[0]) == 1):
+                    tprint(" ! " + appName +"_open", log_fname, t_ref=t_ref)
+                    sprint(appName +"_open", log_synthesis, t_ref=t_ref)
+                    _, success_command_sent = open_app(device, package, activity, log_fname)
+                    _, success_check_opened  = check_package_opened(device, package, log_fname)
+
+                    if not longrun_config.DEBUG_WATCH:
+                        tprint("Sleeping " + str(longrun_config.WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION) + "s after opening")
+                        time.sleep(longrun_config.WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION)
+                    if ( action[0][0].__name__ == "open_app" and len(action[0][0]) == 1):
+                        simulate_required = False
+
+                #  launch action
+                if not longrun_config.DEBUG_ELLISYS and simulate_required:
+                    tprint(" ! action " + appName + " - " + actionName + " starting", log_fname, t_ref)
+                    sprint(appName + "_" + actionName, log_synthesis, t_ref)
+                    success_simulate = simulate(device, display, package, activity, action, log_fname, t_ref)
 
                 if not longrun_config.DEBUG_WATCH:
-                    tprint("Sleeping " + str(longrun_config.WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION) + "s after opening")
-                    time.sleep(longrun_config.WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION)
-                if ( action[0][0].__name__ == "open_app" and len(action[0][0]) == 1):
-                    simulate_required = False
-
-            #  launch action
-            if not longrun_config.DEBUG_ELLISYS and simulate_required:
-                tprint(" ! action " + appName + " - " + actionName + " starting", log_fname, t_ref)
-                sprint(appName + " - " + actionName + " starting", log_synthesis, t_ref)
-                success_simulate = simulate(device, display, package, activity, action, log_fname, t_ref)
+                    tprint("Sleeping " + str(longrun_config.WAITING_TIME_BEFORE_CLOSING) + "s before closing")
+                    time.sleep(longrun_config.WAITING_TIME_BEFORE_CLOSING)
 
 
+                # close the application if the last instruction is not background or close app
+                if action[-1][0].__name__ != "close_app" and  action[-1][0].__name__ != "force_stop" and action[-1][0].__name__ != "background":
+                    tprint(" ! app " + appName + " closing", log_fname, t_ref = t_ref)
+                    sprint(appName + "_force-stop", log_synthesis, t_ref = t_ref)
+                    if longrun_config.CLOSING_METHOD == "close_app":
+                        _, success_close_command_sent = close_app(device, package, log_fname)
+                        _, success_check_closed = check_package_closed(device, package, log_fname)
 
-            # close the application if the last instruction is not background or close app
-            if action[-1][0].__name__ != "close_app" and  action[-1][0].__name__ != "force_stop" and action[-1][0].__name__ != "background":
-                tprint(" ! app " + appName + " closing", log_fname, t_ref = t_ref)
-                sprint(appName + " closing", log_synthesis, t_ref = t_ref)
-                if longrun_config.CLOSING_METHOD == "close_app":
-                    _, success_close_command_sent = close_app(device, package, log_fname)
-                    _, success_check_closed = check_package_closed(device, package, log_fname)
+                    if longrun_config.CLOSING_METHOD == "background":
+                        background(device, package)
+                        tprint("    - background command sent", log_fname, t_ref)
+                        _, success_check_closed = check_package_closed(device, package, log_fname)
+                        lastActionIsBackground = True
 
-                if longrun_config.CLOSING_METHOD == "background":
-                    background(device, package)
-                    tprint("    - background command sent", log_fname, t_ref)
-                    _, success_check_closed = check_package_closed(device, package, log_fname)
-                    lastActionIsBackground = True
-
-                if longrun_config.CLOSING_METHOD == "force_stop":
-                    force_stop(device, package, log_fname)
-                    _, success_check_closed = check_package_closed(device, package, log_fname)
+                    if longrun_config.CLOSING_METHOD == "force_stop":
+                        force_stop(device, package, log_fname)
+                        _, success_check_closed = check_package_closed(device, package, log_fname)
 
 
 
-                if not longrun_config.DEBUG_WATCH:
-                    tprint("   sleeping after closing " + str(longrun_config.WAITING_TIME_AFTER_CLOSING_WHEN_CLOSING_IS_NOT_AN_ACTION) + "s to reach steady state", log_fname)
-                    time.sleep(longrun_config.WAITING_TIME_AFTER_CLOSING_WHEN_CLOSING_IS_NOT_AN_ACTION)
+                    if not longrun_config.DEBUG_WATCH:
+                        tprint("   sleeping after closing " + str(longrun_config.WAITING_TIME_AFTER_CLOSING_WHEN_CLOSING_IS_NOT_AN_ACTION) + "s to reach steady state", log_fname)
+                        time.sleep(longrun_config.WAITING_TIME_AFTER_CLOSING_WHEN_CLOSING_IS_NOT_AN_ACTION)
 
-            # Save capture under a different name if an error occured
-            success = success and success_simulate and success_command_sent and success_check_closed and success_close_command_sent
+                # Save capture under a different name if an error occured
+                success = success and success_simulate and success_command_sent and success_check_closed and success_close_command_sent
 
-            if not success:
-                tprint(" ! ERROR Watch", log_fname, t_ref)
-                sprint("ERROR Watch", log_synthesis, t_ref)
+                if not success:
+                    tprint(" ! ERROR Watch", log_fname, t_ref)
+                    sprint("ERROR Watch", log_synthesis, t_ref)
 
-            # Restart Ellisys each N captures
-            if not longrun_config.DEBUG_WATCH and i % longrun_config.N_CAPTURE_AFTER_ELLISYS_RESART == 0 :
+
+            current_t_capture = time.time()
+            spent = current_t_capture - t_ref
+
+            # Restart Ellisys after CAPTURE_DURATION and start new capture
+            if spent > longrun_config.CAPTURE_DURATION :
                 savedCounter += 1
-                filename = "log-runcapture-"+ str(savedCounter)
+                time.sleep(5)  # 5 seconds asleep before stopping ellisys (let the time for the past action traffic to finish)
                 tprint(" ! capture " + filename + " finished", log_fname, t_ref)
                 sprint("capture " + filename + " finished", log_synthesis, t_ref)
                 errorStop = send_instruction(messages.CMD_STOP_CAPTURE, log_fname)
                 errorEllisys = send_instruction(messages.NewSaveCaptureCommand(payload=filename), log_fname)
                 if errorStop or errorEllisys:
-                    os.system("spd-say 'Error please come help me'")
+                    if longrun_config.SPEAK_UP_INSTRUCTION:
+                        os.system("spd-say 'Error please come help me'")
                     raw_input("Please check ellisys: errorStop=" + str(errorStop) + " errorEllisys=" + str(errorEllisys))
 
                 send_instruction(messages.CMD_CLOSE_ELLISYS, log_fname)
+                if savedCounter == longrun_config.N_REPEAT_CAPTURE:
+                    tprint("done.")
+                    break
                 time.sleep(10)  # Sleeping a bit before capturing new app
                 send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
                 send_instruction(messages.NewStartCaptureCommand(payload=""), log_fname)
                 t_ref = time.time()
-                filename = "log-runcapture-"+ str(savedCounter + 1)
+                launchTime = time.strftime("%y-%m-%d_%H-%M-%S", time.localtime()) # for log file name
+
+                log_synthesis = "longrun_" + longrun_config.WAITING_METHOD+ "_" + launchTime
+                filename = "longrun_" + longrun_config.WAITING_METHOD +"_" + launchTime
+                if longrun_config.WAITING_METHOD == "user_interact_pattern":
+                    filename += "_slot-" + str(savedCounter)
+                write_logs(log_synthesis, "--- Log init ---  \n", 'w')
                 tprint(" ! capture " + filename + " started", log_fname, t_ref)
-                sprint("capture " + filename + " started", log_synthesis, t_ref)
 
-
-
-            tprint("", log_fname)  # add a space for more visibility
 
 
 
