@@ -12,10 +12,10 @@ DEBUG_ELLISYS = False
 
 # Apps
 APPLICATIONS_FNAME = "applications.yaml"  # Applications actions instr. & data
-N_REPEAT_CAPTURE = 30
+N_REPEAT_CAPTURE = 22
 WAITING_TIME_AFTER_START_CAPTURE = 4  # Before lauching an action on the watch
 WAITING_TIME_BEFORE_STOP_CAPTURE = 2
-KEEP_ONLY = ["Qardio", "AppInTheAir", "DCLMRadio"] # "all" # FindMyPhone Applications to keep for the automation
+KEEP_ONLY = ["Shazam"] # "all" # FindMyPhone Applications to keep for the automation
 SKIPPING = ['Timer', 'AppInTheAir', 'Camera',
             'GooglePay', 'PlayMusic', 'ASB', "HealthyRecipes",
             'DailyTracking', 'NoApp', 'Sleep', 'UARecord',

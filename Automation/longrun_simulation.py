@@ -32,9 +32,8 @@ def main():
     log_synthesis = "longrun_" + longrun_config.WAITING_METHOD+ "_" + launchTime
     filename = "longrun_" + longrun_config.WAITING_METHOD +"_" + launchTime
 
-    if longrun_config.WAITING_METHOD == "user_interact_pattern":
+    if longrun_config.WAITING_METHOD == "user-interact-pattern":
         filename += "_slot-" + str(savedCounter)
-        log_fname += "_slot-" + str(savedCounter)
         log_synthesis += "_slot-" + str(savedCounter)
 
     write_logs(log_fname, "--- Log init ---  \n", 'w')
@@ -42,20 +41,15 @@ def main():
 
     # Make the list of all action to pick for the simulation
     all_action = []  # list of tuples: [(name_app, name_action)]
-
     for app in apps_all:
         if len(longrun_config.KEEP_ONLY) == 0 and not app in longrun_config.SKIPPING:
             all_action += [(app, action) for action in apps_all[app]["keepOnly"]]
         elif app in longrun_config.KEEP_ONLY and not app in longrun_config.SKIPPING:
                 all_action += [(app, action) for action in apps_all[app]["keepOnly"]]
-    print(all_action)
-
 
 
     ##### Connection with the watch(es)
-
     tprint("Accessing device(s)...", log_fname)
-
     tries = 0
     devices = []
     for device_addr in longrun_config.DEVICES:
@@ -66,15 +60,12 @@ def main():
         lastFilename = ""
         lastApp = False  # Ensure we do not open and close twice
 
+        # Retrieve the width and height for action simulation
         while width is None:
-
             device = MonkeyRunner.waitForConnection(deviceId=device_addr, timeout=longrun_config.WATCH_CONNECTION_TIMEOUT)
-
-
             width = device.getProperty("display.width")
             height = device.getProperty("display.height")
             watchName = device.getProperty("build.model")
-
             time.sleep(0.5)
             if tries > 10:
                 tprint("Connection with device error. Max tries "+ str(tries) +" reached.\naborting...")
@@ -84,7 +75,6 @@ def main():
         watchName = str(watchName.replace(" ", "-"))
         tprint("Device: " + watchName + " connected")
         devices.append((device, (int(width) - 1, int(height) -1), watchName))
-
     tprint("All devices are connected")
 
     ##### Cleaning all applications
@@ -99,9 +89,6 @@ def main():
         send_instruction(messages.NewStartCaptureCommand(payload=lastFilename), log_fname)
         t_ref = time.time()
 
-
-
-
     # Loop on watches
     for deviceStruct in devices:
 
@@ -111,21 +98,20 @@ def main():
         watchName = deviceStruct[2]
 
 
-
-
-        # Loop on applications
+        # Longrun loop until N_REPEAT_CAPTURE is reached
         i = 0
         while True:
-            # Generate random sequence of action
+            # Pick action
             if longrun_config.APP_CHOICE == "equiprobable":
                 appName, actionName = choice(all_action)
-            elif longrun_config.APP_CHOICE == "user_interact_pattern":
+            elif longrun_config.APP_CHOICE == "user-interact-pattern":
                 appName, actionName = user_interact_choice()
             else:
                 tprint("longrun_config.APP_CHOICE: " + longrun_config.APP_CHOICE + " not recognized", t_ref = t_ref)
                 tprint("aborting...", t_ref = t_ref)
                 sys.exit(1)
 
+            # Generation of the Waiting time before starting the picked action
             if longrun_config.WAITING_METHOD == "exponential":
                 t_wait = int(expovariate(longrun_config.EXPOVARIATE_LAMBDA))
 
@@ -136,7 +122,7 @@ def main():
             elif longrun_config.WAITING_METHOD == "deterministic":
                 t_wait = longrun_config.WAITING_TIME
 
-            elif longrun_config.WAITING_METHOD == "user_interact_pattern":
+            elif longrun_config.WAITING_METHOD == "user-interact-pattern":
                 t_wait = user_interact_wait(savedCounter)  # Here saved counter correspond to the slot
                 if longrun_config.USER_INTERACTION_PATTERN_DEVIATION:
                     t_wait = int(uniform(t_wait + longrun_config.WAITING_DEVIATION_LOWER, t_wait + longrun_config.WAITING_DEVIATION_UPPER))
@@ -146,6 +132,7 @@ def main():
                 tprint("aborting...", t_ref = t_ref)
                 sys.exit(1)
 
+            # Check that we won't go over CAPTURE_DURATION
             elapsed = time.time() - t_ref
             if t_wait + elapsed > longrun_config.CAPTURE_DURATION:
                 tprint("Waiting time reach next slot. Sleep " + str(longrun_config.CAPTURE_DURATION - elapsed) +  " until next slot", log_fname)
@@ -154,12 +141,11 @@ def main():
 
             # Extract info about applications
             app = apps_all[appName]
-
             package = app["package"]
             activity = app["activity"]
             actions = app["actions"]
 
-
+            # Package existance verification
             _, package_exist = verify_package_exist(device, package, log_fname)
             if not package_exist:
                 continue
@@ -266,8 +252,10 @@ def main():
 
                 log_synthesis = "longrun_" + longrun_config.WAITING_METHOD+ "_" + launchTime
                 filename = "longrun_" + longrun_config.WAITING_METHOD +"_" + launchTime
-                if longrun_config.WAITING_METHOD == "user_interact_pattern":
+                if longrun_config.WAITING_METHOD == "user-interact-pattern":
                     filename += "_slot-" + str(savedCounter)
+                    log_synthesis += "_slot-" + str(savedCounter)
+
                 write_logs(log_synthesis, "--- Log init ---  \n", 'w')
                 tprint(" ! capture " + filename + " started", log_fname, t_ref)
 

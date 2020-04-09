@@ -1,43 +1,58 @@
 #!/usr/bin/env python3
 """
-All the fonctions that can be both used by the controller
-and the ellisys laptop
+Helper fonction that is used only by the controller
 """
 import yaml
 import config
 
-def write_logs(log_fname, log, how='a'):
-    "Write to log"
-    path = "./logs/" + log_fname + ".log"
-    f = open(path, how)
-    f.write(log)
-    f.close()
-    if how == "w":
-        print("log file: " + path +" init")
-
 
 def dump_yaml(data, fname):
+    """
+    Take a dict and writes its content un a yaml file
+    Args:
+        data: dict. Dict to dump into file
+        fname: string. Path and file name where to dump data
+    Return:
+        None
+    """
+
     f = open(fname, "w")
     yaml.dump(data, f)
     f.close()
 
 
-def get_action_numb(action, appName, data):
+def get_action_numb(action, app, data):
+    """
+    Give the last event number for a particular app - action pair.
+    Args:
+        action : string. Name of the action
+        app : string. Name of the app
+        data : dict[app][action] = event_nb.
+    Return:
+        data : dict[app][action] = event_nb. Updated
+        event_nb : int. Last envent number.
+    """
 
-
-    if appName in data:
-        actions = data[appName]
+    if app in data:
+        actions = data[app]
         if action in actions:
             return data, actions[action]
         else:
-            data[appName][action] = 0
+            data[app][action] = 0
             return data, 0
     else:
         data[appName] = {action:0}
         return data, 0
 
-# Read the applications info file
+
 def read_app(app_fname):
+    """
+    Read applications settings file into dictionary
+    Args:
+        app_fname: String. Apps data file name
+    Return:
+        Dict. Contains app data
+    """
     f = open(app_fname)
     l = f.read()
     f.close()
@@ -47,6 +62,9 @@ def read_app(app_fname):
 
 
 def flush_left_state_number():
+    """
+    Reset the left_state.yaml file with the corresponding Experience Number
+    """
     L = "000"  # Means a capture can contain maximum 999 experiences runs
 
     if not config.FLUSH_CAPTURE_NUMBER:

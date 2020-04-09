@@ -41,9 +41,9 @@ SKIPPING = ['Timer', 'Qardio', "Camera", "AppInTheAir",
 PACKAGE_NOT_TO_STOP = ["com.google.android.wearable.app", "com.huawei.health", "com.huawei.watch.supersavepower"]
 
 
-# Longrun capture Specific
-APP_CHOICE = "user_interact_pattern" # Prior probabilites of picking action
-WAITING_METHOD = "user_interact_pattern"  # could be deterministic, uniform or exponential
+# Longrun capture specific settings
+APP_CHOICE = "user-interact-pattern" # Prior probabilites of picking action
+WAITING_METHOD = "user-interact-pattern"  # could be deterministic, uniform or exponential
 
 USER_INTERACTION_PATTERN_DEVIATION = True
 WAITING_TIME = 20  # Iner-acation Waiting in seconds when deterministic is chosen as WAITING_METHOD
@@ -63,17 +63,16 @@ SLEEP_AFTER_CLEANING = 180
 
 
 
-
-
+# Convertion and checks
 
 CAPTURE_DURATION = CAPTURE_DURATION_MINUTES * 60  # converting in seconds
 EXPOVARIATE_LAMBDA = EXPOVARIATE_LAMBDA_MINUTE / 60  # We divide by 60 to convert into seconds
 
-if APP_CHOICE not in ["equiprobable", "user_interact_pattern"]:
+if APP_CHOICE not in ["equiprobable", "user-interact-pattern"]:
     print("APP_CHOICE not recognized.\nPlease, check longrun_config.")
     sys.exit(1)
 
 
-if WAITING_METHOD not in ["deterministic", "uniform", "user_interact_pattern"]:
+if WAITING_METHOD not in ["deterministic", "uniform", "user-interact-pattern"]:
     print("WAITING_METHOD not recognized.\nPlease, check longrun_config.")
     sys.exit(1)

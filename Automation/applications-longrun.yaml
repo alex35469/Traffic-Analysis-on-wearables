@@ -1,4 +1,16 @@
-## Does not work
+## Application data.
+#
+# All entries are of the following form:
+# Application name: - name of the application
+#    package: package name - used for launching and stopping an app on the watch
+#    activity: activity name - used for launching an app on the watch
+#    keepOnly: [action1,] - list of action to be considered in simulation
+#    actions: - yaml list of action specifications
+#       action1 : [instruction11,] - list of instruction to perform the action
+#       action2 : [instruction21,] - list of instruction to perform the action
+#         ...
+
+
 # Agenda:
 #   package: com.google.android.wearable.app
 #   activity: com.google.android.clockwork.home.calendar.EventListActivity2
@@ -11,7 +23,6 @@ Alarm:
   package: com.google.android.deskclock
   activity: com.google.android.deskclock.AlarmGatewayActivity
   keepOnly: [open]  # Action to be selected starting at 1.
-  login: None
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force_stop, 20)"]
@@ -20,16 +31,13 @@ Alarm:
 #   package: nz.co.asb.asbmobile
 #   activity: nz.co.asb.wear.MainActivity
 #   keepOnly: [open] []
-#   login: None
 #   actions:
 #     open: ["(open_app, 20)"]
 #     force-stop: ["(force_stop, 20)"]
 
-
 AppInTheAir:
   package: com.aita
   activity: com.aita.mainscreen.MainActivity
-  login: None
   keepOnly: [open]
   actions:
     open: ["(open_app, 20)"]
@@ -38,7 +46,6 @@ AppInTheAir:
 AthkarOfPrayer:
   package: com.appsforall.athkaralsalah
   activity: com.appsforall.athkaralsalah.MainActivityWear
-  login: None
   keepOnly: [open]
   actions:
     open: ["(open_app, 20)"]
@@ -49,7 +56,6 @@ AthkarOfPrayer:
 Battery:
   package: com.huawei.watch.supersavepower
   activity: com.huawei.watch.supersavepower.view.BatteryActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -58,7 +64,6 @@ Battery:
 Bring:
   package:  ch.publisheria.bring
   activity: ch.publisheria.bring.activities.BringWearMainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -69,7 +74,6 @@ Bring:
 Calm:
   package: com.calm.android
   activity: com.calm.android.activities.MainWearActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -81,7 +85,6 @@ Calm:
 Camera:
   package: com.google.android.GoogleCamera
   activity: com.google.android.apps.camera.wear.wearappv2.WearCameraActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -90,7 +93,6 @@ Camera:
 ChinaDaily:
   package: com.chinadaily.wear
   activity: com.chinadaily.NewsHomeActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -99,7 +101,6 @@ ChinaDaily:
 Citymapper:
   package: com.citymapper.app.release
   activity: com.citymapper.app.wear.EntryActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -117,7 +118,6 @@ Citymapper:
 DailyTracking:
   package : com.huawei.health
   activity: com.huawei.bone.view.dailytrack.activity.DailyTrackMainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -136,7 +136,6 @@ DailyTracking:
 DCLMRadio:
   package: org.dclm.live
   activity: .MainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -149,7 +148,6 @@ DCLMRadio:
 DiabetesM:
   package: com.mydiabetes
   activity: com.mydiabetes.MainActivity
-  login: None
   keepOnly: [open, addInsulin, addCarbs, addGlucose, addCal, addProt, addFat]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -164,7 +162,6 @@ DiabetesM:
 DuaKhatqmAlQuran:
   package: com.appsforall.duakhatamalquran
   activity: com.appsforall.duakhatamalquran.MainActivityWear
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -173,7 +170,6 @@ DuaKhatqmAlQuran:
 Endomondo:
   package: com.endomondo.android
   activity: com.endomondo.android.wear.ui.WearAppActivity
-  login: None
   keepOnly: [open, run, browseMap]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -185,7 +181,6 @@ Endomondo:
 FindMyPhone:
   package: com.google.android.gms
   activity: com.google.android.gms.mdm.RingMyPhoneActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -194,7 +189,6 @@ FindMyPhone:
 Fit:
   package: com.google.android.apps.fitness
   activity: com.google.android.wearable.fitness.passive.ui.PassiveActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -203,7 +197,6 @@ Fit:
 FitBreathe:
   package:  com.google.android.apps.fitness
   activity: com.google.android.wearable.fitness.realtime.breathe.BreatheLauncherActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -212,7 +205,6 @@ FitBreathe:
 FitWorkout:
   package:  com.google.android.apps.fitness
   activity: com.google.android.wearable.fitness.realtime.RealtimeActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -221,7 +213,6 @@ FitWorkout:
 FITIVPlus:
   package: com.fitiv.fitivapplication
   activity: com.fitiv.fitivapplication.activities.SplashActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -230,7 +221,6 @@ FITIVPlus:
 Flashlight:
   package: com.google.android.clockwork.flashlight
   activity: com.google.android.clockwork.flashlight.FlashlightActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -240,7 +230,6 @@ Flashlight:
 FoursquareCityGuide:
   package:  com.joelapenna.foursquared
   activity: .wearable.MainActivity
-  login: None
   keepOnly: [open, coffee, food, fun, nightlife, shopping]
   actions:
     open: ["(open_app, 20)"]
@@ -256,7 +245,6 @@ FoursquareCityGuide:
 Glide:
   package: com.glidetalk.glideapp
   activity: com.glidetalk.glideapp.ThreadListActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -274,7 +262,6 @@ GooglePay:
 HealthyRecipes:
   package: com.endless.healthyrecipes
   activity: com.endless.healthyrecipes.HomeActivity
-  login: None
   keepOnly: [researchRecipy]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -284,7 +271,6 @@ HealthyRecipes:
 HeartRate:
   package: com.huawei.health
   activity: com.huawei.bone.view.heartrate.activity.HeartRateMainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -293,7 +279,6 @@ HeartRate:
 KeepNotes:
   package: com.google.android.keep
   activity: com.google.android.keep.wear.MicroBrowseActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -302,7 +287,6 @@ KeepNotes:
 Krone:
   package: at.krone
   activity: at.krone.MainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -311,7 +295,6 @@ Krone:
 Lifesum:
   package: com.sillens.shapeupclub
   activity: com.sillens.shapeupclub.onboarding.StartActivity
-  login: None
   keepOnly: [open, addFood, addWater]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -322,7 +305,6 @@ Lifesum:
 MapMyRun:
   package: com.mapmyrun.android2
   activity: com.mapmyfitness.android.view.MainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -331,7 +313,6 @@ MapMyRun:
 Maps:
   package: com.google.android.apps.maps
   activity: com.google.android.apps.gmmwearable.MainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -340,7 +321,6 @@ Maps:
 Medisafe:
   package: com.medisafe.android.client
   activity: com.medisafe.android.wear.CustomWearableList
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -349,7 +329,6 @@ Medisafe:
 Meduza:
   package: io.meduza.android
   activity: io.meduza.android.RootActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -359,7 +338,6 @@ Meduza:
 Mobilis:
   package: br.com.gerenciadorfinanceiro.controller
   activity: br.com.mobills.wear.views.MobillsWearActivity
-  login: None
   keepOnly: [open]
   actions:
     # Open, wait and close
@@ -370,7 +348,6 @@ Mobilis:
 Outlook:
   package: com.microsoft.office.outlook
   activity: .activities.HubActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -379,7 +356,6 @@ Outlook:
 Phone:
   package: com.google.android.apps.wearable.phone
   activity: com.google.android.clockwork.phone.dialer.DialerActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -389,7 +365,6 @@ PlayMusic:
   package: com.google.android.music
   activity: com.google.android.music.wear.ui.HomeActivity
   keepOnly: [open]  # Action to be selected starting at 1.
-  login: None
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force_stop, 20)"]
@@ -398,7 +373,6 @@ PlayMusic:
 PlayStore:
   package: com.android.vending
   activity: com.google.android.finsky.wear.activities.MainActivity
-  login: None
   keepOnly: [open, deterministicBrowse]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -410,7 +384,6 @@ PlayStore:
 Qardio:
   package: com.getqardio.android
   activity: com.getqardio.android.wearable.ui.activity.MenuActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -419,7 +392,6 @@ Qardio:
 Reminders:
   package: com.google.android.googlequicksearchbox
   activity: com.google.android.wearable.reminders.frontend.MainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -428,7 +400,6 @@ Reminders:
 Running:
   package: com.runtastic.android
   activity: com.runtastic.android.wear.ui.LaunchActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -437,7 +408,6 @@ Running:
 SalatTime:
   package: online.makkahtv.salattime
   activity: online.makkahtv.salattime.activity.MainChooseActivity
-  login: None
   keepOnly: [open]
   actions:
     # 1. Open, wait and close
@@ -447,7 +417,6 @@ SalatTime:
 Shazam:
   package: com.shazam.android
   activity: com.shazam.android.wear.activity.TaggingActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -458,7 +427,6 @@ Sleep:
   package: com.huawei.health
   activity: com.huawei.bone.view.sleep.activity.SleepMainActivity
   keepOnly: [open]  # Action to be selected starting at 1.
-  login: None
   actions :
     open: ["(open_app, 20)"]
     force-stop: ["(force_stop, 20)"]
@@ -466,7 +434,6 @@ Sleep:
 SleepTracking:
   package: com.urbandroid.sleep
   activity: .wear.Sleep
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -494,7 +461,6 @@ SmartZmanim:
 Spotify:
   package: com.spotify.music
   activity: com.spotify.music.MainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -511,7 +477,6 @@ Spotify:
 Strava:
   package: com.strava
   activity: com.strava.WearActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -521,7 +486,6 @@ Strava:
 Telegram:
   package: org.telegram.messenger
   activity: org.telegram.messenger.wear.MainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -530,7 +494,6 @@ Telegram:
 Timer:
   package: com.google.android.deskclock
   activity: com.google.android.deskclock.TimerGatewayActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -539,7 +502,6 @@ Timer:
 Translate:
   package: com.google.android.apps.translate
   activity: com.google.android.wearable.translate.MainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -548,7 +510,6 @@ Translate:
 UARecord:
   package: com.ua.record
   activity: com.ua.record.wear.ui.MainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -557,7 +518,6 @@ UARecord:
 WashPost:
   package: com.washingtonpost.android
   activity: com.wapo.flagship.WearMainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -566,7 +526,6 @@ WashPost:
 WearCasts:
   package: com.krisdb.wearcasts
   activity: com.krisdb.wearcasts.Activities.MainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]
@@ -583,7 +542,6 @@ Weather:
 Workout:
   package: com.huawei.health
   activity: com.huawei.bone.view.workout.activity.WorkoutMainActivity
-  login: None
   keepOnly: [open]  # Action to be selected starting at 1.
   actions :
     open: ["(open_app, 20)"]

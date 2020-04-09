@@ -8,6 +8,7 @@ import time
 import sys
 import messages
 from helper import write_logs, tprint
+import os
 
 instr_to_required_state = {
     "open" : "open ellisys software on the Welcome page",
@@ -57,6 +58,7 @@ def send_instruction(instruction, log_fname):
 
 
             print("'" + cmd + "', '" + payload + "'")
+            os.system("spd-say 'Ellisys laptop stuck. Please come fix it!'")
             raw_input("timeout error. Ellisys program is stuck or is not responsive.\n Fix it to the required state: : '" + instr_to_required_state[cmd] + payload + "' press enter to continue: ")
             print("issuing the command again. Keep in mind that the capture "+ payload + " might be corrupted")
             break
