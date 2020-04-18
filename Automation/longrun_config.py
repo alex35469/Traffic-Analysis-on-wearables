@@ -15,13 +15,13 @@ ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED = 130  # Error msg after timeout reached 
 
 # Debugging settings
 DEBUG_ELLISYS = False
-DEBUG_WATCH = False  # Does not communiacte with ellisys controller
+DEBUG_WATCH = True  # Does not communiacte with ellisys controller
 WATCH_CONNECTION_TIMEOUT = 24  # timeout after watch not connected (First instruction)
 
 
 # Simulation settings
-CAPTURE_DURATION_MINUTES = 20  # Time duration of the capture in minutes
-N_REPEAT_CAPTURE = 24   # Total number of captures 1 capt might have many actions
+CAPTURE_DURATION_MINUTES = 1  # Time duration of the capture in minutes
+N_REPEAT_CAPTURE = 1   # Total number of captures 1 capt might have many actions
 CLOSING_METHOD = "force_stop" # Either close_app or background or force_stop
 WAITING_TIME_BEFORE_CLOSING = 5
 WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION = 8  # Such that the app reach a stable stat
@@ -32,7 +32,7 @@ SPEAK_UP_INSTRUCTION = True  # Allows computer to speak up what it is doing (Lin
 # Apps settings
 APPLICATIONS_FNAME = "applications-longrun.yaml"  # Applications actions instr. & data
 KEEP_ONLY = [] # FindMyPhone Applications to keep for the automation
-SKIPPING = ['Timer', 'Qardio', "Camera", "AppInTheAir",
+SKIPPING = ['Timer', "Camera", 'FitWorkout', "Fit", "FitBreathe",
             'GooglePay', 'PlayMusic', 'ASB',
             'DailyTracking', 'NoApp', 'Sleep', 'UARecord',
             'Alarm', 'HeartRate', 'AthkarOfPrayer', 'WearCasts', 'Workout',
@@ -42,15 +42,18 @@ PACKAGE_NOT_TO_STOP = ["com.google.android.wearable.app", "com.huawei.health", "
 
 
 # Longrun capture specific settings
-APP_CHOICE = "user-interact-pattern" # Prior probabilites of picking action
-WAITING_METHOD = "user-interact-pattern"  # could be deterministic, uniform or exponential
+APP_CHOICE = "equiprobable" # Prior probabilites of picking action
+WAITING_METHOD = "uniform"  # user-interact-pattern could be deterministic, uniform or exponential
 
 USER_INTERACTION_PATTERN_DEVIATION = True
-WAITING_TIME = 20  # Iner-acation Waiting in seconds when deterministic is chosen as WAITING_METHOD
+WAITING_TIME = 50  # Iner-acation Waiting in seconds when deterministic is chosen as WAITING_METHOD
 # When method is uniform the waiting time follows
 # U(WAITING_TIME + WAITING_DEVIATION_LOWER,WAITING_TIME + WAITING_DEVIATION_UPPER  )
 WAITING_DEVIATION_LOWER = -10
 WAITING_DEVIATION_UPPER = 10
+
+# If waiting factor is not None, WAITING_DEVIATION_UPPER are not user and
+WAITING_FACTOR = 0.5
 EXPOVARIATE_LAMBDA_MINUTE = 0.1
 
 
@@ -75,4 +78,8 @@ if APP_CHOICE not in ["equiprobable", "user-interact-pattern"]:
 
 if WAITING_METHOD not in ["deterministic", "uniform", "user-interact-pattern"]:
     print("WAITING_METHOD not recognized.\nPlease, check longrun_config.")
+    sys.exit(1)
+
+if WAITING_METHOD == "user-interact-pattern" and N_REPEAT_CAPTURE != 24:
+    print("N_REPEAT_CAPTURE must be 24 when WAITING_METHOD = 'user_interact-pattern'")
     sys.exit(1)

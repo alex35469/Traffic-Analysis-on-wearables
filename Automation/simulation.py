@@ -92,6 +92,9 @@ def main():
         display = deviceStruct[1]
         watchName = deviceStruct[2]
         faking_nb = 0
+
+        record_apps_version(device, watchName)
+
         # Loop on applications
         for appName in apps:
 
@@ -265,6 +268,7 @@ def main():
             tprint(info, log_fname)
 
         # watch loop
+        record_apps_version(device, watchName)
 
 
 

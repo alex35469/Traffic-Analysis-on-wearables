@@ -18,7 +18,7 @@ from helper_controller import read_app
 messengers = ['Telegram', 'Glide']
 emails = ['Outlook']
 maps = ['Maps', 'Citymapper', 'FoursquareCityGuide']
-fitness = ['FitWorkout', 'Fit', 'FITIVPlus', 'Endomondo', 'Strava', 'Running']
+fitness = ['FITIVPlus', 'Endomondo', 'Strava', 'Running']
 note_taking = ['Bring', 'KeepNotes']
 health = ['Lifesum', 'SmokingLog', 'HealthyRecipes','DiabetesM']
 banking = ['Mobilis']
@@ -79,7 +79,7 @@ for app in apps_prob_vect:
 
 if round(sum(apps_prob_vect.values()), 10) != 1.0:
     print("Error! Not a distribution probability: sum = ", sum(apps_prob_vect.values()) ," Please check the popular set")
-    sys.exit(1)
+    #sys.exit(1)
 
 cumul = 0
 for app in apps_prob_vect:

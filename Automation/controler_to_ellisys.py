@@ -4,6 +4,7 @@
 
 import socket
 import config
+import longrun_config
 import time
 import sys
 import messages
@@ -21,6 +22,9 @@ instr_to_required_state = {
 
 
 def send_instruction(instruction, log_fname):
+
+    if longrun_config.DEBUG_WATCH == True:
+        return False
 
     errorEllisys = False
 

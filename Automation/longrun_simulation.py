@@ -83,11 +83,10 @@ def main():
             clean_apps(device, apps_all, log_fname)
 
     ##### Openning and startin capture Ellisys
-    t_ref = None
     if not longrun_config.DEBUG_WATCH:
         send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
         send_instruction(messages.NewStartCaptureCommand(payload=lastFilename), log_fname)
-        t_ref = time.time()
+    t_ref = time.time()
 
     # Loop on watches
     for deviceStruct in devices:
@@ -97,7 +96,7 @@ def main():
         display = deviceStruct[1]
         watchName = deviceStruct[2]
 
-
+        record_apps_version(device, watchName)
         # Longrun loop until N_REPEAT_CAPTURE is reached
         i = 0
         while True:
@@ -117,7 +116,11 @@ def main():
 
             elif longrun_config.WAITING_METHOD == "uniform":
                 t_wait = longrun_config.WAITING_TIME
-                t_wait = int(uniform(t_wait - longrun_config.WAITING_DEVIATION_LOWER, t_wait + longrun_config.WAITING_DEVIATION_UPPER))
+                if longrun_config.WAITING_FACTOR:
+                    deviation = t_wait * longrun_config.WAITING_FACTOR
+                    t_wait = int(uniform(t_wait - deviation, t_wait + deviation))
+                else:
+                    t_wait = int(uniform(t_wait + longrun_config.WAITING_DEVIATION_LOWER, t_wait + longrun_config.WAITING_DEVIATION_UPPER))
 
             elif longrun_config.WAITING_METHOD == "deterministic":
                 t_wait = longrun_config.WAITING_TIME
@@ -125,7 +128,12 @@ def main():
             elif longrun_config.WAITING_METHOD == "user-interact-pattern":
                 t_wait = user_interact_wait(savedCounter)  # Here saved counter correspond to the slot
                 if longrun_config.USER_INTERACTION_PATTERN_DEVIATION:
-                    t_wait = int(uniform(t_wait + longrun_config.WAITING_DEVIATION_LOWER, t_wait + longrun_config.WAITING_DEVIATION_UPPER))
+                    if longrun_config.WAITING_FACTOR:
+                        deviation = t_wait * longrun_config.WAITING_FACTOR
+                        t_wait = int(uniform(t_wait - deviation, t_wait + deviation))
+                    else:
+                        t_wait = int(uniform(t_wait + longrun_config.WAITING_DEVIATION_LOWER, t_wait + longrun_config.WAITING_DEVIATION_UPPER))
+
 
             else:
                 tprint("longrun_config.WAITING_METHOD: " + longrun_config.WAITING_METHOD + " not recognized", t_ref = t_ref)
@@ -149,6 +157,7 @@ def main():
             _, package_exist = verify_package_exist(device, package, log_fname)
             if not package_exist:
                 continue
+                tprint("Package not found: FAIL but continuing anyway.")
 
             i = i + 1
             tprint(str(i) + " captures", t_ref = t_ref)
@@ -185,7 +194,7 @@ def main():
                 if not longrun_config.DEBUG_ELLISYS and simulate_required:
                     tprint(" ! action " + appName + " - " + actionName + " starting", log_fname, t_ref)
                     sprint(appName + "_" + actionName, log_synthesis, t_ref)
-                    success_simulate = simulate(device, display, package, activity, action, log_fname, t_ref)
+                    success_simulate = simulate(device, display, package, activity, action, log_fname, t_ref, skipBluetoothCheck=True)
 
                 if not longrun_config.DEBUG_WATCH:
                     tprint("Sleeping " + str(longrun_config.WAITING_TIME_BEFORE_CLOSING) + "s before closing")
@@ -258,7 +267,7 @@ def main():
 
                 write_logs(log_synthesis, "--- Log init ---  \n", 'w')
                 tprint(" ! capture " + filename + " started", log_fname, t_ref)
-
+        record_apps_version(device, watchName)
 
 
 

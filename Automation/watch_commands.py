@@ -7,6 +7,12 @@ import random
 
 ################ Swipes ############################
 
+def record_apps_version(device, name):
+    cmd = 'dumpsys package | awk \'/^[ ]*Package \\[.*\\] (.*)/ { i = index($0, "[") + 1; pkg = substr($0, i, index($0, "]") - i); } /[ ]*versionName=/ { { print pkg "\t" substr($0, index($0, "=") + 1); pkg = ""; } }\' > application_version/' + name + '_`date +%Y_%m_%d_%Hh`.tsv'
+    resp = os.popen("adb shell "+cmd).read()
+    print(cmd)
+    print()
+    print(resp)
 
 def swipe(lstart, lstop):
 
@@ -128,6 +134,13 @@ def press_random_numbers(device, display, n_press=3):
     device.shell("input text " + text)
 
 
+def do_nothing(device, display):
+    """
+    Function used to wait for a period of time
+    to let the watch process an action
+    """
+    pass
+
 ################# Open - and close techniques ##################
 
 
@@ -222,7 +235,7 @@ def clean_apps(device, apps, log_fname):
 
 def verify_package_exist(device, package, log_fname):
     expected_return = "package:"+package
-    for _ in range(3):
+    for _ in range(5):
         answ = device.shell("pm list packages " + package)
         if answ is None:
             success = False
@@ -299,13 +312,14 @@ def check_package_closed(device, package, log_fname):
 
 ################### Simulation (main logic of the script) #################
 
-def simulate(device, display, package, activity, actions_waiting, log_fname, check=True, t_ref = None):
+def simulate(device, display, package, activity, actions_waiting,
+             log_fname, check=True, t_ref=None, skipBluetoothCheck=False):
     checkInfo = ""
     success = True
     # Checks
-
-    check_bluetooth, successTmp = check_bluetooth_enabled(device, log_fname)
-    success = success and successTmp
+    if skipBluetoothCheck:
+        check_bluetooth, successTmp = check_bluetooth_enabled(device, log_fname)
+        success = success and successTmp
 
     # Simulate a sequence of action
     for a, w in actions_waiting:
