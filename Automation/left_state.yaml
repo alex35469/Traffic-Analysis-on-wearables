@@ -1,63 +1,63 @@
-Spotify: {force-stop: 99000, open: 99000}
-Translate: {open: 99000, force-stop: 99000}
-Endomondo: {force-stop: 99000, playGreenButton: 99000, browseMap: 99000, open: 99000,
-  openMap: 99000, run: 99000}
-Reminders: {force-stop: 99000, open: 99000}
-Fit: {force-stop: 99000, open: 99000}
-DuaKhatqmAlQuran: {open: 99000, force-stop: 99000}
-KeepNotes: {force-stop: 99000, open: 99000}
-PlayMusic: {open: 99000, force-stop: 99000}
-Timer: {force-stop: 99000, open: 99000}
-Sleep: {force-stop: 99000, open: 99000}
-Running: {force-stop: 99000, open: 99000}
-AppInTheAir: {force-stop: 99000, open: 99000}
-WearCasts: {open: 99000, force-stop: 99000}
-Stopwatch: {open: 99000}
-Outlook: {force-stop: 99000, open: 99000}
-Maps: {open: 99000, force-stop: 99000}
-FitWorkout: {open: 99000, force-stop: 99000}
-Glide: {open: 99000, force-stop: 99000}
-DCLMRadio: {open: 99030, force-stop: 99000}
-HealthyRecipes: {force-stop: 99000, researchRecipy: 99000, open: 99000}
-FitBreathe: {force-stop: 99000, open: 99000}
-WashPost: {open: 99000, force-stop: 99000}
-Workout: {force-stop: 99000, open: 99000}
-SleepTracking: {force-stop: 99000, open: 99000}
-ASB: {open: 99000}
-SmokingLog: {open: 99000, force-stop: 99000}
-FITIVPlus: {open: 99000, force-stop: 99000}
-Flashlight: {force-stop: 99000, open: 99000}
-PlayStore: {force-stop: 99000, open: 99000, deterministicBrowse: 99000}
-Mobilis: {open: 99000, force-stop: 99000}
-Shazam: {force-stop: 99000, open: 99000}
-Meduza: {force-stop: 99000, open: 99000}
-Phone: {open: 99000}
-AthkarOfPrayer: {open: 99000}
-ChinaDaily: {open: 99000, force-stop: 99000}
-Telegram: {force-stop: 99000, open: 99000}
-DailyTracking: {force-stop: 99000, open: 99000}
-UARecord: {force-stop: 99000, open: 99000}
-lastCapture: LEO-BX9_DCLMRadio_open_Classic_enc_99030
-FindMyPhone: {force-stop: 99000, open: 99000}
-DiabetesM: {addGlucose: 99000, addProt: 99000, open: 99000, addFat: 99000, addCal: 99000,
-  addInsulin: 99000, addCarbs: 99000, force-stop: 99000, savePlus1AndPlus10plus1: 99000}
-Weather: {open: 99000, force-stop: 99000}
-MapMyRun: {force-stop: 99000, open: 99000}
-Medisafe: {open: 99000, force-stop: 99000}
-FoursquareCityGuide: {food: 99000, nightlife: 99000, coffee: 99000, open: 99000, fun: 99000,
-  force-stop: 99000, shopping: 99000}
-Camera: {force-stop: 99000, open: 99000}
-SalatTime: {open: 99000, force-stop: 99000}
-Alarm: {open: 99000}
-Lifesum: {force-stop: 99000, open: 99000, addWater: 99000, addFood: 99000}
-Qardio: {open: 99029, force-stop: 99000}
-Battery: {open: 99000, force-stop: 99000}
-Calm: {open: 99000, force-stop: 99000}
-Citymapper: {force-stop: 99000, open: 99000}
-Strava: {force-stop: 99000, open: 99000}
-Bring: {open: 99000, force-stop: 99000}
-Krone: {force-stop: 99000, open: 99000}
-HeartRate: {force-stop: 99000, open: 99000}
-GooglePay: {force-stop: 99000, open: 99000}
-SmartZmanim: {open: 99000}
-NoApp: {NoAction: 99000}
+Medisafe: {force-stop: 15000, open: 15000}
+Battery: {force-stop: 15000, open: 15000}
+FitBreathe: {open: 15000, force-stop: 15000}
+DuaKhatqmAlQuran: {force-stop: 15000, open: 15000}
+Lifesum: {addFood: 15000, open: 15000, addWater: 15000, force-stop: 15000}
+Endomondo: {browseMap: 15000, open: 15000, openMap: 15000, force-stop: 15000, playGreenButton: 15000,
+  run: 15000}
+AppInTheAir: {open: 15000, force-stop: 15000}
+PlayStore: {deterministicBrowse: 15000, force-stop: 15000, open: 15000}
+WearCasts: {force-stop: 15000, open: 15000}
+NoApp: {NoAction: 15000}
+Qardio: {open: 15002, force-stop: 15000}
+SmartZmanim: {open: 15000}
+PlayMusic: {force-stop: 15000, open: 15000}
+Strava: {open: 15000, force-stop: 15000}
+DiabetesM: {addFat: 15000, force-stop: 15000, savePlus1AndPlus10plus1: 15000, addProt: 15000,
+  addCal: 15000, addGlucose: 15000, addInsulin: 15000, addCarbs: 15000, open: 15000}
+DailyTracking: {open: 15000, force-stop: 15000}
+Shazam: {force-stop: 15000, open: 15000}
+HealthyRecipes: {researchRecipy: 15000, force-stop: 15000, open: 15000}
+Workout: {force-stop: 15000, open: 15000}
+Calm: {open: 15000, force-stop: 15000}
+SleepTracking: {force-stop: 15000, open: 15000}
+SmokingLog: {open: 15000, force-stop: 15000}
+WashPost: {force-stop: 15000, open: 15000}
+Running: {open: 15000, force-stop: 15000}
+Weather: {open: 15000, force-stop: 15000}
+FitWorkout: {open: 15000, force-stop: 15000}
+Alarm: {open: 15000}
+Phone: {open: 15000}
+Telegram: {open: 15000, force-stop: 15000}
+Citymapper: {force-stop: 15000, open: 15000}
+Spotify: {force-stop: 15000, open: 15000}
+Timer: {force-stop: 15000, open: 15000}
+HeartRate: {open: 15000, force-stop: 15000}
+Stopwatch: {open: 15000}
+Krone: {open: 15000, force-stop: 15000}
+AthkarOfPrayer: {open: 15000}
+ChinaDaily: {force-stop: 15000, open: 15000}
+Flashlight: {force-stop: 15000, open: 15000}
+Bring: {force-stop: 15000, open: 15000}
+FindMyPhone: {open: 15000, force-stop: 15000}
+KeepNotes: {open: 15000, force-stop: 15000}
+GooglePay: {open: 15000, force-stop: 15000}
+Reminders: {open: 15000, force-stop: 15000}
+DCLMRadio: {force-stop: 15000, open: 15000}
+lastCapture: LEO-BX9_Qardio_open_Classic_enc_15002
+Camera: {force-stop: 15000, open: 15000}
+MapMyRun: {open: 15000, force-stop: 15000}
+Meduza: {force-stop: 15000, open: 15000}
+Sleep: {force-stop: 15000, open: 15000}
+Glide: {force-stop: 15000, open: 15000}
+UARecord: {force-stop: 15000, open: 15000}
+Outlook: {force-stop: 15000, open: 15000}
+ASB: {open: 15000}
+Mobilis: {open: 15000, force-stop: 15000}
+SalatTime: {force-stop: 15000, open: 15000}
+Fit: {open: 15000, force-stop: 15000}
+FoursquareCityGuide: {fun: 15000, open: 15000, coffee: 15000, shopping: 15000, force-stop: 15000,
+  nightlife: 15000, food: 15000}
+FITIVPlus: {force-stop: 15000, open: 15000}
+Maps: {open: 15000, force-stop: 15000}
+Translate: {open: 15000, force-stop: 15000}

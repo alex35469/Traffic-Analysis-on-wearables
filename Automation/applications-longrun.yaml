@@ -379,7 +379,7 @@ PlayStore:
     force-stop: ["(force_stop, 20)"]
     randomBrowse: ["(click((200,20)), 0)", "(click((270, 200)), 0)", "(press_random_letters(), 0)", "(click((300, 30)), 0)"]
     coherentBrowse: []
-    deterministicBrowse: ["(click((200,20)), 0)", "(click((270, 200)), 0)", "(press_deterministic_letters('religious'), 0)", "(click((300, 30)), 10)"]
+    deterministicBrowse: [ "(do_nothing, 18)", "(click((200,20)), 0)", "(click((270, 200)), 0)", "(press_deterministic_letters('religious'), 0)", "(click((300, 30)), 8)"]
 
 Qardio:
   package: com.getqardio.android

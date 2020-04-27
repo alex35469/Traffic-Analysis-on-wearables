@@ -12,11 +12,11 @@ DEBUG_ELLISYS = False
 
 # Apps
 APPLICATIONS_FNAME = "applications.yaml"  # Applications actions instr. & data
-N_REPEAT_CAPTURE = 22
+N_REPEAT_CAPTURE = 2
 WAITING_TIME_AFTER_START_CAPTURE = 4  # Before lauching an action on the watch
 WAITING_TIME_BEFORE_STOP_CAPTURE = 2
-KEEP_ONLY = ["Shazam"] # "all" # FindMyPhone Applications to keep for the automation
-SKIPPING = ['Timer', 'AppInTheAir', 'Camera',
+KEEP_ONLY = ["Qardio"] # Filter Applications to keep for the automation (Empty list keeps all)
+SKIPPING = ['Timer', 'Camera',
             'GooglePay', 'PlayMusic', 'ASB', "HealthyRecipes",
             'DailyTracking', 'NoApp', 'Sleep', 'UARecord',
             'Alarm', 'HeartRate', 'AthkarOfPrayer', 'WearCasts', 'Workout',
@@ -31,12 +31,12 @@ WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION = 20  # Such that the app rea
 WAITING_TIME_AFTER_CLOSING_WHEN_CLOSING_IS_NOT_AN_ACTION = 25 # Such that the app reach a stable stat after closing
 PACKAGE_NOT_TO_STOP = ["com.google.android.wearable.app", "com.huawei.health", "com.huawei.watch.supersavepower"]
 
-N_CAPTURE_AFTER_FAKE = 0  # 0 to not make any fake captures
+N_CAPTURE_AFTER_FAKE = 0  # 0 to not make any fake captures 1 make only fake captures
 FAKE_WAITTING_TIME = 22
 
 # numbering
 FLUSH_CAPTURE_NUMBER = True
-EXPERIENCE_NUMBER = 99
+EXPERIENCE_NUMBER = 15
 REACH_LEFT_STATE = False
 
 # Cleaning

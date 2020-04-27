@@ -10,9 +10,6 @@ import random
 def record_apps_version(device, name):
     cmd = 'dumpsys package | awk \'/^[ ]*Package \\[.*\\] (.*)/ { i = index($0, "[") + 1; pkg = substr($0, i, index($0, "]") - i); } /[ ]*versionName=/ { { print pkg "\t" substr($0, index($0, "=") + 1); pkg = ""; } }\' > application_version/' + name + '_`date +%Y_%m_%d_%Hh`.tsv'
     resp = os.popen("adb shell "+cmd).read()
-    print(cmd)
-    print()
-    print(resp)
 
 def swipe(lstart, lstop):
 

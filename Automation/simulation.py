@@ -79,7 +79,7 @@ def main():
         send_instruction(messages.CMD_OPEN_ELLISYS, log_fname)
 
     apps = config.KEEP_ONLY
-    if config.KEEP_ONLY == "all":
+    if len(config.KEEP_ONLY) == 0:
         apps = apps_all
     skipped = False
     counter = 0
@@ -141,7 +141,7 @@ def main():
                     capt_number =  i + left_nb
 
 
-                    faking = False if config.N_CAPTURE_AFTER_FAKE == 0 else counter % config.N_CAPTURE_AFTER_FAKE == 1
+                    faking = False if config.N_CAPTURE_AFTER_FAKE == 0 else counter % config.N_CAPTURE_AFTER_FAKE == 0
 
                     # actions variables
                     success, success_command_sent, success_check_opened = True, True, True

@@ -15,13 +15,13 @@ ELLYSIS_TIMEOUT_AFTER_COMMAND_RECEIVED = 130  # Error msg after timeout reached 
 
 # Debugging settings
 DEBUG_ELLISYS = False
-DEBUG_WATCH = True  # Does not communiacte with ellisys controller
+DEBUG_WATCH = False  # Does not communiacte with ellisys controller
 WATCH_CONNECTION_TIMEOUT = 24  # timeout after watch not connected (First instruction)
 
 
 # Simulation settings
-CAPTURE_DURATION_MINUTES = 1  # Time duration of the capture in minutes
-N_REPEAT_CAPTURE = 1   # Total number of captures 1 capt might have many actions
+CAPTURE_DURATION_MINUTES = 20  # Time duration of the capture in minutes
+N_REPEAT_CAPTURE = 10   # Total number of captures 1 capt might have many actions
 CLOSING_METHOD = "force_stop" # Either close_app or background or force_stop
 WAITING_TIME_BEFORE_CLOSING = 5
 WAITING_TIME_AFTER_OPEN_WHEN_OPEN_IS_NOT_AN_ACTION = 8  # Such that the app reach a stable stat
@@ -43,7 +43,7 @@ PACKAGE_NOT_TO_STOP = ["com.google.android.wearable.app", "com.huawei.health", "
 
 # Longrun capture specific settings
 APP_CHOICE = "equiprobable" # Prior probabilites of picking action
-WAITING_METHOD = "uniform"  # user-interact-pattern could be deterministic, uniform or exponential
+WAITING_METHOD = "deterministic"  # user-interact-pattern could be deterministic, uniform or exponential
 
 USER_INTERACTION_PATTERN_DEVIATION = True
 WAITING_TIME = 50  # Iner-acation Waiting in seconds when deterministic is chosen as WAITING_METHOD
