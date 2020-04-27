@@ -20,11 +20,12 @@ from sklearn.utils.multiclass import unique_labels
 
 
 TEST_PERCENTAGE = 0.25
-DATA_PATH = ["data/huawei/DiabetesM-1/", "data/huawei/DiabetesM-2/", "data/huawei/DiabetesM-3/", "data/huawei/DiabetesM-4/"] # all
+DATA_PATH = ["./data/huawei/elapsed_time/open-7/", "./data/huawei/elapsed_time/open-8/",
+             "./data/huawei/elapsed_time/open-9/", "./data/huawei/elapsed_time/open-10/"]
 PLOT_DIR = "./plots/"
 WATCH_NAME = 'LEO-BX9'
-REBUILD = False
-EQUALIZATION = True
+REBUILD = True
+EQUALIZATION = False
 DISCARDED_ACTION = ["DiabetesM_addCarbsaddInsulin", "WashPost_openConnectionError", "AppInTheAir_openNotLogin"] #["DiabetesM_addCarbsaddInsulin"] # ["DiabetesM_addFat", "DiabetesM_addProt", "DiabetesM_addCal"] # ["DiabetesM_addCarbsaddInsulin"] #  #["WashPost_open_", "AppInTheAir"]
 TO_MERGE = [] #[["DiabetesM_addFat", "DiabetesM_addProt", "DiabetesM_addCal", "DiabetesM_addCarbs"]] #, "DiabetesM_addInsulin"]] #["DiabetesM_addFat", "DiabetesM_addProt", "DiabetesM_addCal", "DiabetesM_addCarbs","DiabetesM_addInsulin" ]
 MINIMUM_PAYLOAD = 200
@@ -317,7 +318,7 @@ if len(DISCARDED_ACTION) != 0:
 
 if REBUILD:
     print("rebuilding dataset")
-    rebuild_all_datasets(sources_files)
+    rebuild_all_datasets(sources_files, REBUILD)
 
 events, counts = cut_all_datasets_in_events(sources_files)
 

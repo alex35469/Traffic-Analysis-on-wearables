@@ -5,8 +5,14 @@ import glob
 import sys
 
 errors = []
-PATH = "data/fossil/open-4/"
-def parse(file):
+
+PATH_CSV = "/Users/alexandredumur/Desktop/actions/D/"
+PATH_BTT = "/Users/alexandredumur/Desktop/actions/D/"
+
+if PATH_BTT == "":
+    PATH_CSV + PATH_CSV[PATH_CSV[:-1].rfind("/")+1:-1] + "_btt/"
+
+def parse(file, PATH, EXTENTION):
     name = file.replace(PATH, '').replace(EXTENTION, '')
     parts = name.split('_')
     if len(parts) == 4:
@@ -46,31 +52,66 @@ def parse(file):
             repeat = None
         return device, app, action, ble, enc, repeat
 
-EXTENTION = ".csv"
+EXTENTION_CSV = ".csv"
+EXTENTION_BTT = ".btt"
 
-counts = dict()
 
-files = glob.glob(PATH + '*'+EXTENTION, recursive=False)
-for file in files:
+counts_btt = dict()
 
-    device, app, action, ble, enc, repeat = parse(file)
+def count_classes(PATH, EXTENTION):
+    files = glob.glob(PATH + '*'+EXTENTION, recursive=False)
+    counts = dict()
 
-    if not device in counts:
-        counts[device] = dict()
-    if not app in counts[device]:
-        counts[device][app] = dict()
-    if not action in counts[device][app]:
-        counts[device][app][action] = 0
+    for file in files:
 
-    counts[device][app][action] += 1
+        device, app, action, ble, enc, repeat = parse(file, PATH, EXTENTION)
 
-print(counts)
+        if not device in counts:
+            counts[device] = dict()
+        if not app in counts[device]:
+            counts[device][app] = dict()
+        if not action in counts[device][app]:
+            counts[device][app][action] = 0
 
-for d in counts:
-    for a in counts[d]:
-        for a2 in counts[d][a]:
-            print(d,a,a2,counts[d][a][a2])
+        counts[device][app][action] += 1
+    return counts
 
+
+
+counts_csv = count_classes(PATH_CSV, EXTENTION_CSV)
+counts_btt = count_classes(PATH_BTT, EXTENTION_BTT)
+
+missing = set()
+
+for d in counts_csv:
+    for a in counts_csv[d]:
+        for a2 in counts_csv[d][a]:
+            try:
+                cbtt = counts_btt[d][a][a2]
+            except KeyError:
+                missing.add(d + "_" + a + "_" + a2)
+                continue
+
+            print(d,a,a2, counts_csv[d][a][a2], counts_btt[d][a][a2])
+            if counts_btt[d][a][a2] != counts_csv[d][a][a2]:
+                missing.add(d + "_" + a + "_" + a2)
+print("CAREFULL Missing data:")
+
+print(missing)
+
+
+for  i in missing:
+    parts = i.split('_')
+    d = parts[0]
+    a = parts[1]
+    a1 = parts[2]
+    try:
+        cbtt = counts_btt[d][a][a2]
+    except KeyError:
+        cbtt = 0
+        continue
+
+    print(d,a,a2, counts_csv[d][a][a2], cbtt)
 
 # fix errors
 for e in errors:

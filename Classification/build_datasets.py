@@ -8,8 +8,8 @@ from functools import reduce
 
 
 SOURCES_FILE_IGNORE = ["Initial Tests", ".cache", ".sync", ".vscode", "lib", "share", "bin", "etc", "include", ".ipynb_checkpoints"]
-DATA_PATH = "data/huawei/open-3/"
-
+DATA_PATH = "data/huawei/open3/"
+POSSIBLE_MASTERS = ["Pixel 2", "Nexus 5"]
 
 class bcolors:
     FAIL = '\033[91m'
@@ -158,15 +158,15 @@ def packets_to_timesize_tuples(packets):
 
     for packet_id in packets_ids:
         for layer in packets[packet_id]:
-            direction = 1
-            if not "master" in layer['Transmitter'].lower():
-                direction = -1
-            new_master = extract_master(layer["Communication"])
-            if new_master == "Inquirer":
-                continue
-            if master != new_master:
-                print("WARNING master changed:")
+            master = extract_master(layer["Communication"])
+            if master in POSSIBLE_MASTERS:
+                direction = 1
+            else:
+                print("WARNING master not in Possible masters: '" + master + "'")
                 print(layer["Communication"])
+                direction = -1
+
+            if not "master" in layer['Transmitter'].lower():
                 direction *= -1
             xy['xs'].append(float(layer['Time']))
             xy['ys'].append(direction * int(layer['PayloadLength']))
