@@ -1,5 +1,5 @@
 # Attack
-Contains the attack on single-action capture and longrun capture, also contains temporal evaluation and .
+Contains the attack on single-action capture and longrun capture, also contains temporal evaluation and transferability.
 Please refer to the [Master Thesis Report](https://github.com/alex35469/Traffic-Analysis-on-wearables/blob/master/Thesis/masters_thesis_Traffic_Analysis_of_Smartwatches_final.pdf) for more information
 
 
@@ -46,7 +46,7 @@ and run
 
 note: This might take some time.
 
-Please, also create a plots folder in the Attack folder if it does not exist yet. All plots will go in this folder when launching scripts.
+Please, also create a folder named `plots` in this directory if it does not exist yet. All plots will go in this folder when launching scripts.
 
 
 ## Reproducibilty
