@@ -159,8 +159,8 @@ def packets_to_timesize_tuples(packets):
             if master in POSSIBLE_MASTERS:
                 direction = 1
             else:
-                print("WARNING master not in Possible masters: '" + master + "'")
-                print(layer["Communication"])
+                # print("WARNING master not in Possible masters: '" + master + "'")
+                # print(layer["Communication"])
                 direction = -1
 
             if not "master" in layer['Transmitter'].lower():

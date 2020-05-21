@@ -13,6 +13,7 @@ __pycache__/
 Documentation
 
 Attack/Results
+# Attack/plots/*.png
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -41,7 +42,7 @@ venv.bak/
 # Data (use resilio to get them)
 data
 .cache
-plots
+
 datasets
 
 # Virtual Share

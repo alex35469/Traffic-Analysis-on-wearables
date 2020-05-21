@@ -280,14 +280,24 @@ if __name__ == '__main__':
     # build class index dict
     APP_TO_INDEX = build_app_to_index_dict(apple_only=(watch == "iwatch"))
     DATA_PATH_DICT = {  "huawei_open" : ["data/huawei/open-3/"],
-                        "huawei_inApp" : ["data/huawei/Endomondo-1/", "data/huawei/DiabetesM-2/",
-                                          "data/huawei/DiabetesM-3/", "data/huawei/DiabetesM-4/",
-                                          "data/huawei/FoursquareCityGuide-1/", "data/huawei/HealthyRecipes-1/",
-                                          "data/huawei/Lifesum-1/", "data/huawei/Playstore-1/"],
-                        "huawei" : ["data/huawei/Endomondo-1/", "data/huawei/DiabetesM-2/",
-                                    "data/huawei/DiabetesM-3/", "data/huawei/DiabetesM-4/",
-                                    "data/huawei/FoursquareCityGuide-1/", "data/huawei/HealthyRecipes-1/",
-                                    "data/huawei/Lifesum-1/", "data/huawei/Playstore-1/", "data/huawei/open-3/"],
+                        "huawei_inApp" : ["data/huawei/Endomondo-1/",
+                                          "data/huawei/DiabetesM-2/", 
+                                          "data/huawei/DiabetesM-3/",
+                                          "data/huawei/DiabetesM-4/",
+                                          "data/huawei/FoursquareCityGuide-1/",
+                                          "data/huawei/HealthyRecipes-1/",
+                                          "data/huawei/Lifesum-1/",
+                                          "data/huawei/Playstore-1/"],
+
+                        "huawei" : ["data/huawei/Endomondo-1/",
+                                    "data/huawei/DiabetesM-2/",
+                                    "data/huawei/DiabetesM-3/",
+                                    "data/huawei/DiabetesM-4/",
+                                    "data/huawei/FoursquareCityGuide-1/",
+                                    "data/huawei/HealthyRecipes-1/",
+                                    "data/huawei/Lifesum-1/",
+                                    "data/huawei/Playstore-1/",
+                                    "data/huawei/open-3/"],
                         "iwatch" : ["data/iwatch/batch-1/"],
                         "fossil" : ["data/fossil/open-6/"]}
     DATA_PATH = DATA_PATH_DICT[watch]

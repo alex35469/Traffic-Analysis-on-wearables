@@ -19,8 +19,6 @@ DATA_PATH = [ # Single Action and Transfer
 
              # in-App  action
              "data/huawei/Endomondo-1/",
-             "data/huawei/AppInTheAir-1/",
-             "data/huawei/DiabetesM-2/",
              "data/huawei/DiabetesM-3/",
              "data/huawei/DiabetesM-4/",
              "data/huawei/FoursquareCityGuide-1/",
