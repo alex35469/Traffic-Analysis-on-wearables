@@ -13,13 +13,21 @@ from longrun_helpers import *
 ##### CLASSIFIER
 print("Building the Classifier")
 
-DATA_PATH = ["data/huawei/Endomondo-1/", "data/huawei/AppInTheAir-1/",
-             "data/huawei/DiabetesM-2/", "data/huawei/DiabetesM-3/", "data/huawei/DiabetesM-4/",
-             "data/huawei/FoursquareCityGuide-1/", "data/huawei/HealthyRecipes-1/",
-             "data/huawei/Lifesum-1/", "data/huawei/Playstore-1/", "data/huawei/open-6/", "data/huawei/elapsed-time/open-9/",
+DATA_PATH = ["data/huawei/Endomondo-1/",
+             "data/huawei/AppInTheAir-1/",
+             "data/huawei/DiabetesM-2/",
+             "data/huawei/DiabetesM-3/",
+             "data/huawei/DiabetesM-4/",
+             "data/huawei/FoursquareCityGuide-1/",
+             "data/huawei/HealthyRecipes-1/",
+             "data/huawei/Lifesum-1/",
+             "data/huawei/Playstore-1/",
+             "data/huawei/open-6/",
+             "data/huawei/elapsed-time/open-9/",
              "data/huawei/elapsed-time/open-13/",
              "data/huawei/elapsed-time/open-15/",
-             "data/huawei/elapsed-time/open-16/", "data/huawei/force-stop-2/",
+             "data/huawei/elapsed-time/open-16/",
+             "data/huawei/force-stop-2/",
              "data/huawei/NoApp_NoAction/"]
 
 
@@ -72,7 +80,7 @@ print("Classifier has : {} classes".format(len(all_trained_action)))
 #### Imports
 print("Importing longruns")
 DATA_PATH = ["./data/huawei/longrun/user-interaction-pattern-1/", "./data/huawei/longrun/user-interaction-pattern-2/", "./data/huawei/longrun/user-interaction-pattern-3/"]
-captures, content_ground_truth = import_longrun(DATA_PATH, 
+captures, content_ground_truth = import_longrun(DATA_PATH,
                                                 ALL_TRAINED_ACTION=all_trained_action,
                                                 MERGED_FORCE_STOP=force_stop) # This should be merged Noise
 

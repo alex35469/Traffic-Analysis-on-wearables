@@ -1,0 +1,25 @@
+\chapter{Conclusion}
+\label{chap:Conclusion}
+In this thesis, we designed a fingerprinting attack on smartwatches over the Bluetooth encrypted traffic to infer potential sensitive information about installed applications and their usage. In this attack, the adversary is passive (hence, undetectable) and does not need to crack the Bluetooth encryption scheme. 
+\\
+
+To perform the attack, we designed a machine-learning based methodology that covers data collection at large scale using an automation system, features extraction, model selection and evaluation. We showed that the attack works on three brands of smartwatches: \textit{Huawei}, \textit{Fossil} and \textit{Apple Watch}. Moreover, we saw that the attack is generic to a great extend as it allows an attacker to learn from a single smartwatch-phone pair and target possibly many others. We also showed how to make the attack more robust over time. Finally, we proved that sensitive information can reliably be retrieved in an even more realistic context. 
+
+
+\section{Future Work}
+Even though the results clearly showed that an attack is possible, we can still think of the following improvements/extensions of the attack.
+
+\paragraph{Improve the attack on long-run capture.} Due to a lack of time, we could not test many methods and models that would probably increase the performance of the attack in the realistic context. Notably: Use previous knowledge about opening detection to better target in-app actions. Test other Sequence Splitting models, such as CUSUM, or bayesian approaches. Adapt the sensitivity for the Decision Maker according to the time of the day. Test a more complex decision maker, e.g. instead of one global threshold, set one individual threshold per class, or use a ML based Decision Maker.
+
+
+\paragraph{Consider more watches from more brands.} The attack was tested on three devices running two different OS. However other brands having different operating systems exist on the market, such as \textit{Samsung} and \textit{Garmin}. Even though we also expect the attack to work on them, it would be interesting to see how it performs.
+
+\paragraph{Consider an open-world scenario.} Even though the set of application available for smartwatches are rather constrained, we expect that in a near future, many more applications would be available making the closed world scenario less and less realistic. Thus, it would be interesting to select a subset of application that the classifier can train on and see if it can flag unknown applications/actions.
+
+
+
+
+\paragraph{Defenses.} There are currently no defenses in the actual Bluetooth protocol stack to prevent traffic analysis. Hence, each defense mechanism has to be directly implemented on the application level or by the watch Operating System. So it would be important to see how the attack model works under possible traffic-analysis defenses, such as packet padding and keeping fixed packet inter-arrival-time, or more advanced ones such as traffic morphing \cite{wright2009traffic}. We also note that apps developers could use our attack model to extract features importance and see where information leaks the most to develop their own defense.
+
+
+

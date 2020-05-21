@@ -1,0 +1,80 @@
+\chapter{Attack on Long-run Capture Complement}
+
+This is a complement to the experiment of Chap.~\ref{chap:towards_a_realistic_attack}.  It shows the ranking of the fingerprintability of each actions for the long-run attack. All actions are ranked based on their F1 scores. The count field indicates the number of appearance during the overall attack. We note that this result was produced by setting the sensitivity of the Decision Maker to threshold of 0.25 (see Sec.~\ref{sec:longrun methodology})
+
+
+
+\begin{table}[ht]
+\centering
+\caption{fingerprintability ranking of the 50 actions based on f1 scores for the experiment on long-run Captures ordered in ascending order. A NaN value indicates no prediction}
+    \label{tab:attack ranking longrun}
+ \begin{tabular}{llrrrr} 
+ \toprule
+application  &  action &    f1 &  precision &  recall &  count \\
+\midrule
+FoursquareCityGuide & food      &    0.00 &        NaN &    0.00 &      1 \\
+FoursquareCityGuide & shopping  &    0.00 &        NaN &    0.00 &      2 \\
+DiabetesM & addGlucose          &    0.00 &       0.00 &    0.00 &      4 \\
+DiabetesM & addProt             &    0.00 &        NaN &    0.00 &      4 \\
+FoursquareCityGuide & nightlife &    0.00 &        NaN &    0.00 &      4 \\
+FoursquareCityGuide & fun       &    0.00 &        NaN &    0.00 &      5 \\
+Endomondo & browseMap           &    0.00 &       0.00 &    0.00 &      6 \\
+Weather & open                  &   11.43 &      28.57 &    7.14 &     28 \\
+PlayStore & deterministicBrowse &   15.38 &     100.00 &    8.33 &     12 \\
+SleepTracking & open            &   15.38 &     100.00 &    8.33 &     24 \\
+FoursquareCityGuide & coffee    &   33.33 &      50.00 &   25.00 &      4 \\
+DiabetesM & addCal              &   36.36 &      66.67 &   25.00 &      8 \\
+DiabetesM & addCarbs            &   40.00 &      50.00 &   33.33 &      3 \\
+FindMyPhone & open              &   42.86 &      47.37 &   39.13 &     23 \\
+SalatTime & open                &   52.94 &      43.90 &   66.67 &     27 \\
+Lifesum & addWater              &   57.14 &     100.00 &   40.00 &     10 \\
+DiabetesM & addFat              &   66.67 &     100.00 &   50.00 &      2 \\
+DiabetesM & addInsulin          &   66.67 &     100.00 &   50.00 &      2 \\
+Citymapper & open               &   75.00 &      64.29 &   90.00 &     20 \\
+KeepNotes & open                &   78.48 &      67.39 &   93.94 &     33 \\
+FoursquareCityGuide & open      &   84.21 &      94.12 &   76.19 &     21 \\
+Running & open                  &   84.21 &      88.89 &   80.00 &     30 \\
+Strava & open                   &   87.50 &     100.00 &   77.78 &     36 \\
+Translate & open                &   88.00 &      84.62 &   91.67 &     24 \\
+Lifesum & addFood               &   88.89 &     100.00 &   80.00 &      5 \\
+Endomondo & open                &   89.47 &     100.00 &   80.95 &     21 \\
+Mobilis & open                  &   90.00 &      85.71 &   94.74 &     19 \\
+
+ \midrule
+ \multicolumn{5}{c}{continued}\\
+ \bottomrule
+\end{tabular}
+\end{table}
+
+\newpage
+
+\begin{table}[ht]
+\centering
+ \begin{tabular}{llrrrr} 
+ \toprule
+PlayStore & open                &   90.57 &      85.71 &   96.00 &     25 \\
+Qardio & open                   &   92.31 &     100.00 &   85.71 &     14 \\
+Glide & open                    &   92.86 &     100.00 &   86.67 &     30 \\
+Shazam & open                   &   93.33 &     100.00 &   87.50 &     16 \\
+MapMyRun & open                 &   93.62 &      95.65 &   91.67 &     24 \\
+FITIVPlus & open                &   94.55 &     100.00 &   89.66 &     29 \\
+WashPost & open                 &   95.00 &     100.00 &   90.48 &     21 \\
+HealthyRecipes & researchRecipy &   95.83 &      95.83 &   95.83 &     24 \\
+Outlook & open                  &   96.67 &     100.00 &   93.55 &     31 \\
+Lifesum & open                  &   97.30 &      94.74 &  100.00 &     18 \\
+SmokingLog & open               &   97.30 &     100.00 &   94.74 &     19 \\
+DCLMRadio & open                &   97.56 &     100.00 &   95.24 &     21 \\
+ChinaDaily & open               &   97.87 &     100.00 &   95.83 &     24 \\
+Calm & open                     &   97.96 &      96.00 &  100.00 &     24 \\
+DiabetesM & open                &   97.96 &     100.00 &   96.00 &     25 \\
+Telegram & open                 &   98.31 &     100.00 &   96.67 &     30 \\
+Endomondo & run                 &  100.00 &     100.00 &  100.00 &      2 \\
+AppInTheAir & open              &  100.00 &     100.00 &  100.00 &     14 \\
+Krone & open                    &  100.00 &     100.00 &  100.00 &     19 \\
+Maps & open                     &  100.00 &     100.00 &  100.00 &     23 \\
+Meduza & open                   &  100.00 &     100.00 &  100.00 &     23 \\
+Spotify & open                  &  100.00 &     100.00 &  100.00 &     27 \\
+Bring & open                    &  100.00 &     100.00 &  100.00 &     34 \\
+ \bottomrule
+\end{tabular}
+\end{table}

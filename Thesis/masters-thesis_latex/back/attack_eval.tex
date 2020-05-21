@@ -1,0 +1,90 @@
+
+\chapter{Attack Evaluation Complement}
+This is a complement to the attack described in Sec.~\ref{chapter summary}. It shows the ranking of the fingerprintability of each action considered in the mainstream experiment over all. All actions are ranked based on their F1 scores.
+\\
+
+
+
+
+\begin{table}[ht]
+\centering
+\caption{fingerprintability ranking of the 55 actions based on f1 scores. (Ordered in ascending order)}
+    \label{tab:attack ranking}
+ \begin{tabular}{llllll} 
+ \toprule
+ application name & action & f1 score & precision & recall \\ [0.5ex] 
+ \midrule
+FoursquareCityGuide & coffee & 30.78 (+/- 25.02) & 32.96 (+/- 28.62) & 30.57 (+/- 28.12)\\
+FoursquareCityGuide & nightlife & 30.87 (+/- 25.94) & 33.47 (+/- 28.35) & 30.13 (+/- 28.76)\\
+FoursquareCityGuide & fun & 33.97 (+/- 24.83) & 34.49 (+/- 26.54) & 35.13 (+/- 29.02)\\
+DiabetesM & addProt & 34.33 (+/- 27.06) & 39.53 (+/- 30.95) & 32.06 (+/- 28.34)\\
+DiabetesM & addFat & 34.96 (+/- 24.54) & 37.32 (+/- 28.68) & 34.42 (+/- 27.26)\\
+DiabetesM & addGlucose & 38.12 (+/- 24.30) & 42.22 (+/- 29.84) & 37.02 (+/- 29.02)\\
+FoursquareCityGuide & food & 41.46 (+/- 23.47) & 40.99 (+/- 25.30) & 43.97 (+/- 29.53)\\
+DiabetesM & addCal & 47.22 (+/- 20.83) & 45.68 (+/- 19.42) & 51.19 (+/- 30.48)\\
+DiabetesM & addInsulin & 74.19 (+/- 18.89) & 73.85 (+/- 23.32) & 76.38 (+/- 26.60)\\
+DiabetesM & addCarbs & 75.76 (+/- 19.44) & 75.10 (+/- 22.51) & 78.28 (+/- 28.01)\\
+FitWorkout & open & 81.80 (+/- 19.50) & 88.49 (+/- 20.00) & 77.27 (+/- 26.35)\\
+Lifesum & open & 86.59 (+/- 13.96) & 81.23 (+/- 21.77) & 93.90 (+/- 13.75)\\
+Fit & open & 88.44 (+/- 14.24) & 86.75 (+/- 18.82) & 91.08 (+/- 17.98)\\
+Strava & open & 88.85 (+/- 14.92) & 93.59 (+/- 15.26) & 85.37 (+/- 21.33)\\
+PlayStore & open & 89.33 (+/- 12.50) & 86.07 (+/- 17.87) & 93.67 (+/- 15.42)\\
+FoursquareCityGuide & shopping & 90.21 (+/- 11.16) & 83.94 (+/- 18.08) & 98.24 (+/- 9.46)\\
+Maps & open & 90.76 (+/- 11.96) & 86.17 (+/- 17.74) & 96.49 (+/- 11.35)\\
+PlayStore & deterministicBrowse & 90.82 (+/- 12.42) & 99.68 (+/- 3.65) & 84.02 (+/- 20.54)\\
+Weather & open & 91.02 (+/- 13.42) & 96.56 (+/- 10.83) & 86.79 (+/- 21.14)\\
+Bring & open & 92.78 (+/- 10.70) & 86.98 (+/- 18.20) & 100.00 (+/- 0.00)\\
+HealthyRecipes & researchRecipy & 93.00 (+/- 12.68) & 97.45 (+/- 9.57) & 89.74 (+/- 20.99)\\
+ FitBreathe & open & 93.69 (+/- 10.31) & 93.47 (+/- 13.85) & 94.42 (+/- 14.03)\\
+Mobilis & open & 94.43 (+/- 9.47) & 98.09 (+/- 8.77) & 91.44 (+/- 15.42)\\
+Qardio & open & 94.88 (+/- 8.99) & 99.25 (+/- 5.68) & 91.27 (+/- 15.85)\\
+FindMyPhone & open & 94.97 (+/- 10.55) & 97.18 (+/- 10.63) & 93.30 (+/- 15.90)\\
+Shazam & open & 95.08 (+/- 9.28) & 99.17 (+/- 5.67) & 91.69 (+/- 16.07)\\
+ MapMyRun & open & 95.08 (+/- 9.81) & 99.17 (+/- 5.64) & 91.73 (+/- 16.73)\\
+Glide & open & 95.12 (+/- 9.11) & 93.52 (+/- 13.79) & 97.15 (+/- 9.65)\\
+ \midrule
+ \multicolumn{5}{c}{continued}\\
+ \bottomrule
+\end{tabular}
+\end{table}
+
+\newpage
+
+\begin{table}[ht]
+\centering
+ \begin{tabular}{llllll} 
+ \toprule
+ application name & action & f1 score & precision & recall \\ [0.5ex] 
+ \midrule
+
+Krone & open & 95.45 (+/- 8.74) & 99.30 (+/- 5.12) & 92.23 (+/- 15.16)\\
+Running & open & 95.61 (+/- 10.29) & 96.64 (+/- 11.28) & 94.97 (+/- 14.18)\\
+Outlook & open & 95.70 (+/- 8.88) & 97.10 (+/- 10.32) & 94.71 (+/- 13.20)\\
+AppInTheAir & open & 95.70 (+/- 9.00) & 93.03 (+/- 14.63) & 98.89 (+/- 6.50)\\
+Endomondo & open & 95.93 (+/- 7.87) & 95.08 (+/- 11.83) & 97.12 (+/- 9.83)\\
+Endomondo & browseMap & 95.98 (+/- 8.73) & 99.20 (+/- 5.78) & 93.32 (+/- 15.00)\\
+WashPost & open & 96.05 (+/- 9.61) & 92.79 (+/- 16.99) & 100.00 (+/- 0.00)\\
+FoursquareCityGuide & open & 96.12 (+/- 7.77) & 95.65 (+/- 11.54) & 96.90 (+/- 9.60)\\
+Meduza & open & 96.27 (+/- 7.30) & 93.17 (+/- 13.03) & 99.84 (+/- 2.52)\\
+KeepNotes & open & 96.46 (+/- 7.88) & 98.19 (+/- 9.30) & 95.09 (+/- 11.88)\\
+SleepTracking & open & 96.49 (+/- 7.79) & 95.72 (+/- 11.39) & 97.53 (+/- 8.94)\\
+Translate & open & 96.76 (+/- 6.84) & 96.78 (+/- 9.38) & 97.01 (+/- 9.96)\\
+UARecord & open & 96.99 (+/- 7.64) & 100.00 (+/- 0.00) & 94.41 (+/- 13.83)\\
+Telegram & open & 96.99 (+/- 6.77) & 96.89 (+/- 9.88) & 97.38 (+/- 9.77)\\
+DCLMRadio & open & 97.12 (+/- 7.00) & 99.95 (+/- 1.41) & 94.67 (+/- 12.88)\\
+SmokingLog & open & 97.17 (+/- 8.40) & 99.06 (+/- 5.81) & 95.65 (+/- 14.07)\\
+Camera & open & 97.33 (+/- 5.82) & 95.06 (+/- 10.88) & 99.90 (+/- 1.99)\\
+ChinaDaily & open & 97.36 (+/- 5.96) & 95.02 (+/- 11.13) & 100.00 (+/- 0.00)\\
+Endomondo & run & 98.07 (+/- 6.24) & 96.39 (+/- 11.51) & 100.00 (+/- 0.00)\\
+Citymapper & open & 98.18 (+/- 5.82) & 99.86 (+/- 2.29) & 96.72 (+/- 10.76)\\
+Calm & open & 98.19 (+/- 5.68) & 99.81 (+/- 3.18) & 96.77 (+/- 10.23)\\
+FITIVPlus & open & 98.41 (+/- 5.16) & 99.58 (+/- 3.90) & 97.41 (+/- 9.37)\\
+SalatTime & open & 99.07 (+/- 5.83) & 98.39 (+/- 10.09) & 99.90 (+/- 1.99)\\
+Lifesum & addWater & 99.40 (+/- 4.63) & 99.95 (+/- 1.41) & 98.96 (+/- 8.30)\\
+Spotify & open & 99.44 (+/- 3.19) & 99.05 (+/- 5.73) & 99.89 (+/- 2.21)\\
+Lifesum & addFood & 99.51 (+/- 3.78) & 99.13 (+/- 6.87) & 99.95 (+/- 1.41)\\
+DiabetesM & open & 100.00 (+/- 0.00) & 100.00 (+/- 0.00) & 100.00 (+/- 0.00)\\
+ 
+ \bottomrule
+\end{tabular}
+\end{table}

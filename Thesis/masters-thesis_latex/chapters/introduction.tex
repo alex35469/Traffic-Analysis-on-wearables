@@ -1,0 +1,58 @@
+\chapter{Introduction}
+\label{chap:Introduction}
+Smartwatches are small computing devices that are worn as traditional watches. They have a lot of capabilities and can perform almost all operations that a smartphone can do such as making phone calls, sending messages, retrieving emails. But the real asset of smartwatches comes from their ability to provide more advanced services, helping users to manage their smoking habits, remember their medication or monitor their heart rate. 
+\\
+\\
+One important feature of smartwatches is their ability to be personalized by their owner. Every smartwatch has access to an application store (e.g.  Google Play store, App Store) where the user can download any application that is suitable for his usage. Many types of applications exist, ranging from medical, religious or news applications.
+\\
+\\
+Nevertheless, the presence of these applications carry personal information that could enable profiling. Applications running on smartwatches often exchange information with their paired smartphone via Bluetooth. Due to the broadcast nature of Bluetooth, nothing prevents a local attacker to passively record the encrypted Bluetooth traffic of smartwatches to infer sensitive information about the watch's owner.
+
+
+\section{Motivation}
+
+Knowing which applications are installed on a smartwatch can reveal sensitive information and could hurt individual’s interests for the benefits of the attacker. We illustrate this claim by giving few scenarios in which such information can be turned against the victim's interest. 
+
+
+\begin{itemize}
+	\item Health Insurance tracking particular apps to decide health coverage.\footnote{\url{https://www.theglobeandmail.com/technology/how-insurers-are-turning-to-fitness-apps-to-decide-your-health-coverage/article16065068/}} Tracking, for instance, diabetes manager apps to increase insurance rate of individuals.
+	
+	\item Governments tracking individuals having particular religious application to increase their surveillance level.\footnote{\url{https://www.pewresearch.org/fact-tank/2016/06/28/religious-restrictions-among-the-worlds-most-populous-countries-2/}}
+
+	\item Universities, Schools overhearing traffic to fight against cheaters that use translate software on their smartwatch.\footnote{\url{https://www.irishtimes.com/news/education/smartwatches-linked-to-spike-in-college-exam-cheating-1.3978932}}
+	\item Advertiser targeting specific applications. For instance, fitness applications for an advertising campaign on protein supplement powder, or a particular news app that leaks political views.
+\end{itemize}
+
+\newpage
+
+These examples indicate that the reason for such an attack are multiple and diverse, and the attacker himself can take many forms: a noisy neighbor, an advertiser in a mall, or governments. Therefore, we believe that understanding \emph{how well} such attacks perform would be a valuable contribution.
+\\
+
+In addition to the obvious privacy threat, we note that an attacker aware of a vulnerability in a specific application would be able to track this application without having to scan each smartwatch to exploit the vulnerability.
+
+
+\section{Problem statement}
+This Master Thesis aims to answer the following question:
+
+\begin{quote}
+Is it feasible for a passive attacker to infer information by recording encrypted Bluetooth traffic between a smartwatch and its paired mobile phone?    
+\end{quote}
+
+More specifically, we will investigate if an attacker can fingerprint an application and its usage from its generated encrypted traffic within a specific set of applications.  \\
+
+To answer the above question, we will go through the following points which represent our contribution:
+
+\begin{itemize}
+	\item Identify and select what kind of personal information an attacker can infer from encrypted Bluetooth traffic between a smartwatch and a smartphone.
+	\item Construct an automated system that allows data collection at scale.
+	\item Propose and evaluate an attack that infers installed applications and actions from encrypted Bluetooth traffic between different smartwatch-smartphone pairs.
+	\item Discuss and investigate how generic and realistic the attack is.
+\end{itemize}
+
+
+
+
+\section{Thesis structure}
+The structure of this thesis goes as follows: \\
+
+In Chapter~\ref{chap:Background}, we provide background knowledge. In Chapter~\ref{chap:related_work}, we explore the related work. In Chapter \ref{chap:attack overview}, we give an overview of the attack along with our threat model. In Chapter~\ref{chap:methodology}, we explain the methodology we follow to construct the attack. In Chapter \ref{chap:Generalization}, we explore how generic is the attack. In Chapter \ref{chap:towards_a_realistic_attack}, we discuss how realistic is the attack. Finally, in Chapter \ref{chap:Conclusion}, we draw Conclusion of our research and discuss some future works.
