@@ -36,8 +36,8 @@ X_huawei, y_huawei, f_name = build_features_labels_dataset(equilibrate_events_hu
 X_fossil, y_fossil, _ = build_features_labels_dataset(equilibrate_events_fossil, unique_deltas=UNIQUE_DELTAS)
 
 print("useless features extraction")
-to_withdraw_h = find_feat_to_withdraw(DATA_PATH_HUAWEI, N_ATTEMPS_AFTER_EXIT=1, N_ESTIMATOR=1000, MAX_ITERATION=1, DPRINT=True)
-to_withdraw_f = find_feat_to_withdraw(DATA_PATH_FOSSIL, N_ATTEMPS_AFTER_EXIT=1, N_ESTIMATOR=1000, MAX_ITERATION=1, DPRINT=True)
+to_withdraw_h = find_feat_to_withdraw(DATA_PATH_HUAWEI, N_ATTEMPS_AFTER_EXIT=1, N_ESTIMATOR=1000, MAX_ITERATION=1, DPRINT=False)
+to_withdraw_f = find_feat_to_withdraw(DATA_PATH_FOSSIL, N_ATTEMPS_AFTER_EXIT=1, N_ESTIMATOR=1000, MAX_ITERATION=1, DPRINT=False)
 
 #to_withdraw_h = []
 #to_withdraw_f = []

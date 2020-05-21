@@ -7,7 +7,7 @@ Please refer to the [Master Thesis Report](https://github.com/alex35469/Traffic-
 Make sure the following files exists:
 
 ```
-# Single Action Capture
+# Single Action Capture and Transferability
 "data/huawei/open-3/",
 "data/fossil/open-6/",
 "data/iwatch/batch-1/",
@@ -44,15 +44,16 @@ and run
 
 `python cache_data.py`
 
-Please, also create a plots folder in the Attack folder if it does not exist.
+note: This might take some time.
 
-note: This might take some time. all plots will go in this folder when launching scripts.
+Please, also create a plots folder in the Attack folder if it does not exist yet. All plots will go in this folder when launching scripts.
 
 
-## Reproducibiilty
+## Reproducibilty
 
 ### Single-Action capture evaluation
 To reproduce the results on Single-Action capture (Chap):
+
  `python evalute.py <smartwatch>`
 where smartwatch can be `huawei_open`, `huawei_inApp`, `huawei`, `fossil` or `iwatch`.
 
@@ -60,9 +61,10 @@ Print on screen the averaged accuracy with 95% confidence interval using 50 rand
 
 ### Transferability
 To reproduce the results on Transferability:
+
 `python transfer_evaluation.py`
 
-Print on screen the averaged accuracy for the two watches (one in the trained set the other one in the test set and vice versa) with 95% confidence interval using 50 random split cross-validation 25% test 75% train. Finally, for each watch, the script makes one realisation print the accuracy and plot 3 confusion matrix (with different layout) for that realisation.
+Print on screen the averaged accuracy with 95% confidence interval using 50 random split cross-validation 25% test 75% train for the two watches (one in the trained set the other one in the test set and vice versa), when filtering is/isn't used and when fit packages are merged. Finally, for each watch, the script makes one realisation print the accuracy and plot 3 confusion matrix (with different layout) for that realisation.
 
 
 ### Accuracy over Time
@@ -75,6 +77,7 @@ Print on screen the averaged accuracy decrease for each day and averaged over al
 
 ### Long-run Attack
 To reproduce the results on Long-run Attack:
+
 `python longrun_evaluation.py`
 
 Print on sceen the the best threshold for the Decision Maker according to the F1 score. And the associate Precision, Recall and F1 score. Plot also the Precision, Recall, F1 score against different threshold values.
